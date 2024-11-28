@@ -15,4 +15,4 @@ typedef enum
 /*element de type Shape representant la forme de l'objet*/
 /*Shape image_form(char* path)*/
 /* */
-Shape image_form(char* path);
+Shape image_form(char[] path);

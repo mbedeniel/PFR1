@@ -16,4 +16,4 @@ typedef enum
 /*element de type Color representant la couleur de l'objet*/
 /*Color image_color(char* path)*/
 /*Donne la couleur dominante sur l'image traitée*/
-Color image_color(char* path);
+Color image_color(char[] path);

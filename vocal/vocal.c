@@ -11,11 +11,18 @@ int get_index(const char *texte, const char *mot) {
 }
 
 // Fonction pour extraire le nombre à partir de la position donnée dans le texte
-int extract_number_from_position(const char *texte, int start) {
+int extract_number_from_position(const char *texte) {
     int number = 0;
-    while (texte[start] != '\0' && isdigit(texte[start])) {
-        number = number * 10 + (texte[start] - '0');
-        start++;
+    int count = 0;
+    int start = 0;
+    while (texte[count] != '\0') {
+        if (isdigit(texte[count])) {
+            start = 1;
+            number = number * 10 + (texte[count] - '0');
+        } else if (start) {
+            break;
+        }
+        count++;
     }
     return number;
 }
@@ -34,7 +41,23 @@ char* speech_analysis_to_json(char* texte) {
     int position_command[num_commands];
     for (int i = 0; i < num_commands; i++) {
         position_command[i] = get_index(texte, commands[i]);
-        printf("position_command[%d]: %d , %s\n", i, position_command[i], commands[i]);
+    }
+
+    // Trier les commandes par leur position dans le texte (en tenant compte des -1)
+    for (int i = 0; i < num_commands - 1; i++) {
+        for (int j = i + 1; j < num_commands; j++) {
+            if ((position_command[i] > position_command[j] && position_command[j] != -1) ||
+                (position_command[i] == -1 && position_command[j] != -1)) {
+                int temp = position_command[i];
+                position_command[i] = position_command[j];
+                position_command[j] = temp;
+
+                // Échanger les commandes pour qu'elles restent synchronisées avec les indices
+                const char *temp_cmd = commands[i];
+                commands[i] = commands[j];
+                commands[j] = temp_cmd;
+            }
+        }
     }
 
     // Allocation dynamique de mémoire pour le JSON
@@ -45,44 +68,26 @@ char* speech_analysis_to_json(char* texte) {
     strcpy(json, "{");
     int first = 1; // Pour savoir si on ajoute une virgule
 
-    // Trier les commandes par leur position dans le texte
+    // Construire le JSON
     for (int i = 0; i < num_commands; i++) {
-        for (int j = i + 1; j < num_commands; j++) {
-            if (position_command[i] > position_command[j] && position_command[i] != -1 && position_command[j] != -1) {
-                int temp = position_command[i];
-                position_command[i] = position_command[j];
-                position_command[j] = temp;
-            }
-        }
-    }
-
-    // Analyser le texte et récupérer les commandes et leurs nombres associés
-    for (int i = 0; i < num_commands; i++) {
-        // Récupérer la position de la commande dans le texte
-        int position = position_command[i];
-        if (position != -1) {
-            // Chercher le nombre après la commande
-            int number = extract_number_from_position(texte, position + strlen(commands[i]));
-            
-            // Si un nombre est trouvé, ajouter au JSON
+        if (position_command[i] != -1) {
+            int number = extract_number_from_position(texte + position_command[i]);
             if (number > 0) {
                 if (!first) {
                     strcat(json, ", ");
                 }
                 first = 0; // Après la première commande
-                char buffer[200];
+                char buffer[100];
                 sprintf(buffer, "\"%s\": %d", commands[i], number);
                 strcat(json, buffer);
             }
         }
     }
-
     // Fermer le JSON
     strcat(json, "}");
-    printf("JSON: %s\n", json);
-
     return json;  // Retourner directement le JSON
 }
+
 
 // Fonction pour lire le texte généré par la reconnaissance vocale
 char* speech_reception() {
@@ -123,7 +128,7 @@ int main() {
     // Exemple de réception du texte de la reconnaissance vocale
 
     // Lire le texte de la reconnaissance vocale
-    char* texte = "avance de 10, gauche de 90, recule de 5, droite de 45";
+    char* texte = "  droite de 45 ,avance de 10,  recule de 5, ,  gauche de 90 ";
     // Générer le JSON à partir du texte
     char* json = speech_analysis_to_json(texte);
     printf("JSON: %s\n", json);

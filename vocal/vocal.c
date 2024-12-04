@@ -34,7 +34,7 @@ char* speech_analysis_to_json(char* texte) {
     }
 
     // Commandes à vérifier
-    const char *commands[] = {"avance", "gauche", "recule", "droite"};
+    const char *commands[] = {"avance", "gauche", "recule", "droite", "stop"};
     const int num_commands = sizeof(commands) / sizeof(commands[0]);
 
     // Déclaration d'un tableau pour les positions des commandes
@@ -128,7 +128,7 @@ int main() {
     // Exemple de réception du texte de la reconnaissance vocale
 
     // Lire le texte de la reconnaissance vocale
-    char* texte = "  droite de 45 ,avance de 10,  recule de 5, ,  gauche de 90 ";
+    char* texte = speech_reception();
     // Générer le JSON à partir du texte
     char* json = speech_analysis_to_json(texte);
     printf("JSON: %s\n", json);

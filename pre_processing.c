@@ -1,10 +1,17 @@
 #include "pre_processing.h"
+#include <stdio.h>
+#include <math.h>
 
-int* quantification(int pixel)
+void quantification(int pixel, int* pixels)
 {
-    int i, pixels[number_quantified_bit];
-    for(i=0;i<number_quantified_bit;i++)
+    int i,pixel_processed;
+    for(i=0;i<NUMBER_QUANTIFIED_BIT;i++)
     {
-        pixels[i]=pixel/2^(7-i);
+        pixel_processed=pixel/pow(2,7-i);
+        *(pixels+i)=pixel_processed;
+        if(pixel_processed)
+        {
+            pixel-= pow(2,7-i);
+        }
     }
 }

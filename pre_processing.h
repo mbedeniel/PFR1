@@ -26,5 +26,14 @@ typedef struct {
 /*INPUT: pixel a quantifier, adresse du tableau de qui contiendra le resultat*/
 void quantification(int pixel,int* pixels);
 
-
+/*INPUT: 
+    int** pixel_images: une matrice contenant les pixel de l'image
+    int** color_histograms: le tableau ou charge l'histogramme
+    int ligne: nombre de ligne de pixel_images
+    int column: nombre de colone de pixel_images
+*/
+/*OUTPUT: 
+    int : le nombre de case rempli de l'histogramme    
+*/
+int color_histogram(int** pixel_images,int ligne,int column,double** color_histograms);
 

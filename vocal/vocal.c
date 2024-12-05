@@ -15,6 +15,11 @@ int extract_number_from_position(const char *texte) {
     int number = 0;
     int count = 0;
     int start = 0;
+    //rechercher le nombre dans le texte
+    while(!isdigit(texte[count]) && texte[count] != '\0') {
+        count++;
+    }
+    //extraire le nombre
     while (texte[count] != '\0') {
         if (isdigit(texte[count])) {
             start = 1;
@@ -24,6 +29,7 @@ int extract_number_from_position(const char *texte) {
         }
         count++;
     }
+
     return number;
 }
 
@@ -72,7 +78,7 @@ char* speech_analysis_to_json(char* texte) {
     for (int i = 0; i < num_commands; i++) {
         if (position_command[i] != -1) {
             int number = extract_number_from_position(texte + position_command[i]);
-            if (number > 0) {
+            if (number >= 0) {
                 if (!first) {
                     strcat(json, ", ");
                 }
@@ -125,10 +131,15 @@ char* speech_reception() {
 }
 
 int main() {
-    // Exemple de réception du texte de la reconnaissance vocale
-
-    // Lire le texte de la reconnaissance vocale
-    char* texte = speech_reception();
+    // ENLEVER UN DES COMMENTAIRES POUR TESTER AVEC UN TEXTE PRÉDÉFINI OU AVEC LA RECONNAISSANCE VOCALE
+        // Lire le texte de la reconnaissance vocale
+    //char* texte = speech_reception();
+        //la ligne ci-dessus et décommenter la ligne ci-dessous pour tester avec un texte prédéfini
+    char* texte = "avance de 10 mètres à gauche  ";
+    
+    
+    
+    
     // Générer le JSON à partir du texte
     char* json = speech_analysis_to_json(texte);
     printf("JSON: %s\n", json);

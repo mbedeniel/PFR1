@@ -1,0 +1,3 @@
+
+char* speech_reception();
+

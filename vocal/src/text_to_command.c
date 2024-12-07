@@ -60,8 +60,10 @@ char* speech_analysis_to_json(const char* texte) {
                 break;
             }
         }
-
+    // Si aucune commande n'est trouvée, on passe à la suivante en sautant les espaces et les caractères non valides 
+    //cela permet de ne pas bloquer le programme si une commande n'est pas reconnue
         if (!found_command) {
+            // en sautant les espaces et les caractères non valides
             while (*remaining_text && !isspace(*remaining_text)) remaining_text++;
             while (*remaining_text && isspace(*remaining_text)) remaining_text++;
         }

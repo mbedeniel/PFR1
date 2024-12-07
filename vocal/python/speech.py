@@ -9,6 +9,6 @@ with mic as source:
 try:
     result = r.recognize_google(audio_data, language="fr-FR")
 except Exception as e:
-    result = ""
+    result = ''
 
 print(result)

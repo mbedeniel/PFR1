@@ -47,14 +47,23 @@ char* speech_analysis_to_json(const char* texte) {
                 found_command = 1;
 
                 int number = extract_number_from_position(remaining_text + strlen(commands[i]));
-                if (number > 0) {
-                    if (!first) strcat(json, ", ");
-                    first = 0;
-                    char buffer[100];
-                    sprintf(buffer, "\"%s\": %d", commands[i], number);
-                    strcat(json, buffer);
+                //verifier les valeur par default de number pour chaque commande
+                if (number <= 0) {
+                    if (strcmp(commands[i], "avance") == 0 || strcmp(commands[i], "recule") == 0) {
+                        number = 200;
+                    } else if (strcmp(commands[i], "droite") == 0 || strcmp(commands[i], "gauche") == 0) {
+                        number = 90;
+                    }
                 }
 
+
+                if (!first) strcat(json, ", ");
+                first = 0;
+                char buffer[100];
+                sprintf(buffer, "\"%s\": %d", commands[i], number);
+                strcat(json, buffer);
+
+                // accelerer le pointeur pour passer à la commande suivante en sautant les espaces et les caractères non valides
                 remaining_text += strlen(commands[i]);
                 while (*remaining_text && !isspace(*remaining_text)) remaining_text++;
                 break;

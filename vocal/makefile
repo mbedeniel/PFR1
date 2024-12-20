@@ -15,6 +15,13 @@ main.o: main.c include/speech_to_text.h include/text_to_command.h
 #creer le fichier app executable en utilisant les fichiers objets
 app: src/speech_to_text.o src/text_to_command.o main.o
 	gcc -o app src/speech_to_text.o src/text_to_command.o main.o
+#pour le mode IHM
+ihm.o: src/ModeManuel.c 
+	gcc -c src/ModeManuel.c -o ihm.o
+ihm: ihm.o
+	gcc -o ihm ihm.o
+
+
 
 #compiler et executer le fichier application
 run: app

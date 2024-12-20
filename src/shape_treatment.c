@@ -1,44 +1,46 @@
-#include "shape_treatment.h"
-#include <stdio.h>
-#include <math.h>
+#include "../include/shape_treatment.h"
 
-/**
- * Fonction pour analyser et détecter la forme d'un objet.
- * Une heuristique simple basée sur la détection des bords est utilisée.
- */
-int image_form(int** pixel_image, int rows, int cols) {
-    int edges_detected = 0;
+double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape search_shape)
+{
+    int height=max_min_pixel.lowest_pixel.y-max_min_pixel.highest_pixel.y;
+    switch (search_shape)
+    {
+    case BALL:
+        return ((double)nbr_pixel_image)/(pow(((double)height)/2.0,2)*3.14);
+    case CUBE:
+        return ((double)nbr_pixel_image)/(double)pow(height,2);
+    default:
+        fprintf(stderr,"\n \t ERROR TYPE NON PRIX EN CHARGE");
+        return 0.0;
+    }
+}
 
-    for (int i = 1; i < rows - 1; i++) {
-        for (int j = 1; j < cols - 1; j++) {
-            if (abs(pixel_image[i][j] - pixel_image[i + 1][j]) > EDGE_THRESHOLD ||
-                abs(pixel_image[i][j] - pixel_image[i][j + 1]) > EDGE_THRESHOLD) {
-                edges_detected++;
+image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int column)
+{
+    int i,j,pixel,test=1;
+    image_max_min_pixel max_min_pixel;
+    Position max_pixel,min_pixel;
+    for (i=0;i<ligne;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            pixel=binary_image[i][j];
+            /*recuperation du premier pixel de l'image*/
+            if(pixel && test)
+            {
+                max_pixel.x=j;
+                max_pixel.y=i;
+                test=0;
+            }
+            /*recuperation du dernier pixel de l'image*/
+            if(pixel)
+            {
+                min_pixel.x=j;
+                min_pixel.y=i;
             }
         }
     }
-
-    if (edges_detected > SHAPE_CIRCLE_THRESHOLD) {
-        return SHAPE_CIRCLE; // Cercle
-    } else if (edges_detected > SHAPE_SQUARE_THRESHOLD) {
-        return SHAPE_SQUARE; // Carré
-    }
-    return SHAPE_UNKNOWN; // Forme non reconnue
-}
-
-/**
- * Fonction pour afficher la forme détectée.
- */
-void display_shape(int shape_id) {
-    switch (shape_id) {
-        case SHAPE_CIRCLE:
-            printf("Shape detected: Circle\n");
-            break;
-        case SHAPE_SQUARE:
-            printf("Shape detected: Square\n");
-            break;
-        default:
-            printf("Shape detected: Unknown\n");
-            break;
-    }
+    max_min_pixel.highest_pixel=max_pixel;
+    max_min_pixel.lowest_pixel=min_pixel;
+    return max_min_pixel;
 }

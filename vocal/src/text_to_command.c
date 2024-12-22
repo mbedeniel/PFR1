@@ -13,9 +13,12 @@ int get_index(const char *texte, const char *mot) {
 // Fonction pour extraire le nombre à partir d'une position donnée dans le texte
 int extract_number_from_position(const char *texte) {
     int number = 0;
+    // Ignorer les caractères non numériques et les espaces pour accelerer le pointeur
     while (*texte && !isdigit(*texte)) {
         texte++;
     }
+    // Extraire le nombre
+
     while (*texte && isdigit(*texte)) {
         number = number * 10 + (*texte - '0');
         texte++;
@@ -27,12 +30,12 @@ int extract_number_from_position(const char *texte) {
 char* speech_analysis_to_json(const char* texte) {
     if (texte == NULL) return NULL;
 
-    const char *commands[] = {"avance", "gauche", "recule", "droite", "stop"};
-    const int num_commands = sizeof(commands) / sizeof(commands[0]);
+    const char *commands[] = {"avance", "gauche", "recule", "droite", "stop"}; // Liste des commandes a reconnaitre
+    const int num_commands = sizeof(commands) / sizeof(commands[0]); // Nombre de commandes
 
     char *json = malloc(1024);
     if (!json) return NULL;
-
+    //creation du json qui contiendra les commandes et les valeurs et sera utilisé pour la communication avec le robot
     strcpy(json, "{");
     int first = 1;
 
@@ -40,14 +43,18 @@ char* speech_analysis_to_json(const char* texte) {
 
     while (*remaining_text) {
         int found_command = 0;
-
+        //recherche chaque commande dans le texte 
+            //si la commande est trouvée, on extrait le nombre associé à la commande
+                //si elle est troovée sans nombre, on lui attribue une valeur par défaut
+            //si la commande n'est pas trouvée, on passe à la suivante
         for (int i = 0; i < num_commands; i++) {
+        
             int position = get_index(remaining_text, commands[i]);
             if (position == 0) {
                 found_command = 1;
 
                 int number = extract_number_from_position(remaining_text + strlen(commands[i]));
-                //verifier les valeur par default de number pour chaque commande
+                //verifier les valeur par default de number pour chaque commande si elle n'est pas fournie
                 if (number <= 0) {
                     if (strcmp(commands[i], "avance") == 0 || strcmp(commands[i], "recule") == 0) {
                         number = 200;
@@ -56,7 +63,7 @@ char* speech_analysis_to_json(const char* texte) {
                     }
                 }
 
-
+                // Ajouter la commande et le nombre au JSON
                 if (!first) strcat(json, ", ");
                 first = 0;
                 char buffer[100];

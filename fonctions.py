@@ -3,6 +3,11 @@ from integration.main import *
 import keyboard
 #faites "pip install keyboard" pour installer le module keyboard
 
+ drawing.py
+├── movement.py
+├── menu.py
+├── main.py
+
 # ___________________Fonctions___________________
 
 # Surface de jeu

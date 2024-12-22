@@ -57,7 +57,7 @@ char* speech_analysis_to_json(const char* texte) {
                 //verifier les valeur par default de number pour chaque commande si elle n'est pas fournie
                 if (number <= 0) {
                     if (strcmp(commands[i], "avance") == 0 || strcmp(commands[i], "recule") == 0) {
-                        number = 200;
+                        number = 75;
                     } else if (strcmp(commands[i], "droite") == 0 || strcmp(commands[i], "gauche") == 0) {
                         number = 90;
                     }

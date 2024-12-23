@@ -7,31 +7,32 @@ C EST LUI QUI GERE L AFFICHAGE DES ELEMENTS DU JEU. (Interface graphique)
 """
 
 
+
 def tracer_piece(piece, curseur):
     """
     Trace un rectangle représentant une pièce de jeu selon ses dimensions, son coin haut droit,
     sa couleur et l'épaisseur des traits définis dans le dictionnaire `piece`.
     """
     curseur.up()
-    curseur.speed(10)
     #aller au positon du coin HD et orienter le curseur vers le bas
     curseur.goto(piece["coin_HD"])
-    curseur.setheading(270)
-
     curseur.width(piece['trait'])
     curseur.color(piece['couleur'])
-    curseur.down()
-    #tracer le rectangle
-    for _ in range(2):
-        curseur.forward(piece["dimensions"][0])
-        curseur.right(90)
-        curseur.forward(piece["dimensions"][1])
-        curseur.right(90)
     
+    #tracer le rectangle
+   #aller au positon du coin HD et orienter le curseur vers le bas
+    curseur.down()
+    curseur.goto(piece["coins"]["coin_BD"])
+    curseur.goto(piece["coins"]["coin_BG"])
+    curseur.goto(piece["coins"]["coin_HG"])
+    curseur.goto(piece["coin_HD"])
+
+
     curseur.up()
     #tracer les ouvertures et les obstacles
     for ouv in piece['ouvertures']:
         tracer_ouverture(ouv, curseur, piece)
+        
     #tracer les obstacles
     for obs in piece['obstacles']:
         tracer_obstacle(obs, curseur, piece)
@@ -67,20 +68,32 @@ def tracer_carre(cote, curseur ):
 #verifier si un point est a l interieur de la piece
 def est_dans_piece(point, piece):
     """
-    Verifie si un point est a l interieur de la piece.
+    Vérifie si un point est à l'intérieur de la pièce.
+    Retourne True si le point est à l'intérieur, False sinon.
     """
     coins = init_coins(piece)
-    #si !(piece_x1 < point_x1 < piece_x2) ou ! (piece_y1 > point_y1 > piece_y2) alors le point est en dehors de la piece
-    piece_x1 , piece_y1 = coins["coin_HG"]
-    piece_x2 , piece_y2 = coins["coin_BD"]
-    if not (piece_x1 <= point[0] <= piece_x2) or not (piece_y1 >= point[1] >= piece_y2):
-        if not (piece_x1 < point[0] < piece_x2):
-            print(f"Erreur: le point {point} est en dehors de la piece sur l'axe X.")
-        if not (piece_y1 > point[1] > piece_y2):
-            print(f"Erreur: le point {point} est en dehors de la piece sur l'axe Y.")
-        print(f"\tCoordonné de la piece: x∈[{piece_x1}, {piece_x2}] et y∈[{piece_y2}, {piece_y1}]\n\tCoordonné du point: x={point[0]} et y={point[1]}")
-        return False
-    return True
+    
+    # Extraire les limites de la pièce
+    piece_x1 = coins["coin_HG"][0]
+    piece_x2 = coins["coin_HD"][0]
+    piece_y1 = coins["coin_HD"][1]
+    piece_y2 = coins["coin_BD"][1]
+
+    # Vérifier les conditions
+    if piece_x1 <= point[0] <= piece_x2 and piece_y2 <= point[1] <= piece_y1:
+        return True
+    
+    # Si le point est en dehors, afficher les messages d'erreur
+    if point[0] < piece_x1 or point[0] > piece_x2:
+        print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe X.")
+    if point[1] < piece_y2 or point[1] > piece_y1:
+        print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe Y.")
+    
+    print(f"\tCoordonnées de la pièce : x ∈ [{piece_x1}, {piece_x2}] et y ∈ [{piece_y2}, {piece_y1}]")
+    print(f"\tCoordonnées du point : x = {point[0]}, y = {point[1]}")
+    
+    return False
+
 
 def tracer_obstacle(obstacle, curseur, piece):
     """
@@ -129,14 +142,17 @@ def tracer_ouverture(ouverture, curseur , piece):
     #si le coin est le coin_BD  l orientation de l ouverture est vers la gauche pour aller vers le coin BG (angle 180)
     #si le coin est le coin_BG  l orientation de l ouverture est vers le haut pour aller vers le coin HG (angle 90)
     coins = init_coins(piece)
-    if ouverture["coin_droite"] == coins["coin_HD"]:
-        curseur.setheading(-90)
-    elif ouverture["coin_droite"] == coins["coin_HG"]:
+    
+    if ouverture["coin_droite"] == coins["coin_HG"]:
         curseur.setheading(0)
-    elif ouverture["coin_droite"] == coins["coin_BD"]:
-        curseur.setheading(90)
     elif ouverture["coin_droite"] == coins["coin_BG"]:
+        #oriebter le curseur vers le coin le haut
+        curseur.setheading(90)
+    elif ouverture["coin_droite"] == coins["coin_BD"]:
         curseur.setheading(180)
+    elif ouverture["coin_droite"] == coins["coin_HD"]:
+        curseur.setheading(270)
+    
     else :
         print(f"Erreur: l ouverture {ouverture['coin_droite']} n est pas un coin de la piece.")
         return None

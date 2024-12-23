@@ -12,13 +12,15 @@ def init_piece():
     """
     piece ={
     'nom': 'piece',
-    'dimensions': (400, 600),
+    'dimensions': (600, 400),
     'coin_HD': (300, 200),
+    'coins': {},
     'couleur': 'blue',
     'trait': 5,
     'ouvertures': [],
     'obstacles': []
     }
+    piece['coins'] = init_coins(piece)
     return piece
 
 def init_obstable(nom ,coin_HD, couleur, forme, dimension):

@@ -2,7 +2,7 @@ import keyboard
 from mouvement import vocal_reception, adaptation_donnees
 from interaction import mode_Vocal, mode_ihm
 
-def menu(new_curseur):
+def menu(new_curseur, piece):
     """
     Affiche le menu principal et gère le choix de mode (vocal ou IHM).
     """
@@ -17,11 +17,11 @@ def menu(new_curseur):
             print("Appuyez sur 'q' pour quitter le mode vocal")
             data = mode_Vocal()
             adapted_data = adaptation_donnees(data)
-            vocal_reception(new_curseur, adapted_data)
+            vocal_reception(new_curseur, adapted_data, piece)
     elif choix == "2":
         print("__Mode IHM__")
         while not keyboard.is_pressed('q'):
             print("Appuyez sur 'q' pour quitter le mode IHM")
             data = mode_ihm()
             adapted_data = adaptation_donnees(data)
-            vocal_reception(new_curseur, adapted_data)
+            vocal_reception(new_curseur, adapted_data, piece)

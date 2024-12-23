@@ -3,6 +3,7 @@ import turtle as tl
 from drawing import *
 from menu import menu
 from init import*
+from navigation import entrer_robot1
 
 # Initialisation des variables
 
@@ -19,26 +20,40 @@ ouverture4 = init_ouverture(coins['coin_BD'], 10,50)
 # Initialisation des obstacles
 obstacle = init_obstable('obstacle1', (-100,150), 'red', 'cercle', 25)
 obstacle2 = init_obstable('obstacle2', (200, 100), 'green', 'carre', 50)
-obstacle3 = init_obstable('obstacle3', (500, 100), 'orange', 'carre', 50)
+obstacle3 = init_obstable('obstacle3', (100, -150), 'orange', 'carre', 50)
 
 #ajouter les ouvertures et les obstacles à la pièce
 for ouv in [ouverture, ouverture2, ouverture3, ouverture4]:
     piece['ouvertures'].append(ouv)
 for obs in [obstacle, obstacle2, obstacle3]:
-    piece['obstacles'].append(obs)
+    #piece['obstacles'].append(obs)
+    continue
 
 
 # Initialisation de la fenêtre de jeu
 trace_piece = tl.Turtle()
 trace_piece.hideturtle()
+#VITESSE LENTE
+trace_piece.speed(10)
 #tracer la pieces
 tracer_piece(piece, trace_piece)
 
 # Initialisation du curseur sous forme de robot
 new_curseur = modif_curseur()
+#new_curseur.speed(1)
+#mettre le curseur a l exteieur de la piece
+coins = piece['coins']
+coin = coins['coin_BD']
 
+##placer le curseur à l'extérieur de la pièce
+new_curseur.up()
+new_curseur.goto(coin[0]+75 , coin[1] - 30)
+new_curseur.down()
 
+#entrer le robot dans la piece
+entrer_robot1(new_curseur, piece)
+new_curseur.down()
 # Lancer le menu
-#menu(new_curseur)  # Remplacez par vos fonctions réelles
+menu(new_curseur, piece)
 
 tl.done()

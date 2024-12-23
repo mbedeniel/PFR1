@@ -1,6 +1,16 @@
 SRC := src
 INCLUDE := include
 
+########################################################
+#faite 'make run' pour creer le fichier excecutable (main_test_image.exe)
+#exe file
+
+main_test_image.o:main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o
+	gcc -c main_test_image.c -o main_test_image.o
+run: main_test_image.o
+	gcc -o main_test_image.exe main_test_image.o pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o 
+##########################################################
+
 main_test_image.out: main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o
 	gcc -o main_test_image.out main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o -W -Wall -ansi -pedantic -lm
 

@@ -83,3 +83,14 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
     max_min_pixel.lowest_pixel=min_pixel;
     return max_min_pixel;
 }
+
+
+
+
+const char* get_shape_name(Shape shape) {
+    switch (shape) {
+        case BALL: return "BALL";
+        case CUBE: return "CUBE";
+        default: return "NONE_SHAPE";
+    }
+}

@@ -70,3 +70,5 @@ double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape se
         structure contenant les coordonnées des deux points recherchés
 */
 image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int column);
+
+const char* get_shape_name(Shape shape);

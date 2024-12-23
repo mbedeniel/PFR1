@@ -1,4 +1,5 @@
 #include "./include/image_interface.h"
+#include <stdio.h>
 
 int main()
 {
@@ -8,6 +9,17 @@ int main()
     search_object.color=BLUE;
 
     processed_object = image_treatment(search_object);
+
+    // recuperer les infos de l object sous format json
+    char json_buffer[256]; // Tampon pour la chaîne JSON
+
+    object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
+    printf("%s",json_buffer);
+
+
+
+
+    
     
     if(processed_object.color==search_object.color)
     {
@@ -26,6 +38,6 @@ int main()
     {
         printf("Forme non trouvée \n");
     }
-   
+    
     return 0;
 }

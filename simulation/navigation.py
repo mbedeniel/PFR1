@@ -134,34 +134,66 @@ def get_distance(curseur, point):
 
 ##########################fonction pour verifier si le robot qui se deplace d un angle "heading" rencontre un obstacle ou pas
 #pour cela il y a deux cas a considerer:
-"""
--le cas du cercle : 
-    l equation du cercle est donnée par la formule suivante: (x - xc)² + (y - yc)² = r²
-    xc et yc sont les coordonnées du centre du cercle et r est le rayon du cercle
-    pour verifier si def rencontre_obstacle_cercle(curseur, obstacle):
-        La position du point à un instant 𝑡 t est donnée par :
-                𝑃(𝑡)=(𝑥0 + 𝑡⋅cos⁡𝛼 , 𝑦0 + 𝑡⋅sin𝛼)
-        On remplace les coordonnées de 𝑃(𝑡) dans l'équation du cercle pour trouver la distance entre le point et le centre du cercle
-        point le cursuer X= 𝑥0 + 𝑡⋅cos⁡𝛼 et Y = 𝑦0 + 𝑡⋅sin𝛼 avec 𝑥0 et  𝑦0  le position du cursuer et 𝛼 le heading 
-        -apres injection de X ET Y sur l equation du cercle on calcule T 
-        T^2 - 2AT + B = 0 avec    A = (x0​−xc​)cosα + (y0​−yc​)sinα et B = (x0​−xc​)^2 + (y0​−yc​)^2 − r^2
-            +si delta < 0 le curseur ne va jamais se diriger vers ce cercle en gardant ce cap
-            +si delta = 0  Cela signifie que le robot efleure l obstacle en ce point 
-            +si delta > 0 on a T1 et T2  le plus petit est le T lorsque le robot entre dans l'obstable , et le plus grand au moment ou il vas resortir 
-
-        - Ayant le temps T a la quel le robot va percuter l obstacle , on peut ainsi calculer les coordonnées du point de 
-            collision en utilisant P(T) = (𝑥0 + T⋅cos⁡𝛼 , 𝑦0 + T⋅sin𝛼) QUI EST TOUT SIMPLEMENT LE POINT 
-
-
--pour le cas des rectangle 
-    on sait que un rectangle est defini par 4 point (X1 , X2) et (Y1 , Y2)
-    on verifie en quel temps les   X1<=xp<=X2 et Y1<=Yp<=Y2
-    ON PRENT LE PLUS PETIT T DE  L INTERSECTION ENTRE C EST DEUX SOLUTION CORRESPONT AU POINT D ENTREE ET E PLUS GRAND AU t DE SORTIE
-    -on calcule les coordonnées de c est deux points 
-    si n intersecrtion est nul alors pas de collsion avec les rectangles 
 
 """
+Cas du cercle :
+-------------------
+L’équation d’un cercle est donnée par : (x - xc)² + (y - yc)² = r²
+- xc et yc : Coordonnées du centre du cercle.
+- r : Rayon du cercle.
 
+Pour vérifier une collision avec un cercle :
+1. La position du point à un instant t est donnée par :
+   P(t) = (x0 + t * cos(α), y0 + t * sin(α))
+   - x0, y0 : Position initiale du point.
+   - α : Direction (heading) du point.
 
+2. On remplace les coordonnées de P(t) dans l’équation du cercle.
+   Cela permet de trouver la distance entre le point et le centre du cercle :
+   X = x0 + t * cos(α)
+   Y = y0 + t * sin(α)
 
+3. Après injection de X et Y dans l’équation du cercle, on obtient une équation quadratique :
+   t² - 2 * A * t + B = 0
+   - A = (x0 - xc) * cos(α) + (y0 - yc) * sin(α)
+   - B = (x0 - xc)² + (y0 - yc)² - r²
+
+4. Analyse du discriminant (Δ) :
+   - Si Δ < 0 : Pas de collision. Le point ne rencontrera jamais le cercle.
+   - Si Δ = 0 : Collision tangente. Le point effleure le cercle.
+   - Si Δ > 0 : Deux temps t1 et t2.
+     * Le plus petit t correspond à l’entrée dans le cercle.
+     * Le plus grand t correspond à la sortie.
+
+5. Points de collision :
+   - Calculés avec P(T) = (x0 + T * cos(α), y0 + T * sin(α)).
+
+Cas du rectangle :
+-------------------
+Un rectangle est défini par ses coordonnées : (X1, Y1) et (X2, Y2)
+
+Pour vérifier une collision avec un rectangle :
+1. Conditions d’intersection :
+   - Le point doit respecter :
+     X1 ≤ xp ≤ X2 et Y1 ≤ yp ≤ Y2
+   - xp et yp : Coordonnées de la trajectoire à un instant t.
+
+2. Calcul des temps d’intersection :
+   - Pour les côtés verticaux (à X = X1 ou X = X2) :
+     t_x = (X1 - x0) / cos(α) ou t_x = (X2 - x0) / cos(α)
+   - Pour les côtés horizontaux (à Y = Y1 ou Y = Y2) :
+     t_y = (Y1 - y0) / sin(α) ou t_y = (Y2 - y0) / sin(α)
+
+3. Temps valides :
+   - Conservez les valeurs de t > 0.
+   - Vérifiez si les coordonnées correspondantes sont dans les limites du rectangle.
+   - Le plus petit t est le temps d’entrée.
+   - Le plus grand t est le temps de sortie.
+
+4. Points d’intersection :
+   - Coordonnées calculées avec P(t) = (x0 + t * cos(α), y0 + t * sin(α)).
+
+5. Absence de collision :
+   - Si aucune valeur de t ne satisfait les conditions, alors il n’y a pas de collision avec le rectangle.
+"""
 

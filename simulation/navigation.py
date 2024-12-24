@@ -119,17 +119,48 @@ def entrer_robot1(curseur, piece):
             curseur.setheading( curseur.towards(centre))
             curseur.goto(centre)
 # Fonction pour calculer la distance entre le curseur et un coin
-def get_distance(curseur, coin):
+def get_distance(curseur, point):
     """
     Calcule la distance entre le curseur et un coin donné.
     Retourne la distance.
     """
     x_curseur, y_curseur = curseur.position()
-    return sqrt((coin[0] - x_curseur) ** 2 + (coin[1] - y_curseur) ** 2)
+    return sqrt((point[0] - x_curseur) ** 2 + (point[1] - y_curseur) ** 2)
+# dans un repere orthonormé, la distance entre deux points est donnée par la formule de pythagore 
+#distance = racine ( (x2 - x1)² + (y2 - y1)² )
 
-############## FIN DE LA NAVIGATION POUR ENTRER LE ROBOT DANS LA PIECE ####################
+############## FIN DE LA NAVIGATION POUR FAIRE ENTRER LE ROBOT DANS LA PIECE ####################
 
 
+##########################fonction pour verifier si le robot qui se deplace d un angle "heading" rencontre un obstacle ou pas
+#pour cela il y a deux cas a considerer:
+"""
+-le cas du cercle : 
+    l equation du cercle est donnée par la formule suivante: (x - xc)² + (y - yc)² = r²
+    xc et yc sont les coordonnées du centre du cercle et r est le rayon du cercle
+    pour verifier si def rencontre_obstacle_cercle(curseur, obstacle):
+        La position du point à un instant 𝑡 t est donnée par :
+                𝑃(𝑡)=(𝑥0 + 𝑡⋅cos⁡𝛼 , 𝑦0 + 𝑡⋅sin𝛼)
+        On remplace les coordonnées de 𝑃(𝑡) dans l'équation du cercle pour trouver la distance entre le point et le centre du cercle
+        point le cursuer X= 𝑥0 + 𝑡⋅cos⁡𝛼 et Y = 𝑦0 + 𝑡⋅sin𝛼 avec 𝑥0 et  𝑦0  le position du cursuer et 𝛼 le heading 
+        -apres injection de X ET Y sur l equation du cercle on calcule T 
+        T^2 - 2AT + B = 0 avec    A = (x0​−xc​)cosα + (y0​−yc​)sinα et B = (x0​−xc​)^2 + (y0​−yc​)^2 − r^2
+            +si delta < 0 le curseur ne va jamais se diriger vers ce cercle en gardant ce cap
+            +si delta = 0  Cela signifie que le robot efleure l obstacle en ce point 
+            +si delta > 0 on a T1 et T2  le plus petit est le T lorsque le robot entre dans l'obstable , et le plus grand au moment ou il vas resortir 
+
+        - Ayant le temps T a la quel le robot va percuter l obstacle , on peut ainsi calculer les coordonnées du point de 
+            collision en utilisant P(T) = (𝑥0 + T⋅cos⁡𝛼 , 𝑦0 + T⋅sin𝛼) QUI EST TOUT SIMPLEMENT LE POINT 
+
+
+-pour le cas des rectangle 
+    on sait que un rectangle est defini par 4 point (X1 , X2) et (Y1 , Y2)
+    on verifie en quel temps les   X1<=xp<=X2 et Y1<=Yp<=Y2
+    ON PRENT LE PLUS PETIT T DE  L INTERSECTION ENTRE C EST DEUX SOLUTION CORRESPONT AU POINT D ENTREE ET E PLUS GRAND AU t DE SORTIE
+    -on calcule les coordonnées de c est deux points 
+    si n intersecrtion est nul alors pas de collsion avec les rectangles 
+
+"""
 
 
 

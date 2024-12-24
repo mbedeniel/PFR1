@@ -6,7 +6,6 @@ AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OB
 
 """
 
-
 import turtle as tl
 from math import sqrt, atan2, degrees 
 

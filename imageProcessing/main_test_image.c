@@ -14,10 +14,7 @@ int main()
     char json_buffer[256]; // Tampon pour la chaîne JSON
 
     object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
-    printf("%s",json_buffer);
-
-
-
+    printf("%s\n",json_buffer);
 
     
     

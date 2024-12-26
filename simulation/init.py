@@ -30,12 +30,12 @@ def init_obstable(nom ,coin_HD, couleur, forme, dimension):
     - nom: le nom de l'obstacle
     - coin_HD: le coin haut droit de l'obstacle
     - couleur: la couleur de l'obstacle
-    - forme: la forme de l'obstacle('cercle' ou 'carre')
+    - forme: la forme de l'obstacle('cercle' ou 'carree')
     - dimension: 
                     *si la forme est 'cercle', c'est le rayon du cercle, 
-                    *si la forme est 'carre', c'est la longueur du côté du carré
+                    *si la forme est 'carree', c'est la longueur du côté du carré
     """
-    if forme != 'cercle' and forme != 'carre':
+    if forme != 'cercle' and forme != 'carree':
         print(f"Erreur: l obstacle {nom} a une forme invalide.Sa forme({forme}) doit être 'cercle' ou 'carre'.")
         return None
     

@@ -64,7 +64,7 @@ def tracer_carre(cote, curseur ):
     """
     for _ in range(4):
         curseur.forward(cote)
-        curseur.right(90)
+        curseur.left(90)
 #verifier si un point est a l interieur de la piece
 def est_dans_piece(point, piece):
     """
@@ -115,9 +115,9 @@ def tracer_obstacle(obstacle, curseur, piece):
     curseur.color(obstacle["couleur"])
     curseur.begin_fill()
 
-    if obstacle["forme"] == "cercle":
+    if "cercle" == obstacle["forme"]:
         tracer_cercle(obstacle["dimension"],curseur)
-    elif obstacle["forme"] == "carre":
+    elif "carree" == obstacle["forme"]:
         tracer_carre(obstacle["dimension"], curseur)
     else:
         print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")

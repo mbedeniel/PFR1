@@ -18,23 +18,23 @@ ouverture3 = init_ouverture(coins['coin_BG'], 10,50)
 ouverture4 = init_ouverture(coins['coin_BD'], 10,50)
 
 # Initialisation des obstacles
-obstacle = init_obstable('obstacle1', (-100,150), 'red', 'cercle', 25)
-obstacle2 = init_obstable('obstacle2', (200, 100), 'green', 'carre', 50)
-obstacle3 = init_obstable('obstacle3', (100, -150), 'orange', 'carre', 50)
+obstacle = init_obstable('obstacle1', (-100,150), 'red', 'carree', 25)
+obstacle2 = init_obstable('obstacle2', (200, 100), 'green', 'carree', 50)
+obstacle3 = init_obstable('obstacle3', (100, -150), 'orange', 'carree', 50)
 
 #ajouter les ouvertures et les obstacles à la pièce
 for ouv in [ouverture, ouverture2, ouverture3, ouverture4]:
     piece['ouvertures'].append(ouv)
 for obs in [obstacle, obstacle2, obstacle3]:
-    #piece['obstacles'].append(obs)
-    continue
+    piece['obstacles'].append(obs)
+    #continue
 
 
 # Initialisation de la fenêtre de jeu
 trace_piece = tl.Turtle()
 trace_piece.hideturtle()
 #VITESSE LENTE
-trace_piece.speed(10)
+trace_piece.speed(1)
 #tracer la pieces
 tracer_piece(piece, trace_piece)
 

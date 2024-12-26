@@ -35,14 +35,9 @@ def aligner_sur_y(curseur, y):
     """
     new_coordonee = (curseur.xcor(), y)
     curseur.goto(new_coordonee)
-def aller_au_point(curseur, point):
-    """
-    Déplace le curseur vers un point donné.
-    """
-    curseur.goto(point)
 
 def entrer_robot1(curseur, piece):
-
+    delta = 30
  # Vérifier si le robot est déjà dans la pièce
     if est_dans_piece(curseur.position(), piece):
         print("Le robot est déjà à l'intérieur de la pièce.")
@@ -65,7 +60,7 @@ def entrer_robot1(curseur, piece):
     if coin_droite == coins['coin_BG']:
         #OKKKKKKKKKKKKKKK
         # aligner le curseur sur l axe x et entrer dans la piece
-        centre = (coin_droite[0], coin_droite[1] + int(ouverture_proche['distance_coin'] / 2))
+        centre = (coin_droite[0] + delta , coin_droite[1] + int(ouverture_proche['distance_coin'] / 2))
         #verifier si x_curseur < coin_droite[0] 
         if robot_pos[0] < coin_droite[0]:
             aligner_sur_y(curseur, centre[1])
@@ -78,7 +73,7 @@ def entrer_robot1(curseur, piece):
             curseur.goto(centre)
     elif coin_droite == coins['coin_HD']:
         # aligner le curseur sur l axe y et entrer dans la piece
-        centre = (coin_droite[0], coin_droite[1] - int(ouverture_proche['distance_coin'] / 2))
+        centre = (coin_droite[0]- delta, coin_droite[1] - int(ouverture_proche['distance_coin'] / 2))
         #verifier si X_curseur > coin_droite[0]
         if robot_pos[0] > coin_droite[0]:
             aligner_sur_y(curseur, centre[1])
@@ -92,7 +87,7 @@ def entrer_robot1(curseur, piece):
     elif coin_droite == coins['coin_BD']:
         #OKKKKKKKKKK
         # aligner le curseur sur l axe x et entrer dans la piece
-        centre = (coin_droite[0] - int(ouverture_proche['distance_coin'] / 2), coin_droite[1])
+        centre = (coin_droite[0] - int(ouverture_proche['distance_coin'] / 2), coin_droite[1] + delta)
         #verifier si y_curseur < coin_droite[1]
         if robot_pos[1] < coin_droite[1]:
             aligner_sur_x(curseur, centre[0])
@@ -105,7 +100,7 @@ def entrer_robot1(curseur, piece):
             curseur.goto(centre)
     elif coin_droite == coins['coin_HG']:
         # aligner le curseur sur l axe y et entrer dans la piece
-        centre = (coin_droite[0] + int(ouverture_proche['distance_coin'] / 2), coin_droite[1])
+        centre = (coin_droite[0] + int(ouverture_proche['distance_coin'] / 2), coin_droite[1] - delta)
         #verifier si y_curseur > coin_droite[1]
         if robot_pos[1] > coin_droite[1]:
             aligner_sur_x(curseur, centre[0])
@@ -129,6 +124,56 @@ def get_distance(curseur, point):
 #distance = racine ( (x2 - x1)² + (y2 - y1)² )
 
 ############## FIN DE LA NAVIGATION POUR FAIRE ENTRER LE ROBOT DANS LA PIECE ####################
+
+
+
+#navigation 
+from dectection_collision import *
+def aller_vers(curseur, piece, destination):
+    """
+    Déplace le curseur vers une destination donnée.
+    """
+    #orienter le curseur vers la destination
+    curseur.setheading(curseur.towards(destination))
+
+    #determiner les obstacles critiques et les contourner
+    obstacles = piece.get('obstacles', [])
+    obstacles_critiques = get_Obstacles_critiques(obstacles , curseur)
+
+    if len(obstacles_critiques) == 0:
+        #aucun obstacle critique
+        curseur.goto(destination)
+        return
+    
+    for obstacle, point_entree, point_sortie in obstacles_critiques:
+        #comparer la distance entre le curseur et le point de collision avec la distance entre le curseur et la destination
+        distance_collision = curseur.distance(point_entree)
+        distance_destination = curseur.distance(destination)
+        if distance_collision > distance_destination:
+            #le robot est déjà plus proche de la destination que du point de collision
+            # pas de collision
+
+            curseur.goto(destination)
+            return
+        else :
+            #le robot est plus proche du point de collision que de la destination
+            #contourner l'obstacle
+            #se diriger vers le point d'entree
+            curseur.goto(point_entree)
+            #contourner l'obstacle et se diriger vers le point de sortie en faisant un demi-cercle de rayon diemension
+
+            curseur.right(90)
+            curseur.forward(obstacle['dimension']*1.5)
+            curseur.left(90)
+            curseur.forward(obstacle['dimension']*1.5)
+            curseur.left(90)
+            curseur.forward(obstacle['dimension']*1.5)
+            curseur.setheading(curseur.towards(destination))
+            break
+
+    #se diriger vers la destination
+    aller_vers(curseur, piece, destination)
+
 
 
 

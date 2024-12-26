@@ -1,22 +1,26 @@
 from drawing import est_dans_piece
 from math import cos, sin, radians
 
+from navigation import  aller_vers
+
 def translantion(curceur, val, piece):
     """
     Déplace le curseur d'une valeur donnée (positive ou négative).
     """
     #verifier si le curseur risque de sortir de la piece
     x_curseur, y_curseur = curceur.position()
-    heatding = curceur.heading()
+    heading = curceur.heading()
     #calculer la nouvelle position du curseur
-    new_x_curseur = x_curseur + val * cos(radians(heatding))
-    new_y_curseur = y_curseur + val * sin(radians(heatding))
+    new_x_curseur = x_curseur + val * cos(radians(heading))
+    new_y_curseur = y_curseur + val * sin(radians(heading))
     #verifier si le curseur risque de sortir de la piece
-    if not est_dans_piece((new_x_curseur, new_y_curseur), piece):
+    destination = (new_x_curseur, new_y_curseur)
+    if not est_dans_piece(destination, piece):
         print(f"Erreur: le curseur risque de sortir de la piece.")
         #se deplacer jusqu au bord de la piece
         return
-    curceur.forward(val)
+    #curceur.forward(val)
+    aller_vers(curceur, piece , destination)
 
 def rotation(curceur, val):
     """
@@ -27,17 +31,22 @@ def rotation(curceur, val):
 def vocal_reception(curceur, reception, piece):
     """
     Déplace et oriente le curseur en fonction des données reçues dans le dictionnaire `reception`.
+
     """
     if reception["mouvement"] != None:
-        if reception["mouvement"] == 'avance':
+        if  'avance' in reception["mouvement"].lower():
             translantion(curceur, reception["distance_mouvement"], piece)
-        else: 
+        elif 'recule' in reception["mouvement"].lower():
             translantion(curceur, -reception["distance_mouvement"], piece)
+        else :
+            print("Erreur: mouvement non reconnu.")
     if reception["rotation"] != None:
-        if reception["rotation"] == 'droite':
+        if 'droite' in reception["rotation"].lower():
             rotation(curceur, reception["angle_rotation"])
-        else: 
+        elif 'gauche' in reception["rotation"].lower():
             rotation(curceur, -reception["angle_rotation"])
+        else:
+            print("Erreur: rotation non reconnue.")
 
 def adaptation_donnees(data):
     """
@@ -49,6 +58,7 @@ def adaptation_donnees(data):
         'rotation': None,
         'angle_rotation': None,
     }
+    print ("DATA : ", data)
     if len(data) == 0:
         return reception
 

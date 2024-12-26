@@ -1,6 +1,7 @@
 import keyboard
 from mouvement import vocal_reception, adaptation_donnees
 from interaction import mode_Vocal, mode_ihm
+from time import sleep
 
 def menu(new_curseur, piece):
     """
@@ -18,6 +19,7 @@ def menu(new_curseur, piece):
             data = mode_Vocal()
             adapted_data = adaptation_donnees(data)
             vocal_reception(new_curseur, adapted_data, piece)
+            sleep(1)
     elif choix == "2":
         print("__Mode IHM__")
         while not keyboard.is_pressed('q'):
@@ -25,3 +27,4 @@ def menu(new_curseur, piece):
             data = mode_ihm()
             adapted_data = adaptation_donnees(data)
             vocal_reception(new_curseur, adapted_data, piece)
+            sleep(1)

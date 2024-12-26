@@ -64,7 +64,7 @@ def mode_ihm():
         chemin_programme_c = "vocal/ihm.exe"
         data = appeler_programme_c(chemin_programme_c)
         # Vérifier si la taille de la liste n'est pas nulle
-        if len(data) == 0:
+        if data is None or len(data) == 0:
             print("Saisie incorrecte. Veuillez réessayer.")
             continuer = True
         else:

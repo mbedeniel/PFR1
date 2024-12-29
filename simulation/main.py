@@ -4,6 +4,7 @@ from drawing import *
 from menu import menu
 from init import*
 from navigation import entrer_robot1
+from settings import *
 
 # Initialisation des variables
 
@@ -54,6 +55,7 @@ new_curseur.down()
 entrer_robot1(new_curseur, piece)
 new_curseur.down()
 # Lancer le menu
-menu(new_curseur, piece)
+from interaction import *
+mode_Vocal(new_curseur, piece)
 
 tl.done()

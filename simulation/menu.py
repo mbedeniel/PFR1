@@ -2,6 +2,7 @@ import keyboard
 from mouvement import vocal_reception, adaptation_donnees
 from interaction import mode_Vocal, mode_ihm
 from time import sleep
+from settings import __DEBUG__
 
 def menu(new_curseur, piece):
     """

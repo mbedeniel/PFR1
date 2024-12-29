@@ -31,3 +31,30 @@ char* speech_reception() {
 
     return texte;
 }
+
+
+
+
+
+
+// la meme fonction en utilisant fgets
+char* speech_reception_( char* texte , int taille) {
+    // Demander à l'utilisateur de saisir un texte
+    if (texte == NULL) {
+        printf("Erreur d'allocation mémoire.\n");
+        return NULL;
+    }
+
+    printf("Entrez le texte: ");
+    // Lire l'entrée utilisateur, y compris les espaces
+    fgets(texte, taille, stdin);  // Utilise fgets pour lire la ligne complète
+
+    // Retirer le saut de ligne qui peut être présent à la fin de la chaîne
+    size_t len = strlen(texte);
+    if (len > 0 && texte[len - 1] == '\n') {
+        texte[len - 1] = '\0';
+    }
+
+    return texte;
+
+}

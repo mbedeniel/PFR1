@@ -2,6 +2,7 @@ from drawing import est_dans_piece
 from math import cos, sin, radians
 
 from navigation import  aller_vers
+from settings import __DEBUG__
 
 def translantion(curceur, val, piece):
     """
@@ -16,11 +17,12 @@ def translantion(curceur, val, piece):
     #verifier si le curseur risque de sortir de la piece
     destination = (new_x_curseur, new_y_curseur)
     if not est_dans_piece(destination, piece):
-        print(f"Erreur: le curseur risque de sortir de la piece.")
+        if __DEBUG__:
+            print(f"Erreur: le curseur risque de sortir de la piece.")
         #se deplacer jusqu au bord de la piece
         return
     #curceur.forward(val)
-    aller_vers(curceur, piece , destination)
+    aller_vers(curceur, piece , destination , val<0)
 
 def rotation(curceur, val):
     """
@@ -39,14 +41,16 @@ def vocal_reception(curceur, reception, piece):
         elif 'recule' in reception["mouvement"].lower():
             translantion(curceur, -reception["distance_mouvement"], piece)
         else :
-            print("Erreur: mouvement non reconnu.")
+            if __DEBUG__:
+                print("Erreur: mouvement non reconnu.")
     if reception["rotation"] != None:
         if 'droite' in reception["rotation"].lower():
             rotation(curceur, reception["angle_rotation"])
         elif 'gauche' in reception["rotation"].lower():
             rotation(curceur, -reception["angle_rotation"])
         else:
-            print("Erreur: rotation non reconnue.")
+            if __DEBUG__:
+                print("Erreur: rotation non reconnue.")
 
 def adaptation_donnees(data):
     """
@@ -58,7 +62,7 @@ def adaptation_donnees(data):
         'rotation': None,
         'angle_rotation': None,
     }
-    print ("DATA : ", data)
+    
     if len(data) == 0:
         return reception
 

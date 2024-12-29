@@ -6,12 +6,11 @@ AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OB
 
 """
 
-import turtle as tl
-from math import sqrt, atan2, degrees 
-
-from drawing import *  # Assure-toi que cette fonction contient les définitions nécessaires
-from init import init_piece, init_obstable, init_coins  # Tu as ces fonctions pour initialiser la pièce et les obstacles
-
+from drawing import est_dans_piece  # Assure-toi que cette fonction contient les définitions nécessaires
+from init import init_coins 
+from drawing import est_dans_piece
+from settings import __DEBUG__
+from math import sqrt
 ## les  fonction a venir sont des fonctions qui permettent de  positionner le robot dans la piece
 """
 En d autre terme, si le robot est à l'extérieur de la pièce, ces fonctions permettent de le faire entrer dans la pièce en passant par l ouverture le plus proche de lui.
@@ -40,13 +39,15 @@ def entrer_robot1(curseur, piece):
     delta = 30
  # Vérifier si le robot est déjà dans la pièce
     if est_dans_piece(curseur.position(), piece):
-        print("Le robot est déjà à l'intérieur de la pièce.")
+        if __DEBUG__:
+            print("Le robot est déjà à l'intérieur de la pièce.")
         return
 
     # Récupérer les ouvertures de la pièce
     ouvertures = piece.get('ouvertures', [])
     if not ouvertures:
-        print("Erreur : La pièce n'a pas d'ouvertures.")
+        if __DEBUG__: 
+            print("Erreur : La pièce n'a pas d'ouvertures.")
         return
 
     # Trouver l'ouverture la plus proche du robot
@@ -129,50 +130,44 @@ def get_distance(curseur, point):
 
 #navigation 
 from dectection_collision import *
-def aller_vers(curseur, piece, destination):
+def aller_vers(curseur, piece, destination , reculer = False):
     """
     Déplace le curseur vers une destination donnée.
     """
     #orienter le curseur vers la destination
-    curseur.setheading(curseur.towards(destination))
+    if not reculer:
+        curseur.setheading(curseur.towards(destination))
 
     #determiner les obstacles critiques et les contourner
-    obstacles = piece.get('obstacles', [])
+    obstacles = piece["obstacles"]
     obstacles_critiques = get_Obstacles_critiques(obstacles , curseur)
-
     if len(obstacles_critiques) == 0:
         #aucun obstacle critique
-        curseur.goto(destination)
+        if reculer == True:
+            distance = curseur.distance(destination)
+            curseur.backward(distance)
+        else:
+            curseur.goto(destination)
         return
     
     for obstacle, point_entree, point_sortie in obstacles_critiques:
-        #comparer la distance entre le curseur et le point de collision avec la distance entre le curseur et la destination
-        distance_collision = curseur.distance(point_entree)
+        #comparer la distance entre le curseur et le point de collision avec la distance entre le curseur et la destinatio
+        distance_securite = 10
+        distance_collision = curseur.distance(point_sortie)
         distance_destination = curseur.distance(destination)
-        if distance_collision > distance_destination:
-            #le robot est déjà plus proche de la destination que du point de collision
-            # pas de collision
-
+        #print(f"difference entre distance_collision et distance_destination = {distance_destination - distance_collision}")
+        #print(f"##collision avec {obstacle['nom']} en entre : {point_entree} et sortie {point_sortie} distance_collision = {distance_collision} distance_destination = {distance_destination}")
+        if distance_destination < distance_collision + distance_securite:
             curseur.goto(destination)
             return
-        else :
-            #le robot est plus proche du point de collision que de la destination
-            #contourner l'obstacle
-            #se diriger vers le point d'entree
-            curseur.goto(point_entree)
-            #contourner l'obstacle et se diriger vers le point de sortie en faisant un demi-cercle de rayon diemension
-
-            curseur.right(90)
-            curseur.forward(obstacle['dimension']*1.5)
-            curseur.left(90)
-            curseur.forward(obstacle['dimension']*1.5)
-            curseur.left(90)
-            curseur.forward(obstacle['dimension']*1.5)
-            curseur.setheading(curseur.towards(destination))
-            break
+        elif distance_collision + distance_securite < distance_destination:
+            #curseur.goto(point_entree)
+            return
+            #contourner l obstacle
+        
 
     #se diriger vers la destination
-    aller_vers(curseur, piece, destination)
+    #aller_vers(curseur, piece, destination)
 
 
 

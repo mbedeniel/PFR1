@@ -1,3 +1,5 @@
+from settings import __DEBUG__
+
 def init_piece():
     """
     Initialise une pièce de jeu.
@@ -36,7 +38,8 @@ def init_obstable(nom ,coin_HD, couleur, forme, dimension):
                     *si la forme est 'carree', c'est la longueur du côté du carré
     """
     if forme != 'cercle' and forme != 'carree':
-        print(f"Erreur: l obstacle {nom} a une forme invalide.Sa forme({forme}) doit être 'cercle' ou 'carre'.")
+        if __DEBUG__:
+            print(f"Erreur: l obstacle {nom} a une forme invalide.Sa forme({forme}) doit être 'cercle' ou 'carre'.")
         return None
     
     obstacle ={

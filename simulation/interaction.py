@@ -1,6 +1,7 @@
 import subprocess
 import json
 import os
+from settings import __DEBUG__
 
 def appeler_programme_c(path_programme_c):
     """
@@ -28,13 +29,16 @@ def appeler_programme_c(path_programme_c):
         data = json.loads(resultat.stdout)
         return data
     except subprocess.CalledProcessError as e:
-        print("Erreur lors de l'exécution du programme C :", e.stderr)
+        if __DEBUG__:
+            print("Erreur lors de l'exécution du programme C :", e.stderr)
         return None
     except FileNotFoundError:
-        print("Le programme C est introuvable. Vérifiez le chemin ou compilez-le.")
+        if __DEBUG__:
+            print("Le programme C est introuvable. Vérifiez le chemin ou compilez-le.")
         return None
     except json.JSONDecodeError:
-        print("La sortie du programme C n'est pas un JSON valide.")
+        if __DEBUG__:
+            print("La sortie du programme C n'est pas un JSON valide.")
         return None
 
 def mode_Vocal():

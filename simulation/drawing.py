@@ -1,6 +1,6 @@
 import turtle as tl
 from init import init_coins
-
+from settings import __DEBUG__
 """
 CE FICHIER CONTIENT LES FONCTIONS DE TRACAGE DES PIECES, DES OUVERTURES ET DES OBSTACLES.
 C EST LUI QUI GERE L AFFICHAGE DES ELEMENTS DU JEU. (Interface graphique)
@@ -58,13 +58,7 @@ def tracer_cercle(rayon, curseur):
     Trace un cercle de rayon `rayon` et de couleur `couleur` sur la curseur `curseur`.
     """
     curseur.circle(rayon)
-def tracer_carre(cote, curseur ):
-    """
-    Trace un carré de côté `cote` et de couleur `couleur` avec le curseur `curseur`.
-    """
-    for _ in range(4):
-        curseur.forward(cote)
-        curseur.left(90)
+
 #verifier si un point est a l interieur de la piece
 def est_dans_piece(point, piece):
     """
@@ -84,16 +78,26 @@ def est_dans_piece(point, piece):
         return True
     
     # Si le point est en dehors, afficher les messages d'erreur
-    if point[0] < piece_x1 or point[0] > piece_x2:
-        print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe X.")
-    if point[1] < piece_y2 or point[1] > piece_y1:
-        print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe Y.")
-    
-    print(f"\tCoordonnées de la pièce : x ∈ [{piece_x1}, {piece_x2}] et y ∈ [{piece_y2}, {piece_y1}]")
-    print(f"\tCoordonnées du point : x = {point[0]}, y = {point[1]}")
-    
+    if __DEBUG__:
+        if point[0] < piece_x1 or point[0] > piece_x2:
+            print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe X.")
+        if point[1] < piece_y2 or point[1] > piece_y1:
+            print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe Y.")
+        
+        print(f"\tCoordonnées de la pièce : x ∈ [{piece_x1}, {piece_x2}] et y ∈ [{piece_y2}, {piece_y1}]")
+        print(f"\tCoordonnées du point : x = {point[0]}, y = {point[1]}")
+        
     return False
 
+def tracer_obstacle_carre(curseur, obstacle):
+    """
+    Trace un obstacle carré et imprime les coins.
+    """
+    cote = obstacle["dimension"]
+    curseur.setheading(180)  # Assurez-vous que le curseur commence dans la bonne direction
+    for i in range(4):
+        curseur.forward(cote)
+        curseur.left(90)
 
 def tracer_obstacle(obstacle, curseur, piece):
     """
@@ -118,9 +122,18 @@ def tracer_obstacle(obstacle, curseur, piece):
     if "cercle" == obstacle["forme"]:
         tracer_cercle(obstacle["dimension"],curseur)
     elif "carree" == obstacle["forme"]:
-        tracer_carre(obstacle["dimension"], curseur)
+        tracer_obstacle_carre(curseur, obstacle)
+
+        """
+        for i in range(4):
+
+            curseur.forward(cote)
+
+            curseur.left(90)
+    """
     else:
-        print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        if __DEBUG__:
+            print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
 
     curseur.end_fill()
     curseur.up() 

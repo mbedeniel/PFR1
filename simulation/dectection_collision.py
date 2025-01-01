@@ -75,144 +75,159 @@ Pour vérifier une collision avec un rectangle :
 import math 
 
 
-def collision_avec_cercle(curseur, obstacle):
-    """
-    Vérifie si un point en mouvement entrera en collision avec un cercle et retourne les points de collision.
-    
-    :param x0: Position initiale en X.
-    :param y0: Position initiale en Y.
-    :param alpha: Direction du mouvement (en radians).
-    :param xc: Coordonnée X du centre du cercle.
-    :param yc: Coordonnée Y du centre du cercle.
-    :param r: Rayon du cercle.
-    :return: Tuple (collision, point_entree, point_sortie)
-             collision est un booléen indiquant s'il y a une collision,
-             point_entree et point_sortie sont les coordonnées des points d'entrée et de sortie (ou None si pas de collision).
-    """
-    # Récupération des coordonnées du curseur
-    x0, y0 = curseur.position()
-    heading = curseur.heading()
-    # Récupération des coordonnées du cercle
-    centre = obstacle.get("coin_HD")
-    xc, yc = centre[0], centre[1] - obstacle.get("dimension")
-    r = obstacle.get("dimension")
-
-    alpha = math.radians(heading)
-    # Calcul des coefficients A et B
-    cos_alpha = math.cos(alpha)
-    sin_alpha = math.sin(alpha)
-    A = (x0 - xc) * cos_alpha + (y0 - yc) * sin_alpha
-    B = (x0 - xc)**2 + (y0 - yc)**2 - r**2
-    
-    # Calcul du discriminant
-    delta = A**2 - B
-    
-    if delta < 0:
-        return (False, None, None)  # Pas de collision
-    elif delta == 0:
-        t = A  # Collision tangente
-        x = x0 + t * cos_alpha
-        y = y0 + t * sin_alpha
-        return True, (x, y), None
-    else:
-        t1 = A - math.sqrt(delta)
-        t2 = A + math.sqrt(delta)
-        # Calcul des points de collision
-        point_entree = (x0 + t1 * cos_alpha, y0 + t1 * sin_alpha)
-        point_sortie = (x0 + t2 * cos_alpha, y0 + t2 * sin_alpha)
-        return True, point_entree, point_sortie
-
-
 def collision_avec_rectangle(curseur, obstacle):
-    """
-    Détecte une collision entre la trajectoire du curseur et un rectangle (carré).
-    
-    Paramètres :
-        curseur : un objet avec les méthodes `xcor()`, `ycor()` et `heading()` (angle de trajectoire).
-        obstacle : un dictionnaire contenant :
-            - "coin_HD" : coordonnées du coin supérieur droit (tuple).
-            - "dimension" : taille du carré (côté).
 
-    Retour :
-        (bool, tuple, tuple) : 
-        - True si collision, False sinon.
-        - Coordonnées d'entrée (x, y).
-        - Coordonnées de sortie (x, y).
+    return False, None, None
     """
-    # Coin supérieur droit et côté du carré
+    Détecte une collision entre un curseur (avec une position et un angle) et un rectangle.
+    
+    Args:
+        curseur: Objet avec les méthodes `xcor()` (position x), `ycor()` (position y), 
+                 et `heading()` (direction en degrés).
+        obstacle: Dictionnaire contenant :
+            - "coin_HD": tuple (x, y) pour le coin supérieur droit du rectangle.
+            - "dimension": côté du carré (on suppose un carré pour cette implémentation).
+    
+    Returns:
+        tuple:
+            - bool: Indique si une collision a lieu.
+            - tuple: Coordonnées (x, y) du point d'entrée (si collision).
+            - tuple: Coordonnées (x, y) du point de sortie (si collision).
+    """
     coin_HD = obstacle.get("coin_HD")
     cote = obstacle.get("dimension")
-    
-    x_min, y_min = coin_HD[0] - cote, coin_HD[1] - cote
-    x_max, y_max = coin_HD[0], coin_HD[1]
 
-    # Position initiale du curseur
-    x0, y0 = curseur.xcor(), curseur.ycor()
-    angle = math.radians(curseur.heading())
-    dx = math.cos(angle) # dx = cos(α) et = 0
-    dy = math.sin(angle)
+    # Calcul des limites du rectangle
+    X_min, X_max = coin_HD[0] - cote, coin_HD[0]
+    Y_min, Y_max = coin_HD[1] - cote, coin_HD[1]
 
-    # Temps pour les côtés verticaux
-    if dx != 0:
-        t_x1 = (x_min - x0) / dx
-        t_x2 = (x_max - x0) / dx
-    else:
-        t_x1 = t_x2 = float('inf')  # Pas de mouvement horizontal
+    # Calcul de l'angle du curseur en radians
+    angle_radians = math.radians(curseur.heading())
+    cos_angle = math.cos(angle_radians)
+    sin_angle = math.sin(angle_radians)
 
-    # Temps pour les côtés horizontaux
-    if dy != 0:
-        t_y1 = (y_min - y0) / dy
-        t_y2 = (y_max - y0) / dy
-    else:
-        t_y1 = t_y2 = float('inf')  # Pas de mouvement vertical
+    # Éviter la division par zéro en cas de direction parallèle aux axes
+    if cos_angle == 0 and (curseur.xcor() < X_min or curseur.xcor() > X_max):
+        return False, None, None  # Pas de collision (parallèle aux côtés verticaux)
+    if sin_angle == 0 and (curseur.ycor() < Y_min or curseur.ycor() > Y_max):
+        return False, None, None  # Pas de collision (parallèle aux côtés horizontaux)
 
-    # Temps valides (t > 0)
-    t_x = [t for t in [t_x1, t_x2] if t > 0]
-    t_y = [t for t in [t_y1, t_y2] if t > 0]
+    # Calcul des temps de collision avec les côtés verticaux
+    t_x1 = (X_min - curseur.xcor()) / cos_angle if cos_angle != 0 else float('inf')
+    t_x2 = (X_max - curseur.xcor()) / cos_angle if cos_angle != 0 else float('inf')
 
-    if not t_x or not t_y:
+    # Calcul des temps de collision avec les côtés horizontaux
+    t_y1 = (Y_min - curseur.ycor()) / sin_angle if sin_angle != 0 else float('inf')
+    t_y2 = (Y_max - curseur.ycor()) / sin_angle if sin_angle != 0 else float('inf')
+
+    # Récupération des temps valides (positifs)
+    t_valides = [t for t in [t_x1, t_x2, t_y1, t_y2] if t > 0]
+    if not t_valides:
         return False, None, None  # Pas de collision
 
     # Temps d'entrée et de sortie
-    t_entree = min(min(t_x), min(t_y)) # MAXIMUM DES MINIMUMS DES TEMPS D'ENTREE 
-    t_sortie = max(max(t_x), max(t_y)) # MINIMUM DES MAXIMUMS DES TEMPS DE SORTIE
-   
-    if t_entree > t_sortie:
-        print(f"Erreur: t_entree > t_sortie ({t_entree} > {t_sortie})")
-        return False, None, None  # Pas de collision
+    t_entree = min(t_valides)
+    t_sortie = max(t_valides)
 
-    # Coordonnées des points d'entrée et de sortie
-    x_entree = x0 + t_entree * dx
-    y_entree = y0 + t_entree * dy
-    x_sortie = x0 + t_sortie * dx
-    y_sortie = y0 + t_sortie * dy
-    
+    # Calcul des points d'entrée et de sortie
+    x_entree = curseur.xcor() + t_entree * cos_angle
+    y_entree = curseur.ycor() + t_entree * sin_angle
+    x_sortie = curseur.xcor() + t_sortie * cos_angle
+    y_sortie = curseur.ycor() + t_sortie * sin_angle
+
     return True, (x_entree, y_entree), (x_sortie, y_sortie)
 
-    
+def collision_cercle(curseur, obstacle, marge=20):
+    """
+    Vérifie si le curseur risque de pénétrer dans un obstacle circulaire lorsqu'il avance tout droit.
+
+    :param curseur: Objet curseur avec les méthodes position() et heading().
+    :param obstacle: Dictionnaire contenant 'coin_HD' (coordonnées) et 'dimension' (rayon du cercle).
+    :param marge: Distance minimale de sécurité autour de l'obstacle.
+    :return: (collision, point_entree, point_sortie)
+    """
+    # Centre corrigé et rayon de l'obstacle
+    coin_hd = obstacle.get("coin_HD")
+    r = obstacle.get("dimension")
+    xc, yc = coin_hd[0], coin_hd[1] - r  # Ajustement du centre si nécessaire
+
+    # Position initiale et direction du curseur
+    x0, y0 = curseur.position()
+    alpha = math.radians(curseur.heading())
+
+    # Distance actuelle du curseur au centre du cercle
+    distance_to_center = curseur.distance((xc, yc))
+
+    LIMIT = r + marge  # Limite de sécurité
+
+    if distance_to_center <= LIMIT:
+        # Calcul des points d'entrée et de sortie dans la direction de l'angle
+        point_entree = (
+            x0 + (distance_to_center - LIMIT) * math.cos(alpha),
+            y0 + (distance_to_center - LIMIT) * math.sin(alpha),
+        )
+
+        point_sortie = (
+            x0 + (distance_to_center + LIMIT) * math.cos(alpha),
+            y0 + (distance_to_center + LIMIT) * math.sin(alpha),
+        )
+        return True, point_entree, point_sortie
+    elif distance_to_center == LIMIT:
+        # Le curseur est juste à la distance limite
+        point = (
+            x0 + (distance_to_center - LIMIT) * math.cos(alpha),
+            y0 + (distance_to_center - LIMIT) * math.sin(alpha),
+        )
+        return False, point, None
+    else:
+        # Pas de collision ou danger
+        return False, None, None
+
+
 def Test_collision_obstacle(Obstacle , curseur):
     #collision est un booleen qui indique s il y a une collision ou pas 
     if Obstacle.get("forme") == "cercle":
         # Vérification de la collision avec le cercle
-        collision, point_entree, point_sortie = collision_avec_cercle(curseur,Obstacle)
-    if Obstacle.get("forme") == "carree":
+        return collision_cercle(curseur,Obstacle)
+    elif Obstacle.get("forme") == "carree":
         # Vérification de la collision avec le rectangle
-        collision, point_entree, point_sortie = collision_avec_rectangle(curseur, Obstacle)
-        #print (f"collision avec un carree {collision} point d'entree {point_entree} point de sortie {point_sortie}")
-    #retourner si il y a collision ou pas et les coordonnees des points d entree et de sortie
-    return collision, point_entree, point_sortie
+        return  collision_avec_rectangle(curseur, Obstacle)
 
 #recuperer la liste des obstacles critiques et les coordonnees des points d entree et de sortie pour les contourner facilement
+from navigation import get_distance
+
 def get_Obstacles_critiques(obstacles:list , curseur):
     Obstacles_critiques = []
-
     for obstacle in obstacles:
         collision , point_entree , point_sortie = Test_collision_obstacle(obstacle, curseur)
         if collision :
             Obstacles_critiques.append((obstacle,point_entree,point_sortie))
             if __DEBUG__:
-                print(f"Collision avec le {obstacle.get('forme')} {obstacle.get('nom')} au point d'entré : {point_entree} et de sortie {point_sortie}")
+                print(f"Collision avec l'obstacle {obstacle.get('nom')} au point d'entré : {point_entree} et de sortie {point_sortie}")
    
-    return Obstacles_critiques
+    return sorted(Obstacles_critiques, key=lambda obstacle: get_distance(curseur, obstacle[1]))
+    
 
 ############ DETECTION DE COLLISION AVEC LES OBSTACLES ############################
+
+
+
+def point_is_in_obstacle(point , obstacle):
+    #verifier si le point est dans l obstacle
+    coin_hd = obstacle.get("coin_HD")
+    dimension = obstacle.get("dimension")
+    x, y = point
+    forme = obstacle.get("forme")
+    if forme == "cercle":
+        #verifier si le point est dans le cercle
+        xc, yc = coin_hd[0], coin_hd[1] - dimension
+        return (x - xc) ** 2 + (y - yc) ** 2 <= dimension ** 2
+    elif forme == "carree":
+        #verifier si le point est dans le carre
+        X_min, X_max = coin_hd[0] - dimension, coin_hd[0]
+        Y_min, Y_max = coin_hd[1] - dimension, coin_hd[1]
+        return X_min <= x <= X_max and Y_min <= y <= Y_max
+    else:
+        if __DEBUG__:
+            print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        return False

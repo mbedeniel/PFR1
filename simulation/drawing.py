@@ -104,8 +104,6 @@ def tracer_obstacle(obstacle, curseur, piece):
     Trace un obstacle de forme `obstacle` avec le curseur `curseur`.
     un obstacle est soit un cercle, soit un carré.
     """
-     #verifier si le coin_HD de l obstacle est a l interieur de la piece
-    coins = init_coins(piece)
     #verifier si le coin_HD de l obstacle est a l interieur de la piece 
     if not est_dans_piece(obstacle["coin_HD"], piece):
         print(f"Erreur: l obstacle {obstacle['nom']} est en dehors de la piece.")

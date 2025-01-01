@@ -130,46 +130,81 @@ def get_distance(curseur, point):
 
 #navigation 
 from dectection_collision import *
-def aller_vers(curseur, piece, destination , reculer = False):
+
+def contourner_obstacle(curseur, obstacle, entre, sortie):
+    dimensions = obstacle.get('dimension')
+    forme = obstacle.get('forme')
+    distance_sortie = get_distance(curseur, sortie)
+    
+    # Se diriger vers le point d'entrée
+    curseur.goto(entre)
+    alpha = math.radians(curseur.heading())
+    
+    # Initialiser l'angle en fonction de la direction du curseur
+    if alpha == 0 or alpha == math.pi:  # Horizontal, se déplace de gauche à droite ou inversement
+        # Contourner l'obstacle par le haut ou par le bas
+        angle = 90
+    elif alpha == math.pi/2 or alpha == 3*math.pi/2:  # Vertical, se déplace de haut en bas ou inversement
+        # Contourner l'obstacle par la droite ou par la gauche
+        angle = 0
+    else:
+        # Par défaut, on va utiliser un angle de 90° pour contourner
+        angle = 90
+    
+    # Contourner l'obstacle : se déplace autour de l'obstacle
+    curseur.right(angle)
+    alpha = math.radians(curseur.heading())
+    from math import cos, sin
+    destination = (curseur.xcor() + dimensions * cos(alpha), curseur.ycor() + dimensions * sin(alpha))
+    aller_vers(curseur, obstacle, destination)
+    #curseur.forward(dimensions)  # Se déplace autour de l'obstacle
+    curseur.left(angle)
+    destination = (curseur.xcor() + dimensions * cos(alpha), curseur.ycor() + dimensions * sin(alpha))
+    aller_vers(curseur, obstacle, destination)
+    #curseur.forward(distance_sortie)  # Se dirige vers la sortie
+    curseur.left(angle)
+    curseur.forward(dimensions)  # Se déplace autour de l'obstacle de l'autre côté
+    curseur.right(angle)
+
+    # Remettre le curseur sur la direction vers la sortie
+    curseur.setheading(curseur.towards(sortie))
+
+    
+
+
+
+def aller_vers(curseur, piece, destination):
     """
     Déplace le curseur vers une destination donnée.
     """
     #orienter le curseur vers la destination
-    if not reculer:
-        curseur.setheading(curseur.towards(destination))
+    curseur.setheading(curseur.towards(destination))
 
     #determiner les obstacles critiques et les contourner
-    obstacles = piece["obstacles"]
+    obstacles = piece.get('obstacles', [])
     obstacles_critiques = get_Obstacles_critiques(obstacles , curseur)
+    #condition d'arret
     if len(obstacles_critiques) == 0:
-        #aucun obstacle critique
-        if reculer == True:
-            distance = curseur.distance(destination)
-            curseur.backward(distance)
-        else:
-            curseur.goto(destination)
+        print("Aucun obstacle critique trouvé.")
+        curseur.goto(destination)
         return
     
-    for obstacle, point_entree, point_sortie in obstacles_critiques:
-        #comparer la distance entre le curseur et le point de collision avec la distance entre le curseur et la destinatio
-        distance_securite = 10
-        distance_collision = curseur.distance(point_sortie)
-        distance_destination = curseur.distance(destination)
-        #print(f"difference entre distance_collision et distance_destination = {distance_destination - distance_collision}")
-        #print(f"##collision avec {obstacle['nom']} en entre : {point_entree} et sortie {point_sortie} distance_collision = {distance_collision} distance_destination = {distance_destination}")
-        if distance_destination < distance_collision + distance_securite:
+    #trier les obstacles critiques par distance
+    #contourner les obstacles critiques
+    for data in obstacles_critiques:
+        obstacle, point_entree, point_sortie = data
+        #calculer la distance entre le curseur et le point d'entree
+        distanceEntre  = get_distance(curseur, point_entree)
+        distanceDestination = get_distance(curseur, destination)
+        if distanceEntre > distanceDestination: #si le point d'entree est plus loin que la destination
             curseur.goto(destination)
+            break
+        #contourner l'obstacle
+        print("obscalte trouve")
+        #verifier si la destination est dans l'obstacle
+        if point_is_in_obstacle(destination, obstacle):
+            print("La destination est dans l'obstacle.")
             return
-        elif distance_collision + distance_securite < distance_destination:
-            #curseur.goto(point_entree)
-            return
-            #contourner l obstacle
+        else :
+            contourner_obstacle(curseur, obstacle, point_entree, point_sortie)
         
-
-    #se diriger vers la destination
-    #aller_vers(curseur, piece, destination)
-
-
-
-
-

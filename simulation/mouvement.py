@@ -22,10 +22,12 @@ def translantion(curceur, val, piece):
         #se deplacer jusqu au bord de la piece
         return
     #curceur.forward(val)
-    aller_vers(curceur, piece , destination , val<0)
+    aller_vers(curceur, piece , destination)
 
 def rotation(curceur, val):
     """
+
+
     Fait tourner le curseur d'un angle donné (positif ou négatif).
     """
     curceur.right(val)
@@ -34,6 +36,7 @@ def vocal_reception(curceur, reception, piece):
     """
     Déplace et oriente le curseur en fonction des données reçues dans le dictionnaire `reception`.
 
+    
     """
     if reception["mouvement"] != None:
         if  'avance' in reception["mouvement"].lower():

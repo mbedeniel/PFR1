@@ -4,6 +4,7 @@
 #include "include/text_to_command.h"
 
 int main() {
+    
     char* texte = speech_reception();
     if (texte == NULL) {
         printf("{\"erreur\" :\"Erreur lors de la réception du texte.\"}");

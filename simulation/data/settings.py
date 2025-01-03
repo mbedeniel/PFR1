@@ -1,12 +1,16 @@
 # settings.py
 
+
 __DEBUG__ = True
+
+current_language = 'fr'  # Par défaut, la langue est le français
 
 LANGUAGES = {
     'fr': 'Français',
     'en': 'English'
 }
 
+# Textes du menu en plusieurs langues
 MENU_TEXT = {
     'fr': {
         'welcome': "Bienvenue dans le menu principal !",
@@ -21,6 +25,14 @@ MENU_TEXT = {
         'quit_ihm': "Appuyez sur 'o' pour quitter le mode IHM.",
         'end_ihm': "Fin du mode IHM.",
         'quit_prompt': "Voulez-vous vraiment quitter ? (o/n) : ",
+        'presentation_ihm': """Veuillez choisir un mode parmi les suivants :
+            a : avancer
+            r : reculer
+            d : droite
+            g : gauche
+            Saisissez le mode et la valeur (ex : a 15 ou r) : """,
+        'invalid_input':"Entrée invalide. Veuillez réessayer.",
+   
     },
     'en': {
         'welcome': "Welcome to the main menu!",
@@ -35,11 +47,61 @@ MENU_TEXT = {
         'quit_ihm': "Press 'o' to exit IHM mode.",
         'end_ihm': "Exiting IHM mode.",
         'quit_prompt': "Are you sure you want to exit? (o/n): ",
+        'presentation_ihm': """Please choose a mode from the following:
+            a: forward
+            r: backward
+            d: right
+            g: left
+            Enter the mode and the value (ex: a 15 or r): """,
+        'invalid_input':"Invalid input. Please try again.",
     }
 }
 
+# Configuration pour les exécutables externes
+PROGRAMS = {
+    'vocal': {
+        'path': "vocal/app.exe",  # Chemin vers le programme vocal
+        'description': "Programme C pour la reconnaissance vocale"
+    },
+    'ihm': {
+        'path': "vocal/ihm.exe",  # Chemin vers le programme IHM
+        'description': "Programme C pour l'interface utilisateur"
+    }
+}
 
-current_language = 'fr'  # Par défaut, la langue est le français
+def save_all_parameters( ):
+    """
+    Sauvegarde les paramètres dans un fichier.
+    """
+    data = {
+        'debug' : __DEBUG__ ,
+        'current_language': current_language ,
+        'LANGUAGES': LANGUAGES,
+        'MENU_TEXT': MENU_TEXT,
+        'PROGRAMS': PROGRAMS,
+
+    }
+    import json
+    with open("data/settings.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+def load_all_parameters( ):
+    """
+    Charge les paramètres depuis un fichier.
+    """
+    import json
+    with open("data/settings.json", "r") as f:
+        data = json.load(f)
+        global __DEBUG__ , current_language , LANGUAGES , MENU_TEXT , PROGRAMS
+        __DEBUG__ = data['debug']
+        current_language = data['current_language']
+        LANGUAGES = data['LANGUAGES']
+        MENU_TEXT = data['MENU_TEXT']
+        PROGRAMS = data['PROGRAMS']
+    
+
+
+
 
 def set_language():
     """

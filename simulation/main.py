@@ -1,5 +1,5 @@
 import turtle as tl
-from simulation.loader.interaction import *
+
 from simulation.plateform.drawing import *
 from simulation.menu.menu import menu
 from simulation.data.init import*

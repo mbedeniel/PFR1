@@ -1,7 +1,7 @@
 from simulation.navigation.mouvement import vocal_reception, adaptation_donnees
-from simulation.loader.interaction import mode_Vocal, mode_ihm
 from time import sleep
 from simulation.data.settings import __DEBUG__, MENU_TEXT, LANGUAGES , get_text, set_language
+from simulation.loader.interaction import mode_ihm , mode_Vocal
 
 
 def menu(new_curseur, piece):

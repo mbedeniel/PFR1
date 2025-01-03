@@ -5,12 +5,13 @@ LUI DONNER LA FACULTE DE CONTOURNER LES OBSTACLES POUR ATTEINDRE SA DESTINATION
 AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OBSTACLE
 
 """
-
-from drawing import est_dans_piece  # Assure-toi que cette fonction contient les définitions nécessaires
-from init import init_coins 
-from drawing import est_dans_piece
-from settings import __DEBUG__
-from math import sqrt
+from math import cos, sin, radians , pi , sqrt
+#from simulation.navigation.dectection_collision import *
+from simulation.plateform.drawing import est_dans_piece  # Assure-toi que cette fonction contient les définitions nécessaires
+from simulation.data.init import init_coins 
+from simulation.plateform.drawing import est_dans_piece
+from simulation.data.settings import __DEBUG__
+from simulation.navigation.dectection_collision import get_Obstacles_critiques, point_is_in_obstacle
 ## les  fonction a venir sont des fonctions qui permettent de  positionner le robot dans la piece
 """
 En d autre terme, si le robot est à l'extérieur de la pièce, ces fonctions permettent de le faire entrer dans la pièce en passant par l ouverture le plus proche de lui.
@@ -52,8 +53,8 @@ def entrer_robot1(curseur, piece):
 
     # Trouver l'ouverture la plus proche du robot
     robot_pos = curseur.position()
-    ouverture_proche = min(ouvertures, key=lambda ouverture: get_distance(curseur, ouverture['coin_droite']))
-
+   # ouverture_proche = min(ouvertures, key=lambda ouverture: get_distance(curseur, ouverture['coin_droite']))
+    ouverture_proche = min(ouvertures, key=lambda ouverture: curseur.distance(ouverture['coin_droite']))
     # Identifier l'orientation de l'ouverture
     coin_droite = ouverture_proche['coin_droite']
     coins = init_coins(piece)
@@ -113,38 +114,29 @@ def entrer_robot1(curseur, piece):
             aligner_sur_x(curseur, centre[0])
             curseur.setheading( curseur.towards(centre))
             curseur.goto(centre)
-# Fonction pour calculer la distance entre le curseur et un coin
-def get_distance(curseur, point):
-    """
-    Calcule la distance entre le curseur et un coin donné.
-    Retourne la distance.
-    """
-    x_curseur, y_curseur = curseur.position()
-    return sqrt((point[0] - x_curseur) ** 2 + (point[1] - y_curseur) ** 2)
-# dans un repere orthonormé, la distance entre deux points est donnée par la formule de pythagore 
-#distance = racine ( (x2 - x1)² + (y2 - y1)² )
+
 
 ############## FIN DE LA NAVIGATION POUR FAIRE ENTRER LE ROBOT DANS LA PIECE ####################
 
 
 
 #navigation 
-from dectection_collision import *
+
 
 def contourner_obstacle(curseur, obstacle, entre, sortie):
     dimensions = obstacle.get('dimension')
     forme = obstacle.get('forme')
-    distance_sortie = get_distance(curseur, sortie)
+    distance_sortie = curseur.distance(sortie)
     
     # Se diriger vers le point d'entrée
     curseur.goto(entre)
-    alpha = math.radians(curseur.heading())
+    alpha = radians(curseur.heading())
     
     # Initialiser l'angle en fonction de la direction du curseur
-    if alpha == 0 or alpha == math.pi:  # Horizontal, se déplace de gauche à droite ou inversement
+    if alpha == 0 or alpha == pi:  # Horizontal, se déplace de gauche à droite ou inversement
         # Contourner l'obstacle par le haut ou par le bas
         angle = 90
-    elif alpha == math.pi/2 or alpha == 3*math.pi/2:  # Vertical, se déplace de haut en bas ou inversement
+    elif alpha == pi/2 or alpha == 3*pi/2:  # Vertical, se déplace de haut en bas ou inversement
         # Contourner l'obstacle par la droite ou par la gauche
         angle = 0
     else:
@@ -153,8 +145,8 @@ def contourner_obstacle(curseur, obstacle, entre, sortie):
     
     # Contourner l'obstacle : se déplace autour de l'obstacle
     curseur.right(angle)
-    alpha = math.radians(curseur.heading())
-    from math import cos, sin
+    alpha = radians(curseur.heading())
+    
     destination = (curseur.xcor() + dimensions * cos(alpha), curseur.ycor() + dimensions * sin(alpha))
     aller_vers(curseur, obstacle, destination)
     #curseur.forward(dimensions)  # Se déplace autour de l'obstacle
@@ -194,8 +186,8 @@ def aller_vers(curseur, piece, destination):
     for data in obstacles_critiques:
         obstacle, point_entree, point_sortie = data
         #calculer la distance entre le curseur et le point d'entree
-        distanceEntre  = get_distance(curseur, point_entree)
-        distanceDestination = get_distance(curseur, destination)
+        distanceEntre  = curseur.distance(point_entree)
+        distanceDestination =   curseur.distance(destination)
         if distanceEntre > distanceDestination: #si le point d'entree est plus loin que la destination
             curseur.goto(destination)
             break

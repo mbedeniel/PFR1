@@ -1,10 +1,10 @@
 import turtle as tl
-
-from drawing import *
-from menu import menu
-from init import*
-from navigation import entrer_robot1
-from settings import *
+from simulation.loader.interaction import *
+from simulation.plateform.drawing import *
+from simulation.menu.menu import menu
+from simulation.data.init import*
+from simulation.navigation.navigation import entrer_robot1
+from simulation.data.settings import *
 
 # Initialisation des variables
 
@@ -55,7 +55,9 @@ new_curseur.down()
 entrer_robot1(new_curseur, piece)
 new_curseur.down()
 # Lancer le menu
-from interaction import *
-mode_Vocal(new_curseur, piece)
 
-tl.done()
+menu(new_curseur, piece)
+#mode_Vocal()
+#fermer la fenetre
+tl.bye()
+

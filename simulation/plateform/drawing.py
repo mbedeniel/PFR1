@@ -1,6 +1,7 @@
 import turtle as tl
-from init import init_coins
-from settings import __DEBUG__
+from simulation.data.init import init_coins
+from simulation.data.settings import __DEBUG__
+
 """
 CE FICHIER CONTIENT LES FONCTIONS DE TRACAGE DES PIECES, DES OUVERTURES ET DES OBSTACLES.
 C EST LUI QUI GERE L AFFICHAGE DES ELEMENTS DU JEU. (Interface graphique)
@@ -9,6 +10,7 @@ C EST LUI QUI GERE L AFFICHAGE DES ELEMENTS DU JEU. (Interface graphique)
 
 
 def tracer_piece(piece, curseur):
+    curseur.speed(10)
     """
     Trace un rectangle représentant une pièce de jeu selon ses dimensions, son coin haut droit,
     sa couleur et l'épaisseur des traits définis dans le dictionnaire `piece`.
@@ -36,6 +38,7 @@ def tracer_piece(piece, curseur):
     #tracer les obstacles
     for obs in piece['obstacles']:
         tracer_obstacle(obs, curseur, piece)
+    curseur.speed(1)
 
 def modif_curseur():
     """

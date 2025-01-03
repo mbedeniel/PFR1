@@ -1,5 +1,5 @@
 import math
-from settings import __DEBUG__
+from simulation.data.settings import __DEBUG__
 
 ############ DETECTION DE COLLISION AVEC LES OBSTACLES ############################
 
@@ -194,7 +194,7 @@ def Test_collision_obstacle(Obstacle , curseur):
         return  collision_avec_rectangle(curseur, Obstacle)
 
 #recuperer la liste des obstacles critiques et les coordonnees des points d entree et de sortie pour les contourner facilement
-from navigation import get_distance
+
 
 def get_Obstacles_critiques(obstacles:list , curseur):
     Obstacles_critiques = []
@@ -205,7 +205,7 @@ def get_Obstacles_critiques(obstacles:list , curseur):
             if __DEBUG__:
                 print(f"Collision avec l'obstacle {obstacle.get('nom')} au point d'entré : {point_entree} et de sortie {point_sortie}")
    
-    return sorted(Obstacles_critiques, key=lambda obstacle: get_distance(curseur, obstacle[1]))
+    return sorted(Obstacles_critiques, key=lambda obstacle: curseur.distance(obstacle[1]))
     
 
 ############ DETECTION DE COLLISION AVEC LES OBSTACLES ############################

@@ -1,7 +1,7 @@
 import subprocess
 import json
 import os
-from settings import __DEBUG__
+from simulation.data.settings import __DEBUG__
 
 def appeler_programme_c(path_programme_c):
     """
@@ -11,10 +11,14 @@ def appeler_programme_c(path_programme_c):
     """
     # Obtenir la racine du projet
     dossier = os.path.dirname(os.path.abspath(__file__))
+
     racine = os.path.dirname(dossier)
+    racine = os.path.dirname(racine)
 
     relatif_path_file = path_programme_c
     chemin_programme_c = os.path.abspath(os.path.join(racine, relatif_path_file))
+
+    print(f"chemin Programme : {chemin_programme_c}")
     
     try:
         # Exécuter le programme C
@@ -70,7 +74,7 @@ def mode_ihm():
         # Vérifier si la taille de la liste n'est pas nulle
         if data is None or len(data) == 0:
             print("Saisie incorrecte. Veuillez réessayer.")
-            continuer = True
+            return None
         else:
             continuer = False
     return data

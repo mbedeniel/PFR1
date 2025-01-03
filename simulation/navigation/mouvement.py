@@ -1,8 +1,8 @@
-from drawing import est_dans_piece
+from simulation.plateform.drawing import est_dans_piece
 from math import cos, sin, radians
 
-from navigation import  aller_vers
-from settings import __DEBUG__
+from simulation.navigation.navigation import  aller_vers
+from simulation.data.settings import __DEBUG__
 
 def translantion(curceur, val, piece):
     """
@@ -66,7 +66,7 @@ def adaptation_donnees(data):
         'angle_rotation': None,
     }
     
-    if len(data) == 0:
+    if data ==None or  len(data) == 0:
         return reception
 
     cle, valeur = next(iter(data.items()))

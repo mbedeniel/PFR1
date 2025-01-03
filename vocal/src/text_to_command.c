@@ -86,5 +86,7 @@ char* speech_analysis_to_json(const char* texte) {
     }
 
     strcat(json, "}");
+
+    
     return json;
 }

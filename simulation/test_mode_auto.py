@@ -1,13 +1,13 @@
 # Lancer le menu
 import keyboard
-from interaction import *
+from simulation.loader.interaction import *
 from time import sleep
-from menu import *
-from init import *
-from navigation import *
-from mouvement import *
+from simulation.menu.menu import *
+from simulation.data.init import *
+from simulation.navigation.navigation import *
+from simulation.navigation.mouvement import *
 import turtle as tl
-from drawing import *
+from simulation.plateform.drawing import *
 
 # Initialisation de la pièce
 piece =  init_piece()

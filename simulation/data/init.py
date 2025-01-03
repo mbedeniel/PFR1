@@ -1,4 +1,4 @@
-from settings import __DEBUG__
+from simulation.data.settings import __DEBUG__
 
 def init_piece():
     """

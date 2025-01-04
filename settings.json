@@ -1,0 +1,52 @@
+{
+    "debug": true,
+    "current_language": "fr",
+    "LANGUAGES": {
+        "fr": "Fran\u00e7ais",
+        "en": "English"
+    },
+    "MENU_TEXT": {
+        "fr": {
+            "welcome": "Bienvenue dans le menu principal !",
+            "choose_mode": "\nVeuillez choisir un mode parmi les suivants :\n1 : Mode Vocal\n2 : Mode IHM\nl : Changer de langue\nq : Quitter",
+            "prompt": "Entrez votre choix : ",
+            "invalid_choice": "Choix invalide. Veuillez r\u00e9essayer.",
+            "goodbye": "\u00c0 bient\u00f4t !",
+            "vocal_mode": "__Mode Vocal__",
+            "quit_vocal": "Appuyez sur 'o' pour quitter le mode vocal.",
+            "end_vocal": "Fin du mode vocal.",
+            "ihm_mode": "__Mode IHM__",
+            "quit_ihm": "Appuyez sur 'o' pour quitter le mode IHM.",
+            "end_ihm": "Fin du mode IHM.",
+            "quit_prompt": "Voulez-vous vraiment quitter ? (o/n) : ",
+            "presentation_ihm": "Veuillez choisir un mode parmi les suivants :\n            a : avancer\n            r : reculer\n            d : droite\n            g : gauche\n            Saisissez le mode et la valeur (ex : a 15 ou r) : ",
+            "invalid_input": "Entr\u00e9e invalide. Veuillez r\u00e9essayer."
+        },
+        "en": {
+            "welcome": "Welcome to the main menu!",
+            "choose_mode": "\nPlease choose a mode from the following:\n1: Vocal Mode\n2: IHM Mode\nl: Change language\nq: Quit",
+            "prompt": "Enter your choice: ",
+            "invalid_choice": "Invalid choice. Please try again.",
+            "goodbye": "See you soon!",
+            "vocal_mode": "__Vocal Mode__",
+            "quit_vocal": "Press 'o' to exit vocal mode.",
+            "end_vocal": "Exiting vocal mode.",
+            "ihm_mode": "__IHM Mode__",
+            "quit_ihm": "Press 'o' to exit IHM mode.",
+            "end_ihm": "Exiting IHM mode.",
+            "quit_prompt": "Are you sure you want to exit? (o/n): ",
+            "presentation_ihm": "Please choose a mode from the following:\n            a: forward\n            r: backward\n            d: right\n            g: left\n            Enter the mode and the value (ex: a 15 or r): ",
+            "invalid_input": "Invalid input. Please try again."
+        }
+    },
+    "PROGRAMS": {
+        "vocal": {
+            "path": "vocal/app.exe",
+            "description": "Programme C pour la reconnaissance vocale"
+        },
+        "ihm": {
+            "path": "vocal/ihm.exe",
+            "description": "Programme C pour l'interface utilisateur"
+        }
+    }
+}

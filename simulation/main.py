@@ -6,6 +6,9 @@ from simulation.data.init import*
 from simulation.navigation.navigation import entrer_robot1
 from simulation.data.settings import *
 
+#charger les parametres de configurations depuis le fichier settings.json
+load_all_parameters()
+
 # Initialisation des variables
 
 # Initialisation de la pièce
@@ -60,4 +63,7 @@ menu(new_curseur, piece)
 #mode_Vocal()
 #fermer la fenetre
 tl.bye()
+
+#enregistrer tous les paramettres de configurations
+save_all_parameters()
 

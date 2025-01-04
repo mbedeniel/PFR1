@@ -1,9 +1,17 @@
+import os
+
 # settings.py
 
 
 __DEBUG__ = True
 
 current_language = 'fr'  # Par défaut, la langue est le français
+
+
+#recuperer le dossier du fichier courant
+
+dossier = os.path.dirname(os.path.abspath(__file__))
+__PATH_SETIINGS_FILE__ = os.path.abspath(os.path.join(dossier,"settings.json"))
 
 LANGUAGES = {
     'fr': 'Français',
@@ -82,15 +90,19 @@ def save_all_parameters( ):
 
     }
     import json
-    with open("data/settings.json", "w") as f:
+    with open(__PATH_SETIINGS_FILE__, "w") as f:
         json.dump(data, f, indent=4)
+        print(" parametres ont ete sauvegardes avec succes")
 
 def load_all_parameters( ):
     """
     Charge les paramètres depuis un fichier.
     """
     import json
-    with open("data/settings.json", "r") as f:
+    #initialiser le fichier de paramettre s'il n'existe pas
+    init_settings_files()
+
+    with open(__PATH_SETIINGS_FILE__, "r") as f:
         data = json.load(f)
         global __DEBUG__ , current_language , LANGUAGES , MENU_TEXT , PROGRAMS
         __DEBUG__ = data['debug']
@@ -99,6 +111,14 @@ def load_all_parameters( ):
         MENU_TEXT = data['MENU_TEXT']
         PROGRAMS = data['PROGRAMS']
     
+def init_settings_files():
+    """
+    Initialise les fichiers de configurations.
+    """
+    #verifiers si le fichier de configurations n'existe pas
+    import os
+    if os.path.exists(__PATH_SETIINGS_FILE__) == False:
+        save_all_parameters()
 
 
 
@@ -122,3 +142,7 @@ def get_text(key):
     Récupère le texte dans la langue actuelle.
     """
     return MENU_TEXT[current_language].get(key, "Texte manquant")
+
+
+
+

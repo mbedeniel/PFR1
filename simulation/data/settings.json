@@ -45,7 +45,7 @@
             "description": "Programme C pour la reconnaissance vocale"
         },
         "ihm": {
-            "path": "vocal/ihm.exe",
+            "path": "vocal/ihm1exe",
             "description": "Programme C pour l'interface utilisateur"
         }
     }

@@ -1,9 +1,11 @@
 import os
+from vocal.python.speaker import speak
 
 # settings.py
 
 
 __DEBUG__ = True
+__SPEAK__ = True
 
 current_language = 'fr'  # Par défaut, la langue est le français
 
@@ -93,6 +95,9 @@ def save_all_parameters( ):
     with open(__PATH_SETIINGS_FILE__, "w") as f:
         json.dump(data, f, indent=4)
         print(" parametres ont ete sauvegardes avec succes")
+        if __SPEAK__:
+            speak(" parametres ont ete sauvegardes avec succes" , current_language)
+
 
 def load_all_parameters( ):
     """
@@ -129,6 +134,8 @@ def set_language():
     """
     global current_language
     print("\nChoisissez une langue :")
+    if __SPEAK__:
+        speak("Choisissez une langue." , current_language)
     for code, lang in LANGUAGES.items():
         print(f"{code} : {lang}")
     choix = input("\nEntrez le code de la langue (par défaut 'fr') : ").strip().lower()
@@ -136,6 +143,8 @@ def set_language():
         current_language = choix
     else:
         print("Langue non reconnue, le français est conservé par défaut.")
+        if __SPEAK__:
+            speak("Langue non reconnue, le français est conservé par défaut." , current_language)
 
 def get_text(key):
     """

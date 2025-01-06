@@ -124,26 +124,28 @@ def entrer_robot1(curseur, piece):
 
 
 def contourner_obstacle(curseur, obstacle, entre, sortie):
-    dimensions = obstacle.get('dimension')
-    forme = obstacle.get('forme')
-    distance_sortie = curseur.distance(sortie)
-    
-    # Se diriger vers le point d'entrée
-    curseur.goto(entre)
-    alpha = radians(curseur.heading())
-    
-    # Initialiser l'angle en fonction de la direction du curseur
-    if alpha == 0 or alpha == pi:  # Horizontal, se déplace de gauche à droite ou inversement
-        # Contourner l'obstacle par le haut ou par le bas
-        angle = 90
-    elif alpha == pi/2 or alpha == 3*pi/2:  # Vertical, se déplace de haut en bas ou inversement
-        # Contourner l'obstacle par la droite ou par la gauche
-        angle = 0
-    else:
-        # Par défaut, on va utiliser un angle de 90° pour contourner
-        angle = 90
-    
+
+    dimensions = obstacle.get('dimension') * 2
+    heading = curseur.heading()
     # Contourner l'obstacle : se déplace autour de l'obstacle
+    distance_sortie = curseur.distance(sortie)
+    curseur.setheading(heading + 90) # Se dirige vers la droite
+    curseur.forward(dimensions)  # Se déplace autour de l'obstacle
+    curseur.setheading(heading) # Se remet dans la direction initiale
+    curseur.forward(distance_sortie)  # Se déplace autour de l'obstacle
+    curseur.setheading(heading - 90) # Se dirige vers la gauche
+    curseur.forward(dimensions)  # Se déplace autour de l'obstacle
+    curseur.setheading(heading) # Se remet dans la direction initiale
+
+
+
+
+
+
+
+
+    """
+
     curseur.right(angle)
     alpha = radians(curseur.heading())
     
@@ -160,7 +162,7 @@ def contourner_obstacle(curseur, obstacle, entre, sortie):
 
     # Remettre le curseur sur la direction vers la sortie
     curseur.setheading(curseur.towards(sortie))
-
+    """
     
 
 
@@ -169,6 +171,13 @@ def aller_vers(curseur, piece, destination):
     """
     Déplace le curseur vers une destination donnée.
     """
+    # Vérifier si la destination est dans la pièce
+    if not est_dans_piece(destination, piece):
+        if __DEBUG__:
+            print("Erreur: la destination est en dehors de la pièce.")
+        return
+    
+
     #orienter le curseur vers la destination
     curseur.setheading(curseur.towards(destination))
 
@@ -190,6 +199,7 @@ def aller_vers(curseur, piece, destination):
         distanceDestination =   curseur.distance(destination)
         if distanceEntre > distanceDestination: #si le point d'entree est plus loin que la destination
             curseur.goto(destination)
+            print(f"Le point d'entrée({point_entree}) est plus loin que la destination({destination}).")
             break
         #contourner l'obstacle
         print("obscalte trouve")
@@ -198,5 +208,7 @@ def aller_vers(curseur, piece, destination):
             print("La destination est dans l'obstacle.")
             return
         else :
+            curseur.goto(point_entree)
+            print(f"C'est bon. On contourne l'obstacle {obstacle['nom']}.")
             contourner_obstacle(curseur, obstacle, point_entree, point_sortie)
         

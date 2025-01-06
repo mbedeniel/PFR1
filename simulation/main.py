@@ -22,7 +22,7 @@ ouverture3 = init_ouverture(coins['coin_BG'], 10,50)
 ouverture4 = init_ouverture(coins['coin_BD'], 10,50)
 
 # Initialisation des obstacles
-obstacle = init_obstable('obstacle1', (-100,150), 'red', 'carree', 25)
+obstacle = init_obstable('obstacle1', (-100,150), 'red', 'cercle', 25)
 obstacle2 = init_obstable('obstacle2', (200, 100), 'green', 'carree', 50)
 obstacle3 = init_obstable('obstacle3', (100, -150), 'orange', 'carree', 50)
 
@@ -56,7 +56,7 @@ new_curseur.down()
 
 #entrer le robot dans la piece
 entrer_robot1(new_curseur, piece)
-new_curseur.down()
+#new_curseur.down()
 # Lancer le menu
 
 menu(new_curseur, piece)

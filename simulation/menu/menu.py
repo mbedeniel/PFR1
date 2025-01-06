@@ -54,6 +54,7 @@ def lancer_mode_vocal(new_curseur, piece):
             speak(get_text('quit_vocal'), current_language)
         data = mode_Vocal()
         adapted_data = adaptation_donnees(data)
+        print(adapted_data)
         vocal_reception(new_curseur, adapted_data, piece)
         sleep(2)
         #verifier si "Stop" a été prononcé 

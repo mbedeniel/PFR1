@@ -49,7 +49,7 @@ char* speech_analysis_to_json(const char* texte) {
             //si la commande n'est pas trouvée, on passe à la suivante
         for (int i = 0; i < num_commands; i++) {
         
-            int position = get_index(remaining_text, commands[i]);
+            int position = get_index(remaining_text, commands[i]); // obtenir l'index de la commande dans le texte
             if (position == 0) {
                 found_command = 1;
 
@@ -64,8 +64,9 @@ char* speech_analysis_to_json(const char* texte) {
                 }
 
                 // Ajouter la commande et le nombre au JSON
-                if (!first) strcat(json, ", ");
+                if (!first) strcat(json, ", "); // ajouter une virgule pour séparer les commandes
                 first = 0;
+                //ajouter la commande et le nombre au json
                 char buffer[100];
                 sprintf(buffer, "\"%s\": %d", commands[i], number);
                 strcat(json, buffer);
@@ -73,7 +74,11 @@ char* speech_analysis_to_json(const char* texte) {
                 // accelerer le pointeur pour passer à la commande suivante en sautant les espaces et les caractères non valides
                 remaining_text += strlen(commands[i]);
                 while (*remaining_text && !isspace(*remaining_text)) remaining_text++;
-                break;
+                
+
+                //IMPORTANT !!!!!!!!!!!!!!!!!
+                break; // ajouter un break pour prendre en compte une seule commande à la fois
+                //pour prendre en compte plusieurs commandes, il suffit de supprimer le break
             }
         }
     // Si aucune commande n'est trouvée, on passe à la suivante en sautant les espaces et les caractères non valides 

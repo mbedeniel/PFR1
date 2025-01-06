@@ -21,13 +21,14 @@ def translantion(curceur, val, piece):
             print(f"Erreur: le curseur risque de sortir de la piece.")
         #se deplacer jusqu au bord de la piece
         return
-    #curceur.forward(val)
-    aller_vers(curceur, piece , destination)
+    
+    if val < 0: #le robot recule
+        curceur.backward(-val) #comme val est negatif, on le rend positif pour que le robot recule sinon il va avancer
+    else: #le robot avance , pour ne pas tenir compte des obstacles ,if faut utiliser la fonction forward
+        aller_vers(curceur, piece , destination) #utiliser la fonction aller_vers pour contourner les obstacles
 
 def rotation(curceur, val):
     """
-
-
     Fait tourner le curseur d'un angle donné (positif ou négatif).
     """
     curceur.right(val)
@@ -46,6 +47,7 @@ def vocal_reception(curceur, reception, piece):
         else :
             if __DEBUG__:
                 print("Erreur: mouvement non reconnu.")
+
     if reception["rotation"] != None:
         if 'droite' in reception["rotation"].lower():
             rotation(curceur, reception["angle_rotation"])

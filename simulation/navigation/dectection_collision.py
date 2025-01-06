@@ -137,7 +137,7 @@ def collision_avec_rectangle(curseur, obstacle):
 
     return True, (x_entree, y_entree), (x_sortie, y_sortie)
 
-def collision_cercle(curseur, obstacle, marge=20):
+def collision_cercle__(curseur, obstacle, marge=20 ):
     """
     Vérifie si le curseur risque de pénétrer dans un obstacle circulaire lorsqu'il avance tout droit.
 
@@ -182,13 +182,66 @@ def collision_cercle(curseur, obstacle, marge=20):
     else:
         # Pas de collision ou danger
         return False, None, None
+import math
+import math
+
+def verifier_collision_cercle(curseur, obstacle, marge=40):
+    """
+    Vérifie si le curseur risque de pénétrer dans un obstacle circulaire lorsqu'il avance tout droit.
+
+    :param curseur: Objet curseur avec les méthodes position() et heading().
+    :param obstacle: Dictionnaire contenant 'centre' (coordonnées) et 'rayon' (rayon du cercle).
+    :param marge: Distance minimale de sécurité autour de l'obstacle.
+    :return: (collision, point_entree, point_sortie)
+    """
+    # Récupération des informations de l'obstacle
+    coin_HD_obstacle = obstacle.get("coin_HD")
+    rayon = obstacle.get("dimension")
+    centre_x, centre_y = coin_HD_obstacle[0], coin_HD_obstacle[1] - rayon
+    # Position actuelle du curseur
+    curseur_x, curseur_y = curseur.position()
+
+    # Calcul de la direction infinie basée sur l'angle du curseur
+    angle = curseur.heading() #math.radians(curseur.heading())
+    print(f"angle : {angle}  heading : {curseur.heading()}")
+    direction_x = math.cos(angle)  # Composante x de la direction
+    direction_y = math.sin(angle)  # Composante y de la direction
+
+    # Paramètres pour l'équation quadratique de la trajectoire
+    dx = curseur_x - centre_x
+    dy = curseur_y - centre_y
+    a = direction_x**2 + direction_y**2
+    b = 2 * (dx * direction_x + dy * direction_y)
+    c = dx**2 + dy**2 - rayon**2
+
+    # Calcul du discriminant
+    discriminant = b**2 - 4 * a * c
+
+    if discriminant < 0:
+        # Pas de collision : pas d'intersection entre la trajectoire et le cercle
+        return False, None, None
+
+    # Calcul des points d'intersection
+    t1 = (-b - math.sqrt(discriminant)) / (2 * a)
+    t2 = (-b + math.sqrt(discriminant)) / (2 * a)
+
+    # Si t1 et t2 sont négatifs, la collision se trouve derrière le curseur
+    if t1 < 0 and t2 < 0:
+        return False, None, None
+
+    # Points d'entrée et de sortie
+    point_entree = (curseur_x + marge + t1 * direction_x, curseur_y + marge + t1 * direction_y) if t1 >= 0 else None
+    point_sortie = (curseur_x + marge + t2 * direction_x, curseur_y + marge + t2 * direction_y) if t2 >= 0 else None
+
+    return True, point_entree, point_sortie
+
 
 
 def Test_collision_obstacle(Obstacle , curseur):
     #collision est un booleen qui indique s il y a une collision ou pas 
     if Obstacle.get("forme") == "cercle":
         # Vérification de la collision avec le cercle
-        return collision_cercle(curseur,Obstacle)
+        return verifier_collision_cercle(curseur,Obstacle)
     elif Obstacle.get("forme") == "carree":
         # Vérification de la collision avec le rectangle
         return  collision_avec_rectangle(curseur, Obstacle)

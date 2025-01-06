@@ -56,11 +56,13 @@ def modif_curseur():
     curceur_modifier.color("black")
 
     return curceur_modifier
-def tracer_cercle(rayon, curseur):
+def tracer_cercle(dimension, curseur):
     """
     Trace un cercle de rayon `rayon` et de couleur `couleur` sur la curseur `curseur`.
     """
-    curseur.circle(rayon)
+    curseur.setheading(180)  # Assurez-vous que le curseur commence dans la bonne direction
+    #cercle de centre xc, yc = curseur.position()[0], curseur.position()[1] - dimension
+    curseur.circle(dimension)
 
 #verifier si un point est a l interieur de la piece
 def est_dans_piece(point, piece):

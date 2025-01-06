@@ -79,7 +79,7 @@ def vocal_reception(curceur, reception, piece):
                 colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur)
                 distance_obstacle = curceur.distance(point_entre) - 40
                 translantion(curceur, distance_obstacle, piece)
-                
+                 
         
         #executer la mission (aller vers l object specifie)
 

@@ -30,8 +30,15 @@ int extract_number_from_position(const char *texte) {
 char* speech_analysis_to_json(const char* texte) {
     if (texte == NULL) return NULL;
 
-    const char *commands[] = {"avance", "gauche", "recule", "droite", "stop"}; // Liste des commandes a reconnaitre
-    const int num_commands = sizeof(commands) / sizeof(commands[0]); // Nombre de commandes
+    const char *commands[] = {"avance", "gauche", "recule", "droite", "stop", "aller"};
+    const char *objects[] = {"balle", "cube"};
+    const char *colors[] = {"rouge", "bleu", "vert", "jaune"}; // Liste des couleurs possibles
+
+    const int num_commands = sizeof(commands) / sizeof(commands[0]);
+    const int num_objects = sizeof(objects) / sizeof(objects[0]);
+    const int num_colors = sizeof(colors) / sizeof(colors[0]);
+
+
 
     char *json = malloc(1024);
     if (!json) return NULL;
@@ -52,32 +59,59 @@ char* speech_analysis_to_json(const char* texte) {
             int position = get_index(remaining_text, commands[i]); // obtenir l'index de la commande dans le texte
             if (position == 0) {
                 found_command = 1;
-
-                int number = extract_number_from_position(remaining_text + strlen(commands[i]));
-                //verifier les valeur par default de number pour chaque commande si elle n'est pas fournie
-                if (number <= 0) {
-                    if (strcmp(commands[i], "avance") == 0 || strcmp(commands[i], "recule") == 0) {
-                        number = 75;
-                    } else if (strcmp(commands[i], "droite") == 0 || strcmp(commands[i], "gauche") == 0) {
-                        number = 90;
+                if (strcmp(commands[i], "aller") == 0)
+                {
+                    // Si la commande est "aller", rechercher l'objet et la couleur
+                    strcat(json, "\"action\": \"aller\"");
+                    // Recherche de l'objet (balle, cube)
+                    char object[20] = "null";
+                    char color[20] = "null";
+                    //recherche de l'objet dans le texte
+                    for (int j = 0; j < num_objects; j++) {
+                        if (get_index(remaining_text, objects[j]) != -1) {
+                            strcpy(object, objects[j]);
+                            break;
+                        }
                     }
+                    //recherche de la couleur dans le texte
+                    for (int j = 0; j < num_colors; j++) {
+                        if (get_index(remaining_text, colors[j]) != -1) {
+                            strcpy(color, colors[j]);
+                            break;
+                        }
+                    }
+                    //ajouter l'objet et la couleur au json
+                    char buffer[100];
+                    sprintf(buffer, ", \"object\": \"%s\", \"color\": \"%s\"", object, color);
+                    strcat(json, buffer);
                 }
+                else{ 
+                    int number = extract_number_from_position(remaining_text + strlen(commands[i]));
+                    //verifier les valeur par default de number pour chaque commande si elle n'est pas fournie
+                    if (number <= 0) {
+                        if (strcmp(commands[i], "avance") == 0 || strcmp(commands[i], "recule") == 0) {
+                            number = 75;
+                        } else if (strcmp(commands[i], "droite") == 0 || strcmp(commands[i], "gauche") == 0) {
+                            number = 90;
+                        }
+                    }
 
-                // Ajouter la commande et le nombre au JSON
-                if (!first) strcat(json, ", "); // ajouter une virgule pour séparer les commandes
-                first = 0;
-                //ajouter la commande et le nombre au json
-                char buffer[100];
-                sprintf(buffer, "\"%s\": %d", commands[i], number);
-                strcat(json, buffer);
-
+                    // Ajouter la commande et le nombre au JSON
+                    if (!first) strcat(json, ", "); // ajouter une virgule pour séparer les commandes
+                    first = 0;
+                    //ajouter la commande et le nombre au json
+                    char buffer[100];
+                    sprintf(buffer, "\"action\": \"%s\", \"valeur\": %d", commands[i], number);
+                    //sprintf(buffer, "\"%s\": %d", commands[i], number);
+                    strcat(json, buffer);
+                }
                 // accelerer le pointeur pour passer à la commande suivante en sautant les espaces et les caractères non valides
                 remaining_text += strlen(commands[i]);
                 while (*remaining_text && !isspace(*remaining_text)) remaining_text++;
                 
 
                 //IMPORTANT !!!!!!!!!!!!!!!!!
-                break; // ajouter un break pour prendre en compte une seule commande à la fois
+                //break; // ajouter un break pour prendre en compte une seule commande à la fois
                 //pour prendre en compte plusieurs commandes, il suffit de supprimer le break
             }
         }

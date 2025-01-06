@@ -5,7 +5,7 @@
 // Fonction qui génère une réponse JSON avec le mode (avancer, reculer, etc.) et sa valeur associée.
 // Exemple de sortie : {"avancer": 15}
 void print_json_response(const char *mode, int value) {
-    printf("{\"%s\": %d}", mode, value);
+    printf("{\"action\": \"%s\", \"valeur\": %d}", mode, value);
 }
 
 // Fonction qui génère une réponse JSON vide pour signaler une erreur, lorsque le mode est invalide.

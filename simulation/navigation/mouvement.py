@@ -1,8 +1,9 @@
 from simulation.plateform.drawing import est_dans_piece
 from math import cos, sin, radians
-
+from simulation.navigation.dectection_collision import Test_collision_obstacle
 from simulation.navigation.navigation import  aller_vers
 from simulation.data.settings import __DEBUG__
+from simulation.data.init import get_obsatcle_by_forme_or_color
 
 def translantion(curceur, val, piece):
     """
@@ -33,6 +34,12 @@ def rotation(curceur, val):
     """
     curceur.right(val)
 
+
+
+
+
+
+
 def vocal_reception(curceur, reception, piece):
     """
     Déplace et oriente le curseur en fonction des données reçues dans le dictionnaire `reception`.
@@ -57,6 +64,27 @@ def vocal_reception(curceur, reception, piece):
             if __DEBUG__:
                 print("Erreur: rotation non reconnue.")
 
+
+    if reception["mission"] != None:
+        print("Mission en cours d'execution")
+        print(f"Objectif: {reception['mission']}")
+        objectif = reception["mission"]
+        if objectif["commande"] == "aller":
+            object = objectif["object"]
+            color = objectif["color"]
+            obstacle = get_obsatcle_by_forme_or_color(piece, object, color, curceur)
+            if obstacle != None:
+                heading_obstacle = curceur.towards(obstacle['coin_HD'])
+                curceur.setheading(heading_obstacle)
+                colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur)
+                distance_obstacle = curceur.distance(point_entre) - 40
+                translantion(curceur, distance_obstacle, piece)
+                
+        
+        #executer la mission (aller vers l object specifie)
+
+
+#fonction pour adapter les données reçues en fonction des données attendues
 def adaptation_donnees(data):
     """
     Adapte les données reçues au format requis pour le déplacement et l'orientation.
@@ -66,17 +94,56 @@ def adaptation_donnees(data):
         'distance_mouvement': None,
         'rotation': None,
         'angle_rotation': None,
+        "mission": None
     }
-    
+
     if data ==None or  len(data) == 0:
         return reception
+    
+    commande = data.get('action')
+    if 'avance' in commande or 'recule' in commande:
+        reception["mouvement"] = commande
+        reception["distance_mouvement"] = data.get('valeur')
+    elif 'droite' in commande or 'gauche' in commande:
+        reception["rotation"] = commande
+        reception["angle_rotation"] = data.get('valeur')
+    elif 'aller' in commande:
+        _object = data.get('object', None)
+        #traduire l'objet en donnée attendue
+        if _object == "balle":
+            object_ = "cercle"
+        elif _object == "cube":
+            object_ = "carree"
+        else:
+            object_ = None
+        
+        _couleur = data.get('color', None)
+        #traduire la couleur en donnée attendue
+        color = color_translation(_couleur)
 
-    cle, valeur = next(iter(data.items()))
-    if 'avance' in cle or 'recule' in cle:
-        reception["mouvement"] = cle
-        reception["distance_mouvement"] = valeur
-    elif 'droite' in cle or 'gauche' in cle:
-        reception["rotation"] = cle
-        reception["angle_rotation"] = valeur
+        reception["mission"] = {"commande": "aller", "object": object_, "color": color}
 
     return reception
+
+
+
+def color_translation(color):
+    """
+    Traduit la couleur en français en anglais.
+    """
+    if color == "rouge":
+        return "red"
+    elif color == "bleu":
+        return "blue"
+    elif color == "vert":
+        return "green"
+    elif color == "jaune":
+        return "yellow"
+    elif color == "orange":
+        return "orange"
+    elif color == "violet":
+        return "purple"
+    elif color == "rose":
+        return "pink"
+    else:
+        return None

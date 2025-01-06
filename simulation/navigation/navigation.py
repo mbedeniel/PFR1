@@ -211,4 +211,6 @@ def aller_vers(curseur, piece, destination):
             curseur.goto(point_entree)
             print(f"C'est bon. On contourne l'obstacle {obstacle['nom']}.")
             contourner_obstacle(curseur, obstacle, point_entree, point_sortie)
+            aller_vers(curseur, piece, destination)
+            break
         

@@ -5,7 +5,7 @@ from vocal.python.speaker import speak
 
 
 __DEBUG__ = True
-__SPEAK__ = True
+__SPEAK__ = False
 
 current_language = 'fr'  # Par défaut, la langue est le français
 
@@ -74,7 +74,7 @@ PROGRAMS = {
         'description': "Programme C pour la reconnaissance vocale"
     },
     'ihm': {
-        'path': "vocal/ihm.exe",  # Chemin vers le programme IHM
+        'path': "vocal/ihm.exe",  # Chemin vers le programme IHM vocal\vocal.exe
         'description': "Programme C pour l'interface utilisateur"
     }
 }

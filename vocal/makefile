@@ -27,8 +27,9 @@ ihm: ihm.o
 
 
 #compiler et executer le fichier application
-run: app
-	./app
+run: vocal
+	./vocal
+
 #supprimer les fichiers objets et l'application executable
 clean:
 	del /f src\speech_to_text.o src\text_to_command.o main.o app.exe

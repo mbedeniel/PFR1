@@ -48,7 +48,7 @@ double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape se
         }
         return square_ratio_2;
         
-    /*on errete directement la fonction*/
+    /*on arrete directement la fonction en retournant un ratio impossible*/
     default:
         return 0.0;
     }

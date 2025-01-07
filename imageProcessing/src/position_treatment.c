@@ -7,3 +7,8 @@ Position init_position()
     new_position.y=0;
     return new_position;
 }
+
+Position get_pixel_position(Position lowest_pixel)
+{
+    return lowest_pixel;
+}

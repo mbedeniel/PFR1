@@ -27,11 +27,11 @@ Shape init_shape();
 
 typedef struct
 {
-    Position highest_pixel; /*premier pixel de l'image*/
-    Position lowest_pixel; /*pixel le plus bas de l'image*/
+    Position highest_pixel; /*premier pixel de l'image(forme sur l'image)*/
+    Position lowest_pixel; /*pixel le plus bas de l'image(forme sur l'image)*/
 }image_max_min_pixel;
 
-/*FUNCTION:image_form
+/*FUNCTION:ratio_area
     permet d'exprimer la presence d'une forme.
     Plus le resulats est proche de 01 plus il y a de chance que ce
     soit la forme cherché. En multipliant le resultat retourner par 100

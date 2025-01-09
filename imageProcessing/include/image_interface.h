@@ -79,11 +79,15 @@ Object image_treatment(Object search_image_inforrmation);
         L'adresse d'un tableau. Il contiendra les objects present dans l'image qui matchent avec le  pattern
 */
 /*OUTPUT:
-    int : le nombre de pattern qui matche avec la sructure de données recu en parametre
+    int : le resultata de l'analyse de tout les pattern ayant matché
+        Le processu est le suivant :
+            ->pattern_generator() génére tout les patterns qui matchent avec l'objet
+            ->pattern_analyser() envoi chaque pattern a image_treatement() 
+            ->pour chaque pattern image_treatment() renvoi le resultat
 */
 int pattern_analyser(Object searched_pattern, Object* image_objects);
 
-/*FUNCTION : void generate_pattern(Object object, Object* patterns);
+/*FUNCTION : int pattern_generator(Object object, Object* patterns);
     genere les differents patters correspondant a une structure de donnée.
     Par exemple si on cherche un objet ROUGE, les differente possibbilités sont:
     un CUBE rouge ou une BALLE rouge. Pareil si l'on cherche un CUBE. Les possibilitée sont :
@@ -97,6 +101,7 @@ int pattern_analyser(Object searched_pattern, Object* image_objects);
         un tableau ou stocker les patterns qui matche
 */
 /*OUTPUT:
-    NONE
+    int
+        nombre de pattern qu on matché
 */
-void pattern_generator(Object object, Object* patterns);
+int pattern_generator(Object object, Object* patterns);

@@ -8,31 +8,37 @@ int pattern_analyser(Object searched_pattern, Object* image_objects)
     ********DECLARATION DES VARIABLES*******
     ****************************************
     */
-    /*Object pattern; 
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
-    int i,j,k,size_patters=0;*/
-    /*
-    processed_image : resultat du traitement image
-    object_configuration: tableau contenant toute les configurations possibles
-    */
-
+    int i,size_patterns;
+     
     /*
     **************************
     ********TRAITEMENT********
     **************************
     */
+
+    /*ETAPE 1 : GENERATION DES PATTERNS*/
+    size_patterns=pattern_generator(searched_pattern,patterns);
+
+
+    /*ETAPE 2 : TRAITEMENT DES PATTERNS GENERÉES*/
+    for(i=0;i<size_patterns;i++)
+    {
+        image_objects[i]=image_treatment(patterns[i]);
+    }
     
-    return 0;
+    return size_patterns;
 }
 
-void pattern_generator(Object object, Object* match_patterns)
+int pattern_generator(Object object, Object* match_patterns)
 {
-    int i,j,k;
+    int i,j,k,size_match_patterns=0;
     Color object_color=object.color;
     Shape object_shape=object.shape;
     if(object.color!=NONE_COLOR && object.shape!=NONE_SHAPE)
     {
         match_patterns[0]=object;
+        size_match_patterns++;
         /*
         ICI c'est pour anticiper des erreurs car normalement on ne doit 
         pas appeler cette methode si la stucture a une couleur et une forme
@@ -45,6 +51,7 @@ void pattern_generator(Object object, Object* match_patterns)
             for(j=RED;j<NUMBER_OF_COLOR;j++,k++)
             {
                 match_patterns[k]=create_object(i,j,init_position());
+                size_match_patterns++;
             }
         }
         /*ci dessous le contenue de object_configuration*/
@@ -62,6 +69,7 @@ void pattern_generator(Object object, Object* match_patterns)
         for(i=BALL;i<NUMBER_OF_SHAPE;i++)
         {
             match_patterns[i]=create_object(i,object_color,init_position());
+            size_match_patterns++;
         }
     }
     else/*forme connue on genere donc les differentes couleurs*/
@@ -69,8 +77,10 @@ void pattern_generator(Object object, Object* match_patterns)
         for(i=RED;i<NUMBER_OF_COLOR;i++)
         {
             match_patterns[i]=create_object(object_shape,i,init_position());
+            size_match_patterns++;
         }
     }
+    return size_match_patterns;
 }
 
 Object image_treatment(Object search_image_inforrmation)

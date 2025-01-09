@@ -9,7 +9,7 @@ int main()
     /* recuperer les infos de l object sous format json*/
     char json_buffer[256]; /*Tampon pour la chaîne JSON*/
 
-    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
+    /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
     search_object = init_object();
     object_to_json(&search_object, json_buffer, sizeof(json_buffer));
     printf("\t %s \n",json_buffer);
@@ -48,7 +48,7 @@ int main()
     {
         object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
         printf("\t %s \n",json_buffer);
-    }
+    }*/
 
 
     printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
@@ -73,7 +73,7 @@ int main()
     }
 
 
-    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
+    /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
     search_object = init_object();
     search_object.shape=BALL;
     search_object.color=BLUE;
@@ -93,7 +93,7 @@ int main()
     {
         object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
         printf("\t %s \n",json_buffer);
-    }
+    }*/
 
 
 

@@ -93,7 +93,7 @@ Object image_treatment(Object search_image_inforrmation)
     */
 
 
-
+       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
     int i,j,k,nbr_pixel,ligne,colonne;
     double *** image_hsv; /*image obtenu grace a rgb_to_hsv*/
     double *** image_rgb; /*image recupéré*/
@@ -131,7 +131,7 @@ Object image_treatment(Object search_image_inforrmation)
 
 
     /*
-    ***************************************
+    ***************************************       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
     ********DEFINITION DES VARIABLES*******
     ***************************************
     */

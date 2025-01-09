@@ -1,4 +1,5 @@
 from simulation.data.settings import __DEBUG__, MENU_TEXT, LANGUAGES, PROGRAMS , get_text, set_language
+from simulation.logger.logger import display 
 import subprocess
 import json
 import os
@@ -19,38 +20,12 @@ def appeler_programme_c(path_programme_c):
     stdout, stderr = process.communicate()
 
     if process.returncode != 0:
-        #print(f"Erreur : {stderr.decode()}")
+        display(f"Erreur : {stderr.decode()}")
         return None
     else:
-        #print(f"Sortie : {stdout.decode()}")
-
         data = json.loads(stdout.decode())
         return data
-    """
-    try:
-        resultat = subprocess.run(
-            [commande],
-            capture_output=True,  # Capture la sortie standard et les erreurs
-            text=True,  # Pour avoir la sortie sous forme de texte
-            cwd=os.path.dirname(chemin_programme_c),  # Spécifie le répertoire de travail
-            check=True  # Vérifie si le programme a échoué
-        )
-        print(f"Résultat: {resultat.stdout}")
-        data = json.loads(resultat.stdout)
-        return data
-    except subprocess.CalledProcessError as e:
-        if __DEBUG__:
-            print(f"calledProcessError: {e}")
-        return None
-    except FileNotFoundError as e:
-        if __DEBUG__:
-            print(f"Fichier introuvable: {e}")
-        return None
-    except json.JSONDecodeError as e:
-        if __DEBUG__:
-            print(f"Erreur de décodage JSON: {e}")
-        return None
-"""
+
 
 def mode_Vocal():
     """
@@ -58,7 +33,6 @@ def mode_Vocal():
     :return: Les données JSON retournées par le programme.
     """
     chemin_programme_c = PROGRAMS.get('vocal').get("path")
-    print(f"Chemin programme C vocal: {chemin_programme_c}")
     data = appeler_programme_c(chemin_programme_c)
     return data
 
@@ -70,13 +44,12 @@ def mode_ihm():
     continuer = True
     while continuer:
         # Présentation du menu
-        print(get_text('presentation_ihm'))
+        display(get_text('presentation_ihm'))
         chemin_programme_c = PROGRAMS.get('ihm').get("path")
         data = appeler_programme_c(chemin_programme_c)
-        print(f"programme C IHM: {chemin_programme_c}")
         # Vérifier si la taille de la liste n'est pas nulle
         if data is None or len(data) == 0:
-            print(get_text('invalid_input'))
+            display(get_text('invalid_input'))
             return None
         else:
             continuer = False

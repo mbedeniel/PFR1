@@ -26,7 +26,6 @@ else:
 
 
 with mic as source:
-
     audio_data = r.listen(source)
 
 result = ''
@@ -35,7 +34,14 @@ try:
     print(f"Texte reconnu ({language_name}): {result}")
 except Exception as e:
     print(f"Texte non reconnu en {language_name}.")
-    
+"""
+if language == "en-US":
+    #traduire le texte anglais en français
+    from googletrans import Translator
+    translator = Translator()
+    result1 = translator.translate(result, src='en', dest='fr')
+    print(f"Texte traduit ({language_name}): {result1.text}")
+"""
 print(result)
 
 

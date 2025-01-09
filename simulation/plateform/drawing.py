@@ -1,6 +1,6 @@
 import turtle as tl
 from simulation.data.init import init_coins
-from simulation.data.settings import __DEBUG__
+from simulation.logger.logger import display 
 
 """
 CE FICHIER CONTIENT LES FONCTIONS DE TRACAGE DES PIECES, DES OUVERTURES ET DES OBSTACLES.
@@ -83,15 +83,11 @@ def est_dans_piece(point, piece):
         return True
     
     # Si le point est en dehors, afficher les messages d'erreur
-    if __DEBUG__:
-        if point[0] < piece_x1 or point[0] > piece_x2:
-            print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe X.")
-        if point[1] < piece_y2 or point[1] > piece_y1:
-            print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe Y.")
-        
-        print(f"\tCoordonnées de la pièce : x ∈ [{piece_x1}, {piece_x2}] et y ∈ [{piece_y2}, {piece_y1}]")
-        print(f"\tCoordonnées du point : x = {point[0]}, y = {point[1]}")
-        
+
+    if point[0] < piece_x1 or point[0] > piece_x2:
+        display(f"Erreur : le point {point} est en dehors de la pièce sur l'axe X.")
+    if point[1] < piece_y2 or point[1] > piece_y1:
+        display(f"Erreur : le point {point} est en dehors de la pièce sur l'axe Y.")
     return False
 
 def tracer_obstacle_carre(curseur, obstacle):
@@ -111,7 +107,7 @@ def tracer_obstacle(obstacle, curseur, piece):
     """
     #verifier si le coin_HD de l obstacle est a l interieur de la piece 
     if not est_dans_piece(obstacle["coin_HD"], piece):
-        print(f"Erreur: l obstacle {obstacle['nom']} est en dehors de la piece.")
+        display(f"Erreur: l obstacle {obstacle['nom']} est en dehors de la piece.")
         return None 
     
     #aller au positon du coin HD
@@ -135,8 +131,8 @@ def tracer_obstacle(obstacle, curseur, piece):
             curseur.left(90)
     """
     else:
-        if __DEBUG__:
-            print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        
+        display(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
 
     curseur.end_fill()
     curseur.up() 
@@ -170,7 +166,7 @@ def tracer_ouverture(ouverture, curseur , piece):
         curseur.setheading(270)
     
     else :
-        print(f"Erreur: l ouverture {ouverture['coin_droite']} n est pas un coin de la piece.")
+        display(f"Erreur: l ouverture {ouverture['coin_droite']} n est pas un coin de la piece.")
         return None
     curseur.forward(ouverture["distance_coin"])
 

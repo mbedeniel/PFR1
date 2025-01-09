@@ -1,11 +1,13 @@
 import os
 from vocal.python.speaker import speak
+#from simulation.logger.logger import display as print
 
 # settings.py
 
 
 __DEBUG__ = True
-__SPEAK__ = False
+__SPEAK__ = True
+__DISPLAY__ = True
 
 current_language = 'fr'  # Par défaut, la langue est le français
 
@@ -14,6 +16,7 @@ current_language = 'fr'  # Par défaut, la langue est le français
 
 dossier = os.path.dirname(os.path.abspath(__file__))
 __PATH_SETIINGS_FILE__ = os.path.abspath(os.path.join(dossier,"settings.json"))
+__PATH_LOG_FILE__ = os.path.abspath(os.path.join(dossier,"log.txt"))
 
 LANGUAGES = {
     'fr': 'Français',
@@ -94,9 +97,8 @@ def save_all_parameters( ):
     import json
     with open(__PATH_SETIINGS_FILE__, "w") as f:
         json.dump(data, f, indent=4)
-        print(" parametres ont ete sauvegardes avec succes")
-        if __SPEAK__:
-            speak(" parametres ont ete sauvegardes avec succes" , current_language)
+        print("Les parametres ont été sauvegardés avec succés")
+       
 
 
 def load_all_parameters( ):
@@ -134,18 +136,14 @@ def set_language():
     """
     global current_language
     print("\nChoisissez une langue :")
-    if __SPEAK__:
-        speak("Choisissez une langue." , current_language)
     for code, lang in LANGUAGES.items():
         print(f"{code} : {lang}")
     choix = input("\nEntrez le code de la langue (par défaut 'fr') : ").strip().lower()
     if choix in LANGUAGES:
         current_language = choix
+        print(f"Langue changée en {LANGUAGES[current_language]}")
     else:
         print("Langue non reconnue, le français est conservé par défaut.")
-        if __SPEAK__:
-            speak("Langue non reconnue, le français est conservé par défaut." , current_language)
-
 def get_text(key):
     """
     Récupère le texte dans la langue actuelle.

@@ -4,6 +4,7 @@ from simulation.navigation.dectection_collision import Test_collision_obstacle
 from simulation.navigation.navigation import  aller_vers
 from simulation.data.settings import __DEBUG__
 from simulation.data.init import get_obsatcle_by_forme_or_color
+from simulation.logger.logger import display 
 
 def translantion(curceur, val, piece):
     """
@@ -18,8 +19,7 @@ def translantion(curceur, val, piece):
     #verifier si le curseur risque de sortir de la piece
     destination = (new_x_curseur, new_y_curseur)
     if not est_dans_piece(destination, piece):
-        if __DEBUG__:
-            print(f"Erreur: le curseur risque de sortir de la piece.")
+        display(f"Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.")
         #se deplacer jusqu au bord de la piece
         return
     
@@ -52,8 +52,7 @@ def vocal_reception(curceur, reception, piece):
         elif 'recule' in reception["mouvement"].lower():
             translantion(curceur, -reception["distance_mouvement"], piece)
         else :
-            if __DEBUG__:
-                print("Erreur: mouvement non reconnu.")
+            display("Erreur: mouvement non reconnu.")
 
     if reception["rotation"] != None:
         if 'droite' in reception["rotation"].lower():
@@ -61,15 +60,15 @@ def vocal_reception(curceur, reception, piece):
         elif 'gauche' in reception["rotation"].lower():
             rotation(curceur, -reception["angle_rotation"])
         else:
-            if __DEBUG__:
-                print("Erreur: rotation non reconnue.")
+            display("Erreur: rotation non reconnue.")
 
 
     if reception["mission"] != None:
-        print("Mission en cours d'execution")
-        print(f"Objectif: {reception['mission']}")
+        display("Mission en cours d'execution")
+        
         objectif = reception["mission"]
         if objectif["commande"] == "aller":
+            display(f"Deplacement vers l'objet de type {objectif['object']} et de couleur {objectif['color'] if objectif['color'] != None else 'non spécifiée'}")
             object = objectif["object"]
             color = objectif["color"]
             obstacle = get_obsatcle_by_forme_or_color(piece, object, color, curceur)
@@ -77,9 +76,13 @@ def vocal_reception(curceur, reception, piece):
                 heading_obstacle = curceur.towards(obstacle['coin_HD'])
                 curceur.setheading(heading_obstacle)
                 colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur)
-                distance_obstacle = curceur.distance(point_entre) - 40
+                distance_obstacle = curceur.distance((point_entre[0], point_entre[1])) - 20
                 translantion(curceur, distance_obstacle, piece)
-                 
+                display("Mission accomplie.")
+            else:
+                display("Erreur: Obstacle de type " + object + " et de couleur " + color + " non trouvé.")
+                
+                
         
         #executer la mission (aller vers l object specifie)
 

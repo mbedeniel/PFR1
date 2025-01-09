@@ -1,4 +1,5 @@
 from simulation.data.settings import __DEBUG__
+from simulation.logger.logger import display 
 
 def init_piece():
     """
@@ -39,7 +40,7 @@ def init_obstable(nom ,coin_HD, couleur, forme, dimension):
     """
     if forme != 'cercle' and forme != 'carree':
         if __DEBUG__:
-            print(f"Erreur: l obstacle {nom} a une forme invalide.Sa forme({forme}) doit être 'cercle' ou 'carre'.")
+            display(f"Erreur: l obstacle {nom} a une forme invalide.Sa forme({forme}) doit être 'cercle' ou 'carre'.")
         return None
     
     obstacle ={

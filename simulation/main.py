@@ -5,6 +5,11 @@ from simulation.menu.menu import menu
 from simulation.data.init import*
 from simulation.navigation.navigation import entrer_robot1
 from simulation.data.settings import *
+from simulation.logger.logger import display 
+
+
+display("___DEMARRAGE DE LA SIMULATION___")
+
 
 #charger les parametres de configurations depuis le fichier settings.json
 load_all_parameters()
@@ -24,7 +29,7 @@ ouverture4 = init_ouverture(coins['coin_BD'], 10,50)
 # Initialisation des obstacles
 obstacle = init_obstable('obstacle1', (-100,150), 'red', 'cercle', 25)
 obstacle2 = init_obstable('obstacle2', (200, 100), 'green', 'carree', 50)
-obstacle3 = init_obstable('obstacle3', (100, -150), 'orange', 'carree', 50)
+obstacle3 = init_obstable('obstacle3', (100, -150), 'yellow', 'carree', 50)
 
 #ajouter les ouvertures et les obstacles à la pièce
 for ouv in [ouverture, ouverture2, ouverture3, ouverture4]:
@@ -66,4 +71,5 @@ tl.bye()
 
 #enregistrer tous les paramettres de configurations
 save_all_parameters()
+display("___FIN DE LA SIMULATION___")
 

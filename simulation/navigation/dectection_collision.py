@@ -1,5 +1,6 @@
 import math
 from simulation.data.settings import __DEBUG__
+from simulation.logger.logger import display 
 
 ############ DETECTION DE COLLISION AVEC LES OBSTACLES ############################
 
@@ -235,9 +236,6 @@ def get_Obstacles_critiques(obstacles:list , curseur):
         collision , point_entree , point_sortie = Test_collision_obstacle(obstacle, curseur)
         if collision :
             Obstacles_critiques.append((obstacle,point_entree,point_sortie))
-            if __DEBUG__:
-                print(f"Collision avec l'obstacle {obstacle.get('nom')} au point d'entré : {point_entree} et de sortie {point_sortie}")
-   
     return sorted(Obstacles_critiques, key=lambda obstacle: curseur.distance(obstacle[1]))
     
 
@@ -262,6 +260,5 @@ def point_is_in_obstacle(point , obstacle):
         Y_min, Y_max = coin_hd[1] - dimension, coin_hd[1]
         return X_min <= x <= X_max and Y_min <= y <= Y_max
     else:
-        if __DEBUG__:
-            print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        display(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
         return False

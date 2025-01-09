@@ -25,4 +25,21 @@ OUTPUT: une structure Object
 Object init_object();
 
 
+/*FUNCTION : Object create_object(Position position, Shape shape, Color color);
+    crerr un objet
+*/
+/*INPUT :
+    Position psotion
+        la position a donner a l'objet
+    Shape shape 
+        la forme a donner a l'objet
+    Color color
+        la couleur a donner a l'objet
+*/
+/*OUTPUT:
+    retourne l'objet creé
+*/
+Object create_object(Shape shape,Color color,Position position);
+
+
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size);

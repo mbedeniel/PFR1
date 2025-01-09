@@ -1,5 +1,8 @@
 #include "position_treatment.h"
 #include <math.h>
+
+#define NUMBER_OF_SHAPE 2/*nombre d'elment de Shape*/
+
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
 
@@ -7,9 +10,9 @@
 /*BALL or CUBE*/
 typedef enum
 {
-    BALL,
-    CUBE,
-    NONE_SHAPE /*Si la forme ne correspond a aucune forme*/
+    BALL=0,
+    CUBE=1,
+    NONE_SHAPE=2 /*Si la forme ne correspond a aucune forme*/
 } Shape;
 
 

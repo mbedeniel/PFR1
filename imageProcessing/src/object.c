@@ -11,6 +11,14 @@ Object init_object()
     return new_object;
 }
 
+Object create_object(Shape shape,Color color,Position position)
+{
+    Object new_object;
+    new_object.color=color;
+    new_object.shape=shape;
+    new_object.position=position;
+    return new_object;
+}
 
 /* Fonction pour convertir un objet en JSON */
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size) {

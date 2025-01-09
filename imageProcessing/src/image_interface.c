@@ -1,5 +1,78 @@
 #include "../include/image_interface.h"
 
+int pattern_analyser(Object searched_pattern, Object* image_objects)
+{
+    
+    /*
+    ****************************************
+    ********DECLARATION DES VARIABLES*******
+    ****************************************
+    */
+    /*Object pattern; 
+    Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
+    int i,j,k,size_patters=0;*/
+    /*
+    processed_image : resultat du traitement image
+    object_configuration: tableau contenant toute les configurations possibles
+    */
+
+    /*
+    **************************
+    ********TRAITEMENT********
+    **************************
+    */
+    
+    return 0;
+}
+
+void pattern_generator(Object object, Object* match_patterns)
+{
+    int i,j,k;
+    Color object_color=object.color;
+    Shape object_shape=object.shape;
+    if(object.color!=NONE_COLOR && object.shape!=NONE_SHAPE)
+    {
+        match_patterns[0]=object;
+        /*
+        ICI c'est pour anticiper des erreurs car normalement on ne doit 
+        pas appeler cette methode si la stucture a une couleur et une forme
+        */
+    }
+    else if(object.color==NONE_COLOR && object.shape==NONE_SHAPE)
+    {
+        for(i=BALL,k=0;i<NUMBER_OF_SHAPE;i++)
+        {
+            for(j=RED;j<NUMBER_OF_COLOR;j++,k++)
+            {
+                match_patterns[k]=create_object(i,j,init_position());
+            }
+        }
+        /*ci dessous le contenue de object_configuration*/
+        /*
+        { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "RED" }
+        { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "GREEN" }
+        { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "BLUE" }
+        { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "RED" }
+        { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "GREEN" }
+        { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "BLUE" }
+        */
+    }
+    else if(object_color!=NONE_COLOR)/*Couleur connue on genere donc les differentes formes*/
+    {
+        for(i=BALL;i<NUMBER_OF_SHAPE;i++)
+        {
+            match_patterns[i]=create_object(i,object_color,init_position());
+        }
+    }
+    else/*forme connue on genere donc les differentes couleurs*/
+    {
+        for(i=RED;i<NUMBER_OF_COLOR;i++)
+        {
+            match_patterns[i]=create_object(object_shape,i,init_position());
+        }
+    }
+}
+
 Object image_treatment(Object search_image_inforrmation)
 {
 

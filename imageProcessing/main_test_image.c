@@ -15,7 +15,7 @@ int main()
     scanf("%i", &image_number);
     snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
 
-    printf("\n%s\n",path);
+
 
     printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
     search_object = init_object();

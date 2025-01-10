@@ -328,6 +328,9 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     {
         processed_image.shape=search_image_inforrmation.shape;
     }
+
+    /*------- DETECTION POSITION ------*/
+    processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
     
     return processed_image;
 }

@@ -38,7 +38,7 @@ def mode_Vocal():
 
 def mode_ihm():
     """
-    Mode IHM : permet de choisir une option et retourne les données JSON associées.
+    Mode IHM : permet de choisir une option (avancer , reculer , tourner ) et retourne les données JSON associées.
     :return: Les données JSON retournées par le programme.
     """
     continuer = True

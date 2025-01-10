@@ -1,6 +1,6 @@
 #include "../include/image_interface.h"
 
-int pattern_analyser(Object searched_pattern, Object* image_objects)
+int pattern_analyser(Object searched_pattern, Object* image_objects, char * path)
 {
     
     /*
@@ -9,7 +9,8 @@ int pattern_analyser(Object searched_pattern, Object* image_objects)
     ****************************************
     */
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
-    int i,size_patterns;
+    Object pattern;
+    int i,size_patterns,size_image_objects=0;
      
     /*
     **************************
@@ -24,10 +25,16 @@ int pattern_analyser(Object searched_pattern, Object* image_objects)
     /*ETAPE 2 : TRAITEMENT DES PATTERNS GENERÉES*/
     for(i=0;i<size_patterns;i++)
     {
-        image_objects[i]=image_treatment(patterns[i]);
+        pattern=image_treatment(patterns[i],path);
+        if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
+        {
+            image_objects[size_image_objects]=pattern;
+            size_image_objects++;
+        }
+        
     }
     
-    return size_patterns;
+    return size_image_objects;
 }
 
 int pattern_generator(Object object, Object* match_patterns)
@@ -83,7 +90,7 @@ int pattern_generator(Object object, Object* match_patterns)
     return size_match_patterns;
 }
 
-Object image_treatment(Object search_image_inforrmation)
+Object image_treatment(Object search_image_inforrmation,const char* path)
 {
 
     /*
@@ -92,15 +99,13 @@ Object image_treatment(Object search_image_inforrmation)
     ****************************************
     */
 
-
-       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
     int i,j,k,nbr_pixel,ligne,colonne;
     double *** image_hsv; /*image obtenu grace a rgb_to_hsv*/
     double *** image_rgb; /*image recupéré*/
     int ** binary_image; /*image obtebur grace a bit_image*/
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
-    Object processed_image; 
+    Object processed_image=init_object(); 
 
     /*
     processed_image : resultat du traitement image
@@ -125,10 +130,17 @@ Object image_treatment(Object search_image_inforrmation)
 
 
     /*Recuperation des lignes et colonnes*/
-    scanf("%i",&ligne);
-    scanf("%i",&colonne);
 
+    /*Ouvrir le fichier en lecture*/
+    FILE* fichier = fopen(path, "r");
+    if (!fichier) {
+        perror("Erreur lors de l'ouverture du fichier");
+        return processed_image;
+    }
 
+    /*Lire les dimensions de l'image*/
+    fscanf(fichier, "%i", &ligne);
+    fscanf(fichier, "%i", &colonne);
 
     /*
     ***************************************       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
@@ -245,18 +257,17 @@ Object image_treatment(Object search_image_inforrmation)
     l'image est recupere composante par composante
     d'abord la composante R ensuite G ensuit B
     */
-    for(k=0;k<3;k++)
-    {   
-        for(i=0;i<ligne;i++)
-        {
-            for(j=0;j<colonne;j++)
-            {
-                scanf("%lf",&image_rgb[i][j][k]);
+
+    /*Lire les valeurs du fichier*/
+    for (k = 0; k < 3; k++){
+        for (i = 0; i < ligne; i++) {
+            for (j = 0; j < colonne; j++) {
+                fscanf(fichier, "%lf", &image_rgb[i][j][k]);
             }
         }
     }
 
-
+    fclose(fichier); /*Fermer le fichier*/
 
     /*
     **************************
@@ -310,7 +321,7 @@ Object image_treatment(Object search_image_inforrmation)
             break;
         /*On peut envisager qu'on demande au robot d'avancer vers l'objet rouge*/
         default:
-            break; 
+            break;
     }
     /*ANALYSE DES RESULTATS ET MISE A JOUR DE processed_image-*/
     if(my_ratio_area>=shape_min_percentage)

@@ -59,7 +59,7 @@ PRINCIPE:
         La forme recherchée si elle a été trouvée
         Et la position de l'objet si les deux attributs ci dessus ont ete trouvée
 */
-Object image_treatment(Object search_image_inforrmation);
+Object image_treatment(Object search_image_inforrmation,const char* path);
 
 /*FUNCTION: int pattern_analyser(Object searched_pattern, Object* image_objects);
     analyse le paatern recherché. Par exemple,
@@ -77,6 +77,8 @@ Object image_treatment(Object search_image_inforrmation);
         Le contenue du champ position n'est pas important
     Object* image_objects
         L'adresse d'un tableau. Il contiendra les objects present dans l'image qui matchent avec le  pattern
+    char * path
+        chemin d'access vers l'image
 */
 /*OUTPUT:
     int : le resultata de l'analyse de tout les pattern ayant matché
@@ -85,7 +87,7 @@ Object image_treatment(Object search_image_inforrmation);
             ->pattern_analyser() envoi chaque pattern a image_treatement() 
             ->pour chaque pattern image_treatment() renvoi le resultat
 */
-int pattern_analyser(Object searched_pattern, Object* image_objects);
+int pattern_analyser(Object searched_pattern, Object* image_objects, char * path);
 
 /*FUNCTION : int pattern_generator(Object object, Object* patterns);
     genere les differents patters correspondant a une structure de donnée.
@@ -99,6 +101,8 @@ int pattern_analyser(Object searched_pattern, Object* image_objects);
         une stucture contenant le pattern rechrché
     Object* patterns
         un tableau ou stocker les patterns qui matche
+    char * path
+        hemin d'access vers l'image
 */
 /*OUTPUT:
     int

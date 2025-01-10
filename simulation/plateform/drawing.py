@@ -85,9 +85,9 @@ def est_dans_piece(point, piece):
     # Si le point est en dehors, afficher les messages d'erreur
 
     if point[0] < piece_x1 or point[0] > piece_x2:
-        display(f"Erreur : le point {point} est en dehors de la pièce sur l'axe X.")
+        display(f"Erreur : le point ({int(point[0])}, {int(point[1])}) est en dehors de la pièce sur l'axe X.")
     if point[1] < piece_y2 or point[1] > piece_y1:
-        display(f"Erreur : le point {point} est en dehors de la pièce sur l'axe Y.")
+        display(f"Erreur : le point ({int(point[0])}, {int(point[1])}) est en dehors de la pièce sur l'axe Y.")
     return False
 
 def tracer_obstacle_carre(curseur, obstacle):
@@ -132,7 +132,7 @@ def tracer_obstacle(obstacle, curseur, piece):
     """
     else:
         
-        display(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        display(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carrée'.")
 
     curseur.end_fill()
     curseur.up() 

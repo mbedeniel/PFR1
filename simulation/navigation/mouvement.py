@@ -76,11 +76,24 @@ def vocal_reception(curceur, reception, piece):
                 heading_obstacle = curceur.towards(obstacle['coin_HD'])
                 curceur.setheading(heading_obstacle)
                 colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur)
-                distance_obstacle = curceur.distance((point_entre[0], point_entre[1])) - 20
+                
+                distance_obstacle = 0
+                if point_entre !=None :
+                    distance_obstacle = curceur.distance((point_entre[0], point_entre[1])) - 20
+                elif point_sortie != None:
+                    display("Impossible de se rendre au point en face de l'objet , je me dirige vers le point s'opposé")
+                    distance_obstacle = curceur.distance((point_sortie[0], point_sortie[1])) + 20
+                    
+                else:
+                    display("Erreur: un problème est survenu lors de la détection de l'obstacle.")
+                    display("Mission annulée.")
+                    return
                 translantion(curceur, distance_obstacle, piece)
                 display("Mission accomplie.")
+                
             else:
                 display("Erreur: Obstacle de type " + object + " et de couleur " + color + " non trouvé.")
+                display("Mission annulée.")
                 
                 
         

@@ -275,3 +275,304 @@ Fin du contournerment de l'obstacle.
 Déplacement du Robot vers la destination ....
 la position de l'obstacle1  de forme cercle et de couleur red est critique.
 Contournement de l'obstacle obstacle1 ...
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375.00,-230.00) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375.00,-230.00) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375.00,-230.00) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375.00,-230.00) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Erreur: Un problème est survenu lors de la détection de l'objet spécifié.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Erreur: Un problème est survenu lors de la détection de l'objet spécifié.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Erreur: Un problème est survenu lors de la détection de l'objet spécifié.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375.00,-230.00) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375.00,-230.00) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : le point (-514.2272354339116, -159.77067039336842) est en dehors de la pièce sur l'axe X.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Fin du mode vocal.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point 375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+la position de l'obstacle3  de forme carree et de couleur yellow est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : le point -76, -702) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : le point (-751, 142) est en dehors de la pièce sur l'axe X.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : le point -265, -287) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : le point -54, 237) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : le point (348, 192) est en dehors de la pièce sur l'axe X.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Fin du mode vocal.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___

@@ -85,18 +85,18 @@ def get_obsatcle_by_forme_or_color(piece ,forme , color , curseur):
     """
    
     obstacles = piece['obstacles'] #recuperer tous les obstacles de la piece
-    #filtrer les obstacles de la piece de la forme 
-    if forme != None:
-        obstacles = [obstacle for obstacle in piece['obstacles'] if obstacle['forme'] == forme]
-    
-    #filtrer les obstacles de la piece de la couleur
-    if color != None:
-        obstacles = [obstacle for obstacle in obstacles if obstacle['couleur'] == color]
-    
+    selected_obstacle = []
+    #filtrer les obstacles de la piece de la forme dont la couleur est celle donnée
+    for obstacle in obstacles:
+        if obstacle['forme'] == forme and obstacle['couleur'] == color:
+            selected_obstacle.append(obstacle)
+
+  
+            
+    if len(selected_obstacle) == 0:
+        return None
     #trier en fonction de la distance entre le curseur et l'obstacle
     #returner le plus proche obstacle si la liste n est pas vide
-    if len(obstacles) > 0:
-        obstacles.sort(key=lambda obstacle: curseur.distance(obstacle['coin_HD']))
-        return obstacles[0]
-    else:
-        return None
+    selected_obstacle.sort(key=lambda obstacle: curseur.distance(obstacle['coin_HD']))
+    return selected_obstacle[0]
+   

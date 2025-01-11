@@ -126,6 +126,9 @@ def contourner_obstacle(curseur, obstacle, entre, sortie):
 
     dimensions = obstacle.get('dimension') * 2
     heading = curseur.heading()
+    if sortie == None:
+        display("Erreur : le point de sortie correctement n'a pas été fourni.")
+        return
     # Contourner l'obstacle : se déplace autour de l'obstacle
     distance_sortie = curseur.distance((sortie[0], sortie[1]))
     curseur.setheading(heading + 90) # Se dirige vers la droite

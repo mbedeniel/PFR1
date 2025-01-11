@@ -20,10 +20,19 @@ def appeler_programme_c(path_programme_c):
     stdout, stderr = process.communicate()
 
     if process.returncode != 0:
-        display(f"Erreur : {stderr.decode()}")
-        return None
+        sortie = stderr.decode()
+        display(f"Erreur : {sortie}")
+        return {}
     else:
-        data = json.loads(stdout.decode())
+        #decider de l'encodage avec le plus approprié
+        try:
+            sortie = stdout.decode("utf-8").replace('\r', '').replace('\n', '')
+        except UnicodeDecodeError:
+            sortie = stdout.decode("latin1").replace('\r', '').replace('\n', '')
+        except Exception as e:
+            display(f"Erreur de décodage de la sortie du programme C. {str(e)}")
+            return {}
+        data = json.loads(sortie)
         return data
 
 

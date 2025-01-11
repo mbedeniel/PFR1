@@ -18,4 +18,4 @@ try:
 except Exception as e:
     result = ''
 
-print(result)
+print(result,end='')

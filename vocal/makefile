@@ -1,9 +1,6 @@
 
 #utliser la commande make run oubien mingw32-make run pour compiler et executer le fichier application
-push:
-	git add .
-	git commit -m "update"
-	git push origin simulation
+
 
 #creer les fichiers objets a partir des fichiers sources
 src/speech_to_text.o: src/speech_to_text.c include/speech_to_text.h

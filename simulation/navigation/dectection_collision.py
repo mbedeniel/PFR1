@@ -184,7 +184,7 @@ def test_collision_avec_cercle(curseur, obstacle, marge=40):
     # Calcul du discriminant
     discriminant = b**2 - 4 * a * c
 
-    if discriminant < 0:
+    if discriminant <= 0:
         # Pas de collision : pas d'intersection entre la trajectoire et le cercle
         return False, None, None
 
@@ -212,7 +212,13 @@ def test_collision_avec_cercle(curseur, obstacle, marge=40):
 
     # Retourner les points d'entrée et de sortie
     point_entree = points_intersection[0]
+    #le 
     point_sortie = points_intersection[1] if len(points_intersection) > 1 else None
+    
+    
+    #ligne a verifier 
+    if point_sortie==None:
+        point_sortie = points_intersection[0]
 
     return True, point_entree, point_sortie
 

@@ -755,3 +755,4430 @@ Veuillez choisir un mode parmi les suivants :
             Saisissez le mode et la valeur (ex : a 15 ou r) : 
 Erreur : 
 Entrée invalide. Veuillez réessayer.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+vous avez dit : 
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+vous avez dit : 
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+vous avez dit : 
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Erreur : le point (-203, 274) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : 
+
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 20 m
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 200
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer
+
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube bleu
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur blue
+Erreur: Obstacle de type carree et de couleur blue non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge puis aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune puis aller vers le tube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune ensuite aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge ensuite aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer de 20 m puis aller vers le cube vert
+
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge puis aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+vous avez dit : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune ensuite aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le tube rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune ensuite aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune ensuite aller vers le cube vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune ensuite aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge ensuite aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge ensuite enlever le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge ensuite aller vers le cube
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur red
+Erreur: Obstacle de type carree et de couleur red non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vers ensuite aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers l'équipe vert ensuite aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer de 200 m ensuite aller vers le cube jaune
+
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 50 m puis tourner à
+
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : stoppe
+
+Fin du mode vocal.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 20 m puis
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 20 m puis aller vers le cube jaune
+
+Deplacement du Robot ....
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 20 m puis aller vers le tube jaune
+
+Deplacement du Robot ....
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur yellow
+Erreur: un problème est survenu lors de la détection de l'obstacle.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 300 m
+
+Erreur : le point (174, -262) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer 200 m
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vers puis aller vers le tube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Déplacement du Robot ....
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur yellow
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge ensuite aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer de 200 m puis aller vers le cube vert
+
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 100
+
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer 200 m
+
+Erreur : le point (-214, 247) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 120
+
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 50
+
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers aller vers le cube
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Déplacement du Robot ....
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 100 m
+
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur red
+Erreur: Obstacle de type carree et de couleur red non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers l'équipe jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur yellow
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge ensuite aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer de 50 m et aller vers le cube vert
+
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 50 M
+
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 50
+
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de sa mère
+
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 100
+
+Erreur : le point (302, 118) est en dehors de la pièce sur l'axe X.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer de
+
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Erreur: Obstacle de type None et de couleur red non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Erreur: Obstacle de type None et de couleur red non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Erreur: Obstacle de type None et de couleur red non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type None et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+la position de l'obstacle3  de forme carree et de couleur yellow est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+la position de l'obstacle3  de forme carree et de couleur yellow est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type None et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type None et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Erreur: Obstacle de type <class 'object'> et de couleur red non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type <class 'object'> et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la boule rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur red
+Erreur: Obstacle de type <class 'object'> et de couleur red non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type <class 'object'> et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vers ensuite aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: Obstacle de type <class 'object'> et de couleur None non trouvé.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vers ensuite aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: Obstacle de type <class 'object'> et de couleur None non trouvé.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vers ensuite aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: Obstacle de type <class 'object'> et de couleur None non trouvé.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: Obstacle de type <class 'object'> et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune ensuite aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type <class 'object'> et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune aller vers le balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Deplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : stoppe
+
+Fin du mode vocal.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___

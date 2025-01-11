@@ -37,22 +37,34 @@ def menu(new_curseur, piece):
 def lancer_mode_vocal(new_curseur, piece):
     """
     Gère le fonctionnement du mode vocal.
+    les données envoyer par le c snt de la forme
+    {"texte": "aller puis tourner ├á droite  degr├⌐s et aller au balle rouge", "commandes": [{"action": "aller", "object": "null", "color": "null"}, {"action": "droite", "valeur": 90}, {"action": "aller", "object": "balle", "color": "rouge"}]
     """
     display(get_text('vocal_mode'))
     
     while True:
         display(get_text('quit_vocal'))
-        data = mode_Vocal()
-        adapted_data = adaptation_donnees(data)
-        
-        vocal_reception(new_curseur, adapted_data, piece)
-        sleep(2)
-        #verifier si "Stop" a été prononcé 
-        commande = data.get('action', '')
-        if "stop" in commande.lower():
-            break
+        data_from_C_module = mode_Vocal()
+        text = data_from_C_module.get('texte', '')
+        if text == '':
+            continue
+        display(f"vous avez dit : {text}")
+        print(f"\tCommandes associées : {data_from_C_module.get('commandes', [])}")
+        for data in data_from_C_module.get("commandes",[]):
+            
+            display(data.get('texte', ''))
+            adapted_data = adaptation_donnees(data)
+            vocal_reception(new_curseur, adapted_data, piece)
+            #verifier si "Stop" a été prononcé 
+            commande = data.get('action', '')
+            if "stop" in commande.lower():
+                display(get_text('end_vocal'))
+                return
 
-    display(get_text('end_vocal'))
+
+            
+
+    
     
 def lancer_mode_ihm(new_curseur, piece):
     """

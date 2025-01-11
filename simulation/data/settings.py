@@ -6,7 +6,7 @@ from vocal.python.speaker import speak
 
 
 __DEBUG__ = True
-__SPEAK__ = True
+__SPEAK__ = False
 __DISPLAY__ = True
 
 current_language = 'fr'  # Par défaut, la langue est le français

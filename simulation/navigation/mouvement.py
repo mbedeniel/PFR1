@@ -69,32 +69,29 @@ def vocal_reception(curceur, reception, piece):
         objectif = reception["mission"]
         if objectif["commande"] == "aller":
             display(f"Deplacement vers l'objet de type {objectif['object']} et de couleur {objectif['color'] if objectif['color'] != None else 'non spécifiée'}")
-            object = objectif["object"]
+            forme = objectif["object"]
             color = objectif["color"]
-            obstacle = get_obsatcle_by_forme_or_color(piece, object, color, curceur)
+            obstacle = get_obsatcle_by_forme_or_color(piece, forme, color, curceur)
             if obstacle != None:
                 heading_obstacle = curceur.towards(obstacle['coin_HD'])
+                distance_obstacle = curceur.distance(obstacle['coin_HD']) - 20
                 curceur.setheading(heading_obstacle)
+                #recuperer le point d'entrée et de sortie de l'obstacle
                 colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur)
                 
-                distance_obstacle = 0
+                #aller vers le point d'entrée de l'obstacle si la collision est détectée
                 if point_entre !=None :
                     distance_obstacle = curceur.distance((point_entre[0], point_entre[1])) - 20
-                elif point_sortie != None:
-                    display("Impossible de se rendre au point en face de l'objet , je me dirige vers le point s'opposé")
-                    distance_obstacle = curceur.distance((point_sortie[0], point_sortie[1])) + 20
-                    
+                    translantion(curceur, distance_obstacle, piece)
                 else:
-                    display("Erreur: un problème est survenu lors de la détection de l'obstacle.")
-                    display("Mission annulée.")
-                    return
-                translantion(curceur, distance_obstacle, piece)
+                    translantion(curceur, distance_obstacle, piece)
                 display("Mission accomplie.")
                 
-            else:
-                display("Erreur: Obstacle de type " + object + " et de couleur " + color + " non trouvé.")
-                display("Mission annulée.")
                 
+            else:
+                display("Erreur: Obstacle de type " + str(forme) + " et de couleur " + str(color) + " non trouvé.")
+                display("Mission annulée.")
+            
                 
         
         #executer la mission (aller vers l object specifie)

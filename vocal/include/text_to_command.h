@@ -4,3 +4,4 @@ int extract_number_from_position(const char *texte);
 char* speech_analysis_to_json(const char* texte);
 
 char* textToCommandeJson(const char* texte);
+char* splitText(const char* texte, const char* commands[], int num_commands);

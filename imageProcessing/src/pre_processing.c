@@ -102,3 +102,125 @@ void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv)
 		}
 	}
 }
+
+int int_comparer(const void *a, const void *b)
+{
+	return *(int*)a - *(int*)b;
+}
+
+void image_filter(int ** image,int ligne,int column)
+{
+	int i,j,k;
+	int ** new_image;
+	printf("in filter creation ok");
+	/*allocatio du nouveau tableau*/
+	new_image = (int**)malloc((ligne+PAMAETRE_FILTRE*2)*sizeof(int*));
+	if (new_image!=NULL)
+    {
+        for(i=0;i<ligne+PAMAETRE_FILTRE;i++)
+        {
+            new_image[i] = (int*)malloc((column+PAMAETRE_FILTRE*2)*sizeof(int));
+            if(new_image[i]==NULL)
+            {
+                fprintf(stderr,"ERREUR ALLOCATION");
+                return ;
+            }
+        }
+    }
+    else
+    {
+        fprintf(stderr,"ERREUR ALLOCATION");
+        return ;
+    }
+
+	printf("creation ok");
+
+	/*ETAPE 1: gestion des bord
+		il faut gerer les bord des l'image
+		pour cela nous crons un nouveau tableau
+	*/
+	add_padding(new_image,ligne+PAMAETRE_FILTRE,column+PAMAETRE_FILTRE); /*les bord serons initialisé a 0*/
+	
+	/*ETAPE 2: remplissage
+		on rempli le nouveau tableau avec les elements de l'ancien
+	*/
+	for(i=0;i<ligne;i++)
+	{
+		for(j=0;j<column;j++)
+		{
+			new_image[i+PAMAETRE_FILTRE][j+PAMAETRE_FILTRE]=image[i][j];
+		}
+	}
+	
+	/*ETAPE 3: calcul median
+		on fait appel a une fonction pour cela
+	*/
+	for(i=PAMAETRE_FILTRE;i<ligne;i++)
+	{
+		for(j=PAMAETRE_FILTRE;j<column;j++)
+		{
+			median(new_image,i,j);
+		}
+	}
+
+	/*ETAPE 4 : retirer les bordures ajoutée
+		on met a jour image
+	*/
+	for(i=0;i<ligne;i++)
+	{
+		for(j=0;j<column;j++)
+		{
+			image[i][j]=new_image[i+PAMAETRE_FILTRE][j+PAMAETRE_FILTRE];
+		}
+	}
+
+}
+
+void add_padding(int ** image,int ligne,int column)
+{
+	int i,j,k;
+	/*
+	Nous travaillons dans un cadre generique car
+	au PFR2 il peut arriver que nous decidons d'augmenter la taille dumasque
+	*/
+	for(k=0;k<PAMAETRE_FILTRE;k++)
+	{
+		/*Initialisation de la premiere ligne et de la derniere ligne  du tableau*/
+		for(i=k;i<ligne;i+=ligne-(1+2*k))
+		{
+			for(j=k;j<column;j++)
+			{
+				image[i][j]=0;
+			}
+		}
+		/*Initialisation de la premiere colonne et de la derniere colone  du tableau*/
+		for(j=k;j<column;j+=column-(1+2*k))
+		{
+			for(i=k;i<ligne;i++)
+			{
+				image[i][j]=0;
+			}
+		}
+	}
+}
+
+void median(int ** image,int i,int j)
+{
+	int local_i,local_j,k=0,size=pow(2*PAMAETRE_FILTRE+1,2);
+	int filtres[size];
+	/*ETAPE 1 : mise des valuers du filtre dans un tableau*/
+	for(local_i=i-PAMAETRE_FILTRE;local_i<i+PAMAETRE_FILTRE+1;local_i++)
+	{
+		for(local_j=j-PAMAETRE_FILTRE;local_j<j+PAMAETRE_FILTRE+1;local_j++,k++)
+		{
+			filtres[k]=image[local_i][local_j];
+		}
+	}
+
+	/*ETAPE 2 : tire du tableau*/
+	qsort(filtres,size,sizeof(filtres[0]),int_comparer);
+
+
+	/*ETAPE 3 : mise a jour de l'element i,j avec la valeur de la mediane*/
+	image[i][j]=filtres[size/2];
+}

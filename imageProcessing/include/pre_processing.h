@@ -1,3 +1,9 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<math.h>
+
+#define PAMAETRE_FILTRE 1 /*la taille du filtre est (2*PAMAETRE_FILTRE)*(2*PAMAETRE_FILTRE) */
+
 /*les fichiers images que nous traitons sont sous la forme*/
 /*Trois matrice de meme taille*/ 
 /*la premiere pour le rouge*/
@@ -6,7 +12,7 @@
 
 
 
-/*FUNCTION: rgb_to_hsb
+/*FUNCTION: void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv);
     elle a pour role de
     faire passer une image de la base 
     RGB(Red Green Blue) a la base HSB(Hue Saturation Value)
@@ -36,26 +42,90 @@
 void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv);
 
 
-/*FUNTUION: max
+/*FUNTUION: double max(double r,double g,double b);
     retourne le max entre trois double
 */
 /*INPUT:
     double r,double g,double b
 */
-/*OUTPUT: int max
+/*OUTPUT: double max
     le max entre r, g et b
 */
 double max(double r,double g,double b);
 
 
 
-/*FUNTUION: max
+/*FUNTUION: double min(double r,double g,double b);
     retourne le min entre trois double
 */
 /*INPUT:
     double r,double g,double b
 */
-/*OUTPUT: int max
+/*OUTPUT: double min
     le min entre r, g et b
 */
 double min(double r,double g,double b);
+
+
+/*FUNCTION : int int_comparer(const int * a,const int * b);
+    retourne le resultat de la soustraction de a par b
+    ce qui permet de s'avoir qui est le plus grand.
+    Cette fonction est specialement utuliser par la fonction
+    qsort() predefinie en c
+*/
+/*INPUT :
+    const void *a : un pointeur sur un int
+    const void *b : un pointeur sur un int
+    On precise const pour etre sur de ne pas modifier la valeur de a
+*/
+/*OUTPUT: 
+    un entier : resultat de la soustraction  
+*/
+int int_comparer(const void * a, const void * b);
+
+/*FUNCTION:
+    permet d'utiliser le filtre median pour filter une image
+    Dans le cadre de notre projet, nous nouns interesson au filtrage de bruit
+    de type sel et poivre
+*/
+/*INPUT:
+    int ** image
+        le tableau a traité
+    int ligne 
+        Nombre de ligne de l'image d'une matrice des matrices du tenseur
+    int column
+         Nombre de colone de l'image d'une matrice des matrices du tenseur
+*/
+void image_filter(int ** image,int ligne,int column);
+
+/*FUNCTION :
+    permet de calculer la median et mets le pixel i,j a jour
+*/
+/*INPUT:
+    const int ** image
+        le tableau a traité
+    int i
+        la ligne sur laquelle le centre du masque est
+    int j
+        la colonne sur laquelle le centre du masque est
+*/
+/*OUTPUT : void*/
+void median(int ** image,int i,int j);
+
+/*FUNCTION : 
+    permet d'ajouter des bordures e notre images
+    les bordures ajoutées sont fonction de PAMAETRE_FILTRE
+    du point de vue d'un tableau cela ce trqduit par l'ajout
+    de ligne et de colonne au debut et a la fin
+*/
+/*INPUT : 
+    int ** image
+        un tableau ou l'on veux initaliser le premiere ligne
+        et derniere colonne a 0
+    int ligne
+        nombre de ligne du tableau pri en paramete
+    int column
+        nombre de colonne du tableau pris en paraùetre
+*/
+/*OUTPUT: NONE*/
+void add_padding(int ** image,int ligne,int column);

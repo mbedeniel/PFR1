@@ -298,10 +298,15 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
             break;
         /*On peut envisager qu'on demande au robot d'avancer vers la balle*/
         default:
-            break; 
+            break;
     }
 
-    /*ANALYSE DES RESULTATS ET MISE A JOUR DE processed_image*/
+
+
+    /*------- FILTRAGE DE L'IMAGE -------*/
+
+    image_filter(binary_image,ligne,colonne);
+
     if(nbr_pixel>=color_min_pixel)
     {
         processed_image.color=search_image_inforrmation.color;

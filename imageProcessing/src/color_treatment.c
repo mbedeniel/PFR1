@@ -51,7 +51,7 @@ int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int *
                 case RED:
                     condition=(pixel_h>=315 || pixel_h<=15)&&(pixel_s>=s_min); 
                     break;
-                case BLUE:
+                case BLUE: /*meme traitement pour la couleur verte ou bleue*/
                 case GREEN:
                     condition=pixel_h>=h_min && pixel_h<=h_max && pixel_s>=s_min;
                     break;

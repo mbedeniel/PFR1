@@ -12,12 +12,12 @@ typedef struct {
 
 // Définition des synonymes pour les commandes, objets et couleurs
 Synonyme command_synonyms[] = {
-    { "avance", {"avance", "marche", "progresser" , "continue" } },
-    { "gauche", {"gauche", "tourne à gauche"} },
-    { "recule", {"recule", "reculer"} },
-    { "droite", {"droite", "tourne à droite"} },
-    { "stop",   {"stop", "arrête", "pause"} },
-    { "aller",  {"aller", "dirige", "vas"} }
+    { "avance", {"avance", "marche", "progresse" , "continue" , "poursuis" } },
+    { "gauche", {"gauche", "gauche"} },
+    { "recule", {"recule", "reculer" , "rétrograde" } },
+    { "droite", {"droite", "droite"} },
+    { "stop",   {"stop", "arrête", "pause", "annule" , "quitte" } },
+    { "aller",  {"aller", "dirige", "va", "parcours", "atteins", "continue"} }
 };
 
 Synonyme object_synonyms[] = {
@@ -151,8 +151,8 @@ char *speech_analysis_to_json(const char* texte) {
 
     // Remplacer les synonymes par les clés principales
     const char *newText = replaceSynonyms(texte);
-    printf("texte = %s\n", texte);
-    printf("newText = %s\n", newText);
+    //printf("texte = %s\n", texte);
+    //printf("newText = %s\n", newText);
 
     // Diviser le texte en fonction des commandes
     splitedText = splitText(newText, commands, nbre_commandes);

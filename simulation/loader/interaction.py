@@ -1,4 +1,4 @@
-from simulation.data.settings import __DEBUG__, MENU_TEXT, LANGUAGES, PROGRAMS , get_text, set_language
+from simulation.data.settings import get_text , load_parametre
 from simulation.logger.logger import display 
 import subprocess
 import json
@@ -41,7 +41,8 @@ def mode_Vocal():
     Mode vocal : appelle le programme C responsable de la reconnaissance vocale.
     :return: Les données JSON retournées par le programme.
     """
-    chemin_programme_c = PROGRAMS.get('vocal').get("path")
+    programm = load_parametre('PROGRAMS')
+    chemin_programme_c = programm.get('vocal').get("path")
     data = appeler_programme_c(chemin_programme_c)
     return data
 
@@ -54,7 +55,8 @@ def mode_ihm():
     while continuer:
         # Présentation du menu
         display(get_text('presentation_ihm'))
-        chemin_programme_c = PROGRAMS.get('ihm').get("path")
+        programm = load_parametre('PROGRAMS')
+        chemin_programme_c = programm.get('ihm').get("path")
         data = appeler_programme_c(chemin_programme_c)
         # Vérifier si la taille de la liste n'est pas nulle
         if data is None or len(data) == 0:

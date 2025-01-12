@@ -69,7 +69,5 @@ menu(new_curseur, piece)
 #fermer la fenetre
 tl.bye()
 
-#enregistrer tous les paramettres de configurations
-save_all_parameters()
 display("___FIN DE LA SIMULATION___")
 

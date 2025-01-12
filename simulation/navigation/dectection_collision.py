@@ -1,5 +1,4 @@
 import math
-from simulation.data.settings import __DEBUG__
 from simulation.logger.logger import display 
 
 ############ DETECTION DE COLLISION AVEC LES OBSTACLES ############################

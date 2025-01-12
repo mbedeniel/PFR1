@@ -5182,3 +5182,1148 @@ l : Changer de langue
 q : Quitter
 À bientôt !
 ___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Say 'STOP' to exit vocal mode.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 200 mètres
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 200 m puis aller vers la balle rouge
+
+Erreur : le point (-256, 200) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 100 m puis enlever le cube jaune
+
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 20 m
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vers puis aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur non spécifiée
+Erreur: Obstacle de type carree et de couleur None non trouvé.
+Mission annulée.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube vertes et aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer de 20 m
+
+Déplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge ensuite aller vers le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+la position de l'obstacle3  de forme carree et de couleur yellow est critique.
+Contournement de l'obstacle obstacle3 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer de 100 m puis aller vers le cube jaune
+
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Deplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer de 200
+
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : gauche 50
+
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer
+
+Deplacement du Robot ....
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : avancer 200 m
+
+Erreur : le point (359, -82) est en dehors de la pièce sur l'axe X.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : reculer 250 m
+
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type None et de couleur None non trouvé.
+Mission annulée.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : aller vers le cube verte puis aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+Erreur : 
+Dites 'STOP' pour quitter le mode vocal.
+vous avez dit : stoppe arrêter
+
+Fin du mode vocal.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+vous avez dit : avancer de 20
+
+Déplacement du Robot ....
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+vous avez dit : avancer de 50
+
+la position de l'obstacle3  de forme carree et de couleur yellow est critique.
+La destination est dans l'obstacle.
+Déplacement impossible :) 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+vous avez dit : stoppe arrêter
+
+Exiting vocal mode.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+Invalid choice. Please try again.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Say 'STOP' to exit vocal mode.
+vous avez dit : avancer de 10
+
+Deplacement du Robot ....
+Say 'STOP' to exit vocal mode.
+Erreur : 
+Say 'STOP' to exit vocal mode.
+vous avez dit : stoppe
+
+Exiting vocal mode.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+Choix invalide. Veuillez réessayer.
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Choix invalide. Veuillez réessayer.
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Choix invalide. Veuillez réessayer.
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Choix invalide. Veuillez réessayer.
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Choix invalide. Veuillez réessayer.
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+Choose a mode:
+1: Vocal Mode
+2: IHM Mode
+3: Settings
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+Choose a mode:
+1: Vocal Mode
+2: IHM Mode
+3: Settings
+q: Quit
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+Choose a mode:
+1: Vocal Mode
+2: IHM Mode
+3: Settings
+q: Quit
+Choose a mode:
+1: Vocal Mode
+2: IHM Mode
+3: Settings
+q: Quit
+Choose a mode:
+1: Vocal Mode
+2: IHM Mode
+3: Settings
+q: Quit
+Texte introuvable pour la clé 'vocal_mode'.
+Texte introuvable pour la clé 'quit_vocal'.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Texte introuvable pour la clé 'vocal_mode'.
+Texte introuvable pour la clé 'quit_vocal'.
+vous avez dit : avancer de 200
+
+Deplacement du Robot ....
+Texte introuvable pour la clé 'quit_vocal'.
+Erreur : 
+Texte introuvable pour la clé 'quit_vocal'.
+Erreur : 
+Texte introuvable pour la clé 'quit_vocal'.
+Erreur : 
+Texte introuvable pour la clé 'quit_vocal'.
+Erreur : 
+Texte introuvable pour la clé 'quit_vocal'.
+vous avez dit : avancer de 200
+
+Erreur : le point (275, 230) est en dehors de la pièce sur l'axe Y.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Texte introuvable pour la clé 'quit_vocal'.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Texte introuvable.
+Texte introuvable.
+vous avez dit : stoppe arrêter
+
+Texte introuvable.
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+Veuillez choisir un mode :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Texte introuvable pour la clé 'vocal_mode'.
+Texte introuvable pour la clé 'quit_vocal'.
+Erreur : 
+Texte introuvable pour la clé 'quit_vocal'.
+Erreur : 
+Texte introuvable pour la clé 'quit_vocal'.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+__Mode Vocal__
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller vers
+
+Mission en cours d'execution
+Deplacement vers l'objet de type None et de couleur non spécifiée
+Erreur: Obstacle de type None et de couleur None non trouvé.
+Mission annulée.
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller vers la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune ensuite va vers l'équipe vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller vers le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur le cube vert
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur le cube rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur red
+Erreur: Obstacle de type carree et de couleur red non trouvé.
+Mission annulée.
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur le cube vert ensuite aller sur le cube rouge jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur red
+Erreur: Obstacle de type carree et de couleur red non trouvé.
+Mission annulée.
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur la balle rouge
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : aller sur le cube vert ensuite aller sur le cube jaune
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Deplacement du Robot ....
+Mission accomplie.
+
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+la position de l'obstacle2  de forme carree et de couleur green est critique.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+Erreur : 
+Appuyez sur 'o' pour quitter le mode vocal.
+vous avez dit : stoppe arrêter
+
+Fin du mode vocal.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+l : Changer de langue
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___

@@ -6,7 +6,9 @@
 
 char* speech_reception() {
     //exécution de la commande python
-    FILE* fp = popen("python ./vocal/python/speech.py", "r"); //C:\Users\djibril\Desktop\cours\filRouge\PFR1\vocal\python\speech.py
+    //FILE* fp = popen("python ./vocal/python/speech.py", "r"); //C:\Users\djibril\Desktop\cours\filRouge\PFR1\vocal\python\speech.py
+    FILE* fp = popen("python -m vocal.python.speech", "r");
+    
     if (!fp) return NULL;
 
     // Tampon pour stocker la sortie

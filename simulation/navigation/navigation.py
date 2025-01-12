@@ -5,17 +5,15 @@ LUI DONNER LA FACULTE DE CONTOURNER LES OBSTACLES POUR ATTEINDRE SA DESTINATION
 AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OBSTACLE
 
 """
-from math import cos, sin, radians , pi , sqrt
-#from simulation.navigation.dectection_collision import *
 from simulation.plateform.drawing import est_dans_piece  # Assure-toi que cette fonction contient les définitions nécessaires
 from simulation.data.init import init_coins 
 from simulation.plateform.drawing import est_dans_piece
-from simulation.data.settings import __DEBUG__
 from simulation.logger.logger import display 
 from simulation.navigation.dectection_collision import get_Obstacles_critiques, point_is_in_obstacle
 ## les  fonction a venir sont des fonctions qui permettent de  positionner le robot dans la piece
 """
-En d autre terme, si le robot est à l'extérieur de la pièce, ces fonctions permettent de le faire entrer dans la pièce en passant par l ouverture le plus proche de lui.
+En d autre terme, si le robot est à l'extérieur de la pièce, ces fonctions permettent 
+ de le faire entrer dans la pièce en passant par l ouverture le plus proche de lui.
 expliquons un peu le fonctionnement de ces fonctions:
 1. On vérifie si le robot est déjà dans la pièce
 2. On récupère les ouvertures de la pièce
@@ -46,8 +44,7 @@ def entrer_robot1(curseur, piece):
     # Récupérer les ouvertures de la pièce
     ouvertures = piece.get('ouvertures', [])
     if not ouvertures:
-        if __DEBUG__: 
-            display("Erreur : La pièce n'a pas d'ouvertures. Le robot ne peut pas entrer dans la pièce.")
+        display("Erreur : La pièce n'a pas d'ouvertures. Le robot ne peut pas entrer dans la pièce.")
         return
 
     # Trouver l'ouverture la plus proche du robot
@@ -141,34 +138,6 @@ def contourner_obstacle(curseur, obstacle, entre, sortie):
 
 
 
-
-
-
-
-
-    """
-
-    curseur.right(angle)
-    alpha = radians(curseur.heading())
-    
-    destination = (curseur.xcor() + dimensions * cos(alpha), curseur.ycor() + dimensions * sin(alpha))
-    aller_vers(curseur, obstacle, destination)
-    #curseur.forward(dimensions)  # Se déplace autour de l'obstacle
-    curseur.left(angle)
-    destination = (curseur.xcor() + dimensions * cos(alpha), curseur.ycor() + dimensions * sin(alpha))
-    aller_vers(curseur, obstacle, destination)
-    #curseur.forward(distance_sortie)  # Se dirige vers la sortie
-    curseur.left(angle)
-    curseur.forward(dimensions)  # Se déplace autour de l'obstacle de l'autre côté
-    curseur.right(angle)
-
-    # Remettre le curseur sur la direction vers la sortie
-    curseur.setheading(curseur.towards(sortie))
-    """
-    
-
-
-
 def aller_vers(curseur, piece, destination):
     """
     Déplace le curseur vers une destination donnée.
@@ -207,10 +176,9 @@ def aller_vers(curseur, piece, destination):
         #verifier si la destination est dans l'obstacle
         if point_is_in_obstacle(destination, obstacle):
             display("La destination est dans l'obstacle.")
-            display("Déplacement impossible :) ")
+            display("Déplacement impossible ")
             return
         else :
-            
             curseur.goto(point_entree)
             display(f"Contournement de l'obstacle {obstacle['nom']} ...")
             contourner_obstacle(curseur, obstacle, point_entree, point_sortie)
@@ -218,4 +186,3 @@ def aller_vers(curseur, piece, destination):
             display("Déplacement du Robot vers la destination ....")
             aller_vers(curseur, piece, destination)
             break
-        

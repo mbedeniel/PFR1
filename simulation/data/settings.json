@@ -1,5 +1,7 @@
 {
     "debug": true,
+    "speak": true,
+    "display": true,
     "current_language": "fr",
     "LANGUAGES": {
         "fr": "Fran\u00e7ais",
@@ -13,7 +15,7 @@
             "invalid_choice": "Choix invalide. Veuillez r\u00e9essayer.",
             "goodbye": "\u00c0 bient\u00f4t !",
             "vocal_mode": "__Mode Vocal__",
-            "quit_vocal": "Dites 'STOP' pour quitter le mode vocal.",
+            "quit_vocal": "Appuyez sur 'o' pour quitter le mode vocal.",
             "end_vocal": "Fin du mode vocal.",
             "ihm_mode": "__Mode IHM__",
             "quit_ihm": "Appuyez sur 'o' pour quitter le mode IHM.",
@@ -29,7 +31,7 @@
             "invalid_choice": "Invalid choice. Please try again.",
             "goodbye": "See you soon!",
             "vocal_mode": "__Vocal Mode__",
-            "quit_vocal": "Say 'STOP' to exit vocal mode.",
+            "quit_vocal": "Press 'o' to exit vocal mode.",
             "end_vocal": "Exiting vocal mode.",
             "ihm_mode": "__IHM Mode__",
             "quit_ihm": "Press 'o' to exit IHM mode.",
@@ -41,12 +43,12 @@
     },
     "PROGRAMS": {
         "vocal": {
-            "path": "vocal/vocal.exe",
-            "description": "Programme C pour la reconnaissance vocale"
+            "path": "vocal/app.exe",
+            "description": "Programme vocal"
         },
         "ihm": {
             "path": "vocal/ihm.exe",
-            "description": "Programme C pour l'interface utilisateur"
+            "description": "Interface utilisateur"
         }
     }
 }

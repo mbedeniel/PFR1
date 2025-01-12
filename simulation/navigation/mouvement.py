@@ -2,7 +2,6 @@ from simulation.plateform.drawing import est_dans_piece
 from math import cos, sin, radians
 from simulation.navigation.dectection_collision import Test_collision_obstacle
 from simulation.navigation.navigation import  aller_vers
-from simulation.data.settings import __DEBUG__
 from simulation.data.init import get_obsatcle_by_forme_or_color
 from simulation.logger.logger import display 
 

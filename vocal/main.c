@@ -4,7 +4,7 @@
 #include "include/speech_to_text.h"
 #include "include/text_to_command.h"
 
-int main_() {
+int main() {
 
     char* texte = speech_reception();
     if (texte == NULL) {
@@ -18,7 +18,7 @@ int main_() {
         free(texte);
         return 1;
     }
-
+    //printf("r = %s\n", json);
     printf("%s", json);
 
     free(texte);
@@ -27,7 +27,7 @@ int main_() {
 }
 // Main pour tester le programme
 // Main pour tester le programme
-int main() {
+int main_() {
     // Texte d'entrée
     const char *texte = "avance  tourne à gauche 30, et vas vers le ballon rouge";
 

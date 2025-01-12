@@ -1,6 +1,6 @@
 from simulation.navigation.mouvement import vocal_reception, adaptation_donnees
 from time import sleep
-from simulation.data.settings import get_text, set_language
+from simulation.data.settings import get_text, load_parametre, save_parametre, set_language
 from simulation.loader.interaction import mode_ihm , mode_Vocal
 from simulation.logger.logger import display 
 from vocal.python.speaker import speak
@@ -12,26 +12,22 @@ def menu(new_curseur, piece):
     L'utilisateur peut changer la langue ou quitter avec 'q'.
     """
     set_language()  # Permet de choisir la langue au lancement
-
     display(get_text('welcome'))
-
-   
-
     while True:
         display(get_text('choose_mode'))
         choix = input(get_text('prompt')).strip()
-
         if choix == '1':
             lancer_mode_vocal(new_curseur, piece)
         elif choix == '2':
             lancer_mode_ihm(new_curseur, piece)
-        elif choix.lower() == 'l':
-            set_language()
+        elif choix.lower() == '3':
+            settings()
+
+
         elif choix.lower() == 'q':
             break
         else:
             display(get_text('invalid_choice'))
-            
     display(get_text('goodbye'))
     
 def lancer_mode_vocal(new_curseur, piece):
@@ -84,3 +80,31 @@ def lancer_mode_ihm(new_curseur, piece):
 
     display(get_text('end_ihm'))
     
+def settings():
+    """
+    Permet de configurer le système.
+    """
+    choix = ''
+    while choix != 'q':
+        print("\n=== Configuration du système ===")
+        print("1 : Activer/Désactiver le mode DEBUG (actuel : {})".format("Activé" if load_parametre('debug') else "Désactivé"))
+        print("2 : Activer/Désactiver le mode SPEAK (actuel : {})".format("Activé" if load_parametre('speak') else "Désactivé"))
+        print("3 : Changer la langue actuelle")
+        print("q : Retour au menu principal")
+
+        choix = input("Entrez votre choix : ").strip().lower()
+
+        if choix == '1':
+            debug = load_parametre('debug')
+            print(f"AVDEBUG : {debug}")
+            save_parametre('debug', not debug)
+        elif choix == '2':
+            speak = load_parametre('speak')
+            save_parametre('speak', not speak)
+        elif choix == '3':
+            set_language()
+        elif choix == 'q':
+            print("Retour au menu principal...")
+            break
+        else:
+            print("Choix invalide. Veuillez réessayer.")

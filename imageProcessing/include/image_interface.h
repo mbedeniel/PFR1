@@ -51,6 +51,8 @@ PRINCIPE:
         Le champs color contient la couleur recherchée
         Le champs shape contient la forme recherché
         Le contenue du champ position n'est pas important
+    char * path
+        chemin d'access vers l'image
 */
 /*OUTPUT:
     Object
@@ -101,8 +103,6 @@ int pattern_analyser(Object searched_pattern, Object* image_objects, char * path
         une stucture contenant le pattern rechrché
     Object* patterns
         un tableau ou stocker les patterns qui matche
-    char * path
-        hemin d'access vers l'image
 */
 /*OUTPUT:
     int

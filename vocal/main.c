@@ -11,7 +11,6 @@ int main() {
         printf("{\"erreur\" :\"Erreur lors de la réception du texte.\"}");
         return 1;
     }
-
     char* json = speech_analysis_to_json(texte);
     if (json == NULL) {
         printf("{\"erreur\" :\"Erreur lors de la génération du JSON.\"}");
@@ -29,9 +28,13 @@ int main() {
 // Main pour tester le programme
 int main_() {
     // Texte d'entrée
-    const char *texte = "avance  tourne à gauche 30, et vas vers le ballon rouge";
+     char *texte = "avance  tourne à gauche 30, et vas vers le ballon rouge";
+     //anglais
+    //char *texte = "go forward turn left 30, and go to the red ball";
+    printf("texte = %s\n", texte);
 
     // Appel de la fonction pour convertir en JSON
+    printf("en cours...\n");
     char *result = speech_analysis_to_json(texte);
 
     // Affichage du résultat

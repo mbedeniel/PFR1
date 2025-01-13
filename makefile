@@ -1,6 +1,11 @@
 start:
 	python -m simulation.main
 
+bd : 
+	cd ./vocal
+	make app
+	cd ..
+
 
 #a supprimer
 test:

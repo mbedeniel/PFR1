@@ -6327,3 +6327,119 @@ l : Changer de langue
 q : Quitter
 À bientôt !
 ___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Press 'o' to exit vocal mode.
+Erreur : 
+Press 'o' to exit vocal mode.
+Erreur : 
+Press 'o' to exit vocal mode.
+Erreur : 
+Press 'o' to exit vocal mode.
+Erreur : 
+Press 'o' to exit vocal mode.
+Erreur : 
+Press 'o' to exit vocal mode.
+Erreur : 
+Press 'o' to exit vocal mode.
+vous avez dit : stop move forward to 10 m
+
+Exiting vocal mode.
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+See you soon!
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Press 'o' to exit vocal mode.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Press 'o' to exit vocal mode.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Press 'o' to exit vocal mode.
+___DEMARRAGE DE LA SIMULATION___
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe X.
+Erreur : le point (375, -230) est en dehors de la pièce sur l'axe Y.
+Welcome to the main menu!
+
+Please choose a mode from the following:
+1: Vocal Mode
+2: IHM Mode
+l: Change language
+q: Quit
+__Vocal Mode__
+Press 'o' to exit vocal mode.
+vous avez dit : go to the red ball
+
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Press 'o' to exit vocal mode.
+vous avez dit : continue
+
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....
+la position de l'obstacle1  de forme cercle et de couleur red est critique.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournerment de l'obstacle.
+Déplacement du Robot vers la destination ....

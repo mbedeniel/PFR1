@@ -105,11 +105,7 @@ int main()
     }*/
 
 
-
-
-   printf("ration %i : ",shape_min_percentage);
-
-    search_object.shape=BALL;
+    search_object.shape=CUBE;
     search_object.color=BLUE;
 
     processed_object = image_treatment(search_object,path);

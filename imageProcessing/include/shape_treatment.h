@@ -1,4 +1,5 @@
 #include "position_treatment.h"
+#include "pre_processing.h"
 #include <math.h>
 
 #define NUMBER_OF_SHAPE 2/*nombre d'elment de Shape*/
@@ -73,5 +74,25 @@ double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape se
         structure contenant les coordonnées des deux points recherchés
 */
 image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int column);
+
+/*FUNCTION: int segmentation(int ** image, int ligne, int colonne);
+    Segemente une image en attribuant la meme etiquette (nombre)
+    ai pixel de la meme zone
+*/
+/*INPUT:
+    int ** image
+        une image bianaire
+    int ligne
+        le nombre de ligne de image
+    int colonne
+        le nombre de colonne de image
+    int ** segmented_image
+        l'image segmentée de taille [ligne+2][colonne+2]
+*/
+/*OUTPUT:
+    int
+        un entier indiquant le nombre de segment formé
+*/
+int segmentation(const int ** image, int ligne, int colonne,int ** segmented_image);
 
 const char* get_shape_name(Shape shape);

@@ -111,35 +111,12 @@ int int_comparer(const void *a, const void *b)
 void image_filter(int ** image,int ligne,int column)
 {
 	int i,j,k;
-	int ** new_image;
-	printf("in filter creation ok");
-	/*allocatio du nouveau tableau*/
-	new_image = (int**)malloc((ligne+PAMAETRE_FILTRE*2)*sizeof(int*));
-	if (new_image!=NULL)
-    {
-        for(i=0;i<ligne+PAMAETRE_FILTRE;i++)
-        {
-            new_image[i] = (int*)malloc((column+PAMAETRE_FILTRE*2)*sizeof(int));
-            if(new_image[i]==NULL)
-            {
-                fprintf(stderr,"ERREUR ALLOCATION");
-                return ;
-            }
-        }
-    }
-    else
-    {
-        fprintf(stderr,"ERREUR ALLOCATION");
-        return ;
-    }
-
-	printf("creation ok");
-
+	int new_image[ligne+PAMAETRE_FILTRE*2][column+PAMAETRE_FILTRE*2];
 	/*ETAPE 1: gestion des bord
 		il faut gerer les bord des l'image
 		pour cela nous crons un nouveau tableau
 	*/
-	add_padding(new_image,ligne+PAMAETRE_FILTRE,column+PAMAETRE_FILTRE); /*les bord serons initialisé a 0*/
+	add_padding(new_image,ligne+PAMAETRE_FILTRE*2,column+PAMAETRE_FILTRE*2,PAMAETRE_FILTRE); /*les bord serons initialisé a 0*/
 	
 	/*ETAPE 2: remplissage
 		on rempli le nouveau tableau avec les elements de l'ancien
@@ -176,14 +153,14 @@ void image_filter(int ** image,int ligne,int column)
 
 }
 
-void add_padding(int ** image,int ligne,int column)
+void add_padding(int ** image,int ligne,int column, int padding_size)
 {
 	int i,j,k;
 	/*
 	Nous travaillons dans un cadre generique car
 	au PFR2 il peut arriver que nous decidons d'augmenter la taille dumasque
 	*/
-	for(k=0;k<PAMAETRE_FILTRE;k++)
+	for(k=0;k<padding_size;k++)
 	{
 		/*Initialisation de la premiere ligne et de la derniere ligne  du tableau*/
 		for(i=k;i<ligne;i+=ligne-(1+2*k))

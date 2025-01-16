@@ -126,6 +126,8 @@ void median(int ** image,int i,int j);
         nombre de ligne du tableau pri en paramete
     int column
         nombre de colonne du tableau pris en paraùetre
+    int padding_size
+        la taille de la marge exterieure ajouté
 */
 /*OUTPUT: NONE*/
-void add_padding(int ** image,int ligne,int column);
+void add_padding(int ** image,int ligne,int column, int padding_size);

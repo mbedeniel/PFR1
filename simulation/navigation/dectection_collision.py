@@ -1,4 +1,5 @@
 import math
+from simulation.data.settings import get_text
 from simulation.logger.logger import display 
 
 ############ DETECTION DE COLLISION AVEC LES OBSTACLES ############################
@@ -265,5 +266,5 @@ def point_is_in_obstacle(point , obstacle):
         Y_min, Y_max = coin_hd[1] - dimension, coin_hd[1]
         return X_min <= x <= X_max and Y_min <= y <= Y_max
     else:
-        display(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        display(get_text('invalid_form').format(obstacle.get("nom")))
         return False

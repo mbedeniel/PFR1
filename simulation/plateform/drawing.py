@@ -1,5 +1,7 @@
+
 import turtle as tl
 from simulation.data.init import init_coins
+from simulation.data.settings import get_text
 from simulation.logger.logger import display 
 
 """
@@ -83,11 +85,6 @@ def est_dans_piece(point, piece):
         return True
     
     # Si le point est en dehors, afficher les messages d'erreur
-
-    if point[0] < piece_x1 or point[0] > piece_x2:
-        display(f"Erreur : le point ({int(point[0])}, {int(point[1])}) est en dehors de la pièce sur l'axe X.")
-    if point[1] < piece_y2 or point[1] > piece_y1:
-        display(f"Erreur : le point ({int(point[0])}, {int(point[1])}) est en dehors de la pièce sur l'axe Y.")
     return False
 
 def tracer_obstacle_carre(curseur, obstacle):
@@ -107,7 +104,7 @@ def tracer_obstacle(obstacle, curseur, piece):
     """
     #verifier si le coin_HD de l obstacle est a l interieur de la piece 
     if not est_dans_piece(obstacle["coin_HD"], piece):
-        display(f"Erreur: l obstacle {obstacle['nom']} est en dehors de la piece.")
+        display(get_text('obstacle_outside').format(obstacle["nom"]))
         return None 
     
     #aller au positon du coin HD
@@ -122,17 +119,9 @@ def tracer_obstacle(obstacle, curseur, piece):
         tracer_cercle(obstacle["dimension"],curseur)
     elif "carree" == obstacle["forme"]:
         tracer_obstacle_carre(curseur, obstacle)
-
-        """
-        for i in range(4):
-
-            curseur.forward(cote)
-
-            curseur.left(90)
-    """
     else:
         
-        display(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carrée'.")
+        display(get_text('invalid_form').format(obstacle.get("nom")))
 
     curseur.end_fill()
     curseur.up() 
@@ -166,7 +155,7 @@ def tracer_ouverture(ouverture, curseur , piece):
         curseur.setheading(270)
     
     else :
-        display(f"Erreur: l ouverture {ouverture['coin_droite']} n est pas un coin de la piece.")
+        display(get_text('invalid_coin').format(ouverture.get("coin_HD"), ouverture.get("nom")))
         return None
     curseur.forward(ouverture["distance_coin"])
 

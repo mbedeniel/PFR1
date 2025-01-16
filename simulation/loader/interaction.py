@@ -21,7 +21,7 @@ def appeler_programme_c(path_programme_c):
 
     if process.returncode != 0:
         sortie = stderr.decode()
-        display(f"Erreur : {sortie}")
+        display(get_text('not_understood'))
         return {}
     else:
         #decider de l'encodage avec le plus approprié
@@ -30,7 +30,7 @@ def appeler_programme_c(path_programme_c):
         except UnicodeDecodeError:
             sortie = stdout.decode("latin1").replace('\r', '').replace('\n', '')
         except Exception as e:
-            display(f"Erreur de décodage de la sortie du programme C. {str(e)}")
+            display(get_text('error_interactions').format(e))
             return {}
         data = json.loads(sortie)
         return data

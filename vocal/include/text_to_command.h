@@ -1,7 +1,11 @@
+#include <stdio.h>
 
-int get_index(const char *texte, const char *mot);
-int extract_number_from_position(const char *texte);
-char* speech_analysis_to_json(const char* texte);
 
-char* textToCommandeJson(const char* texte);
-char* splitText(const char* texte, const char* commands[], int num_commands);
+int get_index( char *texte,  char *mot);
+int extract_number_from_position( char *texte);
+char* speech_analysis_to_json( char* texte,  char *commands[], char *objects[],  char *colors[], int num_commands, int num_objects, int num_colors);
+char* textToCommandeJson( char* texte,  char *commands[],  char *objects[],  char *colors[], int num_commands, int num_objects, int num_colors);
+char* splitText( char* texte,  char* commands[], int num_commands);
+
+
+

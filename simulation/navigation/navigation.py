@@ -5,6 +5,7 @@ LUI DONNER LA FACULTE DE CONTOURNER LES OBSTACLES POUR ATTEINDRE SA DESTINATION
 AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OBSTACLE
 
 """
+from simulation.data.settings import get_text
 from simulation.plateform.drawing import est_dans_piece  # Assure-toi que cette fonction contient les définitions nécessaires
 from simulation.data.init import init_coins 
 from simulation.plateform.drawing import est_dans_piece
@@ -44,7 +45,7 @@ def entrer_robot1(curseur, piece):
     # Récupérer les ouvertures de la pièce
     ouvertures = piece.get('ouvertures', [])
     if not ouvertures:
-        display("Erreur : La pièce n'a pas d'ouvertures. Le robot ne peut pas entrer dans la pièce.")
+        display(get_text('no_ouverture'))
         return
 
     # Trouver l'ouverture la plus proche du robot
@@ -124,10 +125,10 @@ def contourner_obstacle(curseur, obstacle, entre, sortie):
     dimensions = obstacle.get('dimension') * 2
     heading = curseur.heading()
     if sortie == None:
-        display("Erreur : le point de sortie correctement n'a pas été fourni.")
+        display(get_text('no_sortie'))
         return
     # Contourner l'obstacle : se déplace autour de l'obstacle
-    distance_sortie = curseur.distance((sortie[0], sortie[1]))
+    distance_sortie = curseur.distance((sortie[0], sortie[1]))*1.5
     curseur.setheading(heading + 90) # Se dirige vers la droite
     curseur.forward(dimensions)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
@@ -144,7 +145,7 @@ def aller_vers(curseur, piece, destination):
     """
     # Vérifier si la destination est dans la pièce
     if not est_dans_piece(destination, piece):
-        display("Erreur: la destination est en dehors de la pièce.")
+        display(get_text('destination_outside'))
         return
     
 
@@ -156,7 +157,7 @@ def aller_vers(curseur, piece, destination):
     obstacles_critiques = get_Obstacles_critiques(obstacles , curseur)
     #condition d'arret
     if len(obstacles_critiques) == 0:
-        display("Deplacement du Robot ....")
+        display(get_text('mouving_robot'))
         curseur.goto(destination)
         return
     
@@ -168,21 +169,21 @@ def aller_vers(curseur, piece, destination):
         distanceEntre  = curseur.distance(point_entree)
         distanceDestination =   curseur.distance(destination)
         if distanceEntre > distanceDestination: #si le point d'entree est plus loin que la destination
-            display("Déplacement du Robot ....")
+            display(get_text('mouving_robot'))
             curseur.goto(destination)
             break
         #contourner l'obstacle
-        display(f"la position de l'{obstacle['nom']}  de forme {obstacle['forme']} et de couleur {obstacle['couleur']} est critique.")
+        display(get_text('critical_obstacle'))
         #verifier si la destination est dans l'obstacle
         if point_is_in_obstacle(destination, obstacle):
-            display("La destination est dans l'obstacle.")
-            display("Déplacement impossible ")
+            display(get_text('destination_in_obstacle'))
+            display(get_text('impossible_to_move'))
             return
         else :
             curseur.goto(point_entree)
-            display(f"Contournement de l'obstacle {obstacle['nom']} ...")
+            display(get_text('contournement_obstacle').format(obstacle.get('type')))
             contourner_obstacle(curseur, obstacle, point_entree, point_sortie)
-            display("Fin du contournerment de l'obstacle.")
-            display("Déplacement du Robot vers la destination ....")
+            display(get_text('end_contournement'))
+            display(get_text('go_to_destination'))
             aller_vers(curseur, piece, destination)
             break

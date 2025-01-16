@@ -1,3 +1,4 @@
+from simulation.data.settings import get_text
 from simulation.plateform.drawing import est_dans_piece
 from math import cos, sin, radians
 from simulation.navigation.dectection_collision import Test_collision_obstacle
@@ -18,7 +19,7 @@ def translantion(curceur, val, piece):
     #verifier si le curseur risque de sortir de la piece
     destination = (new_x_curseur, new_y_curseur)
     if not est_dans_piece(destination, piece):
-        display(f"Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.")
+        display(get_text('not_in_piece'))
         #se deplacer jusqu au bord de la piece
         return
     
@@ -51,7 +52,7 @@ def vocal_reception(curceur, reception, piece):
         elif 'recule' in reception["mouvement"].lower():
             translantion(curceur, -reception["distance_mouvement"], piece)
         else :
-            display("Erreur: mouvement non reconnu.")
+            display(get_text('invalid_movement'))
 
     if reception["rotation"] != None:
         if 'droite' in reception["rotation"].lower():
@@ -59,15 +60,15 @@ def vocal_reception(curceur, reception, piece):
         elif 'gauche' in reception["rotation"].lower():
             rotation(curceur, -reception["angle_rotation"])
         else:
-            display("Erreur: rotation non reconnue.")
+            display(get_text('invalid_rotation'))
 
 
     if reception["mission"] != None:
-        display("Mission en cours d'execution")
+        display(get_text('mission_in_progress'))
         
         objectif = reception["mission"]
         if objectif["commande"] == "aller":
-            display(f"Deplacement vers l'objet de type {objectif['object']} et de couleur {objectif['color'] if objectif['color'] != None else 'non spécifiée'}")
+            display(get_text('move_to_object').format(objectif["object"], objectif["color"]))
             forme = objectif["object"]
             color = objectif["color"]
             obstacle = get_obsatcle_by_forme_or_color(piece, forme, color, curceur)
@@ -84,12 +85,12 @@ def vocal_reception(curceur, reception, piece):
                     translantion(curceur, distance_obstacle, piece)
                 else:
                     translantion(curceur, distance_obstacle, piece)
-                display("Mission accomplie.")
+                display(get_text('mission_accomplished'))
                 
                 
             else:
-                display("Erreur: Obstacle de type " + str(forme) + " et de couleur " + str(color) + " non trouvé.")
-                display("Mission annulée.")
+                display(get_text('Object_not_found').format(forme, color))
+                display(get_text('cancel_mission'))
             
                 
         

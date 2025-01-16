@@ -44,11 +44,11 @@ def lancer_mode_vocal(new_curseur, piece):
         text = data_from_C_module.get('texte', '')
         if text == '':
             continue
-        display(f"vous avez dit : {text}")
-        print(f"\tCommandes associées : {data_from_C_module.get('commandes', [])}")
+        display(get_text('you_said').format(text))
+        print(get_text('command').format(data_from_C_module.get('commandes', [])))
+        
         for data in data_from_C_module.get("commandes",[]):
             
-            display(data.get('texte', ''))
             adapted_data = adaptation_donnees(data)
             vocal_reception(new_curseur, adapted_data, piece)
             #verifier si "Stop" a été prononcé 
@@ -86,17 +86,11 @@ def settings():
     """
     choix = ''
     while choix != 'q':
-        print("\n=== Configuration du système ===")
-        print("1 : Activer/Désactiver le mode DEBUG (actuel : {})".format("Activé" if load_parametre('debug') else "Désactivé"))
-        print("2 : Activer/Désactiver le mode SPEAK (actuel : {})".format("Activé" if load_parametre('speak') else "Désactivé"))
-        print("3 : Changer la langue actuelle")
-        print("q : Retour au menu principal")
-
-        choix = input("Entrez votre choix : ").strip().lower()
+        display(get_text('settings_text').format(load_parametre('debug'), load_parametre('speak')))
+        choix = input().strip().lower()
 
         if choix == '1':
             debug = load_parametre('debug')
-            print(f"AVDEBUG : {debug}")
             save_parametre('debug', not debug)
         elif choix == '2':
             speak = load_parametre('speak')
@@ -104,7 +98,7 @@ def settings():
         elif choix == '3':
             set_language()
         elif choix == 'q':
-            print("Retour au menu principal...")
+            print(get_text('back_to_main'))
             break
         else:
-            print("Choix invalide. Veuillez réessayer.")
+            get_text('invalid_choice')

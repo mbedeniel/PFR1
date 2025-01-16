@@ -18,12 +18,12 @@ LANGUAGES = {
 MENU_TEXT = {
     'fr': {
         'welcome': "Bienvenue dans le menu principal !",
-        'choose_mode': "\nVeuillez choisir un mode parmi les suivants :\n1 : Mode Vocal\n2 : Mode IHM\nl : Changer de langue\nq : Quitter",
+        'choose_mode': "\nVeuillez choisir un mode parmi les suivants :\n1 : Mode Vocal\n2 : Mode IHM\n3 : Configurations\nq : Quitter",
         'prompt': "Entrez votre choix : ",
         'invalid_choice': "Choix invalide. Veuillez réessayer.",
         'goodbye': "À bientôt !",
         'vocal_mode': "__Mode Vocal__",
-        'quit_vocal': "Appuyez sur 'o' pour quitter le mode vocal.",
+        'quit_vocal': "Dites 'Stop' pour quitter le mode vocal. Je vous écoute...",
         'end_vocal': "Fin du mode vocal.",
         'ihm_mode': "__Mode IHM__",
         'quit_ihm': "Appuyez sur 'o' pour quitter le mode IHM.",
@@ -36,16 +36,56 @@ MENU_TEXT = {
             g : gauche
             Saisissez le mode et la valeur (ex : a 15 ou r) : """,
         'invalid_input':"Entrée invalide. Veuillez réessayer.",
-   
-    },
+        'error': "Une erreur est survenue : {0}",
+        'not_understood': "Je n'ai pas compris votre demande. Veuillez réessayer.",
+        'create_config': "Création du fichier de configuration par défaut...",
+        'success_config': "Paramètres sauvegardés avec succès.",
+        'file_not_found': "Fichier de configuration introuvable. Création d'un fichier par défaut...",
+        
+        'set_language': "Actuellement, la langue est réglée sur {0}.\nChoisissez une langue :\n\tEntrez le code de la langue 'en' ou 'fr' (par défaut 'fr') : ",
+        'error_set_language': "Entrée non reconnue. La langue est conservée en {0}.",
+        'success_set_language': "Langue changée avec succès.",
+        #interactions
+        'error_interactions': "Erreur lors de l'appel du programme C. {0}",
+        #menu
+        'you_said': "vous avez dit : {0}",
+        'command': "Commandes associées : {0}",
+        'settings_text': "\n___ Configuration du système ___\n1 : Activer/Désactiver le mode DEBUG (actuel : {0})\n2 : Activer/Désactiver le mode SPEAK (actuel : {1})\n3 : Changer la langue actuelle\nq : Retour au menu principal\n\tEntrez votre choix : ",
+        "back_to_main": "Retour au menu principal...",
+        'invalid_choice': "Choix invalide. Veuillez réessayer.",
+        #detection_collision
+        "invalid_form":"Erreur : la forme de L'objet {0} n'est pas reconnue ",
+        #mouvement
+        'not_in_piece':"Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.",
+        'invalid_movement':"Mouvement non reconnu.",
+        'invalid_rotation':"Rotation non reconnue.",
+        'mission_in_progress':"Mission en cours d'execution",    
+        'move_to_object':"Deplacement vers l'objet de type {0} et de couleur {1}",
+        'mission_accomplished':"Mission accomplie.",
+        'Object_not_found':"Erreur: Obstacle de type {0} et de couleur {1} non trouvé.",
+        'cancel_mission':"Mission annulée.",
+        #navigation
+        'no_ouverture':"Erreur : La pièce ne contient pas d'ouverture.",
+        'no_sortie':"Erreur : le point de sortie correctement n'a pas été fourni.",
+        'destination_outside':"Erreur: la destination est en dehors de la pièce.",
+        'mouving_robot':"Déplacement du Robot ....",
+        'critical_obstacle':"Obstacle critique détecté.",
+        'destination_in_obstacle':"La destination est dans l'obstacle.",
+        'impossible_to_move':"Impossible de se déplacer.",
+        'contournement_obstacle':"Contournement de l'obstacle {0} ...",
+        'end_contournement':"Fin du contournement de l'obstacle.",
+        "go_to_destination":"Déplacement du Robot vers la destination ....",
+        #drawing
+        'obstacle_outside':"Erreur : l'obstacle {0} est en dehors de la pièce.",
+        'invalid_coin':"Erreur : le coin {0} de l'ouverture {1} est invalide.",
+        },
     'en': {
         'welcome': "Welcome to the main menu!",
-        'choose_mode': "\nPlease choose a mode from the following:\n1: Vocal Mode\n2: IHM Mode\nl: Change language\nq: Quit",
-        'prompt': "Enter your choice: ",
+        'choose_mode': "\nPlease choose a mode from the following:\n1: Vocal Mode\n2: IHM Mode\n3: Settings\nq: Quit",
         'invalid_choice': "Invalid choice. Please try again.",
         'goodbye': "See you soon!",
         'vocal_mode': "__Vocal Mode__",
-        'quit_vocal': "Press 'o' to exit vocal mode.",
+        'quit_vocal': "Say 'Stop' to exit vocal mode. I'm listening...",
         'end_vocal': "Exiting vocal mode.",
         'ihm_mode': "__IHM Mode__",
         'quit_ihm': "Press 'o' to exit IHM mode.",
@@ -58,7 +98,49 @@ MENU_TEXT = {
             g: left
             Enter the mode and the value (ex: a 15 or r): """,
         'invalid_input':"Invalid input. Please try again.",
-    }
+        'error': "An error occurred: {0}",
+        'not_understood': "I did not understand your request. Please try again.",
+        'create_config': "Creating default configuration file...",
+        'success_config': "Settings saved successfully.",
+        'file_not_found': "Configuration file not found. Creating a default file...",
+        'set_language': "Currently, the language is set to {0}.\nChoose a language:\n\tEnter the language code 'en' or 'fr' (default 'en'): ",
+        'error_set_language': "Unrecognized input. Language is kept in {0}.",
+        'success_set_language': "Language changed successfully.",
+        #interactions
+        'error_interactions': "Error when calling the C program. {0}",
+        #menu
+        'you_said': "you said: {0}",
+        'command': "Associated commands: {0}",
+        'settings_text': "\n___ System Configuration ___\n1: Enable/Disable DEBUG mode (current: {0})\n2: Enable/Disable SPEAK mode (current: {1})\n3: Change the current language\nq: Back to main menu\n\tEnter your choice: ",
+        "back_to_main": "Back to main menu...",
+        'invalid_choice': "Invalid choice. Please try again.",
+        #detection_collision
+        "invalid_form":"Error: The shape of the object {0} is not recognized",
+        #mouvement
+        'not_in_piece':"Impossible to move. The Robot may hit the room's wall.",
+        'invalid_movement':"Movement not recognized.",
+        'invalid_rotation':"Rotation not recognized.",
+        'mission_in_progress':"Mission in progress",
+        'move_to_object':"Moving to the object of type {0} and color {1}",
+        'mission_accomplished':"Mission accomplished.",
+        'Object_not_found':"Error: Obstacle of type {0} and color {1} not found.",
+        'cancel_mission':"Mission canceled.",
+        #navigation
+        'no_ouverture':"Error: The room does not contain an opening.",
+        'no_sortie':"Error: the correct exit point was not provided.",
+        'destination_outside':"Error: the destination is outside the room.",
+        'mouving_robot':"Robot moving ....",
+        'critical_obstacle':"Critical obstacle detected.",
+        'destination_in_obstacle':"The destination is in the obstacle.",
+        'impossible_to_move':"Impossible to move.",
+        'contournement_obstacle':"Bypassing obstacle {0} ...",
+        'end_contournement':"End of obstacle bypass.",
+        "go_to_destination":"Robot moving to destination ....",
+        #drawing
+        'obstacle_outside':"Error: obstacle {0} is outside the room.",
+        'invalid_coin':"Error: corner {0} of opening {1} is invalid.",
+        
+        }
 }
 
 PROGRAMS = {
@@ -81,14 +163,14 @@ def init_settings_file():
     }
     with open(__PATH_SETTINGS_FILE__, "w") as f:
         json.dump(data, f, indent=4)
-    print("Paramètres sauvegardés avec succès.")
+    print(get_text('create_config'))
 
 def load_all_parameters():
     """
     Charge les paramètres depuis un fichier. Recrée le fichier par défaut si le chargement échoue.
     """
     if not os.path.exists(__PATH_SETTINGS_FILE__):
-        print("Fichier de configuration introuvable. Création d'un fichier par défaut...")
+        print(get_text('file_not_found'))
         init_settings_file()
     try:
         with open(__PATH_SETTINGS_FILE__, "r") as f:
@@ -101,26 +183,24 @@ def load_all_parameters():
         LANGUAGES = data.get('LANGUAGES', LANGUAGES)
         MENU_TEXT = data.get('MENU_TEXT', MENU_TEXT)
         PROGRAMS = data.get('PROGRAMS', PROGRAMS)
-        print("Paramètres chargés avec succès.")
+        print(get_text('success_config'))
     except Exception as e:
-        print(f"Erreur lors du chargement du fichier de configuration : {e}")
-        print("Recréation d'un fichier de configuration par défaut...")
+        print(get_text('error').format(e))
         init_settings_file()
 
 def set_language():
     """
     Permet à l'utilisateur de choisir la langue de l'interface.
     """
-    print(f"Actuellement, la langue est réglée sur {load_parametre('current_language')}.")
-    print("Choisissez une langue :")
+    print(get_text('set_language').format(load_parametre('current_language'), ', '.join(LANGUAGES.keys())))
     for code, lang in load_parametre('LANGUAGES').items():
         print(f"{code} : {lang}")
-    choix = input("\nEntrez le code de la langue 'en' ou 'fr'(par défaut 'fr') : ").strip().lower()
+    choix = input().strip().lower()
     if choix in LANGUAGES:
         save_parametre('current_language', choix)
-        print(f"Langue changée en {load_parametre('current_language')}")
+        print(get_text('success_set_language'))
     else:
-        print(f"Entrée non reconnue. La langue est conservée en {load_parametre('current_language')}.")
+        print(get_text('error_set_language').format(load_parametre('current_language')))
 
 def get_text(key):
     """
@@ -146,7 +226,7 @@ def save_parametre(key, value):
         data[key] = value
     with open(__PATH_SETTINGS_FILE__, "w") as f:
         json.dump(data, f, indent=4)
-    print("Paramètre sauvegardé avec succès.")
+    print(get_text('success_set_language'))
 
 # Point d'entrée principal
 if __name__ == "__main__":

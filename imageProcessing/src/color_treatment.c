@@ -15,14 +15,14 @@ int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int *
     switch (search_color)
     {
         case ORANGE:
-            h_min=15;
-            h_max=35;
+            h_min=12;
+            h_max=25;
             s_min=75.0;
             break;
         case YELLOW:
-            h_min=35;
+            h_min=33;
             h_max=55;
-            s_min=75.0;
+            s_min=55.0;
             break;
         case BLUE:
             h_min=205;

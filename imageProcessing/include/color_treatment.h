@@ -6,8 +6,8 @@
 /*RED or GREEN or BLUE*/
 typedef enum
 {
-    RED=0,
-    GREEN=1,
+    ORANGE=0,
+    YELLOW=1,
     BLUE=2,
     NONE_COLOR=3 /*pour marquer que la couleur ne matche avec aucune couleur*/
 } Color;

@@ -110,13 +110,33 @@ int int_comparer(const void *a, const void *b)
 
 void image_filter(int ** image,int ligne,int column)
 {
-	int i,j,k;
-	int new_image[ligne+PAMAETRE_FILTRE*2][column+PAMAETRE_FILTRE*2];
+	int i,j;
+	int ** new_image; 
+
+	/*Allocation*/
+	new_image = (int**)malloc((ligne+PAMAETRE_FILTRE*2)*sizeof(int*));
+	if (new_image!=NULL)
+    {
+        for(i=0;i<ligne+PAMAETRE_FILTRE*2;i++)
+        {
+            new_image[i] = (int*)malloc((column+PAMAETRE_FILTRE*2)*sizeof(int));
+            if(new_image[i]==NULL)
+            {
+                fprintf(stderr,"ERREUR ALLOCATION");
+                return ;
+            }
+        }
+    }
+    else
+    {
+        fprintf(stderr,"ERREUR ALLOCATION");
+        return ;
+    }
 	/*ETAPE 1: gestion des bord
 		il faut gerer les bord des l'image
 		pour cela nous crons un nouveau tableau
 	*/
-	add_padding(new_image,ligne+PAMAETRE_FILTRE*2,column+PAMAETRE_FILTRE*2,PAMAETRE_FILTRE); /*les bord serons initialisé a 0*/
+	add_padding(new_image,ligne+PAMAETRE_FILTRE*2,column+PAMAETRE_FILTRE*2); /*les bord serons initialisé a 0*/
 	
 	/*ETAPE 2: remplissage
 		on rempli le nouveau tableau avec les elements de l'ancien
@@ -132,9 +152,9 @@ void image_filter(int ** image,int ligne,int column)
 	/*ETAPE 3: calcul median
 		on fait appel a une fonction pour cela
 	*/
-	for(i=PAMAETRE_FILTRE;i<ligne;i++)
+	for(i=PAMAETRE_FILTRE;i<ligne+PAMAETRE_FILTRE;i++)
 	{
-		for(j=PAMAETRE_FILTRE;j<column;j++)
+		for(j=PAMAETRE_FILTRE;j<column+PAMAETRE_FILTRE;j++)
 		{
 			median(new_image,i,j);
 		}
@@ -153,14 +173,14 @@ void image_filter(int ** image,int ligne,int column)
 
 }
 
-void add_padding(int ** image,int ligne,int column, int padding_size)
+void add_padding(int ** image,int ligne,int column)
 {
 	int i,j,k;
 	/*
 	Nous travaillons dans un cadre generique car
 	au PFR2 il peut arriver que nous decidons d'augmenter la taille dumasque
 	*/
-	for(k=0;k<padding_size;k++)
+	for(k=0;k<PAMAETRE_FILTRE;k++)
 	{
 		/*Initialisation de la premiere ligne et de la derniere ligne  du tableau*/
 		for(i=k;i<ligne;i+=ligne-(1+2*k))
@@ -184,7 +204,10 @@ void add_padding(int ** image,int ligne,int column, int padding_size)
 void median(int ** image,int i,int j)
 {
 	int local_i,local_j,k=0,size=pow(2*PAMAETRE_FILTRE+1,2);
-	int filtres[size];
+	int * filtres;
+
+	/*Allocation*/
+	filtres = (int*)malloc(sizeof(int)*size);
 	/*ETAPE 1 : mise des valuers du filtre dans un tableau*/
 	for(local_i=i-PAMAETRE_FILTRE;local_i<i+PAMAETRE_FILTRE+1;local_i++)
 	{

@@ -14,15 +14,15 @@ int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int *
     /*h_min represente la teinte (hue) minimum et h_max la tiente maximum*/
     switch (search_color)
     {
-        case RED:
-            h_min=315;
-            h_max=15;
-            s_min=0.0;
+        case ORANGE:
+            h_min=15;
+            h_max=35;
+            s_min=75.0;
             break;
-        case GREEN:
-            h_min=105;
-            h_max=155;
-            s_min=0.0;
+        case YELLOW:
+            h_min=35;
+            h_max=55;
+            s_min=75.0;
             break;
         case BLUE:
             h_min=205;
@@ -45,21 +45,10 @@ int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int *
         {
             pixel_h=image_hsv[i][j][0]; /*Composante suivnat la teinte du pixel*/
             pixel_s=image_hsv[i][j][1]; /*Composante suivant la saturation*/
-            /*la strcuture de la condition change suivant la couleur*/
-            switch(search_color)
-            {
-                case RED:
-                    condition=(pixel_h>=315 || pixel_h<=15)&&(pixel_s>=s_min); 
-                    break;
-                case BLUE: /*meme traitement pour la couleur verte ou bleue*/
-                case GREEN:
-                    condition=pixel_h>=h_min && pixel_h<=h_max && pixel_s>=s_min;
-                    break;
-                /*Dans ce cas on arrete la programme*/
-                default :
-                    return 0;
-                   
-            }
+            
+            /*la strcuture de la condition ne change suivant la couleur*/
+            /*meme traitement pour les couleurs*/
+            condition=pixel_h>=h_min && pixel_h<=h_max && pixel_s>=s_min;
             if(condition)
             {
                 binary_image[i][j]=1;
@@ -79,8 +68,8 @@ int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int *
 /* Fonctions auxiliaires */
 const char* get_color_name(Color color) {
     switch (color) {
-        case RED: return "RED";
-        case GREEN: return "GREEN";
+        case ORANGE: return "ORANGE";
+        case YELLOW: return "YELLOW";
         case BLUE: return "BLUE";
         default: return "NONE_COLOR";
     }

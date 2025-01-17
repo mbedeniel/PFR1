@@ -9,8 +9,8 @@
 ******************************************
 */
 
-#define color_min_pixel 75
-#define shape_min_percentage 75
+#define COLOR_MIN_PIXEL 75
+#define SHAPE_MIN_PERCENTAGE 75
 
 /*
 color_min_pixel : nombre de pixel minimu pour valider la presence d'une couleur
@@ -89,7 +89,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path);
             ->pattern_analyser() envoi chaque pattern a image_treatement() 
             ->pour chaque pattern image_treatment() renvoi le resultat
 */
-int pattern_analyser(Object searched_pattern, Object* image_objects, char * path);
+int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path);
 
 /*FUNCTION : int pattern_generator(Object object, Object* patterns);
     genere les differents patters correspondant a une structure de donnée.

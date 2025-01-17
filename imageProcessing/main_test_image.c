@@ -12,7 +12,7 @@ int main()
 
 
     /*Path vers l'image*/
-    printf("Vulliez entrer le numéro de l'image : ");
+    /*printf("Veulliez entrer le numéro de l'image : ");*/
     scanf("%i", &image_number);
     snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
 
@@ -105,14 +105,14 @@ int main()
     }*/
 
 
-    search_object.shape=CUBE;
+    search_object.shape=BALL;
     search_object.color=BLUE;
-
+    
     processed_object = image_treatment(search_object,path);
 
 
-    object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
-    printf("\n %s \n",json_buffer);
+    /*object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
+    printf("\n%s \n",json_buffer);
 
 
 
@@ -135,7 +135,7 @@ int main()
     else
     {
         printf("Forme non trouvée \n");
-    }
+    }*/
     
     return 0;
 }

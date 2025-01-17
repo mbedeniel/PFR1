@@ -11,15 +11,15 @@ int main() {
     Synonyme command_synonyms[] = {
         { "avance", {"avance", "marche", "progresse", "continue", "poursuis", "forward", NULL} },
         { "gauche", {"gauche", "left", NULL} },
-        { "recule", {"recule", "reculer", "rétrograde", "retourne", "back", "reverse", "backward", NULL} },
+        { "recule", {"recule", "rétrograde", "retourne", "back", "reverse", "backward", NULL} },
         { "droite", {"droite", "right", NULL} },
-        { "stop",   {"stop", "arrête", "pause", "halte", "immobilise", "annule", "quitte", "exit", "cancel", "halt", "end", NULL} },
-        { "aller",  {"aller", "dirige","recherche", "vas", "atteins", "go", "proceed", "move", "reach", "advance", NULL}}
+        { "stop",   {"stop", "arrête", "pause", "annule", "quitte", "exit", "cancel", "end", NULL} },
+        { "aller",  {"aller", "dirige","recherche", "vas", "go", "proceed", "move", "reach", "advance", NULL}}
     };
 
 
     Synonyme object_synonyms[] = {
-        { "balle", {"ball", "ballon", "sphère", "boule", "rond", "sphérique", "cercle", "sphere", "round", "orb", "circle", NULL} },
+        { "balle", {"balle", "ballon", "sphère", "boule", "rond", "sphérique", "cercle", "sphere", "round", "orb", "circle", NULL} },
         { "cube",  {"cube", "bloc", "parallélépipède", "carré", "cubique", "rectangle", "box", "square", "block", "parallelepiped", "rectangular", NULL}}
         };
 

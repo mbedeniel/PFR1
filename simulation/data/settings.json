@@ -2,7 +2,7 @@
     "debug": true,
     "speak": true,
     "display": true,
-    "current_language": "fr",
+    "current_language": "en",
     "LANGUAGES": {
         "fr": "Fran\u00e7ais",
         "en": "English"

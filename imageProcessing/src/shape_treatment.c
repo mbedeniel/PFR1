@@ -84,37 +84,6 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
     return max_min_pixel;
 }
 
-int segmentation(const int ** image, int ligne, int colonne, int ** segmented_image)
-{
-    int i,j,pixel,top_pixel,left_pixel;
-    /*
-        pixel : un pixel de l'image
-        
-    */
-    /*ETAPE 1: initialiser le padding*/
-    add_padding(segmented_image,ligne+2,colonne+2,1);
-
-    /*ETAPE 2: recopie de image*/
-    for(i=0;i<ligne;i++)
-    {
-        for(j=0;j<colonne;j++)
-        {
-            segmented_image[i+1][j+1]=image[i][j];
-        }
-    }
-
-    /*ETAPE 3:traitement*/
-    for(i=1;i<ligne+1;i++)
-    {
-        for(j=1;j<colonne+1;j++)
-        {
-            pixel=segmented_image[i][j];
-            if()
-        }
-    }
-}
-
-
 const char* get_shape_name(Shape shape) {
     switch (shape) {
         case BALL: return "BALL";

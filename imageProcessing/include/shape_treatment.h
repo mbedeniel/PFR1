@@ -93,6 +93,5 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
     int
         un entier indiquant le nombre de segment formé
 */
-int segmentation(const int ** image, int ligne, int colonne,int ** segmented_image);
 
 const char* get_shape_name(Shape shape);

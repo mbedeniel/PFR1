@@ -121,23 +121,67 @@ def entrer_robot1(curseur, piece):
 #navigation 
 
 
-def contourner_obstacle(curseur, obstacle, entre, sortie):
+def contourner_obstacle(curseur, obstacle, entre, sortie, piece):
+    
+    
 
-    dimensions = obstacle.get('dimension') * 2
+    
+
+    dimensions = obstacle.get('dimension')
+    if obstacle.get('forme') == 'cercle':
+        dimensions = dimensions + 10
+    else:
+        dimensions = dimensions + 10
+    
+
     heading = curseur.heading()
+
     if sortie == None:
         display(get_text('no_sortie'))
         return
+    
+    #verifier sion on doit contourner l obstacle par la droite ou par la gauche
+    #si le point de sortie est à droite du point d'entrée
+
+    ##verifier verifier s il faut contourner l obstacle par la droite ou par la gauche
+    bon_angle = None
+    for angle in [90, -90]:
+        obsta = get_Obstacles_critiques(piece.get('obstacles', []), curseur, angle + heading)
+        if len(obsta) != 0:
+            (ob , en , so) = obsta[0]
+
+            ##verifier si le heading du point d entrer est le meme que celle de la an + heading
+            if curseur.towards((en[0], en[1])) != angle + heading: #si le heading n est pas le meme
+                bon_angle = angle
+                break
+            else: # meme heading entre l'obstacle et la direction choisie
+                if curseur.distance((en[0], en[1])) < dimensions: #si la distance est inferieur à la dimension de l obstacle
+                    display(get_text('impossible_to_move'))
+                    bon_angle = 0
+                else:
+                    bon_angle = angle
+                    break
+        else:
+            bon_angle = angle
+            break
+   
+    if bon_angle == None or bon_angle == 0:
+        display(get_text('impossible_to_move'))
+        return
+    
+    
+            
+        
+
     # Contourner l'obstacle : se déplace autour de l'obstacle
-    distance_sortie = curseur.distance((sortie[0], sortie[1]))*1.5
-    curseur.setheading(heading + 90) # Se dirige vers la droite
+    distance_sortie = curseur.distance((sortie[0], sortie[1]))
+    curseur.right(bon_angle) # Se dirige vers la droite +
     curseur.forward(dimensions)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
     curseur.forward(distance_sortie)  # Se déplace autour de l'obstacle
-    curseur.setheading(heading - 90) # Se dirige vers la gauche
+    curseur.left(bon_angle) # Se dirige vers la gauche -
     curseur.forward(dimensions)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
-
 
 
 def aller_vers(curseur, piece, destination):
@@ -155,7 +199,7 @@ def aller_vers(curseur, piece, destination):
 
     #determiner les obstacles critiques et les contourner
     obstacles = piece.get('obstacles', [])
-    obstacles_critiques = get_Obstacles_critiques(obstacles , curseur)
+    obstacles_critiques = get_Obstacles_critiques(obstacles , curseur, curseur.heading())
     #condition d'arret
     if len(obstacles_critiques) == 0:
         display(get_text('mouving_robot'))
@@ -167,12 +211,13 @@ def aller_vers(curseur, piece, destination):
     for data in obstacles_critiques:
         obstacle, point_entree, point_sortie = data
         #calculer la distance entre le curseur et le point d'entree
-        distanceEntre  = curseur.distance(point_entree)
+        distanceEntre  = curseur.distance(point_entree) 
         distanceDestination =   curseur.distance(destination)
         if distanceEntre > distanceDestination: #si le point d'entree est plus loin que la destination
             display(get_text('mouving_robot'))
             curseur.goto(destination)
             break
+
         #contourner l'obstacle
         display(get_text('critical_obstacle'))
         #verifier si la destination est dans l'obstacle
@@ -182,8 +227,8 @@ def aller_vers(curseur, piece, destination):
             return
         else :
             curseur.goto(point_entree)
-            display(get_text('contournement_obstacle').format(obstacle.get('type')))
-            contourner_obstacle(curseur, obstacle, point_entree, point_sortie)
+            display(get_text('contournement_obstacle').format(obstacle.get('nom')))
+            contourner_obstacle(curseur, obstacle, point_entree, point_sortie, piece)
             display(get_text('end_contournement'))
             display(get_text('go_to_destination'))
             aller_vers(curseur, piece, destination)

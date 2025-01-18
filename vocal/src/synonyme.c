@@ -5,6 +5,12 @@
 
 
 
+
+
+
+
+
+
 // Remplacer un mot dans une chaîne par un autre
 char *replaceWord(char *s,  char *old,  char *new) {
     char *result;
@@ -54,3 +60,16 @@ char* replaceListSynonyme(char *result, Synonyme *table, int nbre_element) {
         return result;
     }
 
+
+char** getKeys(Synonyme *table, int nbre_element) {
+    
+    char *keys = malloc(100);
+    if (!keys) return NULL;
+    char **tab = malloc(nbre_element * sizeof(keys));
+    if (!tab) return NULL;
+    for (int i = 0; i < nbre_element; i++) {
+        tab[i] = table[i].key;
+    }
+    //retouner  le tableau des clés
+    return tab;
+}

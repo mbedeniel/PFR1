@@ -61,7 +61,7 @@ def tracer_cercle(dimension, curseur):
     """
     curseur.setheading(180)  # Assurez-vous que le curseur commence dans la bonne direction
     #cercle de centre xc, yc = curseur.position()[0], curseur.position()[1] - dimension
-    curseur.circle(dimension)
+    curseur.circle(dimension) 
 
 #verifier si un point est a l interieur de la piece
 def est_dans_piece(point, piece):
@@ -115,6 +115,10 @@ def tracer_obstacle(obstacle, curseur, piece):
         tracer_obstacle_carre(curseur, obstacle)
     else:
         display(get_text('invalid_form').format(obstacle.get("nom")))
+
+    #AJOUTER UNE DISTANCE DE SECURITE SUR LES OBSTACLES POUR QUE LE ROBOT NE LES TOUCHE PAS
+    obstacle["dimension"] += 10
+    
     curseur.end_fill()
     curseur.up() 
 

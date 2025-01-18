@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdio.h>
+#include "../include/initData.h"
 
 // Définition globale des synonymes
 
@@ -29,7 +30,21 @@ int extract_number_from_position( char *texte) {
 
 
 // Fonction pour analyser le texte de la parole et générer un JSON
-char *speech_analysis_to_json( char* texte,char *commands[],char *objects[],char *colors[],int nbre_commandes,int nbre_objets,int nbre_couleurs) {
+char *speech_analysis_to_json( char* texte) {
+    char **liste_commandes = getKeys(command_synonyms, num_commands);
+    char **liste_objets = getKeys(object_synonyms, num_objects);
+    char **liste_couleurs = getKeys(color_synonyms, num_colors);
+
+    //marquer la fin du texte avec \0 au cas où
+    if (texte[strlen(texte) - 1] != '\0')
+        strcat(texte, "\0");
+
+
+    // Allocation mémoire pour le JSON (augmentable dynamiquement si nécessaire)
+    
+    
+    
+    
     char *json = malloc(1024);
     char *splitedText;
    
@@ -41,17 +56,30 @@ char *speech_analysis_to_json( char* texte,char *commands[],char *objects[],char
     strcat(json, "\"");
     strcat(json, ", \"commandes\": [");
     if (texte == NULL) return NULL;
+
+
+    // remplecer les synonymes par les clés principales
+    // Remplacer les synonymes dans le texte
+    texte = replaceListSynonyme(texte, command_synonyms, num_commands);
+    texte = replaceListSynonyme(texte, object_synonyms, num_objects);
+    texte = replaceListSynonyme(texte, color_synonyms, num_colors);
+
+
     
     // Diviser le texte en fonction des commandes
-    splitedText = splitText(texte, commands, nbre_commandes);
+    splitedText = splitText(texte, liste_commandes, num_commands);
     // Ajouter des séparateurs entre les commandes
     int index = 0;
     while (splitedText[index] != '\0') {
         char *positionSeparator = strchr(splitedText + index, '/');
         int positionSeparatorIndex = positionSeparator ? positionSeparator - (splitedText + index) : -1;
-        if (positionSeparatorIndex == -1) {
-        char *tmp = textToCommandeJson(splitedText + index, commands, objects, colors, nbre_commandes, nbre_objets, nbre_couleurs);
-            strcat(json, tmp);
+      
+        if (positionSeparatorIndex == -1) { //si le séparateur n'est pas trouvé
+            char *tmp = textToCommandeJson(splitedText + index);
+            if(tmp != NULL) {
+                strcat(json, tmp);
+                free(tmp);
+            }
             strcat(json, "]"); // Fin des commandes
             strcat(json, "}");
             free(tmp);
@@ -59,12 +87,15 @@ char *speech_analysis_to_json( char* texte,char *commands[],char *objects[],char
             return json;
         } else if (positionSeparatorIndex == 0) { //si le séparateur est au début de la chaîne
             index++; // Ignorer les séparateurs
-        } else {
+            
+        } else { //si le séparateur est trouvé 
             splitedText[index + positionSeparatorIndex] = '\0'; // Séparer la chaîne ET remplacer le séparateur par un caractère nul
-            char *tmp = textToCommandeJson(splitedText + index, commands, objects, colors, nbre_commandes, nbre_objets, nbre_couleurs);
-            strcat(json, tmp);
+            char *tmp = textToCommandeJson(splitedText + index );
+            if(tmp != NULL) {
+                    strcat(json, tmp);
+                    strcat(json, ", ");
+            }
             free(tmp);
-            strcat(json, ", ");
             index += positionSeparatorIndex + 1;// Avancer l'index de la longueur du séparateur + 1
             
         }
@@ -73,9 +104,12 @@ char *speech_analysis_to_json( char* texte,char *commands[],char *objects[],char
     return json;
 }
 
-char* textToCommandeJson(char* texte, char* commands[], char* objects[], char* colors[], int num_commands, int num_objects, int num_colors) {
+char* textToCommandeJson(char* texte) {
+    char ** commands = getKeys(command_synonyms, num_commands);
+    char ** objects = getKeys(object_synonyms, num_objects);
+    char ** colors = getKeys(color_synonyms, num_colors);
+    
     if (texte == NULL) return NULL;
-
         
     // Allocation mémoire pour le JSON (augmentable dynamiquement si nécessaire)
     char *json = malloc(1024);

@@ -7353,3 +7353,137 @@ Say 'Stop' to exit vocal mode. I'm listening...
 you said: aller to the website
 Mission in progress
 Moving to the object of type None and color None
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+__Mode Vocal__
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+__Mode Vocal__
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : je cherche le ballon rouge
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+__Mode Vocal__
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : chercher le ballon rouge
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : de 25
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : filet de 250 m
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : reculer de 250 m
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : à gauche et aller vers le cube jaune
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : et de 30 m
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : et de 30 mai
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : avancer de 50 m
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : verbe cube ouverte
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : verbe cube verte
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : recherche le cube verte
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : recherche le ballon rouge recherche le ballon
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur None
+Erreur: Obstacle de type cercle et de couleur None non trouvé.
+Mission annulée.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : avancer 200
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : continuer tout droit
+Obstacle critique détecté.
+Contournement de l'obstacle None ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+__Mode Vocal__
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : chercher le ballon rouge
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : avancer de 100
+Obstacle critique détecté.
+Contournement de l'obstacle None ...
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+q : Quitter
+__Mode Vocal__
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...

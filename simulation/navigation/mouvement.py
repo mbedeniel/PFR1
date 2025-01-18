@@ -72,7 +72,7 @@ def vocal_reception(curceur, reception, piece):
                 distance_obstacle = curceur.distance(obstacle['coin_HD']) - 20
                 curceur.setheading(heading_obstacle)
                 #recuperer le point d'entrée et de sortie de l'obstacle
-                colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur)
+                colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur,curceur.heading())
                 
                 #aller vers le point d'entrée de l'obstacle si la collision est détectée
                 if point_entre !=None :

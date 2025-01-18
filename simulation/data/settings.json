@@ -1,8 +1,8 @@
 {
-    "debug": true,
-    "speak": true,
+    "debug": false,
+    "speak": false,
     "display": true,
-    "current_language": "en",
+    "current_language": "fr",
     "LANGUAGES": {
         "fr": "Fran\u00e7ais",
         "en": "English"

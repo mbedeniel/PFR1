@@ -73,12 +73,6 @@ Pour vérifier une collision avec un rectangle :
 '''
 
 ####" cas pratique "
-import math 
-
-
-import math
-
-import math
 
 def test_collision_avec_rectangle(curseur, obstacle):
     """

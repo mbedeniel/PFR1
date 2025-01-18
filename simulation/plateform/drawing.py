@@ -1,4 +1,3 @@
-
 import turtle as tl
 from simulation.data.init import init_coins
 from simulation.data.settings import get_text
@@ -8,8 +7,6 @@ from simulation.logger.logger import display
 CE FICHIER CONTIENT LES FONCTIONS DE TRACAGE DES PIECES, DES OUVERTURES ET DES OBSTACLES.
 C EST LUI QUI GERE L AFFICHAGE DES ELEMENTS DU JEU. (Interface graphique)
 """
-
-
 
 def tracer_piece(piece, curseur):
     curseur.speed(10)
@@ -83,7 +80,7 @@ def est_dans_piece(point, piece):
     # Vérifier les conditions
     if piece_x1 <= point[0] <= piece_x2 and piece_y2 <= point[1] <= piece_y1:
         return True
-    
+
     # Si le point est en dehors, afficher les messages d'erreur
     return False
 
@@ -106,23 +103,18 @@ def tracer_obstacle(obstacle, curseur, piece):
     if not est_dans_piece(obstacle["coin_HD"], piece):
         display(get_text('obstacle_outside').format(obstacle["nom"]))
         return None 
-    
     #aller au positon du coin HD
     curseur.up()
     curseur.goto(obstacle["coin_HD"])
     curseur.down()
-
     curseur.color(obstacle["couleur"])
     curseur.begin_fill()
-
     if "cercle" == obstacle["forme"]:
         tracer_cercle(obstacle["dimension"],curseur)
     elif "carree" == obstacle["forme"]:
         tracer_obstacle_carre(curseur, obstacle)
     else:
-        
         display(get_text('invalid_form').format(obstacle.get("nom")))
-
     curseur.end_fill()
     curseur.up() 
 
@@ -134,16 +126,13 @@ def tracer_ouverture(ouverture, curseur , piece):
     curseur.up()
     curseur.goto(ouverture["coin_droite"])
     curseur.down()
-
     curseur.color(ouverture["color"])
     curseur.begin_fill()
-
     #si le coin est le coin_HD  l orientation de l ouverture est vers le bas pour aller vers le coin BD (angle 270 ou -90)
     #si le coin est le coin_HG  l orientation de l ouverture est vers la droite pour aller vers le coin HD (angle 0)
     #si le coin est le coin_BD  l orientation de l ouverture est vers la gauche pour aller vers le coin BG (angle 180)
     #si le coin est le coin_BG  l orientation de l ouverture est vers le haut pour aller vers le coin HG (angle 90)
     coins = init_coins(piece)
-    
     if ouverture["coin_droite"] == coins["coin_HG"]:
         curseur.setheading(0)
     elif ouverture["coin_droite"] == coins["coin_BG"]:
@@ -153,7 +142,6 @@ def tracer_ouverture(ouverture, curseur , piece):
         curseur.setheading(180)
     elif ouverture["coin_droite"] == coins["coin_HD"]:
         curseur.setheading(270)
-    
     else :
         display(get_text('invalid_coin').format(ouverture.get("coin_HD"), ouverture.get("nom")))
         return None

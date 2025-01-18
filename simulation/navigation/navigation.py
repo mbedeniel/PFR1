@@ -2,8 +2,8 @@
 """
 EN GROS, ICI J'ESSAIE D IMPLEMENTER LA NAVIGATION AUTOMATIQUE DU ROBOT 
 LUI DONNER LA FACULTE DE CONTOURNER LES OBSTACLES POUR ATTEINDRE SA DESTINATION
-AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OBSTACLE
-
+AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OBSTACLE , NI SE TROUVER DANS UN OBSTACLE
+OU DE SORTIR DE LA PIECE EN TRAVERSANT LES MURS
 """
 from simulation.data.settings import get_text
 from simulation.plateform.drawing import est_dans_piece  # Assure-toi que cette fonction contient les définitions nécessaires
@@ -16,12 +16,13 @@ from simulation.navigation.dectection_collision import get_Obstacles_critiques, 
 En d autre terme, si le robot est à l'extérieur de la pièce, ces fonctions permettent 
  de le faire entrer dans la pièce en passant par l ouverture le plus proche de lui.
 expliquons un peu le fonctionnement de ces fonctions:
-1. On vérifie si le robot est déjà dans la pièce
+1. On vérifie si le robot est déjà dans la pièce ? si oui, on ne fait rien ,sion 
 2. On récupère les ouvertures de la pièce
 3. On trouve l'ouverture la plus proche du robot
 4. s aligne sur l axe x ou y par rapport au centre de l ouverture la plus proche
 5. on se dirige vers le centre de l ouverture
-6. on entre dans la pièce
+6. on entre dans la pièce en se dirigeant vers le centre de l ouverture en le deplacant de quelques pixels
+                7. YOUPIIIII LE ROBOT EST DANS LA PIECE :)
 """
 def aligner_sur_x(curseur, x):
     """
@@ -38,10 +39,11 @@ def aligner_sur_y(curseur, y):
 
 def entrer_robot1(curseur, piece):
     delta = 30
- # Vérifier si le robot est déjà dans la pièce
+ # Vérifier si le robot est déjà dans la pièce , si oui, on ne fait rien
     if est_dans_piece(curseur.position(), piece):
         return
-
+    
+    #sinon
     # Récupérer les ouvertures de la pièce
     ouvertures = piece.get('ouvertures', [])
     if not ouvertures:
@@ -50,17 +52,16 @@ def entrer_robot1(curseur, piece):
 
     # Trouver l'ouverture la plus proche du robot
     robot_pos = curseur.position()
-   # ouverture_proche = min(ouvertures, key=lambda ouverture: get_distance(curseur, ouverture['coin_droite']))
+    #trier les ouvertures par distance minimale
     ouverture_proche = min(ouvertures, key=lambda ouverture: curseur.distance(ouverture['coin_droite']))
     # Identifier l'orientation de l'ouverture
     coin_droite = ouverture_proche['coin_droite']
     coins = init_coins(piece)
-
+    #en fonction du coin_droite, on peut s avoir l'orientation de l'ouverture (horizontal ou vertical)
     if coin_droite == coins['coin_BG']:
         #OKKKKKKKKKKKKKKK
         # aligner le curseur sur l axe x et entrer dans la piece
         centre = (coin_droite[0] + delta , coin_droite[1] + int(ouverture_proche['distance_coin'] / 2))
-        #verifier si x_curseur < coin_droite[0] 
         if robot_pos[0] < coin_droite[0]:
             aligner_sur_y(curseur, centre[1])
             curseur.setheading( curseur.towards(centre))

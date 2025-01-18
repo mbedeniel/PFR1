@@ -35,11 +35,6 @@ def rotation(curceur, val):
     curceur.right(val)
 
 
-
-
-
-
-
 def vocal_reception(curceur, reception, piece):
     """
     Déplace et oriente le curseur en fonction des données reçues dans le dictionnaire `reception`.
@@ -144,19 +139,18 @@ def color_translation(color):
     """
     Traduit la couleur en français en anglais.
     """
-    if color == "rouge":
-        return "red"
-    elif color == "bleu":
-        return "blue"
-    elif color == "vert":
-        return "green"
-    elif color == "jaune":
-        return "yellow"
-    elif color == "orange":
-        return "orange"
-    elif color == "violet":
-        return "purple"
-    elif color == "rose":
-        return "pink"
-    else:
-        return None
+    couleur={
+        "rouge": "red",
+        "bleu": "blue",
+        "vert": "green",
+        "jaune": "yellow",
+        "orange": "orange",
+        "violet": "purple",
+        "rose": "pink",
+        "noir": "black",
+        "blanc": "white",
+        "marron": "brown",
+        "gris": "gray",
+        "cyan": "cyan"
+    }
+    return couleur.get(color, None)

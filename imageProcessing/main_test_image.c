@@ -110,17 +110,8 @@ int main()
     
     processed_object = image_treatment(search_object,path);*/
 
-<<<<<<< HEAD
     object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
     printf("%s\n",json_buffer);
-=======
-
-    /*object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
-    printf("\n%s \n",json_buffer);
-
-
-
->>>>>>> 2f636529183e4c8c0f757307d06a87390f0e210e
 
     
     
@@ -140,7 +131,7 @@ int main()
     else
     {
         printf("Forme non trouvée \n");
-    }*/
+    }
     
     return 0;
 }

@@ -276,6 +276,8 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
     Object pattern;
     int i,size_patterns,size_image_objects=0;
+    char command[256]; /* Ajout d'un croix avec un script python*/
+    int result; /* Resultat de l'appel*/
      
     /*
     **************************

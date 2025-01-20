@@ -25,6 +25,8 @@ def menu(new_curseur, piece):
             settings()
         elif choix == '4':
             lancer_mode_manuel(new_curseur, piece)
+        elif choix == '5': 
+            lancer_mode_auto(new_curseur, piece)
         elif choix.lower() == 'q':
             break
         else:
@@ -94,6 +96,21 @@ def lancer_mode_manuel(new_curseur, piece):
             rotation(new_curseur, 5)
         if keyboard.is_pressed("right"):
             rotation(new_curseur, -5)
+
+def lancer_mode_auto(new_curseur, piece):
+    """
+    Gère le fonctionnement du mode automatique.
+    """
+    display(get_text('auto_mode'))
+    import random
+
+    while keyboard.is_pressed("esc") == False:
+        angle = random.randint(-45, 45)
+        disctance = random.randint(-40, 300)
+        rotation(new_curseur, angle)
+        translantion(new_curseur, disctance, piece)
+        sleep(0.5)
+        
     
 def settings():
     """

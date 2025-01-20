@@ -11892,3 +11892,1839 @@ Impossible de se déplacer.
 Fin du contournement de l'obstacle.
 Déplacement du Robot vers la destination ....
 Déplacement du Robot ....
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4: Mode Manuel
+q : Quitter
+Texte introuvable pour la clé 'auto_mode'.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4: Mode Manuel
+q : Quitter
+Texte introuvable pour la clé 'auto_mode'.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4: Mode Manuel
+q : Quitter
+À bientôt !
+___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4: Mode Manuel
+q : Quitter
+Texte introuvable pour la clé 'auto_mode'.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Erreur : le point de sortie correctement n'a pas été fourni.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle4 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Déplacement du Robot ....
+Obstacle critique détecté.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle7 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Impossible de se déplacer.
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Obstacle critique détecté.
+La destination est dans l'obstacle.
+Impossible de se déplacer.
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle1 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Déplacement du Robot ....
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4: Mode Manuel
+q : Quitter

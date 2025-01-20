@@ -1,5 +1,5 @@
 {
-    "debug": false,
+    "debug": true,
     "speak": false,
     "display": true,
     "current_language": "fr",
@@ -10,7 +10,7 @@
     "MENU_TEXT": {
         "fr": {
             "welcome": "Bienvenue dans le menu principal !",
-            "choose_mode": "\nVeuillez choisir un mode parmi les suivants :\n1 : Mode Vocal\n2 : Mode IHM\n3 : Configurations\nq : Quitter",
+            "choose_mode": "\nVeuillez choisir un mode parmi les suivants :\n1 : Mode Vocal\n2 : Mode IHM\n3 : Configurations\n4: Mode Manuel\nq : Quitter",
             "prompt": "Entrez votre choix : ",
             "invalid_choice": "Choix invalide. Veuillez r\u00e9essayer.",
             "goodbye": "\u00c0 bient\u00f4t !",
@@ -22,6 +22,7 @@
             "end_ihm": "Fin du mode IHM.",
             "quit_prompt": "Voulez-vous vraiment quitter ? (o/n) : ",
             "presentation_ihm": "Veuillez choisir un mode parmi les suivants :\n            a : avancer\n            r : reculer\n            d : droite\n            g : gauche\n            Saisissez le mode et la valeur (ex : a 15 ou r) : ",
+            "manuel_mode": "__Mode Manuel__\n\tAppuyer sur les fl\u00e8ches pour d\u00e9placer le robot.\n\tAppuyer sur '\u00e9chape' pour quitter.",
             "invalid_input": "Entr\u00e9e invalide. Veuillez r\u00e9essayer.",
             "error": "Une erreur est survenue : {0}",
             "not_understood": "Je n'ai pas compris votre demande. Veuillez r\u00e9essayer.",
@@ -60,7 +61,7 @@
         },
         "en": {
             "welcome": "Welcome to the main menu!",
-            "choose_mode": "\nPlease choose a mode from the following:\n1: Vocal Mode\n2: IHM Mode\n3: Settings\nq: Quit",
+            "choose_mode": "\nPlease choose a mode from the following:\n1: Vocal Mode\n2: IHM Mode\n3: Settings\n4: Manual Mode\nq: Quit",
             "invalid_choice": "Invalid choice. Please try again.",
             "goodbye": "See you soon!",
             "vocal_mode": "__Vocal Mode__",
@@ -71,6 +72,7 @@
             "end_ihm": "Exiting IHM mode.",
             "quit_prompt": "Are you sure you want to exit? (o/n): ",
             "presentation_ihm": "Please choose a mode from the following:\n            a: forward\n            r: backward\n            d: right\n            g: left\n            Enter the mode and the value (ex: a 15 or r): ",
+            "manuel_mode": "__Manual Mode__\n\tUse the arrow keys to move the robot.\n\tPress 'escape' to exit.",
             "invalid_input": "Invalid input. Please try again.",
             "error": "An error occurred: {0}",
             "not_understood": "I did not understand your request. Please try again.",

@@ -1,4 +1,5 @@
-from simulation.navigation.mouvement import vocal_reception, adaptation_donnees
+import keyboard
+from simulation.navigation.mouvement import rotation, translantion, vocal_reception, adaptation_donnees
 from time import sleep
 from simulation.data.settings import get_text, load_parametre, save_parametre, set_language
 from simulation.loader.interaction import mode_ihm , mode_Vocal
@@ -22,8 +23,8 @@ def menu(new_curseur, piece):
             lancer_mode_ihm(new_curseur, piece)
         elif choix.lower() == '3':
             settings()
-
-
+        elif choix == '4':
+            lancer_mode_manuel(new_curseur, piece)
         elif choix.lower() == 'q':
             break
         else:
@@ -71,14 +72,28 @@ def lancer_mode_ihm(new_curseur, piece):
         display(get_text('quit_ihm'))
         
         data = mode_ihm()
-        adapted_data = adaptation_donnees(data)
-        vocal_reception(new_curseur, adapted_data, piece)
-        sleep(2)
+        commandes = data.get('commandes', [])
+        for data in commandes:
+            adapted_data = adaptation_donnees(data)
+            vocal_reception(new_curseur, adapted_data, piece)
         quitter = input(get_text('quit_prompt')).strip().lower()
         if quitter == 'o':
             break
 
     display(get_text('end_ihm'))
+
+
+def lancer_mode_manuel(new_curseur, piece):
+    display(get_text('manuel_mode'))
+    while keyboard.is_pressed("esc") == False:
+        if keyboard.is_pressed("up"):
+            translantion(new_curseur, 20, piece)
+        if keyboard.is_pressed("down"):
+            translantion(new_curseur, -20, piece)
+        if keyboard.is_pressed("left"):
+            rotation(new_curseur, 5)
+        if keyboard.is_pressed("right"):
+            rotation(new_curseur, -5)
     
 def settings():
     """

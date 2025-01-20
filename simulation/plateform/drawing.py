@@ -117,7 +117,7 @@ def tracer_obstacle(obstacle, curseur, piece):
         display(get_text('invalid_form').format(obstacle.get("nom")))
 
     #AJOUTER UNE DISTANCE DE SECURITE SUR LES OBSTACLES POUR QUE LE ROBOT NE LES TOUCHE PAS
-    obstacle["dimension"] += 10
+    obstacle["dimension"] += 5
     
     curseur.end_fill()
     curseur.up() 

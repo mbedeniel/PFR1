@@ -1,7 +1,7 @@
 from simulation.data.settings import get_text
 from simulation.plateform.drawing import est_dans_piece
 from math import cos, sin, radians
-from simulation.navigation.dectection_collision import Test_collision_obstacle
+from simulation.navigation.dectection_collision import Test_collision_obstacle , get_Obstacles_critiques , point_is_in_obstacle
 from simulation.navigation.navigation import  aller_vers
 from simulation.data.init import get_obsatcle_by_forme_or_color
 from simulation.logger.logger import display 
@@ -24,7 +24,23 @@ def translantion(curceur, val, piece):
         return
     
     if val < 0: #le robot recule
-        curceur.backward(-val) #comme val est negatif, on le rend positif pour que le robot recule sinon il va avancer
+        print("recule de ", val , " et de heading ", heading + 180)
+        print("destination ", destination)
+        print(" destination est dans la piece ", est_dans_piece(destination, piece))
+        #pour que le robot recule, on verifie s il n y a d'obstacle derriere lui
+        obstacle_derriere = get_Obstacles_critiques(piece.get('obstacles', []), curceur, heading)
+        if len(obstacle_derriere) != 0:
+            (obstacle , point_entre , point_sortie) = obstacle_derriere[0]
+            #on verifie la distance entre le curseur et l'obstacle
+            distance_obstacle = curceur.distance((point_entre[0], point_entre[1])) - 20
+            if distance_obstacle < abs(val) or point_is_in_obstacle(destination, obstacle):
+                display(get_text('critical_obstacle'))
+                display(get_text('impossible_to_move'))
+                return
+            else: #on peut reculer  car la distance est suffisamment  (petite) pour reculer (aucun risque e percuter l obstacle)
+                curceur.backward(-val) #comme val est negatif, on le rend positif pour que le robot recule sinon il va avancer
+        else: #il n y a pas d'obstacle derriere le robot
+            curceur.backward(-val)
     else: #le robot avance , pour ne pas tenir compte des obstacles ,if faut utiliser la fonction forward
         aller_vers(curceur, piece , destination) #utiliser la fonction aller_vers pour contourner les obstacles
 

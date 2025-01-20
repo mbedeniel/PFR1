@@ -174,7 +174,7 @@ def contourner_obstacle(curseur, obstacle, entre, sortie, piece):
         
 
     # Contourner l'obstacle : se déplace autour de l'obstacle
-    distance_sortie = curseur.distance((sortie[0], sortie[1]))
+    distance_sortie = curseur.distance((sortie[0], sortie[1])) + 5
     curseur.right(bon_angle) # Se dirige vers la droite +
     curseur.forward(dimensions)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale

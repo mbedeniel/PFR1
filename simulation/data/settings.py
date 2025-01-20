@@ -18,7 +18,7 @@ LANGUAGES = {
 MENU_TEXT = {
     'fr': {
         'welcome': "Bienvenue dans le menu principal !",
-        'choose_mode': "\nVeuillez choisir un mode parmi les suivants :\n1 : Mode Vocal\n2 : Mode IHM\n3 : Configurations\nq : Quitter",
+        'choose_mode': "\nVeuillez choisir un mode parmi les suivants :\n1 : Mode Vocal\n2 : Mode IHM\n3 : Configurations\n4: Mode Manuel\nq : Quitter",
         'prompt': "Entrez votre choix : ",
         'invalid_choice': "Choix invalide. Veuillez réessayer.",
         'goodbye': "À bientôt !",
@@ -35,6 +35,7 @@ MENU_TEXT = {
             d : droite
             g : gauche
             Saisissez le mode et la valeur (ex : a 15 ou r) : """,
+        'manuel_mode': "__Mode Manuel__\n\tAppuyer sur les flèches pour déplacer le robot.\n\tAppuyer sur 'échape' pour quitter.",
         'invalid_input':"Entrée invalide. Veuillez réessayer.",
         'error': "Une erreur est survenue : {0}",
         'not_understood': "Je n'ai pas compris votre demande. Veuillez réessayer.",
@@ -81,7 +82,7 @@ MENU_TEXT = {
         },
     'en': {
         'welcome': "Welcome to the main menu!",
-        'choose_mode': "\nPlease choose a mode from the following:\n1: Vocal Mode\n2: IHM Mode\n3: Settings\nq: Quit",
+        'choose_mode': "\nPlease choose a mode from the following:\n1: Vocal Mode\n2: IHM Mode\n3: Settings\n4: Manual Mode\nq: Quit",
         'invalid_choice': "Invalid choice. Please try again.",
         'goodbye': "See you soon!",
         'vocal_mode': "__Vocal Mode__",
@@ -97,6 +98,7 @@ MENU_TEXT = {
             d: right
             g: left
             Enter the mode and the value (ex: a 15 or r): """,
+        'manuel_mode': "__Manual Mode__\n\tUse the arrow keys to move the robot.\n\tPress 'escape' to exit.",
         'invalid_input':"Invalid input. Please try again.",
         'error': "An error occurred: {0}",
         'not_understood': "I did not understand your request. Please try again.",

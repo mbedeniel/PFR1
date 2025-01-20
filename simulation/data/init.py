@@ -14,7 +14,7 @@ def init_piece():
     """
     piece ={
     'nom': 'piece',
-    'dimensions': (600, 400),
+    'dimensions': (600, 400), #600, 400
     'coin_HD': (300, 200),
     'coins': {},
     'couleur': 'blue',

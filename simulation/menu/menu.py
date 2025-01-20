@@ -1,3 +1,4 @@
+import random
 import keyboard
 from simulation.navigation.mouvement import rotation, translantion, vocal_reception, adaptation_donnees
 from time import sleep
@@ -27,6 +28,8 @@ def menu(new_curseur, piece):
             lancer_mode_manuel(new_curseur, piece)
         elif choix == '5': 
             lancer_mode_auto(new_curseur, piece)
+        elif choix == '6':
+            lancer_mode_image_processing(new_curseur, piece)
         elif choix.lower() == 'q':
             break
         else:
@@ -102,14 +105,23 @@ def lancer_mode_auto(new_curseur, piece):
     Gère le fonctionnement du mode automatique.
     """
     display(get_text('auto_mode'))
-    import random
 
     while keyboard.is_pressed("esc") == False:
-        angle = random.randint(-45, 45)
-        disctance = random.randint(-40, 300)
+        angle = random.randint(-90, 90)
+        disctance = random.randint(0, 250)
         rotation(new_curseur, angle)
         translantion(new_curseur, disctance, piece)
-        sleep(0.5)
+        #sleep(0.2)
+
+def lancer_mode_image_processing(new_curseur, piece):
+    """
+    Gère le fonctionnement du mode de traitement d'image.
+    """
+    display(get_text('image_processing_mode'))
+
+    display(get_text('quit_image_processing'))
+    if input().strip().lower() == 'o':
+        return
         
     
 def settings():

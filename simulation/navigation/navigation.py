@@ -122,18 +122,19 @@ def entrer_robot1(curseur, piece):
 
 
 def contourner_obstacle(curseur, obstacle, entre, sortie, piece):
-    
-    
+
+    if entre == None or sortie == None or obstacle == None:
+        return
+
 
     
-
     dimensions = obstacle.get('dimension')
     if obstacle.get('forme') == 'cercle':
         dimensions = dimensions + 10
     else:
         dimensions = dimensions + 10
     
-
+    """
     heading = curseur.heading()
 
     if sortie == None:
@@ -168,19 +169,37 @@ def contourner_obstacle(curseur, obstacle, entre, sortie, piece):
     if bon_angle == None or bon_angle == 0:
         display(get_text('impossible_to_move'))
         return
-    
-    
-            
-        
+   """ 
+    heading = curseur.heading() 
+    #pour savaoir de quelle coter contourner l obstacle, calculer le centre de l obstacle
+    #comparer le cap du centre et et le cap de la sortie
+    # si cap_centre < cap_sortie, contourner par la droite
+    #sinon contourner par la gauche
+    coin_HD_obstacle = obstacle.get('coin_HD')
+    #calculer le centre de l obstacle
+    if obstacle.get('forme') == 'cercle':
+        rayon = obstacle.get("dimension")
+        centre_x, centre_y = coin_HD_obstacle[0], coin_HD_obstacle[1] - rayon
+        centre = (centre_x, centre_y)
+    else:
+        centre = (coin_HD_obstacle[0] - dimensions / 2, coin_HD_obstacle[1] - dimensions / 2)
+    #calculer le cap du centre
+
+    cap_centre_object = curseur.towards(centre)
+    if heading < cap_centre_object <= heading + 180:
+        bon_angle = -90
+    else:
+        bon_angle = 90
 
     # Contourner l'obstacle : se déplace autour de l'obstacle
     distance_sortie = curseur.distance((sortie[0], sortie[1])) + 5
-    curseur.right(bon_angle) # Se dirige vers la droite +
-    curseur.forward(dimensions)  # Se déplace autour de l'obstacle
+    dimension_contournement = dimensions * (distance_sortie / dimensions) / 1.5
+    curseur.setheading(heading +  bon_angle) # Se dirige vers la droite + right
+    curseur.forward(dimension_contournement)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
     curseur.forward(distance_sortie)  # Se déplace autour de l'obstacle
-    curseur.left(bon_angle) # Se dirige vers la gauche -
-    curseur.forward(dimensions)  # Se déplace autour de l'obstacle
+    curseur.setheading(heading -  bon_angle) # Se dirige vers la gauche + left
+    curseur.forward(dimension_contournement)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
 
 

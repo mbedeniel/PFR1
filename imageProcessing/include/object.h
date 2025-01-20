@@ -46,8 +46,10 @@ Object create_object(Shape shape,Color color,Position position);
 */
 
 /*INPUT: 
+    Cette fonction prend en entrée un objet et un buffer de taille buffer_size
 */
 
 /*OUTPUT: void
+    Elle copie les informations de l'objet dans le buffer sous forme de chaine de caractère
 */
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size);

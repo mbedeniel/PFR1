@@ -17,3 +17,19 @@ INPUT: NONE
 OUTPUT: une structure Position
 */
 Position init_position();
+
+/*
+FUNCTION : Position get_pixel_position()
+    calcul les coordonnées du point le plus bas de l'objet recherché
+    l'unité etant le pixel
+*/
+/*
+INPUT: 
+    Position lowest_pixel
+        pixel le plus bas de la forme sur l'image qui a la couleur rechrchée
+*/
+/*
+OUTPUT: Position 
+    le pixel le plus bas de la forme recherchée
+*/
+Position get_pixel_position(Position lowest_pixel);

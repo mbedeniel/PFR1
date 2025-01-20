@@ -1,3 +1,4 @@
+#define NUMBER_OF_COLOR 3 /*Nombre de couleur de Color*/
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
 
@@ -5,10 +6,10 @@
 /*RED or GREEN or BLUE*/
 typedef enum
 {
-    RED,
-    GREEN,
-    BLUE,
-    NONE_COLOR /*pour marquer que la couleur ne matche avec aucune couleur*/
+    ORANGE=0,
+    YELLOW=1,
+    BLUE=2,
+    NONE_COLOR=3 /*pour marquer que la couleur ne matche avec aucune couleur*/
 } Color;
 
 

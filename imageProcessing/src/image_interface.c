@@ -1,6 +1,6 @@
 #include "../include/image_interface.h"
 
-Object image_treatment(Object search_image_inforrmation)
+Object image_treatment(Object search_image_inforrmation,const char* path)
 {
 
     /*
@@ -8,8 +8,6 @@ Object image_treatment(Object search_image_inforrmation)
     ********DECLARATION DES VARIABLES*******
     ****************************************
     */
-
-
 
     int i,j,k,nbr_pixel,ligne,colonne;
     double *** image_hsv; /*image obtenu grace a rgb_to_hsv*/
@@ -42,13 +40,20 @@ Object image_treatment(Object search_image_inforrmation)
 
 
     /*Recuperation des lignes et colonnes*/
-    scanf("%i",&ligne);
-    scanf("%i",&colonne);
 
+    /*Ouvrir le fichier en lecture*/
+    FILE* fichier = fopen(path, "r");
+    if (!fichier) {
+        perror("ERREUR DE LECTURE");
+        return processed_image;
+    }
 
+    /*Lire les dimensions de l'image*/
+    fscanf(fichier, "%i", &ligne);
+    fscanf(fichier, "%i", &colonne);
 
     /*
-    ***************************************
+    ***************************************       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
     ********DEFINITION DES VARIABLES*******
     ***************************************
     */
@@ -162,18 +167,17 @@ Object image_treatment(Object search_image_inforrmation)
     l'image est recupere composante par composante
     d'abord la composante R ensuite G ensuit B
     */
-    for(k=0;k<3;k++)
-    {   
-        for(i=0;i<ligne;i++)
-        {
-            for(j=0;j<colonne;j++)
-            {
-                scanf("%lf",&image_rgb[i][j][k]);
+
+    /*Lire les valeurs du fichier*/
+    for (k = 0; k < 3; k++){
+        for (i = 0; i < ligne; i++) {
+            for (j = 0; j < colonne; j++) {
+                fscanf(fichier, "%lf", &image_rgb[i][j][k]);
             }
         }
     }
 
-
+    fclose(fichier); /*Fermer le fichier*/
 
     /*
     **************************
@@ -193,25 +197,39 @@ Object image_treatment(Object search_image_inforrmation)
     /*DETERMINER L'IMAGE BINARISÉ*/
     switch(search_image_inforrmation.color)
     {
-        case RED:
-            nbr_pixel=bit_image(RED,ligne,colonne,image_hsv, binary_image);
+        case ORANGE:
+            nbr_pixel=bit_image(ORANGE,ligne,colonne,image_hsv, binary_image);
             break;
         case BLUE:
             nbr_pixel=bit_image(BLUE,ligne,colonne,image_hsv, binary_image);
             break;
-        case GREEN:
-            nbr_pixel=bit_image(GREEN,ligne,colonne,image_hsv, binary_image);
+        case YELLOW:
+            nbr_pixel=bit_image(YELLOW,ligne,colonne,image_hsv, binary_image);
             break;
         /*On peut envisager qu'on demande au robot d'avancer vers la balle*/
         default:
-            break; 
+            break;
     }
-
-    /*ANALYSE DES RESULTATS ET MISE A JOUR DE processed_image*/
-    if(nbr_pixel>=color_min_pixel)
+    if(nbr_pixel>=COLOR_MIN_PIXEL)
     {
         processed_image.color=search_image_inforrmation.color;
     }
+
+    
+    /*------- FILTRAGE DE L'IMAGE -------*/
+
+    image_filter(binary_image,ligne,colonne);
+    /*add_padding(binary_image,ligne,colonne);*/
+
+    for(i=0;i<ligne;i++)
+    {
+        for(j=0;j<colonne;j++)
+        {
+            printf("%i\t",binary_image[i][j]);
+        }
+        printf("\n");
+    }
+
 
    /*------- DETECTION FORME ------*/
 
@@ -227,13 +245,106 @@ Object image_treatment(Object search_image_inforrmation)
             break;
         /*On peut envisager qu'on demande au robot d'avancer vers l'objet rouge*/
         default:
-            break; 
+            break;
     }
     /*ANALYSE DES RESULTATS ET MISE A JOUR DE processed_image-*/
-    if(my_ratio_area>=shape_min_percentage)
+    if(my_ratio_area>=SHAPE_MIN_PERCENTAGE)
     {
         processed_image.shape=search_image_inforrmation.shape;
     }
+
+    /*------- DETECTION POSITION ------*/
+    processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
     
     return processed_image;
+}
+
+int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path)
+{
+    
+    /*
+    ****************************************
+    ********DECLARATION DES VARIABLES*******
+    ****************************************
+    */
+    Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
+    Object pattern;
+    int i,size_patterns,size_image_objects=0;
+     
+    /*
+    **************************
+    ********TRAITEMENT********
+    **************************
+    */
+
+    /*ETAPE 1 : GENERATION DES PATTERNS*/
+    size_patterns=pattern_generator(searched_pattern,patterns);
+
+
+    /*ETAPE 2 : TRAITEMENT DES PATTERNS GENERÉES*/
+    for(i=0;i<size_patterns;i++)
+    {
+        pattern=image_treatment(patterns[i],path);
+        if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
+        {
+            image_objects[size_image_objects]=pattern;
+            size_image_objects++;
+        }
+        
+    }
+    
+    return size_image_objects;
+}
+
+int pattern_generator(Object object, Object* match_patterns)
+{
+    int i,j,k,size_match_patterns=0;
+    Color object_color=object.color;
+    Shape object_shape=object.shape;
+    if(object.color!=NONE_COLOR && object.shape!=NONE_SHAPE)
+    {
+        match_patterns[0]=object;
+        size_match_patterns++;
+        /*
+        ICI c'est pour anticiper des erreurs car normalement on ne doit 
+        pas appeler cette methode si la stucture a une couleur et une forme
+        */
+    }
+    else if(object.color==NONE_COLOR && object.shape==NONE_SHAPE)
+    {
+        for(i=BALL,k=0;i<NUMBER_OF_SHAPE;i++)
+        {
+            for(j=ORANGE;j<NUMBER_OF_COLOR;j++,k++)
+            {
+                match_patterns[k]=create_object(i,j,init_position());
+                size_match_patterns++;
+            }
+        }
+        /*ci dessous le contenue de object_configuration*/
+        /*
+        { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "RED" }
+        { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "GREEN" }
+        { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "BLUE" }
+        { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "RED" }
+        { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "GREEN" }
+        { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "BLUE" }
+        */
+    }
+    else if(object_color!=NONE_COLOR)/*Couleur connue on genere donc les differentes formes*/
+    {
+        for(i=BALL;i<NUMBER_OF_SHAPE;i++)
+        {
+            match_patterns[i]=create_object(i,object_color,init_position());
+            size_match_patterns++;
+        }
+    }
+    else/*forme connue on genere donc les differentes couleurs*/
+    {
+        for(i=ORANGE;i<NUMBER_OF_COLOR;i++)
+        {
+            match_patterns[i]=create_object(object_shape,i,init_position());
+            size_match_patterns++;
+        }
+    }
+    return size_match_patterns;
 }

@@ -41,5 +41,13 @@ Object init_object();
 */
 Object create_object(Shape shape,Color color,Position position);
 
+/*FUNCTION:void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size)
+    
+*/
 
+/*INPUT: 
+*/
+
+/*OUTPUT: void
+*/
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size);

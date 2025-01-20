@@ -54,5 +54,15 @@ Color init_color();
  */
 int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int ** binary_image);
 
+/*FUNCTION:const char* get_color_name(Color color)
+    
+*/
 
+/*INPUT: Color color
+
+*/
+
+/*OUTPUT: const char*
+
+*/
 const char* get_color_name(Color color);

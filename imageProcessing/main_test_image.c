@@ -18,7 +18,7 @@ int main()
 
 
 
-    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
+    /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
     search_object = init_object();
     object_to_json(&search_object, json_buffer, sizeof(json_buffer));
     printf("\t %s \n",json_buffer);
@@ -35,7 +35,7 @@ int main()
     {
         object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
         printf("\t %s \n",json_buffer);
-    }
+    }*/
 
 /*
     printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
@@ -105,10 +105,10 @@ int main()
     }*/
 
 
-   /* search_object.shape=BALL;
-    search_object.color=YELLOW;
+    search_object.shape=BALL;
+    search_object.color=ORANGE;
     
-    processed_object = image_treatment(search_object,path);*/
+    processed_object = image_treatment(search_object,path);
 
     object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
     printf("%s\n",json_buffer);

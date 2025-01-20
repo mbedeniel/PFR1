@@ -94,4 +94,15 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
         un entier indiquant le nombre de segment formé
 */
 
+/*FUNCTION:const char* get_shape_name(Shape shape)
+
+*/
+
+/*INPUT: Shape shape
+    
+*/
+
+/*OUTPUT: const char* 
+
+*/
 const char* get_shape_name(Shape shape);

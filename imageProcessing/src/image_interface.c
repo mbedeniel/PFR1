@@ -16,6 +16,8 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
     Object processed_image; 
+    char command[256]; /* Ajout d'un croix avec un script python*/
+    int result; /* Resultat de l'appel*/
 
     /*
     processed_image : resultat du traitement image
@@ -255,6 +257,10 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
 
     /*------- DETECTION POSITION ------*/
     processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
+
+    // Prépare la commande pour exécuter le script Python
+    snprintf(command, sizeof(command), "python3 ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
+    result = system(command);
     
     return processed_image;
 }
@@ -289,6 +295,10 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
         {
             image_objects[size_image_objects]=pattern;
             size_image_objects++;
+
+            //Appel python
+            snprintf(command, sizeof(command), "python3 ajout_croix.py %s %s %s", path, pattern.position.x, pattern.position.y);
+            result = system(command);
         }
         
     }

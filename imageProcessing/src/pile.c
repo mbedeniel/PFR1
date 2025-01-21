@@ -106,7 +106,7 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n){
     return ps;
 }
 
-void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil) {
+int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil) {
     int object_num = 1;  
     
     
@@ -140,7 +140,7 @@ void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seui
         /////////Traitement sur image possible ici/////////
         ///////////////////////////////////////////////////
 
-
+	object_num++;
         ///////////////////////////////////////////////////
         }
         for (int i = 0; i < HEIGHT; i++) {
@@ -151,11 +151,12 @@ void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seui
         }
         free(image);
 
-        object_num++;
+        
 
 
         act_stack = act_stack->suivant;
     }
+return object_num;
 }
 
 void affiche_PILE_stack(PILE_stack ps){

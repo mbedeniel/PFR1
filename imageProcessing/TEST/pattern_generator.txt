@@ -1,0 +1,109 @@
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "NONE_SHAPE", "color": "NONE_COLOR" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "RED" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "GREEN" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "BLUE" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "RED" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "GREEN" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "BLUE" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "NONE_COLOR" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "RED" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "GREEN" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "BLUE" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "NONE_COLOR" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "RED" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "GREEN" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "BLUE" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "NONE_SHAPE", "color": "RED" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "RED" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "RED" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "NONE_SHAPE", "color": "BLUE" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "BLUE" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "BLUE" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "NONE_SHAPE", "color": "GREEN" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "GREEN" } 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "GREEN" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "RED" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "RED" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "BLUE" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "BLUE" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "GREEN" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "CUBE", "color": "GREEN" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "BLUE" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "BLUE" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "RED" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "RED" } 
+
+
+
+ OBJET AVANT LE TRAITEMENT 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "GREEN" } 
+
+ LES PATTERNS GENERÉES SONT : 
+	 { "position": { "x": 0, "y": 0 }, "shape": "BALL", "color": "GREEN" } 
+    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    for(i=0;i<NUMBER_OF_COLOR*NUMBER_OF_SHAPE;i++)    {        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));        printf("\t %s \n",json_buffer);    }    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.shape=BALL;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    for(i=0;i<NUMBER_OF_COLOR;i++)    {        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));        printf("\t %s \n",json_buffer);    }    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.shape=CUBE;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    for(i=0;i<NUMBER_OF_COLOR;i++)    {        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));        printf("\t %s \n",json_buffer);    }    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.color=RED;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    for(i=0;i<NUMBER_OF_SHAPE;i++)    {        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));        printf("\t %s \n",json_buffer);    }    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.color=BLUE;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    for(i=0;i<NUMBER_OF_SHAPE;i++)    {        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));        printf("\t %s \n",json_buffer);    }    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.color=GREEN;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    for(i=0;i<NUMBER_OF_SHAPE;i++)    {        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));        printf("\t %s \n",json_buffer);    }    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.shape=CUBE;    search_object.color=RED;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    object_to_json(&patterns[0], json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.shape=CUBE;    search_object.color=BLUE;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    object_to_json(&patterns[0], json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");    search_object = init_object();    search_object.shape=CUBE;    search_object.color=GREEN;    object_to_json(&search_object, json_buffer, sizeof(json_buffer));    printf("\t %s \n",json_buffer);    generate_pattern(search_object,patterns);    printf("\n LES PATTERNS GENERÉES SONT : \n");    object_to_json(&patterns[0], json_buffer, sizeof(json_buffer));    printf("\t %s 

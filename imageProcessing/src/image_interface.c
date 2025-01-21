@@ -237,6 +237,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
 
     /*------- Segmentation des FORMEs ------*/
+    /*
     PILE_stack pile_objets = init_PILE_stack();
 
     for(int i = 0; i < ligne; i++) {
@@ -245,6 +246,8 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
                 pile_objets = parcour_PILE_connex(pile_objets, i, j, 2);
             
             }}}
+
+    */
 
     
     int nb_forme = objecBinariser(pile_objets,ligne,colone,1,COLOR_MIN_PIXEL);

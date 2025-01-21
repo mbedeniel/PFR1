@@ -38,6 +38,6 @@ int PILE_estVide_stack(PILE_stack ps);
 
 PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n);
 
-int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil);
+int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil);
 
 void affiche_PILE_stack(PILE_stack ps);

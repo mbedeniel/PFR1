@@ -1,12 +1,13 @@
 #include "./include/image_interface.h"
-#include <stdio.h>
 
 int main()
 {
-    Object search_object,processed_object;
+    Object search_object;
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
-    int i =0,size_patterns,number_valid_pattern,image_number,mode=0,color_shape;
+    int i =0,number_valid_pattern,image_number,mode=0,color_shape;
     char path[35];
+
+
     /* recuperer les infos de l object sous format json*/
     char json_buffer[256]; /*Tampon pour la chaîne JSON*/
 

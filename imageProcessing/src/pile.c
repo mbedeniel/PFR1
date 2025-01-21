@@ -1,18 +1,13 @@
 #include "./../include/pile.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 typedef int ELEMENT;
 
 void affiche_ELEMENT(ELEMENT element){
 	printf("%d", element);
 }
-
-typedef struct cell{
-    struct cell *suivant;
-    int x;
-    int y;
-} CELLULE;
 
 typedef CELLULE * PILE;
 
@@ -67,11 +62,6 @@ int connexN(PILE p, int x, int y, int n){
     return 0;
 }
 
-typedef struct cellu{
-    struct cellu *suivant;
-    PILE p;
-    int num_object;
-} CELLULEP;
 
 typedef CELLULEP * PILE_stack;
 
@@ -111,10 +101,12 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n){
 int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil) {
     int object_num = 1;  
     int max_nb_pixel = 0;
+    int i, j;
+
     int ***image_save = (int ***)malloc(HEIGHT * sizeof(int **));
-	for (int i = 0; i < HEIGHT; i++) {
+	for (i = 0; i < HEIGHT; i++) {
 	    image_save[i] = (int **)malloc(WIDTH * sizeof(int *));
-	    for (int j = 0; j < WIDTH; j++) {
+	    for ( j = 0; j < WIDTH; j++) {
 		image_save[i][j] = (int *)calloc(CHANNELS, sizeof(int));  // Initialise tout à 0
 	    }
 	}
@@ -125,9 +117,9 @@ int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int se
         int nb_pixels = 0;
     
         int ***image = (int ***)malloc(HEIGHT * sizeof(int **));
-        for (int i = 0; i < HEIGHT; i++) {
+        for ( i = 0; i < HEIGHT; i++) {
             image[i] = (int **)malloc(WIDTH * sizeof(int *));
-            for (int j = 0; j < WIDTH; j++) {
+            for ( j = 0; j < WIDTH; j++) {
                 image[i][j] = (int *)calloc(CHANNELS, sizeof(int));  // Initialise tout à 0
             }
         }

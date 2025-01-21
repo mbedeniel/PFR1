@@ -275,7 +275,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
 
     // Prépare la commande pour exécuter le script Python
-    snprintf(command, sizeof(command), "python3 ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
+    snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
     result = system(command);
     
     return processed_image;
@@ -315,7 +315,7 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
             size_image_objects++;
 
             //Appel python
-            snprintf(command, sizeof(command), "python3 ajout_croix.py %s %s %s", path, pattern.position.x, pattern.position.y);
+            snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, pattern.position.x, pattern.position.y);
             result = system(command);
         }
         

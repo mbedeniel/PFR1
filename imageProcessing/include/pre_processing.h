@@ -129,3 +129,5 @@ void median(int ** image,int i,int j);
 */
 /*OUTPUT: NONE*/
 void add_padding(int ** image,int ligne,int column);
+
+void segmentation_img_b(int*** image, int n, int seuil, int ligne, int colonne);

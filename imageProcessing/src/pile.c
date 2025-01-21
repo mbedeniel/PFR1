@@ -106,14 +106,21 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n){
     return ps;
 }
 
-int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil) {
+int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil) {
     int object_num = 1;  
-    
+    int max_nb_pixel = 0;
+    int ***image_save = (int ***)malloc(HEIGHT * sizeof(int **));
+	for (int i = 0; i < HEIGHT; i++) {
+	    image_save[i] = (int **)malloc(WIDTH * sizeof(int *));
+	    for (int j = 0; j < WIDTH; j++) {
+		image_save[i][j] = (int *)calloc(CHANNELS, sizeof(int));  // Initialise tout à 0
+	    }
+	}
     
     PILE_stack act_stack = ps;
     while (act_stack != NULL) {
         PILE act_pile = act_stack->p;
-        int seuil_pille = 0;
+        int nb_pixels = 0;
     
         int ***image = (int ***)malloc(HEIGHT * sizeof(int **));
         for (int i = 0; i < HEIGHT; i++) {
@@ -130,18 +137,16 @@ int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil
 
             if (x >= 0 && x < HEIGHT && y >= 0 && y < WIDTH) {
                 image[x][y][0] = 1;  
-                seuil_pille++;
+                nb_pixels++;
             }
 
             act_pile = act_pile->suivant;  
         }
-        if (seuil<seuil_pille){
-        ///////////////////////////////////////////////////
-        /////////Traitement sur image possible ici/////////
-        ///////////////////////////////////////////////////
+        if (seuil<nb_pixels){
+	    if (max_nb_pixel<nb_pixels){
+		image_save = image;}
+	    object_num++;
 
-	object_num++;
-        ///////////////////////////////////////////////////
         }
         for (int i = 0; i < HEIGHT; i++) {
             for (int j = 0; j < WIDTH; j++) {
@@ -151,12 +156,9 @@ int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil
         }
         free(image);
 
-        
-
-
         act_stack = act_stack->suivant;
     }
-return object_num;
+return image_save;
 }
 
 void affiche_PILE_stack(PILE_stack ps){

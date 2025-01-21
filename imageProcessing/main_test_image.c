@@ -44,6 +44,9 @@ int main()
         number_valid_pattern=pattern_analyser(search_object,patterns,path);
         for(i=0;i<number_valid_pattern;i++)
         {
+            /*------------------------------------*/
+            /*ADD PYTHON FOR MARKING POSITION HEAR*/
+            /*------------------------------------*/
             object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
             printf("\t %s \n",json_buffer);
         }
@@ -60,6 +63,9 @@ int main()
         number_valid_pattern=pattern_analyser(search_object,patterns,path);
         for(i=0;i<number_valid_pattern;i++)
         {
+            /*------------------------------------*/
+            /*ADD PYTHON FOR MARKING POSITION HEAR*/
+            /*------------------------------------*/
             object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
             printf("\t %s \n",json_buffer);
         }
@@ -76,6 +82,9 @@ int main()
         number_valid_pattern=pattern_analyser(search_object,patterns,path);
         for(i=0;i<number_valid_pattern;i++)
         {
+            /*------------------------------------*/
+            /*ADD PYTHON FOR MARKING POSITION HEAR*/
+            /*------------------------------------*/
             object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
             printf("\t %s \n",json_buffer);
         }
@@ -86,6 +95,9 @@ int main()
         number_valid_pattern=pattern_analyser(search_object,patterns,path);
         for(i=0;i<number_valid_pattern;i++)
         {
+            /*------------------------------------*/
+            /*ADD PYTHON FOR MARKING POSITION HEAR*/
+            /*------------------------------------*/
             object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
             printf("\t %s \n",json_buffer);
         }

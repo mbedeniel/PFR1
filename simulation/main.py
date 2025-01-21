@@ -27,12 +27,12 @@ ouverture3 = init_ouverture(coins['coin_BG'], 10,50)
 ouverture4 = init_ouverture(coins['coin_BD'], 10,50)
 
 # Initialisation des obstacles
-obstacle = init_obstable('obstacle1', (-100,150), 'red', 'cercle', 25)
-obstacle2 = init_obstable('obstacle2', (200, 100), 'green', 'carree', 50)
-obstacle3 = init_obstable('obstacle3', (50, 20), 'yellow', 'carree', 50)
-obstacle4 = init_obstable('obstacle4', (-200, -100), 'blue', 'cercle', 25)
-obstacle6 = init_obstable('obstacle6', (-130, 70), 'red', 'carree', 50)
-obstacle7 = init_obstable('obstacle7', (80, -120), 'green', 'carree', 50)
+obstacle = init_obstable('obstacle1', (-80,150), 'red', 'cercle', 25)
+obstacle2 = init_obstable('obstacle2', (200, 110), 'green', 'carree', 50)
+obstacle3 = init_obstable('obstacle3', (40, 20), 'yellow', 'carree', 50)
+obstacle4 = init_obstable('obstacle4', (-180, -70), 'blue', 'cercle', 25)
+obstacle6 = init_obstable('obstacle6', (-140, 70), 'red', 'carree', 50)
+obstacle7 = init_obstable('obstacle7', (150, -60), 'green', 'carree', 50)
 
 
 

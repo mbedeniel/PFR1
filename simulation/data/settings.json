@@ -1,6 +1,6 @@
 {
     "debug": true,
-    "speak": false,
+    "speak": true,
     "display": true,
     "current_language": "fr",
     "LANGUAGES": {
@@ -126,6 +126,10 @@
         "ihm": {
             "path": "vocal/ihm.exe",
             "description": "Interface utilisateur"
+        },
+        "image_processing": {
+            "path": "imageProcessing\\main_test_image.exe",
+            "description": "Image Processing"
         }
     }
 }

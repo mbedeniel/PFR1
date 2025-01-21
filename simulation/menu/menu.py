@@ -3,7 +3,7 @@ import keyboard
 from simulation.navigation.mouvement import rotation, translantion, vocal_reception, adaptation_donnees
 from time import sleep
 from simulation.data.settings import get_text, load_parametre, save_parametre, set_language
-from simulation.loader.interaction import mode_ihm , mode_Vocal
+from simulation.loader.interaction import mode_ihm , mode_Vocal, mode_image_processing
 from simulation.logger.logger import display 
 from vocal.python.speaker import speak
 
@@ -118,10 +118,13 @@ def lancer_mode_image_processing(new_curseur, piece):
     Gère le fonctionnement du mode de traitement d'image.
     """
     display(get_text('image_processing_mode'))
+    while True:
+        display(get_text('quit_image_processing'))
+        mode_image_processing()
+        quitter = input(get_text('quit_prompt')).strip().lower()
+        if quitter == 'o':
+            break
 
-    display(get_text('quit_image_processing'))
-    if input().strip().lower() == 'o':
-        return
         
     
 def settings():

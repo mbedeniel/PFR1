@@ -155,7 +155,8 @@ MENU_TEXT = {
 
 PROGRAMS = {
     'vocal': {'path': "vocal/app.exe", 'description': "Programme vocal"},
-    'ihm': {'path': "vocal/ihm.exe", 'description': "Interface utilisateur"}
+    'ihm': {'path': "vocal/ihm.exe", 'description': "Interface utilisateur"},
+    'image_processing' : {'path' : "imageProcessing\main_test_image.exe", 'description':"Image Processing"}
 }
 
 def init_settings_file():

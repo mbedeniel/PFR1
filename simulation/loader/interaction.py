@@ -25,14 +25,22 @@ def appeler_programme_c(path_programme_c):
         return {}
     else:
         #decider de l'encodage avec le plus approprié
+        data = {}
         try:
             sortie = stdout.decode("utf-8").replace('\r', '').replace('\n', '')
+            
         except UnicodeDecodeError:
             sortie = stdout.decode("latin1").replace('\r', '').replace('\n', '')
+            
         except Exception as e:
             display(get_text('error_interactions').format(e))
             return {}
-        data = json.loads(sortie)
+        try:
+            data = json.loads(sortie)
+        except json.JSONDecodeError:
+            print(sortie)
+            return {}
+        
         return data
 
 
@@ -64,4 +72,14 @@ def mode_ihm():
             return None
         else:
             continuer = False
+    return data
+
+def mode_image_processing():
+    """
+    Mode de traitement d'image : appelle le programme C responsable du traitement d'image.
+    :return: Les données JSON retournées par le programme.
+    """
+    programm = load_parametre('PROGRAMS')
+    chemin_programme_c = programm.get('image_processing').get("path")
+    data = appeler_programme_c(chemin_programme_c)
     return data

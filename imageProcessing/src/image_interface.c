@@ -219,17 +219,6 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*------- FILTRAGE DE L'IMAGE -------*/
 
     image_filter(binary_image,ligne,colonne);
-    /*add_padding(binary_image,ligne,colonne);*/
-
-    for(i=0;i<ligne;i++)
-    {
-        for(j=0;j<colonne;j++)
-        {
-            printf("%i\t",binary_image[i][j]);
-        }
-        printf("\n");
-    }
-
 
    /*------- DETECTION FORME ------*/
 

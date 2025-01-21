@@ -74,3 +74,23 @@ const char* get_color_name(Color color) {
         default: return "NONE_COLOR";
     }
 }
+
+Color get_color(int number)
+{
+    if (number==ORANGE)
+    {
+        return ORANGE;
+    }
+    else if(number==BLUE)
+    {
+        return BLUE;
+    }
+    else if(number==YELLOW)
+    {
+        return YELLOW;
+    }
+    else
+    {
+        return NONE_COLOR;
+    } 
+}

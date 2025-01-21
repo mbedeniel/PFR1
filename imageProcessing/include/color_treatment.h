@@ -54,6 +54,8 @@ Color init_color();
  */
 int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int ** binary_image);
 
+Color get_color(int number);
+
 /*FUNCTION:const char* get_color_name(Color color)
     cette fontion retourne le nom de la couleur sous forme de chaine de caractère
 */

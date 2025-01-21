@@ -5,132 +5,90 @@ int main()
 {
     Object search_object,processed_object;
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
-    int i =0,size_patterns,number_valid_pattern,image_number;
+    int i =0,size_patterns,number_valid_pattern,image_number,mode=0,color_shape;
     char path[35];
     /* recuperer les infos de l object sous format json*/
     char json_buffer[256]; /*Tampon pour la chaîne JSON*/
 
 
-    /*Path vers l'image*/
-    /*printf("Veulliez entrer le numéro de l'image : ");*/
+
+    /*Recuperation dumode*/
+    printf("\n MODE : ");
+    scanf("%i", &mode);
+
+
+    /*Generation du Path vers l'image*/
+    printf("\n PATH : ");
     scanf("%i", &image_number);
     snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
 
 
-
-    /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
+    /*Collecte d'information pour la recherche*/
     search_object = init_object();
-    object_to_json(&search_object, json_buffer, sizeof(json_buffer));
-    printf("\t %s \n",json_buffer);
-    printf("\n LES PATTERNS GENERÉES SONT : \n");
-    size_patterns=pattern_generator(search_object,patterns);
-    for(i=0;i<size_patterns;i++)
+
+    if(mode==1) /* La couleur et la forme sont fournis*/
     {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
+        /*Recuperation de la couleur*/
+        printf("\n COLOR : ");
+        scanf("%i",&color_shape);
+        /*Mise a jour de la couleur l'objet*/
+        search_object.color = get_color(color_shape);
+
+        /*Recuperation de la forme*/
+        printf("\n SHAPE : ");
+        scanf("%i",&color_shape);
+        /*Mise a jour de la forme l'objet*/
+        search_object.shape = get_shape(color_shape);
+
+        /*Lancement du traitement et resultat*/
+        number_valid_pattern=pattern_analyser(search_object,patterns,path);
+        for(i=0;i<number_valid_pattern;i++)
+        {
+            object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
+            printf("\t %s \n",json_buffer);
+        }
     }
-    printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");
-    number_valid_pattern=pattern_analyser(search_object,patterns,path);
-    for(i=0;i<number_valid_pattern;i++)
+    else if(mode==2) /*eul la forme est forunie*/
     {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
-    }*/
+        /*Recuperation de la forme*/
+        printf("\n SHAPE : ");
+        scanf("%i",&color_shape);
+        /*Mise a jour de la couleur l'objet*/
+        search_object.color = get_color(color_shape);
 
-/*
-    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
-    search_object = init_object();
-    search_object.shape=BALL;
-    object_to_json(&search_object, json_buffer, sizeof(json_buffer));
-    printf("\t %s \n",json_buffer);
-    pattern_generator(search_object,patterns);
-    printf("\n LES PATTERNS GENERÉES SONT : \n");
-    size_patterns=pattern_generator(search_object,patterns);
-    for(i=0;i<size_patterns;i++)
-    {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
+        /*Lancement du traitement et resultat*/
+        number_valid_pattern=pattern_analyser(search_object,patterns,path);
+        for(i=0;i<number_valid_pattern;i++)
+        {
+            object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
+            printf("\t %s \n",json_buffer);
+        }
     }
-    printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");
-    number_valid_pattern=pattern_analyser(search_object,patterns,path);
-    for(i=0;i<number_valid_pattern;i++)
+    else if(mode==3) /*seul la couleur est fourni*/
     {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
+        /*Recuperation de la couleur*/
+        printf("\nCOLOR : ");
+        scanf("%i",&color_shape);
+        /*Mise a jour de la couleur l'objet*/
+        search_object.color = get_color(color_shape);
+
+        /*Lancement du traitement et resultat*/
+        number_valid_pattern=pattern_analyser(search_object,patterns,path);
+        for(i=0;i<number_valid_pattern;i++)
+        {
+            object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
+            printf("\t %s \n",json_buffer);
+        }
     }
-
-
-    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
-    search_object = init_object();
-    search_object.color=BLUE;
-    object_to_json(&search_object, json_buffer, sizeof(json_buffer));
-    printf("\t %s \n",json_buffer);
-    pattern_generator(search_object,patterns);
-    printf("\n LES PATTERNS GENERÉES SONT : \n");
-    size_patterns=pattern_generator(search_object,patterns);
-    for(i=0;i<size_patterns;i++)
+    else /*Analyse complete de l'image*/
     {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
-    }
-    printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");
-    number_valid_pattern=pattern_analyser(search_object,patterns,path);
-    for(i=0;i<number_valid_pattern;i++)
-    {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
-    }
-
-
-    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
-    search_object = init_object();
-    search_object.shape=BALL;
-    search_object.color=BLUE;
-    object_to_json(&search_object, json_buffer, sizeof(json_buffer));
-    printf("\t %s \n",json_buffer);
-    pattern_generator(search_object,patterns);
-    printf("\n LES PATTERNS GENERÉES SONT : \n");
-    size_patterns=pattern_generator(search_object,patterns);
-    for(i=0;i<size_patterns;i++)
-    {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
-    }
-    printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");
-    number_valid_pattern=pattern_analyser(search_object,patterns,path);
-    for(i=0;i<number_valid_pattern;i++)
-    {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
-    }*/
-
-
-    search_object.shape=BALL;
-    search_object.color=ORANGE;
-    
-    processed_object = image_treatment(search_object,path);
-
-    object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
-    printf("%s\n",json_buffer);
-
-    
-    
-    if(processed_object.color==search_object.color)
-    {
-        printf("Couleur trouvée \n");
-    }
-    else
-    {
-        printf("Couleur non trouvée \n");
-    }
-
-    if(processed_object.shape==search_object.shape)
-    {
-        printf("Forme trouvée \n");
-    }
-    else
-    {
-        printf("Forme non trouvée \n");
+        /*Lancement du traitement et resultat*/
+        number_valid_pattern=pattern_analyser(search_object,patterns,path);
+        for(i=0;i<number_valid_pattern;i++)
+        {
+            object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
+            printf("\t %s \n",json_buffer);
+        }
     }
     
     return 0;

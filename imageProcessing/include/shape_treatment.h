@@ -106,3 +106,6 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
 
 */
 const char* get_shape_name(Shape shape);
+
+
+Shape get_shape(int number);

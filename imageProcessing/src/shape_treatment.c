@@ -91,3 +91,19 @@ const char* get_shape_name(Shape shape) {
         default: return "NONE_SHAPE";
     }
 }
+
+Shape get_shape(int number)
+{
+    if (number==BALL)
+    {
+        return BALL;
+    }
+    else if(number==CUBE)
+    {
+        return CUBE;
+    }
+    else
+    {
+        return NONE_SHAPE;
+    } 
+}

@@ -247,12 +247,10 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
             
             }}}
 
-    */
-
     
     int nb_forme = objecBinariser(pile_objets,ligne,colone,1,COLOR_MIN_PIXEL);
 
-
+    */
     
     switch(search_image_inforrmation.shape)
     {

@@ -1,3 +1,5 @@
+#include "./../include/pile.h"
+
 typedef int ELEMENT;
 
 void affiche_ELEMENT(ELEMENT element){

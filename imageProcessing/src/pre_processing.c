@@ -226,7 +226,7 @@ void median(int ** image,int i,int j)
 	image[i][j]=filtres[size/2];
 }
 
-void segmentation_img_b(int*** image, int n, int seuil, int ligne, int colonne){
+int*** segmentation_img_b(int*** image, int n, int seuil, int ligne, int colonne){
     PILE_stack pile_objets = init_PILE_stack();
 
     for(int i = 0; i < ligne; i++) {
@@ -235,7 +235,7 @@ void segmentation_img_b(int*** image, int n, int seuil, int ligne, int colonne){
                 pile_objets = parcour_PILE_connex(pile_objets, i, j, n);
             
             }}}
-	objecBinariser(pile_objets,ligne,colonne,1,seuil);
+	return objecBinariser(pile_objets,ligne,colonne,1,seuil);
     
 }
 

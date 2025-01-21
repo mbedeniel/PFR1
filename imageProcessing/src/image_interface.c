@@ -251,7 +251,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     int nb_forme = objecBinariser(pile_objets,ligne,colone,1,COLOR_MIN_PIXEL);
 
     */
-    segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne);
+    int*** image_binaire_seg = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne);
     
     switch(search_image_inforrmation.shape)
     {

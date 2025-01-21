@@ -3,8 +3,8 @@ import cv2
 
 
 def ajout_croix_image(image_path, x_center, y_center, taille_croix = 1 ):
-    #.txt to .jpeg
-    image_path = image_path[:-3] + "jpeg"
+    #txt to jpeg
+    image_path = "../IMG_RGB_TEST/" + image_path[:-3] + "jpeg"
     
     # Ouvre l'image
     img = cv2.imread(image_path)

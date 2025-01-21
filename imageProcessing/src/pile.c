@@ -1,4 +1,6 @@
 #include "./../include/pile.h"
+#include <stdio.h>
+#include <string.h>
 
 typedef int ELEMENT;
 

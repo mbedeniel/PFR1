@@ -1,6 +1,6 @@
 {
     "debug": true,
-    "speak": true,
+    "speak": false,
     "display": true,
     "current_language": "fr",
     "LANGUAGES": {

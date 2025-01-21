@@ -111,7 +111,7 @@ def lancer_mode_auto(new_curseur, piece):
         disctance = random.randint(0, 250)
         rotation(new_curseur, angle)
         translantion(new_curseur, disctance, piece)
-        #sleep(0.2)
+        sleep(0.2)
 
 def lancer_mode_image_processing(new_curseur, piece):
     """

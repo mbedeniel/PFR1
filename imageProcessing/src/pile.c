@@ -91,12 +91,12 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n){
     return ps;
 }
 
-int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil) {
+void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil) {
     int object_num = 1;  
     int max_nb_pixel = 0;
     int i, j;
 
-    int ***image_save = (int ***)malloc(HEIGHT * sizeof(int **));
+    int **image_save = (int ***)malloc(HEIGHT * sizeof(int **));
 	for (i = 0; i < HEIGHT; i++) {
 	    image_save[i] = (int **)malloc(WIDTH * sizeof(int *));
 	    for ( j = 0; j < WIDTH; j++) {
@@ -109,7 +109,7 @@ int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int se
         PILE act_pile = act_stack->p;
         int nb_pixels = 0;
     
-        int ***image = (int ***)malloc(HEIGHT * sizeof(int **));
+        int **image = (int ***)malloc(HEIGHT * sizeof(int **));
         for ( i = 0; i < HEIGHT; i++) {
             image[i] = (int **)malloc(WIDTH * sizeof(int *));
             for ( j = 0; j < WIDTH; j++) {
@@ -123,16 +123,16 @@ int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int se
             int y = act_pile->y;
 
             if (x >= 0 && x < HEIGHT && y >= 0 && y < WIDTH) {
-                image[x][y][0] = 1;  
+                image[x][y] = 1;  
                 nb_pixels++;
             }
 
             act_pile = act_pile->suivant;  
         }
         if (seuil<nb_pixels){
-	    if (max_nb_pixel<nb_pixels){
-		image_save = image;}
-	    object_num++;
+            if (max_nb_pixel<nb_pixels){
+            image_save = image;}
+            object_num++;
 
         }
         for (int i = 0; i < HEIGHT; i++) {
@@ -145,7 +145,6 @@ int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int se
 
         act_stack = act_stack->suivant;
     }
-return image_save;
 }
 
 void affiche_PILE_stack(PILE_stack ps){

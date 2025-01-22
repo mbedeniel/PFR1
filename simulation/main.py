@@ -61,7 +61,7 @@ coins = piece['coins']
 
 coin = coins['coin_BD']
 new_curseur.up()
-new_curseur.goto(coin[0]+75 , coin[1] - 30)
+new_curseur.goto(coin[0]-200 , coin[1] - 30)
 new_curseur.down()
 
 #entrer le robot dans la piece

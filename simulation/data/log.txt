@@ -2295,3 +2295,185 @@ Veuillez choisir un mode parmi les suivants :
 q : Quitter
 À bientôt !
 ___FIN DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+__Mode Manuel__
+	Appuyer sur les flèches pour déplacer le robot.
+	Appuyer sur 'échape' pour quitter.
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+__Mode IHM__
+Appuyez sur 'o' pour quitter le mode IHM.
+Veuillez choisir un mode parmi les suivants :
+            a : avancer
+            r : reculer
+            d : droite
+            g : gauche
+            Saisissez le mode et la valeur (ex : a 15 ou r) : 
+Déplacement du Robot ....
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode IHM.
+Veuillez choisir un mode parmi les suivants :
+            a : avancer
+            r : reculer
+            d : droite
+            g : gauche
+            Saisissez le mode et la valeur (ex : a 15 ou r) : 
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur blue
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle2 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Obstacle critique détecté.
+Impossible de se déplacer.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur yellow
+Déplacement du Robot ....
+Mission accomplie.
+Appuyez sur 'o' pour quitter le mode IHM.
+Veuillez choisir un mode parmi les suivants :
+            a : avancer
+            r : reculer
+            d : droite
+            g : gauche
+            Saisissez le mode et la valeur (ex : a 15 ou r) : 
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle3 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+___DEMARRAGE DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+Choix invalide. Veuillez réessayer.
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+À bientôt !

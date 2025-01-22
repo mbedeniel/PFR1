@@ -219,7 +219,7 @@ def get_text(key):
     """
     langue  = load_parametre('current_language')
     menu_text = load_parametre('MENU_TEXT')
-    return menu_text[langue].get(key, f"Texte introuvable pour la clé '{key}'.")
+    return menu_text[langue].get(key,"")
 
 
 def load_parametre(key):

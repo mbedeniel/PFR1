@@ -106,12 +106,18 @@ def lancer_mode_auto(new_curseur, piece):
     """
     display(get_text('auto_mode'))
 
+    #enregister le mode speaker actuelle et le desactiver
+    speak_mode = load_parametre('speak')
+    save_parametre('speak', False)
+
     while keyboard.is_pressed("esc") == False:
-        angle = random.randint(-90, 90)
-        disctance = random.randint(0, 250)
-        rotation(new_curseur, angle)
-        translantion(new_curseur, disctance, piece)
-        sleep(0.2)
+        random_angle = random.randint(-90, 90)
+        random_disctance = random.randint(0, 250)
+        rotation(new_curseur, random_angle)
+        translantion(new_curseur, random_disctance, piece)
+        sleep(0.3)
+    #remettre le mode speaker actuelle
+    save_parametre('speak', speak_mode)
 
 def lancer_mode_image_processing(new_curseur, piece):
     """

@@ -39,4 +39,14 @@ clean_out:
 	rm -rf *.out
 
 clean_out_o:
-	rm -rf *.o *.out
+	rm -rf *.o *.outtst_file_dynamique.out : tst_file_dynamique.c element.o file_dynamique.o
+	gcc -o tst_file_dynamique.out tst_file_dynamique.c element.o file_dynamique.o
+
+tst_file_dynamique.out : tst_file_dynamique.c file_dynamique.o element.o
+	gcc -o tst_file_dynamique.out tst_file_dynamique.c file_dynamique.o element.o -W -Wall -ansi -pedantic -lm
+
+file_dynamique.o : $(SRC)/file_dynamique.c $(INCLUDE)/file_dynamique.h $(INCLUDE)/element.h
+	gcc -o file_dynamique.o -c $(SRC)/file_dynamique.c -W -Wall -ansi -pedantic -lm
+
+element.o : $(SRC)/element.c $(INCLUDE)/element.h
+	gcc -o element.o -c $(SRC)/element.c -W -Wall -ansi -pedantic -lm

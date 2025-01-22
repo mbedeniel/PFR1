@@ -107,7 +107,7 @@ int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int se
 	for (i = 0; i < HEIGHT; i++) {
 	    image_save[i] = (int **)malloc(WIDTH * sizeof(int *));
 	    for ( j = 0; j < WIDTH; j++) {
-		image_save[i][j] = (int *)calloc(CHANNELS, sizeof(int));  // Initialise tout à 0
+		image_save[i][j] = (int *)calloc(CHANNELS, sizeof(int));  /*Initialise tout à 0*/
 	    }
 	}
     
@@ -120,7 +120,7 @@ int*** objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int se
         for ( i = 0; i < HEIGHT; i++) {
             image[i] = (int **)malloc(WIDTH * sizeof(int *));
             for ( j = 0; j < WIDTH; j++) {
-                image[i][j] = (int *)calloc(CHANNELS, sizeof(int));  // Initialise tout à 0
+                image[i][j] = (int *)calloc(CHANNELS, sizeof(int));  /*Initialise tout à 0*/
             }
         }
 

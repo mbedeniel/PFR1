@@ -221,36 +221,11 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*------- FILTRAGE DE L'IMAGE -------*/
 
     image_filter(binary_image,ligne,colonne);
-    /*add_padding(binary_image,ligne,colonne);*/
 
-    for(i=0;i<ligne;i++)
-    {
-        for(j=0;j<colonne;j++)
-        {
-            printf("%i\t",binary_image[i][j]);
-        }
-        printf("\n");
-    }
-
-
-   /*------- DETECTION FORME ------*/
+    /*------- DETECTION FORME ------*/
     max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
 
     /*------- Segmentation des FORMEs ------*/
-    /*
-    PILE_stack pile_objets = init_PILE_stack();
-
-    for(int i = 0; i < ligne; i++) {
-        for(int j = 0; j < colone; j++) {
-            if (binary_image[i][j][0] == 1){
-                pile_objets = parcour_PILE_connex(pile_objets, i, j, 2);
-            
-            }}}
-
-    
-    int nb_forme = objecBinariser(pile_objets,ligne,colone,1,COLOR_MIN_PIXEL);
-
-    */
     int*** image_binaire_seg = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne);
     
     switch(search_image_inforrmation.shape)
@@ -261,7 +236,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
         case CUBE:
             my_ratio_area=ratio_area(nbr_pixel,max_min_pixel,CUBE);
             break;
-        /*On peut envisager qu'on demande au robot d'avancer vers l'objet rouge*/
+        /*On peut envisager qu'on demande au robot d'avancer vers l'objet bleue*/
         default:
             break;
     }
@@ -274,7 +249,8 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*------- DETECTION POSITION ------*/
     processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
 
-    // Prépare la commande pour exécuter le script Python
+    /*Prépare la commande pour exécuter le script Python*/
+    /*Appel du programme python pour marqué une croix a la position detectée*/
     snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
     result = system(command);
     
@@ -293,7 +269,7 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     Object pattern;
     int i,size_patterns,size_image_objects=0;
     char command[256]; /* Ajout d'un croix avec un script python*/
-    int result; /* Resultat de l'appel*/
+    int result; /* Resultat de l'appel du programme python*/
      
     /*
     **************************
@@ -314,7 +290,7 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
             image_objects[size_image_objects]=pattern;
             size_image_objects++;
 
-            //Appel python
+            /*Appel du programme python pour marqué une croix a la position detectée*/
             snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, pattern.position.x, pattern.position.y);
             result = system(command);
         }

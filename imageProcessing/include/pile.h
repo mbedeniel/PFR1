@@ -1,13 +1,5 @@
 typedef int ELEMENT;
 
-void affiche_ELEMENT(ELEMENT element);
-
-typedef struct cell{
-    struct cell *suivant;
-    int x;
-    int y;
-} CELLULE;
-
 typedef CELLULE * PILE;
 
 

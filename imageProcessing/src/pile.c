@@ -3,14 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-typedef int ELEMENT;
-
-void affiche_ELEMENT(ELEMENT element){
-	printf("%d", element);
-}
-
 typedef CELLULE * PILE;
-
 
 PILE init_PILE(void) {
     return NULL;
@@ -20,9 +13,9 @@ void affiche_PILE(PILE p){
     PILE act = p;
     while (act != NULL){
         printf("L'element est : ");
-        affiche_ELEMENT(act->x);
+        printf("%d", act->x);
         printf(",");
-        affiche_ELEMENT(act->y);
+	printf("%d", act->y);
         printf("\n");
         act = act->suivant;
     }

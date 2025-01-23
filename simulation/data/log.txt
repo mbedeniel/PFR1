@@ -2491,3 +2491,72 @@ q : Quitter
 __Mode Traitement d'image__
 Appuyez sur 'o' pour quitter le mode traitement d'image.
 Appuyez sur 'o' pour quitter le mode traitement d'image.
+___DEMARRAGE DE LA SIMULATION___
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter
+__Mode Vocal__
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : rechercher la balle rouge
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : aller vers la balle bleue
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur blue
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : reculer de 200 m et rechercher le cube ouverte
+Obstacle critique détecté.
+Impossible de se déplacer.
+Mission en cours d'execution
+Deplacement vers l'objet de type carree et de couleur green
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : reculer 200
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : reculer 200 m et aller à la balle rouge
+Mission en cours d'execution
+Deplacement vers l'objet de type cercle et de couleur red
+Obstacle critique détecté.
+Contournement de l'obstacle obstacle6 ...
+Fin du contournement de l'obstacle.
+Déplacement du Robot vers la destination ....
+Déplacement du Robot ....
+Mission accomplie.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : demander reculer
+Obstacle critique détecté.
+Impossible de se déplacer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : reculer
+Obstacle critique détecté.
+Impossible de se déplacer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+vous avez dit : reculer de 300
+Déplacement impossible. Le Robot risque de percuter la paroi de la pièce.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Dites 'Stop' pour quitter le mode vocal. Je vous écoute...

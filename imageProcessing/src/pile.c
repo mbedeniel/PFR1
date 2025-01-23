@@ -93,8 +93,8 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n){
     return ps;
 }
 
-void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil, MA_FILE* file){
-    int object_num = 1;  
+int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil, MA_FILE* file){
+    int nombre_objet = 0;  
     int max_nb_pixel = 0;
     int i, j;
     
@@ -106,7 +106,7 @@ void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seui
         ELEMENT img = creer_ELEMENT(HEIGHT, WIDTH);
         while (act_pile != NULL) {
             img[act_pile->x][act_pile->y] = 1;
-
+	    nombre_objet ++;
             act_pile = act_pile->suivant;  
         }
         if (seuil<nb_pixels){
@@ -117,6 +117,7 @@ void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seui
         }
         act_stack = act_stack->suivant;
     }
+    return nombre_objet;
 }
 
 

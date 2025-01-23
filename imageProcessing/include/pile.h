@@ -182,7 +182,7 @@ INPUT:
 OUTPUT:
     Retourne une image binaire contenant les objets dépassant le seuil.
 */
-void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil, MA_FILE* file);
+int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil, MA_FILE* file);
 
 /*
 FUNCTION : void affiche_PILE_stack(PILE_stack ps)

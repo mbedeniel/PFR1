@@ -1,4 +1,6 @@
 #include "./../include/pile.h"
+#include "./../include/file_dynamique.h"
+#include "./../include/element.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -109,6 +111,9 @@ void objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seui
         }
         if (seuil<nb_pixels){
             ENFILER(file, img);
+        }
+	else{
+            free(img);
         }
         act_stack = act_stack->suivant;
     }

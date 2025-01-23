@@ -1,4 +1,5 @@
 #include "../include/image_interface.h"
+#include "../include/file_dynamique.h"
 
 Object image_treatment(Object search_image_inforrmation,const char* path)
 {
@@ -227,7 +228,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
 
     /*------- Segmentation des FORMEs ------*/
     MA_FILE file;
-    INIT_FILE(file);
+    INIT_FILE(&file);
     int nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,file);
     
     switch(search_image_inforrmation.shape)

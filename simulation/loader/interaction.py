@@ -1,4 +1,5 @@
-from simulation.data.settings import __DEBUG__, MENU_TEXT, LANGUAGES, PROGRAMS , get_text, set_language
+from simulation.data.settings import get_text , load_parametre
+from simulation.logger.logger import display 
 import subprocess
 import json
 import os
@@ -19,65 +20,66 @@ def appeler_programme_c(path_programme_c):
     stdout, stderr = process.communicate()
 
     if process.returncode != 0:
-        #print(f"Erreur : {stderr.decode()}")
-        return None
+        sortie = stderr.decode()
+        display(get_text('not_understood'))
+        return {}
     else:
-        #print(f"Sortie : {stdout.decode()}")
+        #decider de l'encodage avec le plus approprié
+        data = {}
+        try:
+            sortie = stdout.decode("utf-8").replace('\r', '').replace('\n', '')
+            
+        except UnicodeDecodeError:
+            sortie = stdout.decode("latin1").replace('\r', '').replace('\n', '')
+            
+        except Exception as e:
+            display(get_text('error_interactions').format(e))
+            return {}
+        try:
+            data = json.loads(sortie)
+        except json.JSONDecodeError:
+            print(sortie)
+            return {}
+        
+        return data
 
-        data = json.loads(stdout.decode())
-        return data
-    """
-    try:
-        resultat = subprocess.run(
-            [commande],
-            capture_output=True,  # Capture la sortie standard et les erreurs
-            text=True,  # Pour avoir la sortie sous forme de texte
-            cwd=os.path.dirname(chemin_programme_c),  # Spécifie le répertoire de travail
-            check=True  # Vérifie si le programme a échoué
-        )
-        print(f"Résultat: {resultat.stdout}")
-        data = json.loads(resultat.stdout)
-        return data
-    except subprocess.CalledProcessError as e:
-        if __DEBUG__:
-            print(f"calledProcessError: {e}")
-        return None
-    except FileNotFoundError as e:
-        if __DEBUG__:
-            print(f"Fichier introuvable: {e}")
-        return None
-    except json.JSONDecodeError as e:
-        if __DEBUG__:
-            print(f"Erreur de décodage JSON: {e}")
-        return None
-"""
 
 def mode_Vocal():
     """
     Mode vocal : appelle le programme C responsable de la reconnaissance vocale.
     :return: Les données JSON retournées par le programme.
     """
-    chemin_programme_c = PROGRAMS.get('vocal').get("path")
-    print(f"Chemin programme C vocal: {chemin_programme_c}")
+    programm = load_parametre('PROGRAMS')
+    chemin_programme_c = programm.get('vocal').get("path")
     data = appeler_programme_c(chemin_programme_c)
     return data
 
 def mode_ihm():
     """
-    Mode IHM : permet de choisir une option et retourne les données JSON associées.
+    Mode IHM : permet de choisir une option (avancer , reculer , tourner ) et retourne les données JSON associées.
     :return: Les données JSON retournées par le programme.
     """
     continuer = True
     while continuer:
         # Présentation du menu
-        print(get_text('presentation_ihm'))
-        chemin_programme_c = PROGRAMS.get('ihm').get("path")
+        display(get_text('presentation_ihm'))
+        programm = load_parametre('PROGRAMS')
+        chemin_programme_c = programm.get('ihm').get("path")
         data = appeler_programme_c(chemin_programme_c)
-        print(f"programme C IHM: {chemin_programme_c}")
         # Vérifier si la taille de la liste n'est pas nulle
         if data is None or len(data) == 0:
-            print(get_text('invalid_input'))
+            display(get_text('invalid_input'))
             return None
         else:
             continuer = False
+    return data
+
+def mode_image_processing():
+    """
+    Mode de traitement d'image : appelle le programme C responsable du traitement d'image.
+    :return: Les données JSON retournées par le programme.
+    """
+    programm = load_parametre('PROGRAMS')
+    chemin_programme_c = programm.get('image_processing').get("path")
+    data = appeler_programme_c(chemin_programme_c)
     return data

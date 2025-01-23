@@ -1,7 +1,10 @@
-from simulation.navigation.mouvement import vocal_reception, adaptation_donnees
+import random
+import keyboard
+from simulation.navigation.mouvement import rotation, translantion, vocal_reception, adaptation_donnees
 from time import sleep
-from simulation.data.settings import __DEBUG__,__SPEAK__, MENU_TEXT, LANGUAGES , get_text, set_language ,current_language
-from simulation.loader.interaction import mode_ihm , mode_Vocal
+from simulation.data.settings import get_text, load_parametre, save_parametre, set_language
+from simulation.loader.interaction import mode_ihm , mode_Vocal, mode_image_processing
+from simulation.logger.logger import display 
 from vocal.python.speaker import speak
 
 
@@ -11,79 +14,144 @@ def menu(new_curseur, piece):
     L'utilisateur peut changer la langue ou quitter avec 'q'.
     """
     set_language()  # Permet de choisir la langue au lancement
-
-    print(get_text('welcome'))
-
-    if __SPEAK__:
-        speak(get_text('welcome'), current_language)
-
+    display(get_text('welcome'))
     while True:
-        print(get_text('choose_mode'))
-        if __SPEAK__:
-            speak(get_text('choose_mode'), current_language)
+        display(get_text('choose_mode'))
         choix = input(get_text('prompt')).strip()
-
         if choix == '1':
             lancer_mode_vocal(new_curseur, piece)
         elif choix == '2':
             lancer_mode_ihm(new_curseur, piece)
-        elif choix.lower() == 'l':
-            set_language()
+        elif choix.lower() == '3':
+            settings()
+        elif choix == '4':
+            lancer_mode_manuel(new_curseur, piece)
+        elif choix == '5': 
+            lancer_mode_auto(new_curseur, piece)
+        elif choix == '6':
+            lancer_mode_image_processing(new_curseur, piece)
         elif choix.lower() == 'q':
             break
         else:
-            print(get_text('invalid_choice'))
-            if __SPEAK__:
-                speak(get_text('invalid_choice'), current_language)
-
-    print(get_text('goodbye'))
-    if __SPEAK__:
-        speak(get_text('goodbye'), current_language)
-
+            display(get_text('invalid_choice'))
+    display(get_text('goodbye'))
+    
 def lancer_mode_vocal(new_curseur, piece):
     """
     Gère le fonctionnement du mode vocal.
+    les données envoyer par le c snt de la forme
+    {"texte": "aller puis tourner ├á droite  degr├⌐s et aller au balle rouge", "commandes": [{"action": "aller", "object": "null", "color": "null"}, {"action": "droite", "valeur": 90}, {"action": "aller", "object": "balle", "color": "rouge"}]
     """
-    print(get_text('vocal_mode'))
-    if __SPEAK__:
-        speak(get_text('vocal_mode'), current_language)
-
+    display(get_text('vocal_mode'))
+    
     while True:
-        print(get_text('quit_vocal'))
-        if __SPEAK__:
-            speak(get_text('quit_vocal'), current_language)
-        data = mode_Vocal()
-        adapted_data = adaptation_donnees(data)
+        display(get_text('quit_vocal'))
+        data_from_C_module = mode_Vocal()
+        text = data_from_C_module.get('texte', '')
+        if text == '':
+            continue
+        display(get_text('you_said').format(text))
+        print(get_text('command').format(data_from_C_module.get('commandes', [])))
         
-        vocal_reception(new_curseur, adapted_data, piece)
-        sleep(2)
-        #verifier si "Stop" a été prononcé 
-        commande = data.get('action', '')
-        if "stop" in commande.lower():
-            break
+        for data in data_from_C_module.get("commandes",[]):
+            
+            adapted_data = adaptation_donnees(data)
+            vocal_reception(new_curseur, adapted_data, piece)
+            #verifier si "Stop" a été prononcé 
+            commande = data.get('action', '')
+            if "stop" in commande.lower():
+                display(get_text('end_vocal'))
+                return
 
-    print(get_text('end_vocal'))
-    if __SPEAK__:
-        speak(get_text('end_vocal'), current_language)
 
+            
+
+    
+    
 def lancer_mode_ihm(new_curseur, piece):
     """
     Gère le fonctionnement du mode IHM.
     """
-    print(get_text('ihm_mode'))
+    display(get_text('ihm_mode'))
     while True:
-        print(get_text('quit_ihm'))
-        if __SPEAK__:
-            speak(get_text('quit_ihm'), current_language)
-
+        display(get_text('quit_ihm'))
+        
         data = mode_ihm()
-        adapted_data = adaptation_donnees(data)
-        vocal_reception(new_curseur, adapted_data, piece)
-        sleep(2)
+        commandes = data.get('commandes', [])
+        for data in commandes:
+            adapted_data = adaptation_donnees(data)
+            vocal_reception(new_curseur, adapted_data, piece)
         quitter = input(get_text('quit_prompt')).strip().lower()
         if quitter == 'o':
             break
 
-    print(get_text('end_ihm'))
-    if __SPEAK__:
-        speak(get_text('end_ihm'), current_language)
+    display(get_text('end_ihm'))
+
+
+def lancer_mode_manuel(new_curseur, piece):
+    display(get_text('manuel_mode'))
+    while keyboard.is_pressed("esc") == False:
+        if keyboard.is_pressed("up"):
+            translantion(new_curseur, 20, piece)
+        if keyboard.is_pressed("down"):
+            translantion(new_curseur, -20, piece)
+        if keyboard.is_pressed("left"):
+            rotation(new_curseur, 5)
+        if keyboard.is_pressed("right"):
+            rotation(new_curseur, -5)
+
+def lancer_mode_auto(new_curseur, piece):
+    """
+    Gère le fonctionnement du mode automatique.
+    """
+    display(get_text('auto_mode'))
+
+    #enregister le mode speaker actuelle et le desactiver
+    speak_mode = load_parametre('speak')
+    save_parametre('speak', False)
+
+    while keyboard.is_pressed("esc") == False:
+        random_angle = random.randint(-90, 90)
+        random_disctance = random.randint(0, 250)
+        rotation(new_curseur, random_angle)
+        translantion(new_curseur, random_disctance, piece)
+        sleep(0.3)
+    #remettre le mode speaker actuelle
+    save_parametre('speak', speak_mode)
+
+def lancer_mode_image_processing(new_curseur, piece):
+    """
+    Gère le fonctionnement du mode de traitement d'image.
+    """
+    display(get_text('image_processing_mode'))
+    while True:
+        display(get_text('quit_image_processing'))
+        mode_image_processing()
+        quitter = input(get_text('quit_prompt')).strip().lower()
+        if quitter == 'o':
+            break
+
+        
+    
+def settings():
+    """
+    Permet de configurer le système.
+    """
+    choix = ''
+    while choix != 'q':
+        display(get_text('settings_text').format(load_parametre('debug'), load_parametre('speak')))
+        choix = input().strip().lower()
+
+        if choix == '1':
+            debug = load_parametre('debug')
+            save_parametre('debug', not debug)
+        elif choix == '2':
+            speak = load_parametre('speak')
+            save_parametre('speak', not speak)
+        elif choix == '3':
+            set_language()
+        elif choix == 'q':
+            print(get_text('back_to_main'))
+            break
+        else:
+            get_text('invalid_choice')

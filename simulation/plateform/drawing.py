@@ -1,13 +1,12 @@
 import turtle as tl
 from simulation.data.init import init_coins
-from simulation.data.settings import __DEBUG__
+from simulation.data.settings import get_text
+from simulation.logger.logger import display 
 
 """
 CE FICHIER CONTIENT LES FONCTIONS DE TRACAGE DES PIECES, DES OUVERTURES ET DES OBSTACLES.
 C EST LUI QUI GERE L AFFICHAGE DES ELEMENTS DU JEU. (Interface graphique)
 """
-
-
 
 def tracer_piece(piece, curseur):
     curseur.speed(10)
@@ -62,7 +61,7 @@ def tracer_cercle(dimension, curseur):
     """
     curseur.setheading(180)  # Assurez-vous que le curseur commence dans la bonne direction
     #cercle de centre xc, yc = curseur.position()[0], curseur.position()[1] - dimension
-    curseur.circle(dimension)
+    curseur.circle(dimension) 
 
 #verifier si un point est a l interieur de la piece
 def est_dans_piece(point, piece):
@@ -81,17 +80,8 @@ def est_dans_piece(point, piece):
     # Vérifier les conditions
     if piece_x1 <= point[0] <= piece_x2 and piece_y2 <= point[1] <= piece_y1:
         return True
-    
+
     # Si le point est en dehors, afficher les messages d'erreur
-    if __DEBUG__:
-        if point[0] < piece_x1 or point[0] > piece_x2:
-            print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe X.")
-        if point[1] < piece_y2 or point[1] > piece_y1:
-            print(f"Erreur : le point {point} est en dehors de la pièce sur l'axe Y.")
-        
-        print(f"\tCoordonnées de la pièce : x ∈ [{piece_x1}, {piece_x2}] et y ∈ [{piece_y2}, {piece_y1}]")
-        print(f"\tCoordonnées du point : x = {point[0]}, y = {point[1]}")
-        
     return False
 
 def tracer_obstacle_carre(curseur, obstacle):
@@ -111,33 +101,24 @@ def tracer_obstacle(obstacle, curseur, piece):
     """
     #verifier si le coin_HD de l obstacle est a l interieur de la piece 
     if not est_dans_piece(obstacle["coin_HD"], piece):
-        print(f"Erreur: l obstacle {obstacle['nom']} est en dehors de la piece.")
+        display(get_text('obstacle_outside').format(obstacle["nom"]))
         return None 
-    
     #aller au positon du coin HD
     curseur.up()
     curseur.goto(obstacle["coin_HD"])
     curseur.down()
-
     curseur.color(obstacle["couleur"])
     curseur.begin_fill()
-
     if "cercle" == obstacle["forme"]:
         tracer_cercle(obstacle["dimension"],curseur)
     elif "carree" == obstacle["forme"]:
         tracer_obstacle_carre(curseur, obstacle)
-
-        """
-        for i in range(4):
-
-            curseur.forward(cote)
-
-            curseur.left(90)
-    """
     else:
-        if __DEBUG__:
-            print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        display(get_text('invalid_form').format(obstacle.get("nom")))
 
+    #AJOUTER UNE DISTANCE DE SECURITE SUR LES OBSTACLES POUR QUE LE ROBOT NE LES TOUCHE PAS
+    obstacle["dimension"] += 5
+    
     curseur.end_fill()
     curseur.up() 
 
@@ -149,16 +130,13 @@ def tracer_ouverture(ouverture, curseur , piece):
     curseur.up()
     curseur.goto(ouverture["coin_droite"])
     curseur.down()
-
     curseur.color(ouverture["color"])
     curseur.begin_fill()
-
     #si le coin est le coin_HD  l orientation de l ouverture est vers le bas pour aller vers le coin BD (angle 270 ou -90)
     #si le coin est le coin_HG  l orientation de l ouverture est vers la droite pour aller vers le coin HD (angle 0)
     #si le coin est le coin_BD  l orientation de l ouverture est vers la gauche pour aller vers le coin BG (angle 180)
     #si le coin est le coin_BG  l orientation de l ouverture est vers le haut pour aller vers le coin HG (angle 90)
     coins = init_coins(piece)
-    
     if ouverture["coin_droite"] == coins["coin_HG"]:
         curseur.setheading(0)
     elif ouverture["coin_droite"] == coins["coin_BG"]:
@@ -168,9 +146,8 @@ def tracer_ouverture(ouverture, curseur , piece):
         curseur.setheading(180)
     elif ouverture["coin_droite"] == coins["coin_HD"]:
         curseur.setheading(270)
-    
     else :
-        print(f"Erreur: l ouverture {ouverture['coin_droite']} n est pas un coin de la piece.")
+        display(get_text('invalid_coin').format(ouverture.get("coin_HD"), ouverture.get("nom")))
         return None
     curseur.forward(ouverture["distance_coin"])
 

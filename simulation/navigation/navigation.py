@@ -2,26 +2,27 @@
 """
 EN GROS, ICI J'ESSAIE D IMPLEMENTER LA NAVIGATION AUTOMATIQUE DU ROBOT 
 LUI DONNER LA FACULTE DE CONTOURNER LES OBSTACLES POUR ATTEINDRE SA DESTINATION
-AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OBSTACLE
-
+AUTREMENT DIT, IL DOIT SE DEPLACER DANS LA PIECE SANS PERCUTER (traverser) UN OBSTACLE , NI SE TROUVER DANS UN OBSTACLE
+OU DE SORTIR DE LA PIECE EN TRAVERSANT LES MURS
 """
-from math import cos, sin, radians , pi , sqrt
-#from simulation.navigation.dectection_collision import *
+from simulation.data.settings import get_text
 from simulation.plateform.drawing import est_dans_piece  # Assure-toi que cette fonction contient les définitions nécessaires
 from simulation.data.init import init_coins 
 from simulation.plateform.drawing import est_dans_piece
-from simulation.data.settings import __DEBUG__
+from simulation.logger.logger import display 
 from simulation.navigation.dectection_collision import get_Obstacles_critiques, point_is_in_obstacle
 ## les  fonction a venir sont des fonctions qui permettent de  positionner le robot dans la piece
 """
-En d autre terme, si le robot est à l'extérieur de la pièce, ces fonctions permettent de le faire entrer dans la pièce en passant par l ouverture le plus proche de lui.
+En d autre terme, si le robot est à l'extérieur de la pièce, ces fonctions permettent 
+ de le faire entrer dans la pièce en passant par l ouverture le plus proche de lui.
 expliquons un peu le fonctionnement de ces fonctions:
-1. On vérifie si le robot est déjà dans la pièce
+1. On vérifie si le robot est déjà dans la pièce ? si oui, on ne fait rien ,sion 
 2. On récupère les ouvertures de la pièce
 3. On trouve l'ouverture la plus proche du robot
 4. s aligne sur l axe x ou y par rapport au centre de l ouverture la plus proche
 5. on se dirige vers le centre de l ouverture
-6. on entre dans la pièce
+6. on entre dans la pièce en se dirigeant vers le centre de l ouverture en le deplacant de quelques pixels
+                7. YOUPIIIII LE ROBOT EST DANS LA PIECE :)
 """
 def aligner_sur_x(curseur, x):
     """
@@ -38,32 +39,29 @@ def aligner_sur_y(curseur, y):
 
 def entrer_robot1(curseur, piece):
     delta = 30
- # Vérifier si le robot est déjà dans la pièce
+ # Vérifier si le robot est déjà dans la pièce , si oui, on ne fait rien
     if est_dans_piece(curseur.position(), piece):
-        if __DEBUG__:
-            print("Le robot est déjà à l'intérieur de la pièce.")
         return
-
+    
+    #sinon
     # Récupérer les ouvertures de la pièce
     ouvertures = piece.get('ouvertures', [])
     if not ouvertures:
-        if __DEBUG__: 
-            print("Erreur : La pièce n'a pas d'ouvertures.")
+        display(get_text('no_ouverture'))
         return
 
     # Trouver l'ouverture la plus proche du robot
     robot_pos = curseur.position()
-   # ouverture_proche = min(ouvertures, key=lambda ouverture: get_distance(curseur, ouverture['coin_droite']))
+    #trier les ouvertures par distance minimale
     ouverture_proche = min(ouvertures, key=lambda ouverture: curseur.distance(ouverture['coin_droite']))
     # Identifier l'orientation de l'ouverture
     coin_droite = ouverture_proche['coin_droite']
     coins = init_coins(piece)
-
+    #en fonction du coin_droite, on peut s avoir l'orientation de l'ouverture (horizontal ou vertical)
     if coin_droite == coins['coin_BG']:
         #OKKKKKKKKKKKKKKK
         # aligner le curseur sur l axe x et entrer dans la piece
         centre = (coin_droite[0] + delta , coin_droite[1] + int(ouverture_proche['distance_coin'] / 2))
-        #verifier si x_curseur < coin_droite[0] 
         if robot_pos[0] < coin_droite[0]:
             aligner_sur_y(curseur, centre[1])
             curseur.setheading( curseur.towards(centre))
@@ -123,48 +121,86 @@ def entrer_robot1(curseur, piece):
 #navigation 
 
 
-def contourner_obstacle(curseur, obstacle, entre, sortie):
+def contourner_obstacle(curseur, obstacle, entre, sortie, piece):
 
-    dimensions = obstacle.get('dimension') * 2
+    if entre == None or sortie == None or obstacle == None:
+        return
+
+
+    
+    dimensions = obstacle.get('dimension')
+    if obstacle.get('forme') == 'cercle':
+        dimensions = dimensions + 10
+    else:
+        dimensions = dimensions + 10
+    
+    """
     heading = curseur.heading()
+
+    if sortie == None:
+        display(get_text('no_sortie'))
+        return
+    
+    #verifier sion on doit contourner l obstacle par la droite ou par la gauche
+    #si le point de sortie est à droite du point d'entrée
+
+    ##verifier verifier s il faut contourner l obstacle par la droite ou par la gauche
+    bon_angle = None
+    for angle in [90, -90]:
+        obsta = get_Obstacles_critiques(piece.get('obstacles', []), curseur, angle + heading)
+        if len(obsta) != 0:
+            (ob , en , so) = obsta[0]
+
+            ##verifier si le heading du point d entrer est le meme que celle de la an + heading
+            if curseur.towards((en[0], en[1])) != angle + heading: #si le heading n est pas le meme
+                bon_angle = angle
+                break
+            else: # meme heading entre l'obstacle et la direction choisie
+                if curseur.distance((en[0], en[1])) < dimensions: #si la distance est inferieur à la dimension de l obstacle
+                    display(get_text('impossible_to_move'))
+                    bon_angle = 0
+                else:
+                    bon_angle = angle
+                    break
+        else:
+            bon_angle = angle
+            break
+   
+    if bon_angle == None or bon_angle == 0:
+        display(get_text('impossible_to_move'))
+        return
+   """ 
+    heading = curseur.heading() 
+    #pour savaoir de quelle coter contourner l obstacle, calculer le centre de l obstacle
+    #comparer le cap du centre et et le cap de la sortie
+    # si cap_centre < cap_sortie, contourner par la droite
+    #sinon contourner par la gauche
+    coin_HD_obstacle = obstacle.get('coin_HD')
+    #calculer le centre de l obstacle
+    if obstacle.get('forme') == 'cercle':
+        rayon = obstacle.get("dimension")
+        centre_x, centre_y = coin_HD_obstacle[0], coin_HD_obstacle[1] - rayon
+        centre = (centre_x, centre_y)
+    else:
+        centre = (coin_HD_obstacle[0] - dimensions / 2, coin_HD_obstacle[1] - dimensions / 2)
+    #calculer le cap du centre
+
+    cap_centre_object = curseur.towards(centre)
+    if heading < cap_centre_object <= heading + 180:
+        bon_angle = -90
+    else:
+        bon_angle = 90
+
     # Contourner l'obstacle : se déplace autour de l'obstacle
-    distance_sortie = curseur.distance(sortie)
-    curseur.setheading(heading + 90) # Se dirige vers la droite
-    curseur.forward(dimensions)  # Se déplace autour de l'obstacle
+    distance_sortie = curseur.distance((sortie[0], sortie[1])) + 5
+    dimension_contournement = dimensions * (distance_sortie / dimensions) / 1.5
+    curseur.setheading(heading +  bon_angle) # Se dirige vers la droite + right
+    curseur.forward(dimension_contournement)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
     curseur.forward(distance_sortie)  # Se déplace autour de l'obstacle
-    curseur.setheading(heading - 90) # Se dirige vers la gauche
-    curseur.forward(dimensions)  # Se déplace autour de l'obstacle
+    curseur.setheading(heading -  bon_angle) # Se dirige vers la gauche + left
+    curseur.forward(dimension_contournement)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
-
-
-
-
-
-
-
-
-    """
-
-    curseur.right(angle)
-    alpha = radians(curseur.heading())
-    
-    destination = (curseur.xcor() + dimensions * cos(alpha), curseur.ycor() + dimensions * sin(alpha))
-    aller_vers(curseur, obstacle, destination)
-    #curseur.forward(dimensions)  # Se déplace autour de l'obstacle
-    curseur.left(angle)
-    destination = (curseur.xcor() + dimensions * cos(alpha), curseur.ycor() + dimensions * sin(alpha))
-    aller_vers(curseur, obstacle, destination)
-    #curseur.forward(distance_sortie)  # Se dirige vers la sortie
-    curseur.left(angle)
-    curseur.forward(dimensions)  # Se déplace autour de l'obstacle de l'autre côté
-    curseur.right(angle)
-
-    # Remettre le curseur sur la direction vers la sortie
-    curseur.setheading(curseur.towards(sortie))
-    """
-    
-
 
 
 def aller_vers(curseur, piece, destination):
@@ -173,8 +209,7 @@ def aller_vers(curseur, piece, destination):
     """
     # Vérifier si la destination est dans la pièce
     if not est_dans_piece(destination, piece):
-        if __DEBUG__:
-            print("Erreur: la destination est en dehors de la pièce.")
+        display(get_text('destination_outside'))
         return
     
 
@@ -183,10 +218,10 @@ def aller_vers(curseur, piece, destination):
 
     #determiner les obstacles critiques et les contourner
     obstacles = piece.get('obstacles', [])
-    obstacles_critiques = get_Obstacles_critiques(obstacles , curseur)
+    obstacles_critiques = get_Obstacles_critiques(obstacles , curseur, curseur.heading())
     #condition d'arret
     if len(obstacles_critiques) == 0:
-        print("Aucun obstacle critique trouvé.")
+        display(get_text('mouving_robot'))
         curseur.goto(destination)
         return
     
@@ -195,22 +230,25 @@ def aller_vers(curseur, piece, destination):
     for data in obstacles_critiques:
         obstacle, point_entree, point_sortie = data
         #calculer la distance entre le curseur et le point d'entree
-        distanceEntre  = curseur.distance(point_entree)
+        distanceEntre  = curseur.distance(point_entree) 
         distanceDestination =   curseur.distance(destination)
         if distanceEntre > distanceDestination: #si le point d'entree est plus loin que la destination
+            display(get_text('mouving_robot'))
             curseur.goto(destination)
-            print(f"Le point d'entrée({point_entree}) est plus loin que la destination({destination}).")
             break
+
         #contourner l'obstacle
-        print("obscalte trouve")
+        display(get_text('critical_obstacle'))
         #verifier si la destination est dans l'obstacle
         if point_is_in_obstacle(destination, obstacle):
-            print("La destination est dans l'obstacle.")
+            display(get_text('destination_in_obstacle'))
+            display(get_text('impossible_to_move'))
             return
         else :
             curseur.goto(point_entree)
-            print(f"C'est bon. On contourne l'obstacle {obstacle['nom']}.")
-            contourner_obstacle(curseur, obstacle, point_entree, point_sortie)
+            display(get_text('contournement_obstacle').format(obstacle.get('nom')))
+            contourner_obstacle(curseur, obstacle, point_entree, point_sortie, piece)
+            display(get_text('end_contournement'))
+            display(get_text('go_to_destination'))
             aller_vers(curseur, piece, destination)
             break
-        

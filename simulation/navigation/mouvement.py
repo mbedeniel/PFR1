@@ -1,9 +1,10 @@
+from simulation.data.settings import get_text
 from simulation.plateform.drawing import est_dans_piece
 from math import cos, sin, radians
-from simulation.navigation.dectection_collision import Test_collision_obstacle
+from simulation.navigation.dectection_collision import Test_collision_obstacle , get_Obstacles_critiques , point_is_in_obstacle
 from simulation.navigation.navigation import  aller_vers
-from simulation.data.settings import __DEBUG__
 from simulation.data.init import get_obsatcle_by_forme_or_color
+from simulation.logger.logger import display 
 
 def translantion(curceur, val, piece):
     """
@@ -18,13 +19,28 @@ def translantion(curceur, val, piece):
     #verifier si le curseur risque de sortir de la piece
     destination = (new_x_curseur, new_y_curseur)
     if not est_dans_piece(destination, piece):
-        if __DEBUG__:
-            print(f"Erreur: le curseur risque de sortir de la piece.")
+        display(get_text('not_in_piece'))
         #se deplacer jusqu au bord de la piece
         return
     
     if val < 0: #le robot recule
-        curceur.backward(-val) #comme val est negatif, on le rend positif pour que le robot recule sinon il va avancer
+        print("recule de ", val , " et de heading ", heading + 180)
+        print("destination ", destination)
+        print(" destination est dans la piece ", est_dans_piece(destination, piece))
+        #pour que le robot recule, on verifie s il n y a d'obstacle derriere lui
+        obstacle_derriere = get_Obstacles_critiques(piece.get('obstacles', []), curceur, heading)
+        if len(obstacle_derriere) != 0:
+            (obstacle , point_entre , point_sortie) = obstacle_derriere[0]
+            #on verifie la distance entre le curseur et l'obstacle
+            distance_obstacle = curceur.distance((point_entre[0], point_entre[1])) - 20
+            if distance_obstacle < abs(val) or point_is_in_obstacle(destination, obstacle):
+                display(get_text('critical_obstacle'))
+                display(get_text('impossible_to_move'))
+                return
+            else: #on peut reculer  car la distance est suffisamment  (petite) pour reculer (aucun risque e percuter l obstacle)
+                curceur.backward(-val) #comme val est negatif, on le rend positif pour que le robot recule sinon il va avancer
+        else: #il n y a pas d'obstacle derriere le robot
+            curceur.backward(-val)
     else: #le robot avance , pour ne pas tenir compte des obstacles ,if faut utiliser la fonction forward
         aller_vers(curceur, piece , destination) #utiliser la fonction aller_vers pour contourner les obstacles
 
@@ -33,11 +49,6 @@ def rotation(curceur, val):
     Fait tourner le curseur d'un angle donné (positif ou négatif).
     """
     curceur.right(val)
-
-
-
-
-
 
 
 def vocal_reception(curceur, reception, piece):
@@ -52,8 +63,7 @@ def vocal_reception(curceur, reception, piece):
         elif 'recule' in reception["mouvement"].lower():
             translantion(curceur, -reception["distance_mouvement"], piece)
         else :
-            if __DEBUG__:
-                print("Erreur: mouvement non reconnu.")
+            display(get_text('invalid_movement'))
 
     if reception["rotation"] != None:
         if 'droite' in reception["rotation"].lower():
@@ -61,25 +71,39 @@ def vocal_reception(curceur, reception, piece):
         elif 'gauche' in reception["rotation"].lower():
             rotation(curceur, -reception["angle_rotation"])
         else:
-            if __DEBUG__:
-                print("Erreur: rotation non reconnue.")
+            display(get_text('invalid_rotation'))
 
 
     if reception["mission"] != None:
-        print("Mission en cours d'execution")
-        print(f"Objectif: {reception['mission']}")
+        display(get_text('mission_in_progress'))
+        
         objectif = reception["mission"]
         if objectif["commande"] == "aller":
-            object = objectif["object"]
+            display(get_text('move_to_object').format(objectif["object"], objectif["color"]))
+            forme = objectif["object"]
             color = objectif["color"]
-            obstacle = get_obsatcle_by_forme_or_color(piece, object, color, curceur)
+            obstacle = get_obsatcle_by_forme_or_color(piece, forme, color, curceur)
             if obstacle != None:
                 heading_obstacle = curceur.towards(obstacle['coin_HD'])
+                distance_obstacle = curceur.distance(obstacle['coin_HD']) - 20
                 curceur.setheading(heading_obstacle)
-                colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur)
-                distance_obstacle = curceur.distance(point_entre) - 40
-                translantion(curceur, distance_obstacle, piece)
-                 
+                #recuperer le point d'entrée et de sortie de l'obstacle
+                colision , point_entre, point_sortie = Test_collision_obstacle(obstacle, curceur,curceur.heading())
+                
+                #aller vers le point d'entrée de l'obstacle si la collision est détectée
+                if point_entre !=None :
+                    distance_obstacle = curceur.distance((point_entre[0], point_entre[1])) - 20
+                    translantion(curceur, distance_obstacle, piece)
+                else:
+                    translantion(curceur, distance_obstacle, piece)
+                display(get_text('mission_accomplished'))
+                
+                
+            else:
+                display(get_text('Object_not_found').format(forme, color))
+                display(get_text('cancel_mission'))
+            
+                
         
         #executer la mission (aller vers l object specifie)
 
@@ -131,19 +155,18 @@ def color_translation(color):
     """
     Traduit la couleur en français en anglais.
     """
-    if color == "rouge":
-        return "red"
-    elif color == "bleu":
-        return "blue"
-    elif color == "vert":
-        return "green"
-    elif color == "jaune":
-        return "yellow"
-    elif color == "orange":
-        return "orange"
-    elif color == "violet":
-        return "purple"
-    elif color == "rose":
-        return "pink"
-    else:
-        return None
+    couleur={
+        "rouge": "red",
+        "bleu": "blue",
+        "vert": "green",
+        "jaune": "yellow",
+        "orange": "orange",
+        "violet": "purple",
+        "rose": "pink",
+        "noir": "black",
+        "blanc": "white",
+        "marron": "brown",
+        "gris": "gray",
+        "cyan": "cyan"
+    }
+    return couleur.get(color, None)

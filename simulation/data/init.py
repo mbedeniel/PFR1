@@ -1,4 +1,4 @@
-from simulation.data.settings import __DEBUG__
+from simulation.logger.logger import display 
 
 def init_piece():
     """
@@ -14,7 +14,7 @@ def init_piece():
     """
     piece ={
     'nom': 'piece',
-    'dimensions': (600, 400),
+    'dimensions': (600, 400), #600, 400
     'coin_HD': (300, 200),
     'coins': {},
     'couleur': 'blue',
@@ -38,8 +38,7 @@ def init_obstable(nom ,coin_HD, couleur, forme, dimension):
                     *si la forme est 'carree', c'est la longueur du côté du carré
     """
     if forme != 'cercle' and forme != 'carree':
-        if __DEBUG__:
-            print(f"Erreur: l obstacle {nom} a une forme invalide.Sa forme({forme}) doit être 'cercle' ou 'carre'.")
+        display(f"Erreur: l obstacle {nom} a une forme invalide.Sa forme({forme}) doit être 'cercle' ou 'carre'.")
         return None
     
     obstacle ={
@@ -84,18 +83,18 @@ def get_obsatcle_by_forme_or_color(piece ,forme , color , curseur):
     """
    
     obstacles = piece['obstacles'] #recuperer tous les obstacles de la piece
-    #filtrer les obstacles de la piece de la forme 
-    if forme != None:
-        obstacles = [obstacle for obstacle in piece['obstacles'] if obstacle['forme'] == forme]
-    
-    #filtrer les obstacles de la piece de la couleur
-    if color != None:
-        obstacles = [obstacle for obstacle in obstacles if obstacle['couleur'] == color]
-    
+    selected_obstacle = []
+    #filtrer les obstacles de la piece de la forme dont la couleur est celle donnée
+    for obstacle in obstacles:
+        if obstacle['forme'] == forme and obstacle['couleur'] == color:
+            selected_obstacle.append(obstacle)
+
+  
+            
+    if len(selected_obstacle) == 0:
+        return None
     #trier en fonction de la distance entre le curseur et l'obstacle
     #returner le plus proche obstacle si la liste n est pas vide
-    if len(obstacles) > 0:
-        obstacles.sort(key=lambda obstacle: curseur.distance(obstacle['coin_HD']))
-        return obstacles[0]
-    else:
-        return None
+    selected_obstacle.sort(key=lambda obstacle: curseur.distance(obstacle['coin_HD']))
+    return selected_obstacle[0]
+   

@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../include/text_to_command.h"
 
 // Fonction qui génère une réponse JSON avec le mode (avancer, reculer, etc.) et sa valeur associée.
 // Exemple de sortie : {"avancer": 15}
-void print_json_response(const char *mode, int value) {
+void print_json_response( char *mode, int value) {
     printf("{\"action\": \"%s\", \"valeur\": %d}", mode, value);
 }
 
@@ -22,7 +23,7 @@ void print_error_response() {
  * 4. Génère une réponse JSON avec le mode et la valeur.
  * Si le mode est invalide, une réponse JSON vide est retournée.
  */
-int main() {
+int main_() {
     char mode;                // Stocke le mode saisi par l'utilisateur (a, r, d, g)
     int value = 0;            // Valeur associée au mode, par défaut à 0
     char *mode_name;          // Pointeur pour le nom du mode en texte
@@ -60,4 +61,32 @@ int main() {
     print_json_response(mode_name, value);
 
     return 0; // Fin du programme
+}
+
+
+
+int main(){
+   char *texte = malloc(1000 * sizeof(char));
+    // Récupérer le texte de la reconnaissance vocale
+    //char* texte = speech_reception();
+    fgets(texte, 1000, stdin);
+    
+    if (texte == NULL) {
+        printf("{\"texte\" : \"\", \"commande\" : [] , \"erreur\" :\"Erreur lors de la réception du texte.\"}");
+        return 1;
+    }
+
+    // Analyser le texte pour extraire les commandes, objets et couleurs sous forme de JSON
+    char* json = speech_analysis_to_json(texte);
+    if (json == NULL) {
+        printf("{\"texte\" : \"%s\", \"commande\" : [] , \"erreur\" :\"Erreur lors de l'analyse du texte.\"}", texte);
+        return 1;
+    }
+    // Afficher le résultat
+    printf("%s", json);
+
+   // free(texte);
+    free(json);
+    return 0;
+
 }

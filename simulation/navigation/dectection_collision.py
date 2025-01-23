@@ -1,5 +1,6 @@
 import math
-from simulation.data.settings import __DEBUG__
+from simulation.data.settings import get_text
+from simulation.logger.logger import display 
 
 ############ DETECTION DE COLLISION AVEC LES OBSTACLES ############################
 
@@ -72,14 +73,8 @@ Pour vérifier une collision avec un rectangle :
 '''
 
 ####" cas pratique "
-import math 
 
-
-import math
-
-import math
-
-def test_collision_avec_rectangle(curseur, obstacle):
+def test_collision_avec_rectangle(curseur, obstacle, angle_deg):
     """
     Vérifie si le curseur entre en collision avec un rectangle en avançant tout droit.
     
@@ -104,7 +99,6 @@ def test_collision_avec_rectangle(curseur, obstacle):
 
     # Position et direction du curseur
     curseur_x, curseur_y = curseur.xcor(), curseur.ycor()
-    angle_deg = curseur.heading()
     angle_rad = math.radians(angle_deg)
 
     # Composantes directionnelles
@@ -150,7 +144,7 @@ def test_collision_avec_rectangle(curseur, obstacle):
     return True, point_entree, point_sortie
 
 
-def test_collision_avec_cercle(curseur, obstacle, marge=40):
+def test_collision_avec_cercle(curseur, obstacle, angle_deg ):
     """
     Vérifie si le curseur risque de pénétrer dans un obstacle circulaire lorsqu'il avance tout droit.
 
@@ -166,7 +160,7 @@ def test_collision_avec_cercle(curseur, obstacle, marge=40):
     # Position actuelle du curseur
     # Position et direction du curseur
     curseur_x, curseur_y = curseur.xcor(), curseur.ycor()
-    angle_deg = curseur.heading()
+    
     angle_rad = math.radians(angle_deg)
 
     # Composantes directionnelles
@@ -183,7 +177,7 @@ def test_collision_avec_cercle(curseur, obstacle, marge=40):
     # Calcul du discriminant
     discriminant = b**2 - 4 * a * c
 
-    if discriminant < 0:
+    if discriminant <= 0:
         # Pas de collision : pas d'intersection entre la trajectoire et le cercle
         return False, None, None
 
@@ -211,33 +205,36 @@ def test_collision_avec_cercle(curseur, obstacle, marge=40):
 
     # Retourner les points d'entrée et de sortie
     point_entree = points_intersection[0]
+    #le 
     point_sortie = points_intersection[1] if len(points_intersection) > 1 else None
+    
+    
+    #ligne a verifier 
+    if point_sortie==None:
+        point_sortie = points_intersection[0]
 
     return True, point_entree, point_sortie
 
 
 
-def Test_collision_obstacle(Obstacle , curseur):
+def Test_collision_obstacle(Obstacle , curseur, angle_deg):
     #collision est un booleen qui indique s il y a une collision ou pas 
     if Obstacle.get("forme") == "cercle":
         # Vérification de la collision avec le cercle
-        return test_collision_avec_cercle(curseur,Obstacle)
+        return test_collision_avec_cercle(curseur,Obstacle, angle_deg)
     elif Obstacle.get("forme") == "carree":
         # Vérification de la collision avec le rectangle
-        return  test_collision_avec_rectangle(curseur, Obstacle)
+        return  test_collision_avec_rectangle(curseur, Obstacle, angle_deg)
 
 #recuperer la liste des obstacles critiques et les coordonnees des points d entree et de sortie pour les contourner facilement
 
 
-def get_Obstacles_critiques(obstacles:list , curseur):
+def get_Obstacles_critiques(obstacles:list , curseur,heding):
     Obstacles_critiques = []
     for obstacle in obstacles:
-        collision , point_entree , point_sortie = Test_collision_obstacle(obstacle, curseur)
+        collision , point_entree , point_sortie = Test_collision_obstacle(obstacle, curseur, heding)
         if collision :
             Obstacles_critiques.append((obstacle,point_entree,point_sortie))
-            if __DEBUG__:
-                print(f"Collision avec l'obstacle {obstacle.get('nom')} au point d'entré : {point_entree} et de sortie {point_sortie}")
-   
     return sorted(Obstacles_critiques, key=lambda obstacle: curseur.distance(obstacle[1]))
     
 
@@ -262,6 +259,5 @@ def point_is_in_obstacle(point , obstacle):
         Y_min, Y_max = coin_hd[1] - dimension, coin_hd[1]
         return X_min <= x <= X_max and Y_min <= y <= Y_max
     else:
-        if __DEBUG__:
-            print(f"Erreur: l obstacle {obstacle['nom']} a une forme invalide.Sa forme({obstacle['forme']}) doit être 'cercle' ou 'carre'.")
+        display(get_text('invalid_form').format(obstacle.get("nom")))
         return False

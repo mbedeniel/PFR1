@@ -1,6 +1,7 @@
 #include "./../include/object.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 Object init_object()
 {

@@ -226,7 +226,9 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
 
     /*------- Segmentation des FORMEs ------*/
-    segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne);
+    MA_FILE file;
+    INIT_FILE(file);
+    int nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,file);
     
     switch(search_image_inforrmation.shape)
     {

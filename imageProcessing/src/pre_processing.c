@@ -1,5 +1,6 @@
 #include "../include/pre_processing.h"
 #include "../include/pile.h"
+#include "../include/file_dynamique.h"
 
 double max(double r,double g,double b)
 {

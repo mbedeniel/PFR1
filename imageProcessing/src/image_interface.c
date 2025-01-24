@@ -296,7 +296,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     return processed_images;
 }
 
-int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path)
+int pattern_analyser(Object searched_pattern, Objects * image_objects,const char * path)
 {
     
     /*
@@ -305,8 +305,9 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     ****************************************
     */
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
+    Objects pattern_array;
+    int i,j,size_patterns,size_image_objects=0;
     Object pattern;
-    int i,size_patterns,size_image_objects=0;
      
     /*
     **************************
@@ -323,19 +324,24 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
 
     for(i=0;i<size_patterns;i++)
     {
-        pattern=image_treatment(patterns[i],path);
+        pattern_array=image_treatment(patterns[i],path);
 
-        /*
+        /*for(j=0;j<pattern_array.count_element;j++)
+        {
+            pattern = pattern_array.table[j]; /*Recuperation des resultats*/
+            /*
             On ne retient que les patterns complets
-
             On peut tout de meme retirer ce if pour une analyse de l'image beaucoup plus large
             De facon a detecter des objets qui ne sont ni des balles ni des carré
-        */
-        if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
-        {
-            image_objects[size_image_objects]=pattern;
-            size_image_objects++;
-        }
+            */
+            /*if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
+            {
+                image_objects[size_image_objects]=pattern;
+                size_image_objects++;
+            }
+        }*/
+       image_objects[size_patterns] = pattern_array;
+       size_patterns++;
         
     }
     

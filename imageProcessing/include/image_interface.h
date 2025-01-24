@@ -88,7 +88,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path,
             ->pattern_analyser() envoi chaque pattern a image_treatement() 
             ->pour chaque pattern image_treatment() renvoi le resultat
 */
-int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path);
+int pattern_analyser(Object searched_pattern, Objects * image_objects,const char * path);
 
 /*FUNCTION : int pattern_generator(Object object, Object* patterns);
     genere les differents patters correspondant a une structure de donnée.

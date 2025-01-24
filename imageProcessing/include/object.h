@@ -1,6 +1,5 @@
 #include "color_treatment.h"
 #include "shape_treatment.h"
-#include <stdio.h>
 
 
 /*un objet est defini par sa position, sa forme et sa couleur*/

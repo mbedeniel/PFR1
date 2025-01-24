@@ -1,8 +1,5 @@
 #include "file_dynamique.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-
 /* 
 STRUCTURE : CELLULE
     Représente un élément dans une pile, contenant des coordonnées (x, y)

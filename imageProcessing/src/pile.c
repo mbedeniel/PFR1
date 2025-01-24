@@ -1,9 +1,4 @@
 #include "./../include/pile.h"
-#include "./../include/file_dynamique.h"
-#include "./../include/element.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
 typedef CELLULE * PILE;
 

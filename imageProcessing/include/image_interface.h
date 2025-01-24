@@ -1,7 +1,6 @@
 #include "object.h"
 #include "pre_processing.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "file_dynamique.h"
 
 /*
 ******************************************

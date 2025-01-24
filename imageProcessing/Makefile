@@ -11,10 +11,14 @@ run: main_test_image.o
 	gcc -o main_test_image.exe main_test_image.o pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o -W -Wall -ansi -pedantic -lm
 ##########################################################
 
-main_test_image.out: main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o
-	gcc -o main_test_image.out main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o -W -Wall -ansi -pedantic -lm
+#############################
+########### IMAGE ###########
+#############################
 
-image_interface.o: $(SRC)/image_interface.c $(INCLUDE)/image_interface.h $(INCLUDE)/position_treatment.h $(INCLUDE)/shape_treatment.h $(INCLUDE)/color_treatment.h $(INCLUDE)/pre_processing.h $(INCLUDE)/object.h
+main_test_image.out: main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o file_dynamique.o
+	gcc -o main_test_image.out main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o file_dynamique.o -W -Wall -ansi -pedantic -lm
+
+image_interface.o: $(SRC)/image_interface.c $(INCLUDE)/image_interface.h $(INCLUDE)/position_treatment.h $(INCLUDE)/shape_treatment.h $(INCLUDE)/color_treatment.h $(INCLUDE)/pre_processing.h $(INCLUDE)/object.h $(INCLUDE)/file_dynamique.h
 	gcc -o image_interface.o -c $(SRC)/image_interface.c -W -Wall -ansi -pedantic -lm
 
 pre_processing.o: $(SRC)/pre_processing.c $(INCLUDE)/pre_processing.h
@@ -42,11 +46,19 @@ clean_out_o:
 	rm -rf *.o *.outtst_file_dynamique.out : tst_file_dynamique.c element.o file_dynamique.o
 	gcc -o tst_file_dynamique.out tst_file_dynamique.c element.o file_dynamique.o
 
-tst_file_dynamique.out : tst_file_dynamique.c file_dynamique.o element.o
-	gcc -o tst_file_dynamique.out tst_file_dynamique.c file_dynamique.o element.o -W -Wall -ansi -pedantic -lm
+######################################
+########### FILE DYNAMIQUE ###########
+######################################
 
 file_dynamique.o : $(SRC)/file_dynamique.c $(INCLUDE)/file_dynamique.h $(INCLUDE)/element.h
 	gcc -o file_dynamique.o -c $(SRC)/file_dynamique.c -W -Wall -ansi -pedantic -lm
 
 element.o : $(SRC)/element.c $(INCLUDE)/element.h
 	gcc -o element.o -c $(SRC)/element.c -W -Wall -ansi -pedantic -lm
+
+######################################
+########### PILE DYNAMIQUE ###########
+######################################
+
+pile.o : $(SRC)/pile.c $(INCLUDE)/pile.h $(INCLUDE)/file_dynamique.h
+	gcc -o pile.o -c $(SRC)/pile.c -W -Wall -ansi -pedantic -lm

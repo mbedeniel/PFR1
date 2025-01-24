@@ -1,6 +1,4 @@
-#include "../include/image_interface.h"
-#include "../include/file_dynamique.h"
-#include "../include/file_dynamique.h"
+#include "./../include/image_interface.h"
 
 Objects image_treatment(const Object search_image_inforrmation,const char* path)
 {

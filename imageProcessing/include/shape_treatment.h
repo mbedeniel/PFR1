@@ -1,6 +1,5 @@
 #include "position_treatment.h"
 #include "pre_processing.h"
-#include <math.h>
 
 #define NUMBER_OF_SHAPE 2/*nombre d'elment de Shape*/
 

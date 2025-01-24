@@ -7,7 +7,7 @@ int main()
     Objects objets;
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
     int i =0,size_patterns,number_valid_pattern,image_number;
-    char path[35];
+    char path[75];
     /* recuperer les infos de l object sous format json*/
     char json_buffer[256]; /*Tampon pour la chaîne JSON*/
 
@@ -15,9 +15,8 @@ int main()
     /*Path vers l'image*/
     /*printf("Veulliez entrer le numéro de l'image : ");*/
     scanf("%i", &image_number);
-    snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
-
-
+    /*snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);*/
+    snprintf(path, 200, "./IMG_RGB_TEST/nos_IMG_RGB_TEST/img_%i.txt", image_number);
 
     /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
     search_object = init_object();
@@ -109,19 +108,14 @@ int main()
     search_object.shape=BALL;
     search_object.color=ORANGE;
 
-    printf("MAIN 1 \n");
     
     objets = image_treatment(search_object,path);
 
-    printf("MAIN 2 \n");
-
-    /*for(i=0;i<objets.count_element;i++)
+    for(i=0;i<objets.count_element;i++)
     {
-        printf("MAIN 3 \n");
         object_to_json(&objets.table[i], json_buffer, sizeof(json_buffer));
-        printf("%s\n",json_buffer);
-        printf("MAIN 4 \n");
-    }*/
+        printf("\n%s\n",json_buffer);
+    }
 
     
     

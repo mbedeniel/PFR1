@@ -111,6 +111,7 @@ int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int seuil, MA_FILE* fil
         while (act_pile != NULL) {
             img[act_pile->x][act_pile->y] = 1;
             act_pile = act_pile->suivant;  
+	    nb_pixels++;
         }
         if (seuil<nb_pixels){
             ENFILER(file, img);

@@ -103,16 +103,18 @@ int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int seuil, MA_FILE* fil
         nb_pixels = 0;
 
         img = creer_ELEMENT(HEIGHT, WIDTH);
+        if(img==NULL)
+        {
+            fprintf(stderr,"ERREUR ALLOCATION");
+            return 0;
+        }
         while (act_pile != NULL) {
             img[act_pile->x][act_pile->y] = 1;
-	        nombre_objet ++;
+	        nombre_objet++;
             act_pile = act_pile->suivant;  
         }
         if (seuil<nb_pixels){
             ENFILER(file, img);
-        }
-	else{
-            free(img);
         }
         act_stack = act_stack->suivant;
     }

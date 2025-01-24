@@ -34,19 +34,20 @@ void ENFILER(MA_FILE* file, ELEMENT element)
   }
   else
   {
-    printf("allocation impossible \n");
+    fprintf(stderr,"ERREUR ALLOCATION");
   }
 }
 
 ELEMENT DEFILER(MA_FILE* file)
 {
-  if(FILE_EST_VIDE(*file))
-  {
-    printf("ERREUR la file est vide \n");
-    return NULL;
-  }
+
   ELEMENT element;
   CELL* previous_head;
+  if(FILE_EST_VIDE(*file))
+  {
+    fprintf(stderr,"ERREUR FILE VIDE");
+    return NULL;
+  }
   previous_head = file->head;
   element = (file->head)->data;
   file->head=(file->head)->next_cell;

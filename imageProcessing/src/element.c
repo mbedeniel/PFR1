@@ -7,7 +7,7 @@ void affect_ELEMENT(ELEMENT* ptr_element,ELEMENT data){
 int ** creer_ELEMENT(int ligne, int colonne)
 {
   /*Declaration*/
-  int i;
+  int i,j;
   int ** binary_image;
 
   /*Allocation des tableaux de pointeurs*/
@@ -25,11 +25,20 @@ int ** creer_ELEMENT(int ligne, int colonne)
               return NULL;
           }
       }
-    return binary_image;
   }
   else
   {
       fprintf(stderr,"ERREUR ALLOCATION");
       return NULL;
   }
+
+  /*initialisation*/
+  for(i=0;i<ligne;i++)
+  {
+    for(j=0;j<colonne;j++)
+    {
+      binary_image[i][j]=0;
+    }
+  }
+  return binary_image;
 }

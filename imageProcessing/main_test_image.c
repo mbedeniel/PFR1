@@ -108,15 +108,20 @@ int main()
 
     search_object.shape=BALL;
     search_object.color=ORANGE;
+
+    printf("MAIN 1 \n");
     
     objets = image_treatment(search_object,path);
 
+    printf("MAIN 2 \n");
 
-    for(i=0;i<objets.count_element;i++)
+    /*for(i=0;i<objets.count_element;i++)
     {
+        printf("MAIN 3 \n");
         object_to_json(&objets.table[i], json_buffer, sizeof(json_buffer));
         printf("%s\n",json_buffer);
-    }
+        printf("MAIN 4 \n");
+    }*/
 
     
     

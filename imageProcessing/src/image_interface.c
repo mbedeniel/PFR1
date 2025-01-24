@@ -238,6 +238,8 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
 
     nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,&file_image);
 
+    printf("\nnombre d'objet = %i\n",nombre_objet);
+
     objet_array = create_objects_array(nombre_objet);
     if(objet_array==NULL)
     {
@@ -246,10 +248,11 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
         /*Mais on a initalisé processed_images donc c'est beaucoup mieux ainsi*/
     }
 
-    for(i=0;i<nombre_objet;i++){
 
-        /*recuperation des differents images abtenue aprés segmentation*/
-        binary_image = DEFILER(&file_image);
+    /*recuperation des differents images abtenue aprés segmentation*/
+    binary_image = DEFILER(&file_image);
+
+    while(binary_image != NULL){
 
         /*------- DETECTION FORME ------*/
         max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
@@ -281,12 +284,15 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
 
         /*Prépare la commande pour exécuter le script Python*/
         /*Appel du programme python pour marqué une croix a la position detectée*/
-        snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
-        result = system(command);
+        /*snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
+        result = system(command);*/
 
 
         /*------- RECUPERATION DES RESULTATS ------*/
         objet_array[i]=processed_image;
+
+        /*recuperation des differents images abtenue aprés segmentation*/
+        binary_image = DEFILER(&file_image);
     }
     
     processed_images.count_element = nombre_objet;

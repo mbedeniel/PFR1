@@ -53,15 +53,14 @@ PRINCIPE:
         Le contenue du champ position n'est pas important
     char * path
         chemin d'access vers l'image
+    Object * processed_images
+        les differents resultats du traitement de l'image
 */
 /*OUTPUT:
-    Object
-        une structure de donnée Object contenant:
-        La couleur recherchée si elle a été trouvé
-        La forme recherchée si elle a été trouvée
-        Et la position de l'objet si les deux attributs ci dessus ont ete trouvée
+    int
+        le nombre d'element contenue dans processed_images
 */
-Object image_treatment(Object search_image_inforrmation,const char* path);
+Objects image_treatment(const Object search_image_inforrmation,const char* path, Object * processed_images);
 
 /*FUNCTION: int pattern_analyser(Object searched_pattern, Object* image_objects);
     analyse le paatern recherché. Par exemple,

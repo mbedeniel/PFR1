@@ -20,6 +20,21 @@ Object create_object(Shape shape,Color color,Position position)
     return new_object;
 }
 
+Objects init_objects()
+{
+    Objects new_objects;
+    new_objects.count_element=0;
+    new_objects.table=NULL;
+    return new_objects;
+}
+
+Object * create_objects_array(int size)
+{
+    Object * object_array = (Object *)malloc(sizeof(Object)*size);
+    return object_array;
+}
+
+
 /* Fonction pour convertir un objet en JSON */
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size) {
     snprintf(

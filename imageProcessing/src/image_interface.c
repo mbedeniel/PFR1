@@ -1,7 +1,8 @@
 #include "../include/image_interface.h"
 #include "../include/file_dynamique.h"
+#include "../include/file_dynamique.h"
 
-Object image_treatment(Object search_image_inforrmation,const char* path)
+Objects image_treatment(const Object search_image_inforrmation,const char* path)
 {
 
     /*
@@ -14,14 +15,19 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     double *** image_hsv; /*image obtenu grace a rgb_to_hsv*/
     double *** image_rgb; /*image recupéré*/
     int ** binary_image; /*image obtebur grace a bit_image*/
+    Object * objet_array; /*tableau d'objets*/
+    Objects processed_images; /*les differents resultats du traitement de l'image*/
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
     Object processed_image; 
     char command[256]; /* Ajout d'un croix avec un script python*/
     int result; /* Resultat de l'appel*/
+    int nombre_objet;
+    MA_FILE file_image;
 
     /*
-    processed_image : resultat du traitement image
+    processed_image : resultat du traitement d'une image contenant un seul objet
+    processed_images : resultat du traitement d'une image 
     i : variable d'incrementation suivant les lignes
     j : variable d'ncrementation suivant les colonnes
     k : variable d'incrementation suivant la profondeur
@@ -32,6 +38,19 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     image_rgb : image dans la base RGB
     */
     
+
+
+    /*
+    *************************************** 
+    ********DEFINITION DES VARIABLES*******
+    ***************************************
+    */
+
+    /*Initialisation d'un Object*/
+    processed_image=init_object();
+    processed_images=init_objects();
+    INIT_FILE(&file_image);
+
 
 
     /*
@@ -48,21 +67,12 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     FILE* fichier = fopen(path, "r");
     if (!fichier) {
         perror("ERREUR DE LECTURE");
-        return processed_image;
+        return processed_images;
     }
 
     /*Lire les dimensions de l'image*/
     fscanf(fichier, "%i", &ligne);
     fscanf(fichier, "%i", &colonne);
-
-    /*
-    ***************************************       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
-    ********DEFINITION DES VARIABLES*******
-    ***************************************
-    */
-
-    /*Initialisation d'un Object*/
-    processed_image=init_object();
 
 
     /*creation des tableaux*/
@@ -83,7 +93,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
             if(image_hsv[i]==NULL)
             {
                 fprintf(stderr,"ERREUR ALLOCATION");
-                return processed_image;
+                return processed_images;
             }
         }
         for(i=0;i<ligne;i++)
@@ -94,7 +104,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
                 if(image_hsv[i][j]==NULL)
                 {
                     fprintf(stderr,"ERREUR ALLOCATION");
-                    return processed_image;
+                    return processed_images;
                 }
             }
         }
@@ -102,7 +112,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     else
     {
         fprintf(stderr,"ERREUR ALLOCATION");
-        return processed_image;
+        return processed_images;
     }
     
 
@@ -116,7 +126,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
             if(image_rgb[i]==NULL)
             {
                 fprintf(stderr,"ERREUR ALLOCATION");
-                return processed_image;
+                return processed_images;
             }
         }
         for(i=0;i<ligne;i++)
@@ -127,7 +137,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
                 if(image_rgb[i][j]==NULL)
                 {
                     fprintf(stderr,"ERREUR ALLOCATION");
-                    return processed_image;
+                    return processed_images;
                 }
             }
         }
@@ -135,7 +145,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     else
     {
         fprintf(stderr,"ERREUR ALLOCATION");
-        return processed_image;
+        return processed_images;
     }
 
     /*tableau binary_image*/
@@ -147,14 +157,14 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
             if(binary_image[i]==NULL)
             {
                 fprintf(stderr,"ERREUR ALLOCATION");
-                return processed_image;
+                return processed_images;
             }
         }
     }
     else
     {
         fprintf(stderr,"ERREUR ALLOCATION");
-        return processed_image;
+        return processed_images;
     }
 
 
@@ -223,41 +233,67 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
 
     image_filter(binary_image,ligne,colonne);
 
-    /*------- DETECTION FORME ------*/
-    max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
 
-    /*------- Segmentation des FORMEs ------*/
-    MA_FILE file;
-    INIT_FILE(&file);
-    int nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,file);
-    
-    switch(search_image_inforrmation.shape)
+
+   /*------- SEGMENTATION DE L IMAGE -------*/
+
+    nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,&file_image);
+
+    objet_array = create_objects_array(nombre_objet);
+    if(objet_array==NULL)
     {
-        case BALL:
-            my_ratio_area=ratio_area(nbr_pixel,max_min_pixel,BALL);
-            break;
-        case CUBE:
-            my_ratio_area=ratio_area(nbr_pixel,max_min_pixel,CUBE);
-            break;
-        /*On peut envisager qu'on demande au robot d'avancer vers l'objet bleue*/
-        default:
-            break;
-    }
-    /*ANALYSE DES RESULTATS ET MISE A JOUR DE processed_image-*/
-    if(my_ratio_area>=SHAPE_MIN_PERCENTAGE)
-    {
-        processed_image.shape=search_image_inforrmation.shape;
+        fprintf(stderr,"ERREUR ALLOCATION");
+        return processed_images; /*On aurrait pu retourner NULL*/
+        /*Mais on a initalisé processed_images donc c'est beaucoup mieux ainsi*/
     }
 
-    /*------- DETECTION POSITION ------*/
-    processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
+    for(i=0;i<nombre_objet;i++){
 
-    /*Prépare la commande pour exécuter le script Python*/
-    /*Appel du programme python pour marqué une croix a la position detectée*/
-    snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
-    result = system(command);
+        /*recuperation des differents images abtenue aprés segmentation*/
+        binary_image = DEFILER(&file_image);
+
+        /*------- DETECTION FORME ------*/
+        max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
+        
+        switch(search_image_inforrmation.shape)
+        {
+            case BALL:
+                my_ratio_area=ratio_area(nbr_pixel,max_min_pixel,BALL);
+                break;
+            case CUBE:
+                my_ratio_area=ratio_area(nbr_pixel,max_min_pixel,CUBE);
+                break;
+            /*On peut envisager qu'on demande au robot d'avancer vers l'objet bleue*/
+            default:
+                break;
+        }
+        /*ANALYSE DES RESULTATS ET MISE A JOUR DE processed_image-*/
+        if(my_ratio_area>=SHAPE_MIN_PERCENTAGE)
+        {
+            processed_image.shape=search_image_inforrmation.shape;
+        }
+        else
+        {
+            processed_image.shape=NONE_SHAPE;
+        }
+
+        /*------- DETECTION POSITION ------*/
+        processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
+
+        /*Prépare la commande pour exécuter le script Python*/
+        /*Appel du programme python pour marqué une croix a la position detectée*/
+        snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, processed_image.position.x, processed_image.position.y);
+        result = system(command);
+
+
+        /*------- RECUPERATION DES RESULTATS ------*/
+        objet_array[i]=processed_image;
+    }
     
-    return processed_image;
+    processed_images.count_element = nombre_objet;
+    processed_images.table = objet_array;
+
+    return processed_images;
 }
 
 int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path)
@@ -271,8 +307,6 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
     Object pattern;
     int i,size_patterns,size_image_objects=0;
-    char command[256]; /* Ajout d'un croix avec un script python*/
-    int result; /* Resultat de l'appel du programme python*/
      
     /*
     **************************
@@ -285,17 +319,22 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
 
 
     /*ETAPE 2 : TRAITEMENT DES PATTERNS GENERÉES*/
+
+
     for(i=0;i<size_patterns;i++)
     {
         pattern=image_treatment(patterns[i],path);
+
+        /*
+            On ne retient que les patterns complets
+
+            On peut tout de meme retirer ce if pour une analyse de l'image beaucoup plus large
+            De facon a detecter des objets qui ne sont ni des balles ni des carré
+        */
         if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
         {
             image_objects[size_image_objects]=pattern;
             size_image_objects++;
-
-            /*Appel du programme python pour marqué une croix a la position detectée*/
-            snprintf(command, sizeof(command), "python3 ../python/ajout_croix.py %s %s %s", path, pattern.position.x, pattern.position.y);
-            result = system(command);
         }
         
     }

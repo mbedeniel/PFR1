@@ -1,6 +1,4 @@
 #include "../include/pre_processing.h"
-#include "../include/pile.h"
-#include "../include/file_dynamique.h"
 
 double max(double r,double g,double b)
 {
@@ -236,7 +234,7 @@ int segmentation_img_b(int** image, int n, int seuil, int ligne, int colonne, MA
             if (image[i][j] == 1){
                 pile_objets = parcour_PILE_connex(pile_objets, i, j, n);
             }}}
-    return objecBinariser(pile_objets, ligne, colonne, 1, seuil, file);
+    return objecBinariser(pile_objets, ligne, colonne, seuil, file);
 }
 
 

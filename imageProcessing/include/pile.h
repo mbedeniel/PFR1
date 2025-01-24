@@ -1,7 +1,7 @@
 #ifndef DEF_PILE
 #define DEF_PILE
 #include "file_dynamique.h"
-#include <string.h>
+
 /* 
 STRUCTURE : CELLULE
     Représente un élément dans une pile, contenant des coordonnées (x, y)
@@ -174,14 +174,13 @@ INPUT:
     PILE_stack ps : La pile de piles contenant les objets.
     int HEIGHT : Hauteur de l'image.
     int WIDTH : Largeur de l'image.
-    int CHANNELS : Nombre de canaux de l'image.
     int seuil : Seuil pour filtrer les petits objets.
 */
 /*
 OUTPUT:
     Retourne une image binaire contenant les objets dépassant le seuil.
 */
-int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int CHANNELS, int seuil, MA_FILE* file);
+int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int seuil, MA_FILE* file);
 
 /*
 FUNCTION : void affiche_PILE_stack(PILE_stack ps)

@@ -1,6 +1,6 @@
 #ifndef DEF_PRE_PROCESSING
 #define DEF_PRE_PROCESSING
-#include "file_dynamique.h"
+#include "pile.h"
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>

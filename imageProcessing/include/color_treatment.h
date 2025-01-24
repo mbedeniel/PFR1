@@ -1,3 +1,5 @@
+#ifndef DEF_COLOR_TREATMENT
+#define DEF_COLOR_TREATMENT
 #define NUMBER_OF_COLOR 3 /*Nombre de couleur de Color*/
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
@@ -68,3 +70,4 @@ int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int *
 
 */
 const char* get_color_name(Color color);
+#endif

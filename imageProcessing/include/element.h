@@ -1,3 +1,5 @@
+#ifndef DEF_ELEMENT
+#define DEF_ELEMENT
 #include <stdlib.h>
 #include <stdio.h>
 /*Declaration d'un element*/
@@ -11,4 +13,5 @@ typedef int ** ELEMENT;
 /*affecte data a element*/
 void affect_ELEMENT(ELEMENT* ptr_element,ELEMENT data);
 
-int ** creer_ELEMENT();
+ELEMENT creer_ELEMENT();
+#endif

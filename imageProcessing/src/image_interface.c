@@ -18,6 +18,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
     Object processed_image; 
+    FILE* fichier;/*Lecture du ficheir image*/
     char command[256]; /* Ajout d'un croix avec un script python*/
     int result; /* Resultat de l'appel*/
     int nombre_objet;
@@ -62,7 +63,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     /*Recuperation des lignes et colonnes*/
 
     /*Ouvrir le fichier en lecture*/
-    FILE* fichier = fopen(path, "r");
+    fichier = fopen(path, "r");
     if (!fichier) {
         perror("ERREUR DE LECTURE");
         return processed_images;

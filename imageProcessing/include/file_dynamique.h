@@ -1,3 +1,5 @@
+#ifndef DEF_FILE_DYNAMIQUE
+#define DEF_FILE_DYNAMIQUE
 #include "element.h"
 /*Definition des cellules de MA_FILE*/
 typedef struct CELL
@@ -30,3 +32,4 @@ void ENFILER(MA_FILE* file,ELEMENT element);
 /*DEFILER qui permet de d´efiler une file (donn´ee en param`etre),*/
 /*cette fonction doit renvoyer aussi l’´el´ement qui ´etait en tˆete de file*/
 ELEMENT DEFILER(MA_FILE* file);
+#endif

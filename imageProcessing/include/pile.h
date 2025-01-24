@@ -1,3 +1,5 @@
+#ifndef DEF_PILE
+#define DEF_PILE
 #include "file_dynamique.h"
 #include <string.h>
 /* 
@@ -6,9 +8,9 @@ STRUCTURE : CELLULE
     et un pointeur vers l'élément suivant de la pile.
 */
 typedef struct cellule {
-    int x;                     // Coordonnée x
-    int y;                     // Coordonnée y
-    struct cellule* suivant;   // Pointeur vers la cellule suivante
+    int x;                     /*Coordonnée x*/
+    int y;                     /*Coordonnée y*/
+    struct cellule* suivant;   /*Pointeur vers la cellule suivante*/
 } CELLULE;
 
 /*
@@ -94,9 +96,9 @@ STRUCTURE : CELLULEP
     Représente un élément dans une pile de piles (PILE_stack), contenant une pile et un pointeur vers la pile suivante.
 */
 typedef struct cellu {
-    struct cellu* suivant; // Pointeur vers l'élément suivant
-    PILE p;               // Pile associée
-    int num_object;       // Identifiant de l'objet
+    struct cellu* suivant; /*Pointeur vers l'élément suivant*/
+    PILE p;               /*Pile associée*/
+    int num_object;       /*Identifiant de l'objet*/
 } CELLULEP;
 
 /*
@@ -193,3 +195,4 @@ INPUT:
 OUTPUT: NONE
 */
 void affiche_PILE_stack(PILE_stack ps);
+#endif

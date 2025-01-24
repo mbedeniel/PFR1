@@ -1,3 +1,5 @@
+#ifndef DEF_IMAGE_INTERFACE
+#define DEF_IMAGE_INTERFACE
 #include "object.h"
 #include "pre_processing.h"
 #include "file_dynamique.h"
@@ -105,3 +107,4 @@ int pattern_analyser(Object searched_pattern, Objects * image_objects,const char
         nombre de pattern qu on matché
 */
 int pattern_generator(Object object, Object* patterns);
+#endif

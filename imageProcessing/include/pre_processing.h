@@ -1,3 +1,6 @@
+#ifndef DEF_PRE_PROCESSING
+#define DEF_PRE_PROCESSING
+#include "file_dynamique.h"
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
@@ -131,3 +134,4 @@ void median(int ** image,int i,int j);
 void add_padding(int ** image,int ligne,int column);
 
 int segmentation_img_b(int** image, int n, int seuil, int ligne, int colonne, MA_FILE* file);
+#endif

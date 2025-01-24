@@ -228,10 +228,11 @@ void median(int ** image,int i,int j)
 }
 
 int segmentation_img_b(int** image, int n, int seuil, int ligne, int colonne, MA_FILE* file){
+	int i,j;
     PILE_stack pile_objets = init_PILE_stack();
 
-    for(int i = 0; i < ligne; i++) {
-        for(int j = 0; j < colonne; j++) {
+    for(i = 0; i < ligne; i++) {
+        for(j = 0; j < colonne; j++) {
             if (image[i][j] == 1){
                 pile_objets = parcour_PILE_connex(pile_objets, i, j, n);
             }}}

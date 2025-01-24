@@ -2628,3 +2628,14 @@ Veuillez choisir un mode parmi les suivants :
 5 : Mode Auto
 6 : Mode Traitement d'image
 q : Quitter
+___DEMARRAGE DE LA SIMULATION___
+Bienvenue dans le menu principal !
+
+Veuillez choisir un mode parmi les suivants :
+1 : Mode Vocal
+2 : Mode IHM
+3 : Configurations
+4 : Mode Manuel
+5 : Mode Auto
+6 : Mode Traitement d'image
+q : Quitter

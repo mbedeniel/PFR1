@@ -4,6 +4,7 @@
 int main()
 {
     Object search_object,processed_object;
+    Objects objets;
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
     int i =0,size_patterns,number_valid_pattern,image_number;
     char path[35];
@@ -108,14 +109,18 @@ int main()
     search_object.shape=BALL;
     search_object.color=ORANGE;
     
-    processed_object = image_treatment(search_object,path);
+    objets = image_treatment(search_object,path);
 
-    object_to_json(&processed_object, json_buffer, sizeof(json_buffer));
-    printf("%s\n",json_buffer);
+
+    for(i=0;i<objets.count_element;i++)
+    {
+        object_to_json(&objets.table[i], json_buffer, sizeof(json_buffer));
+        printf("%s\n",json_buffer);
+    }
 
     
     
-    if(processed_object.color==search_object.color)
+    /*if(processed_object.color==search_object.color)
     {
         printf("Couleur trouvée \n");
     }
@@ -131,7 +136,7 @@ int main()
     else
     {
         printf("Forme non trouvée \n");
-    }
+    }*/
     
     return 0;
 }

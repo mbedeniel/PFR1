@@ -2,7 +2,6 @@
 
 Objects image_treatment(const Object search_image_inforrmation,const char* path)
 {
-
     /*
     ****************************************
     ********DECLARATION DES VARIABLES*******
@@ -23,6 +22,15 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     int result; /* Resultat de l'appel*/
     int nombre_objet;
     MA_FILE file_image;
+
+
+
+    char json_buffer[256];
+
+
+
+    object_to_json(&search_image_inforrmation, json_buffer, sizeof(json_buffer));
+    printf("\t %s \n",json_buffer);
 
     /*
     processed_image : resultat du traitement d'une image contenant un seul objet
@@ -212,11 +220,11 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
         case ORANGE:
             nbr_pixel=bit_image(ORANGE,ligne,colonne,image_hsv, binary_image);
             break;
-        case BLUE:
-            nbr_pixel=bit_image(BLUE,ligne,colonne,image_hsv, binary_image);
-            break;
         case YELLOW:
             nbr_pixel=bit_image(YELLOW,ligne,colonne,image_hsv, binary_image);
+            break;
+        case BLUE:
+            nbr_pixel=bit_image(BLUE,ligne,colonne,image_hsv, binary_image);
             break;
         /*On peut envisager qu'on demande au robot d'avancer vers la balle*/
         default:
@@ -226,12 +234,22 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     {
         processed_image.color=search_image_inforrmation.color;
     }
+    object_to_json(&processed_image, json_buffer, sizeof(json_buffer));
+    printf("\t %s \n",json_buffer);
 
-    
     /*------- FILTRAGE DE L'IMAGE -------*/
 
     image_filter(binary_image,ligne,colonne);
 
+
+    /*for(i=0;i<ligne;i++)
+    {
+        for(j=0;j<colonne;j++)
+        {
+            printf("%i\t",binary_image[i][j]);
+        }
+        printf("\n");
+    }*/
 
 
    /*------- SEGMENTATION DE L IMAGE -------*/
@@ -290,6 +308,10 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
 
         /*------- RECUPERATION DES RESULTATS ------*/
         objet_array[i]=processed_image;
+
+
+        object_to_json(&processed_image, json_buffer, sizeof(json_buffer));
+        printf("\t %s \n",json_buffer);
 
         /*recuperation des differents images abtenue aprés segmentation*/
         binary_image = DEFILER(&file_image);

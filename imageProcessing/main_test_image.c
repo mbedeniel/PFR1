@@ -15,8 +15,8 @@ int main()
     /*Path vers l'image*/
     /*printf("Veulliez entrer le numéro de l'image : ");*/
     scanf("%i", &image_number);
-    /*snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);*/
-    snprintf(path, 200, "./IMG_RGB_TEST/nos_IMG_RGB_TEST/img_%i.txt", image_number);
+    snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
+    /*snprintf(path, 200, "./IMG_RGB_TEST/nos_IMG_RGB_TEST/img_%i.txt", image_number);*/
 
     /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
     search_object = init_object();
@@ -105,12 +105,16 @@ int main()
     }*/
 
 
-    search_object.shape=BALL;
-    search_object.color=ORANGE;
+    search_object=create_object(CUBE,YELLOW,init_position());
+
+
+        object_to_json(&search_object, json_buffer, sizeof(json_buffer));
+        printf("\n%s\n",json_buffer);
 
     
     objets = image_treatment(search_object,path);
 
+    printf("\n------------------------\n");
     for(i=0;i<objets.count_element;i++)
     {
         object_to_json(&objets.table[i], json_buffer, sizeof(json_buffer));

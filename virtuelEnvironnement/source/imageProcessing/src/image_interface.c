@@ -56,7 +56,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     fscanf(fichier, "%i", &colonne);
 
     /*
-    ***************************************       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
+    *************************************** 
     ********DEFINITION DES VARIABLES*******
     ***************************************
     */
@@ -348,7 +348,7 @@ int pattern_generator(Object object, Object* match_patterns)
 
 void user_interface(int choice)
 {
-    if(choice==0)
+    if(choice==0)/*Presentation des modes*/
     {
         printf("\n MODES MENU  ");
         printf("\n \t MODE 1 : search precise COLOR (ORANGE,BLUE,YELLOW) and a SHAPE (BALL,CUBE) ");
@@ -358,7 +358,7 @@ void user_interface(int choice)
         printf("\n \t MODE 0 : you want to search a COLOR X and a SHAPE Y  ");
         printf("\n \t Enter a NUMBER associate to a MODE : ");
     }
-    else if(choice==1)
+    else if(choice==1)/*Presentation des couleurs*/
     {
         printf("\n COLOR MENU  ");
         printf("\n \t COLOR  \t | \t NUMBER");
@@ -367,7 +367,7 @@ void user_interface(int choice)
         printf("\n \t BLUE   \t | \t 2");
         printf("\n \t Enter a NUMBER associate to a COLOR : ");
     }
-    else if(choice==2)
+    else if(choice==2)/*Presentation des formes*/
     {
         printf("\n COLOR MENU  ");
         printf("\n \t SHAPE \t | \t NUMBER");
@@ -375,7 +375,7 @@ void user_interface(int choice)
         printf("\n \t CUBE  \t | \t 1");
         printf("\n \t Enter a NUMBER associate to a SHAPE : ");
     }
-    else if(choice==3)
+    else if(choice==3)/*Presentation des images*/
     {
         printf("\n PATH MENU  ");
         printf("\n \t The PATH is a RELATIVE PATH of a FILE(IMAGE) in the FORMAT .TXT ");

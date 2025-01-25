@@ -2639,3 +2639,10 @@ Veuillez choisir un mode parmi les suivants :
 5 : Mode Auto
 6 : Mode Traitement d'image
 q : Quitter
+Erreur lors de l'appel du programme C. 'str' object has no attribute 'decode'
+Erreur lors de l'appel du programme C. 'str' object has no attribute 'decode'
+Erreur lors de l'appel du programme C. 'str' object has no attribute 'decode'
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Je n'ai pas compris votre demande. Veuillez réessayer.
+Je n'ai pas compris votre demande. Veuillez réessayer.

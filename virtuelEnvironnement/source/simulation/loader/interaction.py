@@ -21,13 +21,14 @@ def appeler_programme_c(path_programme_c):
 
     if process.returncode != 0:
         sortie = stderr.decode()
+        print(sortie)
         display(get_text('not_understood'))
         return {}
     else:
         #decider de l'encodage avec le plus approprié
         data = {}
         try:
-            sortie = stdout.decode("utf-8").replace('\r', '').replace('\n', '')
+           sortie = stdout.decode("utf-8").replace('\r', '').replace('\n', '')
             
         except UnicodeDecodeError:
             sortie = stdout.decode("latin1").replace('\r', '').replace('\n', '')

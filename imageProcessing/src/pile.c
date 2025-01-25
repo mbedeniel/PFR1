@@ -144,9 +144,9 @@ int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int seuil, MA_FILE* fil
 	    nombre_objet++;
         }
 	for (int i = 0; i < HEIGHT; i++) {
-            free(image[i]);
+            free(img[i]);
         }
-        free(image);
+        free(img);
         act_stack = act_stack->suivant;
     }
     return nombre_objet;

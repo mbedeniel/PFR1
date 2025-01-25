@@ -194,4 +194,5 @@ INPUT:
 OUTPUT: NONE
 */
 void affiche_PILE_stack(PILE_stack ps);
+PILE fusion_PILE(PILE p1, PILE p2);
 #endif

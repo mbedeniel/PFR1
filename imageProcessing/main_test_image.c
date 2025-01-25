@@ -20,7 +20,7 @@ int main()
     /*snprintf(path, 200, "./IMG_RGB_TEST/nos_IMG_RGB_TEST/img_%i.txt", image_number);*/
 
     printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
-    search_object = create_object(BALL,ORANGE,init_position());
+    search_object = create_object(CUBE,ORANGE,init_position());
     object_to_json(&search_object, json_buffer, sizeof(json_buffer));
     printf("\t %s \n",json_buffer);
     printf("\n LES PATTERNS GENERÉES SONT : \n");

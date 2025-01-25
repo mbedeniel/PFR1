@@ -237,7 +237,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
    /*------- SEGMENTATION DE L IMAGE -------*/
 
     nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,&file_image);
-
+    printf("NOMBRE OBJECT : %i",nombre_objet);
     /*printf("\nnombre d'objet = %i\n",nombre_objet);*/
 
     object_array = create_object_array(nombre_objet);

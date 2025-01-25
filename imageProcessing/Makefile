@@ -43,8 +43,7 @@ clean_out:
 	rm -rf *.out
 
 clean_out_o:
-	rm -rf *.o *.outtst_file_dynamique.out : tst_file_dynamique.c element.o file_dynamique.o
-	gcc -o tst_file_dynamique.out tst_file_dynamique.c element.o file_dynamique.o
+	rm -rf *.o *.out
 
 ######################################
 ########### FILE DYNAMIQUE ###########

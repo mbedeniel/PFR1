@@ -355,7 +355,7 @@ void user_interface(int choice)
         printf("\n \t MODE 2 : search for a precise SHAPE (BALL,CUBE) ");
         printf("\n \t MODE 3 : search for a precise COLOR (ORANGE,BLUE,YELLOW) ");
         printf("\n \t MODE 4 : a global analysis of the image ");
-        printf("\n \t MODE 0 : you want to search a COLOR X and a SHAPE Y  ");
+        printf("\n \t Enter 0 for QUIT ");
         printf("\n \t Enter a NUMBER associate to a MODE : ");
     }
     else if(choice==1)/*Presentation des couleurs*/

@@ -31,17 +31,12 @@ PILE emPILE(PILE p, int x, int y) {
     return cel;
 }
 
-int connexN(PILE p, int x, int y, int n){
+int connexN(PILE p, int x, int y, int n) {
     PILE act = p;
-    int xcon8,ycon8,x_connex,y_connex;
-    while (act != NULL){
-        xcon8 = 0;
-        ycon8 = 0;
-        for(x_connex = -n; x_connex<=n+1; x_connex++){
-            for(y_connex = -n; y_connex<=n+1; y_connex++){
-                xcon8 = act->x + x_connex;
-                ycon8 = act->y + y_connex;
-                if (xcon8 == x && ycon8 == y ){
+    while (act != NULL) {
+        for (int x_connex = -n; x_connex <= n; x_connex++) {
+            for (int y_connex = -n; y_connex <= n; y_connex++) {
+                if (act->x + x_connex == x && act->y + y_connex == y) {
                     return 1;
                 }
             }

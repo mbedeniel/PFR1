@@ -16,22 +16,22 @@ int main()
     /*Path vers l'image*/
     /*printf("Veulliez entrer le numéro de l'image : ");*/
     scanf("%i", &image_number);
-    snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
-    /*snprintf(path, 200, "./IMG_RGB_TEST/nos_IMG_RGB_TEST/img_%i.txt", image_number);*/
+    /*snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);*/
+    snprintf(path, 200, "./IMG_RGB_TEST/nos_IMG_RGB_TEST/img_%i.txt", image_number);
 
-    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
-    search_object = create_object(CUBE,ORANGE,init_position());
+    search_object = init_object();
+    /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
     object_to_json(&search_object, json_buffer, sizeof(json_buffer));
     printf("\t %s \n",json_buffer);
-    printf("\n LES PATTERNS GENERÉES SONT : \n");
-    size_patterns=pattern_generator(search_object,patterns);
+    printf("\n LES PATTERNS GENERÉES SONT : \n");*/
+    /*size_patterns=pattern_generator(search_object,patterns);
     for(i=0;i<size_patterns;i++)
     {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
+        /*object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
+        printf("\t %s \n",json_buffer);*/
 
 
-        objets = image_treatment(patterns[i],path);
+        /*objets = image_treatment(patterns[i],path);
 
         for(j=0;j<objets.count_element;j++)
         {
@@ -40,18 +40,18 @@ int main()
         }
 
         objets = init_objects();
-    }
-    /*printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");
-    number_valid_pattern=pattern_analyser(search_object,pattern_array,path);*/
-    /*for(i=0;i<number_valid_pattern;i++)
+    }*/
+    /*printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");*/
+    number_valid_pattern=pattern_analyser(search_object,pattern_array,path);
+    for(i=0;i<number_valid_pattern;i++)
     {
         objets = pattern_array[i];
-        for(i=0;i<objets.count_element;i++)
+        for(j=0;j<objets.count_element;j++)
         {
-            object_to_json(&objets.table[i], json_buffer, sizeof(json_buffer));
+            object_to_json(&objets.table[j], json_buffer, sizeof(json_buffer));
             printf("\n%s\n",json_buffer);
         }
-    }*/
+    }
 
 /*
     printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");

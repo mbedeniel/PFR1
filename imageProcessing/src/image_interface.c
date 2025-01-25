@@ -229,7 +229,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     /*------- FILTRAGE DE L'IMAGE -------*/
 
     image_filter(binary_image,ligne,colonne);
-
+ 
 
     
 
@@ -237,7 +237,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
    /*------- SEGMENTATION DE L IMAGE -------*/
 
     nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,&file_image);
-    printf("NOMBRE OBJECT : %i",nombre_objet);
+    printf("\n NOMBRE OBJECT : %i",nombre_objet);
     /*printf("\nnombre d'objet = %i\n",nombre_objet);*/
 
     object_array = create_object_array(nombre_objet);
@@ -256,7 +256,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
 
     for(i=0;binary_image != NULL;i++,binary_image = DEFILER(&file_image)){
 
-        if(i>0){
+        /*if(i>0){
              for(i=0;i<ligne;i++)
             {
                 for(j=0;j<colonne;j++)
@@ -265,7 +265,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
                 }
                 printf("\n");
             }
-        }
+        }*/
 
         /*------- DETECTION FORME ------*/
         max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
@@ -357,8 +357,8 @@ int pattern_analyser(const Object searched_pattern, Objects * image_objects,cons
                 size_image_objects++;
             }
         }*/
-       image_objects[size_patterns] = pattern_array;
-       size_patterns++;
+       image_objects[i] = pattern_array;
+       size_image_objects++;
         
     }
     

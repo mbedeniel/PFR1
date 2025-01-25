@@ -16,6 +16,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
     Object processed_image; 
+    FILE * fichier;
 
     /*
     processed_image : resultat du traitement image
@@ -30,6 +31,8 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     */
     
 
+    /*Initialisation d'un Object*/
+    processed_image=init_object();
 
     /*
     ***************************************
@@ -42,7 +45,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*Recuperation des lignes et colonnes*/
 
     /*Ouvrir le fichier en lecture*/
-    FILE* fichier = fopen(path, "r");
+    fichier = fopen(path, "r");
     if (!fichier) {
         perror("ERREUR DE LECTURE");
         return processed_image;
@@ -57,9 +60,6 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     ********DEFINITION DES VARIABLES*******
     ***************************************
     */
-
-    /*Initialisation d'un Object*/
-    processed_image=init_object();
 
 
     /*creation des tableaux*/
@@ -245,6 +245,12 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*------- DETECTION POSITION ------*/
     processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
     
+
+    /*------- LIBERER LA MEMOIRE ------*/
+    free(binary_image);
+    free(image_rgb);
+    free(image_hsv);
+
     return processed_image;
 }
 
@@ -274,13 +280,15 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     for(i=0;i<size_patterns;i++)
     {
         pattern=image_treatment(patterns[i],path);
-        if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
+        /*if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
         {
             image_objects[size_image_objects]=pattern;
             size_image_objects++;
-        }
-        
+        }*/
+        image_objects[size_image_objects]=pattern;
+        size_image_objects++;
     }
+
     
     return size_image_objects;
 }
@@ -336,4 +344,41 @@ int pattern_generator(Object object, Object* match_patterns)
         }
     }
     return size_match_patterns;
+}
+
+void user_interface(int choice)
+{
+    if(choice==0)
+    {
+        printf("\n MODES MENU  ");
+        printf("\n \t MODE 1 : search precise COLOR (ORANGE,BLUE,YELLOW) and a SHAPE (BALL,CUBE) ");
+        printf("\n \t MODE 2 : search for a precise SHAPE (BALL,CUBE) ");
+        printf("\n \t MODE 3 : search for a precise COLOR (ORANGE,BLUE,YELLOW) ");
+        printf("\n \t MODE 4 : a global analysis of the image ");
+        printf("\n \t MODE 0 : you want to search a COLOR X and a SHAPE Y  ");
+        printf("\n \t Enter a NUMBER associate to a MODE : ");
+    }
+    else if(choice==1)
+    {
+        printf("\n COLOR MENU  ");
+        printf("\n \t COLOR  \t | \t NUMBER");
+        printf("\n \t ORANGE \t | \t 0");
+        printf("\n \t YELLOW \t | \t 1");
+        printf("\n \t BLUE   \t | \t 2");
+        printf("\n \t Enter a NUMBER associate to a COLOR : ");
+    }
+    else if(choice==2)
+    {
+        printf("\n COLOR MENU  ");
+        printf("\n \t SHAPE \t | \t NUMBER");
+        printf("\n \t BALL  \t | \t 0");
+        printf("\n \t CUBE  \t | \t 1");
+        printf("\n \t Enter a NUMBER associate to a SHAPE : ");
+    }
+    else if(choice==3)
+    {
+        printf("\n PATH MENU  ");
+        printf("\n \t The PATH is a RELATIVE PATH of a FILE(IMAGE) in the FORMAT .TXT ");
+        printf("\n \t Enter the NAME of the IMAGE : ");
+    }
 }

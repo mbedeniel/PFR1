@@ -1,3 +1,6 @@
+#ifndef DEF_OBJECT
+#define DEF_OBJECT
+
 #include "color_treatment.h"
 #include "shape_treatment.h"
 #include <stdio.h>
@@ -53,3 +56,5 @@ Object create_object(Shape shape,Color color,Position position);
     Elle copie les informations de l'objet dans le buffer sous forme de chaine de caractère
 */
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size);
+
+#endif

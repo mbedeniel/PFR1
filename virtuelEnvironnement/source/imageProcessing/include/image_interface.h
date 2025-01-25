@@ -1,3 +1,6 @@
+#ifndef DEF_IMAGE_INTERFACE
+#define DEF_IMAGE_INTERFACE
+
 #include "object.h"
 #include "pre_processing.h"
 #include <stdio.h>
@@ -91,6 +94,8 @@ Object image_treatment(Object search_image_inforrmation,const char* path);
 */
 int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path);
 
+void user_interface(int choice);
+
 /*FUNCTION : int pattern_generator(Object object, Object* patterns);
     genere les differents patters correspondant a une structure de donnée.
     Par exemple si on cherche un objet ROUGE, les differente possibbilités sont:
@@ -109,3 +114,5 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
         nombre de pattern qu on matché
 */
 int pattern_generator(Object object, Object* patterns);
+
+#endif

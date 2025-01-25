@@ -1,3 +1,6 @@
+#ifndef DEF_POSITION_TREATMENT
+#define DEF_POSITION_TREATMENT
+
 /* la structure Position qui contient les coordonnées x et y d'un objet*/
 typedef struct 
 {
@@ -33,3 +36,5 @@ OUTPUT: Position
     le pixel le plus bas de la forme recherchée
 */
 Position get_pixel_position(Position lowest_pixel);
+
+#endif

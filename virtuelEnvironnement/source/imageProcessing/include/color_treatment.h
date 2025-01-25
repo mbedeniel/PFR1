@@ -1,3 +1,6 @@
+#ifndef DEF_COLOR_TREATMENT
+#define DEF_COLOR_TREATMENT
+
 #define NUMBER_OF_COLOR 3 /*Nombre de couleur de Color*/
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
@@ -70,3 +73,5 @@ Color get_color(int number);
 
 */
 const char* get_color_name(Color color);
+
+#endif

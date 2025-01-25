@@ -1,3 +1,6 @@
+#ifndef DEF_SHAPE_TREATMENT
+#define DEF_SHAPE_TREATMENT
+
 #include "position_treatment.h"
 #include "pre_processing.h"
 #include <math.h>
@@ -109,3 +112,5 @@ const char* get_shape_name(Shape shape);
 
 
 Shape get_shape(int number);
+
+#endif

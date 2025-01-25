@@ -1,3 +1,6 @@
+#ifndef DEF_PRE_PROCESSING
+#define DEF_PRE_PROCESSING
+
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
@@ -129,3 +132,5 @@ void median(int ** image,int i,int j);
 */
 /*OUTPUT: NONE*/
 void add_padding(int ** image,int ligne,int column);
+
+#endif

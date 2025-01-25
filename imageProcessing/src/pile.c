@@ -33,9 +33,10 @@ PILE emPILE(PILE p, int x, int y) {
 
 int connexN(PILE p, int x, int y, int n) {
     PILE act = p;
+    int x_connex,y_connex;
     while (act != NULL) {
-        for (int x_connex = -n; x_connex <= n; x_connex++) {
-            for (int y_connex = -n; y_connex <= n; y_connex++) {
+        for (x_connex = -n; x_connex <= n; x_connex++) {
+            for (y_connex = -n; y_connex <= n; y_connex++) {
                 if (act->x + x_connex == x && act->y + y_connex == y) {
                     return 1;
                 }
@@ -119,8 +120,7 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n) {
 }
 
 int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int seuil, MA_FILE* file){
-    int nombre_objet = 0;  
-    int nb_pixels;
+    int nb_pixels,i,nombre_objet = 0;  
     PILE act_pile;
     ELEMENT img;
     PILE_stack act_stack = ps;
@@ -141,9 +141,9 @@ int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int seuil, MA_FILE* fil
         }
         if (seuil<nb_pixels){
             ENFILER(file, img);
-	    nombre_objet++;
+	        nombre_objet++;
         }
-	for (int i = 0; i < HEIGHT; i++) {
+	    for (i = 0; i < HEIGHT; i++) {
             free(img[i]);
         }
         free(img);

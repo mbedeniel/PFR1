@@ -107,6 +107,7 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n) {
                 } else {
                     act = ps;
                 }
+                continue;
             }
         }
         prec = act;
@@ -114,10 +115,11 @@ PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n) {
     }
 
     if (!fusion_stack) {
-        ps = emPILE_stack(ps, emPILE(init_PILE(), x, y));
+        PILE new_pile = init_PILE();
+        new_pile = emPILE(new_pile, x, y);
+        ps = emPILE_stack(ps, new_pile);
     }
-    return ps;
-}
+    return ps;}
 
 int objecBinariser(PILE_stack ps, int HEIGHT, int WIDTH, int seuil, MA_FILE* file){
     int nb_pixels,i,nombre_objet = 0;  

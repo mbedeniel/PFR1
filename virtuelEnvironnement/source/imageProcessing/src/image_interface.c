@@ -401,5 +401,7 @@ void user_interface(Menu choice)
             printf("\n \t The PATH is a RELATIVE PATH of a FILE(IMAGE) in the FORMAT .TXT ");
             printf("\n \t Enter the NAME of the IMAGE : ");
             break;
+
+        /*Pad besoin d'un default car on a une enumeration en test et on a couvert les cas possibles*/
     }
 }

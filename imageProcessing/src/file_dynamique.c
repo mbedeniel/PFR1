@@ -45,7 +45,6 @@ ELEMENT DEFILER(MA_FILE* file)
   CELL* previous_head;
   if(FILE_EST_VIDE(*file))
   {
-    fprintf(stderr,"ERREUR FILE VIDE");
     return NULL;
   }
   previous_head = file->head;

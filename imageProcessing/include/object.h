@@ -72,7 +72,7 @@ Objects init_objects();
     retourne le tableau d'objet creé si il a pu etre créé
     ou retourne NULL
 */
-Object * create_objects_array(int size);
+Object * create_object_array(int size);
 
 
 /*FUNCTION:void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size)

@@ -28,7 +28,7 @@ Objects init_objects()
     return new_objects;
 }
 
-Object * create_objects_array(int size)
+Object * create_object_array(int size)
 {
     Object * object_array = (Object *)malloc(sizeof(Object)*size);
     return object_array;

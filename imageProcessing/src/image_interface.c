@@ -12,7 +12,7 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     double *** image_hsv; /*image obtenu grace a rgb_to_hsv*/
     double *** image_rgb; /*image recupéré*/
     int ** binary_image; /*image obtebur grace a bit_image*/
-    Object * objet_array; /*tableau d'objets*/
+    Object * object_array; /*tableau d'objets*/
     Objects processed_images; /*les differents resultats du traitement de l'image*/
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
@@ -22,15 +22,6 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     int result; /* Resultat de l'appel*/
     int nombre_objet;
     MA_FILE file_image;
-
-
-
-    char json_buffer[256];
-
-
-
-    object_to_json(&search_image_inforrmation, json_buffer, sizeof(json_buffer));
-    printf("\t %s \n",json_buffer);
 
     /*
     processed_image : resultat du traitement d'une image contenant un seul objet
@@ -234,32 +225,23 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     {
         processed_image.color=search_image_inforrmation.color;
     }
-    object_to_json(&processed_image, json_buffer, sizeof(json_buffer));
-    printf("\t %s \n",json_buffer);
 
     /*------- FILTRAGE DE L'IMAGE -------*/
 
     image_filter(binary_image,ligne,colonne);
 
 
-    /*for(i=0;i<ligne;i++)
-    {
-        for(j=0;j<colonne;j++)
-        {
-            printf("%i\t",binary_image[i][j]);
-        }
-        printf("\n");
-    }*/
+    
 
 
    /*------- SEGMENTATION DE L IMAGE -------*/
 
     nombre_objet = segmentation_img_b(binary_image, 6,COLOR_MIN_PIXEL, ligne, colonne,&file_image);
 
-    printf("\nnombre d'objet = %i\n",nombre_objet);
+    /*printf("\nnombre d'objet = %i\n",nombre_objet);*/
 
-    objet_array = create_objects_array(nombre_objet);
-    if(objet_array==NULL)
+    object_array = create_object_array(nombre_objet);
+    if(object_array==NULL)
     {
         fprintf(stderr,"ERREUR ALLOCATION");
         return processed_images; /*On aurrait pu retourner NULL*/
@@ -270,7 +252,20 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
     /*recuperation des differents images abtenue aprés segmentation*/
     binary_image = DEFILER(&file_image);
 
-    while(binary_image != NULL){
+   
+
+    for(i=0;binary_image != NULL;i++,binary_image = DEFILER(&file_image)){
+
+        if(i>0){
+             for(i=0;i<ligne;i++)
+            {
+                for(j=0;j<colonne;j++)
+                {
+                    printf("%i\t",binary_image[i][j]);
+                }
+                printf("\n");
+            }
+        }
 
         /*------- DETECTION FORME ------*/
         max_min_pixel=get_image_best_point(binary_image,ligne,colonne);
@@ -307,23 +302,18 @@ Objects image_treatment(const Object search_image_inforrmation,const char* path)
 
 
         /*------- RECUPERATION DES RESULTATS ------*/
-        objet_array[i]=processed_image;
-
-
-        object_to_json(&processed_image, json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
+        object_array[i]=processed_image;
 
         /*recuperation des differents images abtenue aprés segmentation*/
-        binary_image = DEFILER(&file_image);
     }
     
     processed_images.count_element = nombre_objet;
-    processed_images.table = objet_array;
+    processed_images.table = object_array;
 
     return processed_images;
 }
 
-int pattern_analyser(Object searched_pattern, Objects * image_objects,const char * path)
+int pattern_analyser(const Object searched_pattern, Objects * image_objects,const char * path)
 {
     
     /*
@@ -375,7 +365,7 @@ int pattern_analyser(Object searched_pattern, Objects * image_objects,const char
     return size_image_objects;
 }
 
-int pattern_generator(Object object, Object* match_patterns)
+int pattern_generator(const Object object, Object* match_patterns)
 {
     int i,j,k,size_match_patterns=0;
     Color object_color=object.color;

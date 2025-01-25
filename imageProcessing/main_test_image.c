@@ -5,8 +5,9 @@ int main()
 {
     Object search_object,processed_object;
     Objects objets;
+    Objects pattern_array[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
-    int i =0,size_patterns,number_valid_pattern,image_number;
+    int i,j,size_patterns,number_valid_pattern,image_number;
     char path[75];
     /* recuperer les infos de l object sous format json*/
     char json_buffer[256]; /*Tampon pour la chaîne JSON*/
@@ -18,8 +19,8 @@ int main()
     snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
     /*snprintf(path, 200, "./IMG_RGB_TEST/nos_IMG_RGB_TEST/img_%i.txt", image_number);*/
 
-    /*printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
-    search_object = init_object();
+    printf("\n\n\n OBJET AVANT LE TRAITEMENT \n");
+    search_object = create_object(BALL,ORANGE,init_position());
     object_to_json(&search_object, json_buffer, sizeof(json_buffer));
     printf("\t %s \n",json_buffer);
     printf("\n LES PATTERNS GENERÉES SONT : \n");
@@ -28,13 +29,28 @@ int main()
     {
         object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
         printf("\t %s \n",json_buffer);
+
+
+        objets = image_treatment(patterns[i],path);
+
+        for(j=0;j<objets.count_element;j++)
+        {
+            object_to_json(&objets.table[j], json_buffer, sizeof(json_buffer));
+            printf("\t\t%s\n",json_buffer);
+        }
+
+        objets = init_objects();
     }
-    printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");
-    number_valid_pattern=pattern_analyser(search_object,patterns,path);
-    for(i=0;i<number_valid_pattern;i++)
+    /*printf("\n LES ANALYSES DES PATTERNS GENERÉES SONT : \n");
+    number_valid_pattern=pattern_analyser(search_object,pattern_array,path);*/
+    /*for(i=0;i<number_valid_pattern;i++)
     {
-        object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\t %s \n",json_buffer);
+        objets = pattern_array[i];
+        for(i=0;i<objets.count_element;i++)
+        {
+            object_to_json(&objets.table[i], json_buffer, sizeof(json_buffer));
+            printf("\n%s\n",json_buffer);
+        }
     }*/
 
 /*
@@ -105,7 +121,7 @@ int main()
     }*/
 
 
-    search_object=create_object(CUBE,YELLOW,init_position());
+    /*search_object=create_object(CUBE,YELLOW,init_position());
 
 
         object_to_json(&search_object, json_buffer, sizeof(json_buffer));
@@ -119,7 +135,7 @@ int main()
     {
         object_to_json(&objets.table[i], json_buffer, sizeof(json_buffer));
         printf("\n%s\n",json_buffer);
-    }
+    }*/
 
     
     

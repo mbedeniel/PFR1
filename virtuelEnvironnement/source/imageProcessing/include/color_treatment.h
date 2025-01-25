@@ -1,9 +1,30 @@
-#ifndef DEF_COLOR_TREATMENT
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------VERSION : 1.1---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------DATE : 22/01/2025-------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------
+    MANAGEMENT OF THE "Color" STRUCTURE AND GET THE THE "Color" of an OBJECT IN THE IMAGE
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#ifndef DEF_COLOR_TREATMENT 
 #define DEF_COLOR_TREATMENT
 
 #define NUMBER_OF_COLOR 3 /*Nombre de couleur de Color*/
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
+
+/*
+****************************************
+********ENUMERATION ET STRUCTURES*******
+****************************************
+*/
 
 /*TYPE: Color*/
 /*RED or GREEN or BLUE*/
@@ -14,6 +35,14 @@ typedef enum
     BLUE=2,
     NONE_COLOR=3 /*pour marquer que la couleur ne matche avec aucune couleur*/
 } Color;
+
+
+
+/*
+**************************************
+********PROTOTYPE DES FONCTIONS*******
+**************************************
+*/
 
 
 /*
@@ -27,6 +56,7 @@ INPUT: NONE
 OUTPUT: une structure Color
 */
 Color init_color();
+
 
 
 /*FUNCTION: bit_image
@@ -57,7 +87,23 @@ Color init_color();
  */
 int bit_image(Color search_color,int ligne,int column,double *** image_hsv,int ** binary_image);
 
+
+/*FUNCTION: Color get_color(int number)
+    Cette fonction nous permet d'associer des Color a des nombres
+    Nous aurions pu le faire directement lors de la definition
+    Mais cela cause des problémes. Raison pour laquelle nous
+    le realisons via une fonction
+*/
+/*INPUT:
+    int number
+        le numero correspondant da la Color que l'on veut(voir definition de l'enumeration)
+*/
+/*OUTPUT: Color 
+    la Color correspondant au nombre recu (voir definition de l'enumeration)
+*/
 Color get_color(int number);
+
+
 
 /*FUNCTION:const char* get_color_name(Color color)
     cette fontion retourne le nom de la couleur sous forme de chaine de caractère

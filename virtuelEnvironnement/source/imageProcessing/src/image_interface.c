@@ -1,5 +1,9 @@
 #include "../include/image_interface.h"
 
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
 Object image_treatment(Object search_image_inforrmation,const char* path)
 {
 
@@ -54,6 +58,9 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*Lire les dimensions de l'image*/
     fscanf(fichier, "%i", &ligne);
     fscanf(fichier, "%i", &colonne);
+
+    /*Affichage de la taille de ligne*/
+    printf("\n IMAGE RESOLUTION : %i X %i",ligne,colonne);
 
     /*
     *************************************** 
@@ -254,6 +261,10 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     return processed_image;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
 int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path)
 {
     
@@ -292,6 +303,10 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     
     return size_image_objects;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 
 int pattern_generator(Object object, Object* match_patterns)
 {
@@ -346,39 +361,45 @@ int pattern_generator(Object object, Object* match_patterns)
     return size_match_patterns;
 }
 
-void user_interface(int choice)
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+void user_interface(Menu choice)
 {
-    if(choice==0)/*Presentation des modes*/
+    switch(choice)
     {
-        printf("\n MODES MENU  ");
-        printf("\n \t MODE 1 : search precise COLOR (ORANGE,BLUE,YELLOW) and a SHAPE (BALL,CUBE) ");
-        printf("\n \t MODE 2 : search for a precise SHAPE (BALL,CUBE) ");
-        printf("\n \t MODE 3 : search for a precise COLOR (ORANGE,BLUE,YELLOW) ");
-        printf("\n \t MODE 4 : a global analysis of the image ");
-        printf("\n \t Enter 0 for QUIT ");
-        printf("\n \t Enter a NUMBER associate to a MODE : ");
-    }
-    else if(choice==1)/*Presentation des couleurs*/
-    {
-        printf("\n COLOR MENU  ");
-        printf("\n \t COLOR  \t | \t NUMBER");
-        printf("\n \t ORANGE \t | \t 0");
-        printf("\n \t YELLOW \t | \t 1");
-        printf("\n \t BLUE   \t | \t 2");
-        printf("\n \t Enter a NUMBER associate to a COLOR : ");
-    }
-    else if(choice==2)/*Presentation des formes*/
-    {
-        printf("\n COLOR MENU  ");
-        printf("\n \t SHAPE \t | \t NUMBER");
-        printf("\n \t BALL  \t | \t 0");
-        printf("\n \t CUBE  \t | \t 1");
-        printf("\n \t Enter a NUMBER associate to a SHAPE : ");
-    }
-    else if(choice==3)/*Presentation des images*/
-    {
-        printf("\n PATH MENU  ");
-        printf("\n \t The PATH is a RELATIVE PATH of a FILE(IMAGE) in the FORMAT .TXT ");
-        printf("\n \t Enter the NAME of the IMAGE : ");
+        case MODE_MENU: /*Presentation des modes*/
+            printf("\n MODES MENU  ");
+            printf("\n \t MODE 1 : search precise COLOR (ORANGE,BLUE,YELLOW) and a SHAPE (BALL,CUBE) ");
+            printf("\n \t MODE 2 : search for a precise SHAPE (BALL,CUBE) ");
+            printf("\n \t MODE 3 : search for a precise COLOR (ORANGE,BLUE,YELLOW) ");
+            printf("\n \t MODE 4 : a global analysis of the image ");
+            printf("\n \t Enter 0 for QUIT ");
+            printf("\n \t Enter a NUMBER associate to a MODE : ");
+            break;
+
+        case COLOR_MENU: /*Presentation des couleurs*/
+            printf("\n COLOR MENU  ");
+            printf("\n \t COLOR  \t | \t NUMBER");
+            printf("\n \t ORANGE \t | \t 0");
+            printf("\n \t YELLOW \t | \t 1");
+            printf("\n \t BLUE   \t | \t 2");
+            printf("\n \t Enter a NUMBER associate to a COLOR : ");
+            break;
+
+        case SHAPE_MENU: /*Presentation des formes*/
+            printf("\n COLOR MENU  ");
+            printf("\n \t SHAPE \t | \t NUMBER");
+            printf("\n \t BALL  \t | \t 0");
+            printf("\n \t CUBE  \t | \t 1");
+            printf("\n \t Enter a NUMBER associate to a SHAPE : ");
+            break;
+
+        case PATH_MENU:/*Presentation des images*/
+            printf("\n PATH MENU  ");
+            printf("\n \t The PATH is a RELATIVE PATH of a FILE(IMAGE) in the FORMAT .TXT ");
+            printf("\n \t Enter the NAME of the IMAGE : ");
+            break;
     }
 }

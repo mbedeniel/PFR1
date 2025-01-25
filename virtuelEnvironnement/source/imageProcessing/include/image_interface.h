@@ -1,3 +1,20 @@
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------VERSION : 3.0---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------DATE : 12/01/2025-------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------
+    HEADQUATER OF "imageProcessing" MODULE
+    IT IS THE MANAGER THE COMMUNICATION BETWEEN OUR FUNCTIONS AND EVALUATE THE RESULTS THOSE FUNCTIONS PRODUCES
+    IT IS ALSO THE CONTACT POINT BETWEEN THE USER AND THE FEATURES OF "imageProcessing" MODULE
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
 #ifndef DEF_IMAGE_INTERFACE
 #define DEF_IMAGE_INTERFACE
 
@@ -16,8 +33,8 @@
 #define SHAPE_MIN_PERCENTAGE 75
 
 /*
-color_min_pixel : nombre de pixel minimu pour valider la presence d'une couleur
-shape_min_percentage : pourcentage minimu pour valider une forme
+COLOR_MIN_PIXEL : nombre de pixel minimu pour valider la presence d'une couleur
+SHAPE_MIN_PERCENTAGE : pourcentage minimu pour valider une forme
 */
 
 /*
@@ -35,6 +52,22 @@ PRINCIPE:
     POUR TOUTES DIFFICULTÉES DE COMPREHENSION
     OU DE COMMUNICATION VEULLIEZ ME CONTACTER.
 */
+
+
+/*
+****************************************
+********ENUMERATION ET STRUCTURES*******
+****************************************
+*/
+
+typedef enum 
+{
+    MODE_MENU=0,
+    COLOR_MENU=1,
+    SHAPE_MENU=2,
+    PATH_MENU=3
+}Menu;
+
 
 
 /*
@@ -66,6 +99,8 @@ PRINCIPE:
 */
 Object image_treatment(Object search_image_inforrmation,const char* path);
 
+
+
 /*FUNCTION: int pattern_analyser(Object searched_pattern, Object* image_objects);
     analyse le paatern recherché. Par exemple,
     On peut demander au robot d'avancer vers la balle. On remarque  qu'on n'a pas preciser la couleur.
@@ -94,7 +129,21 @@ Object image_treatment(Object search_image_inforrmation,const char* path);
 */
 int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path);
 
-void user_interface(int choice);
+
+
+/*FUNCTION: void user_interface(int choice)
+    En contient les differentes informations pour guider l'utilisateur
+    lors de l'utilisation du programme
+*/
+/*INPUT:
+    Menu choice
+        le menu dont on veut afficher les informations
+*/
+/*OUTPUT: NONE
+*/
+void user_interface(Menu choice);
+
+
 
 /*FUNCTION : int pattern_generator(Object object, Object* patterns);
     genere les differents patters correspondant a une structure de donnée.

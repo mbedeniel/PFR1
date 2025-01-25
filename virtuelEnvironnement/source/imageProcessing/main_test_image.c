@@ -1,5 +1,9 @@
 #include "./include/image_interface.h"
 
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
 int main()
 {
     Object search_object;
@@ -13,7 +17,7 @@ int main()
     
 
     /*Affichege pour l'utilisateur*/
-    user_interface(0);
+    user_interface(MODE_MENU);
 
     /*Recuperation du mode*/
     scanf("%i", &mode);
@@ -25,7 +29,7 @@ int main()
 
 
     /*Affichege pour l'utilisateur*/
-    user_interface(3);
+    user_interface(PATH_MENU);
 
     /*Generation du Path vers l'image*/
     scanf("%i", &image_number);
@@ -38,14 +42,14 @@ int main()
     if(mode==1) /* La couleur et la forme sont fournis*/
     {
         /*Affichege pour l'utilisateur*/
-        user_interface(1);
+        user_interface(COLOR_MENU);
         /*Recuperation de la couleur*/
         scanf("%i",&color_shape);
         /*Mise a jour de la couleur l'objet*/
         search_object.color = get_color(color_shape);
 
         /*Affichege pour l'utilisateur*/
-        user_interface(2);
+        user_interface(SHAPE_MENU);
         /*Recuperation de la forme*/
         scanf("%i",&color_shape);
         /*Mise a jour de la forme l'objet*/
@@ -54,7 +58,7 @@ int main()
     else if(mode==2) /*seul la forme est forunie*/
     {
         /*Affichege pour l'utilisateur*/
-        user_interface(1);
+        user_interface(SHAPE_MENU);
         /*Recuperation de la forme*/
         scanf("%i",&color_shape);
         /*Mise a jour de la couleur l'objet*/
@@ -63,7 +67,7 @@ int main()
     else if(mode==3) /*seul la couleur est fourni*/
     {
         /*Affichege pour l'utilisateur*/
-        user_interface(2);
+        user_interface(COLOR_MENU);
         /*Recuperation de la couleur*/
         scanf("%i",&color_shape);
         /*Mise a jour de la couleur l'objet*/

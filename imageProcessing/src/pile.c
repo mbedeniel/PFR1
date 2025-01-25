@@ -78,17 +78,48 @@ int PILE_estVide_stack(PILE_stack ps) {
     return (ps == NULL);
 }
 
-PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n){
+PILE fusion_PILE(PILE p1, PILE p2) {
+    PILE act = p1;
+    if (act == NULL) return p2;
+    while (act->suivant != NULL) {
+        act = act->suivant;
+    }
+    act->suivant = p2;
+    return p1;
+}
+
+PILE_stack parcour_PILE_connex(PILE_stack ps, int x, int y, int n) {
     PILE_stack act = ps;
-    while (act != NULL){
-        if(connexN(act -> p,  x,  y,  n)){
-            act -> p = emPILE(act -> p , x, y);
-            return ps;
+    PILE_stack prec = NULL; 
+    PILE_stack fusion_stack = NULL;
+
+    while (act != NULL) {
+        if (connexN(act->p, x, y, n)) {
+            if (fusion_stack == NULL) {
+                fusion_stack = act;
+                fusion_stack->p = emPILE(fusion_stack->p, x, y);
+            } else {
+                fusion_stack->p = fusion_PILE(fusion_stack->p, act->p);
+                if (prec) {
+                    prec->suivant = act->suivant;
+                } else {
+                    ps = act->suivant;
+                }
+                free(act);
+                if (prec != NULL) {
+                    act = prec->suivant;
+                } else {
+                    act = ps;
+                }
+            }
         }
+        prec = act;
         act = act->suivant;
     }
 
-    ps = emPILE_stack(ps ,emPILE(init_PILE() , x, y));
+    if (!fusion_stack) {
+        ps = emPILE_stack(ps, emPILE(init_PILE(), x, y));
+    }
     return ps;
 }
 

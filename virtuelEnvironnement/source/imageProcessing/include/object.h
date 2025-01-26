@@ -45,7 +45,7 @@ typedef struct
 
 
 /*
-FUNCTION : Object init_object();
+FUNCTION : Object init_object()
     initialise une strcuture Object
 */
 /*
@@ -58,7 +58,7 @@ Object init_object();
 
 
 
-/*FUNCTION : Object create_object(Position position, Shape shape, Color color);
+/*FUNCTION : Object create_object(Position position, Shape shape, Color color)
     crerr un objet
 */
 /*INPUT :

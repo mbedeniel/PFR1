@@ -84,9 +84,6 @@ int main()
     printf("\n RESULTS : ");
     for(i=0;i<number_valid_pattern;i++)
     {
-        /*------------------------------------*/
-        /*ADD PYTHON FOR MARKING POSITION HEAR*/
-        /*------------------------------------*/
         object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
         printf("\n \t %s \n",json_buffer);
     }

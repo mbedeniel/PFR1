@@ -29,6 +29,8 @@
 ****************************************
 */
 
+
+
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
 
@@ -40,6 +42,23 @@ typedef enum
     CUBE=1,
     NONE_SHAPE=2 /*Si la forme ne correspond a aucune forme*/
 } Shape;
+
+
+
+typedef struct
+{
+    Position highest_pixel; /*premier pixel de l'image(forme sur l'image)*/
+    Position lowest_pixel; /*pixel le plus bas de l'image(forme sur l'image)*/
+}image_max_min_pixel;
+
+
+
+/*
+**************************************
+********PROTOTYPE DES FONCTIONS*******
+**************************************
+*/
+
 
 
 /*
@@ -54,21 +73,9 @@ OUTPUT: une structure Shape
 */
 Shape init_shape();
 
-typedef struct
-{
-    Position highest_pixel; /*premier pixel de l'image(forme sur l'image)*/
-    Position lowest_pixel; /*pixel le plus bas de l'image(forme sur l'image)*/
-}image_max_min_pixel;
 
 
-/*
-**************************************
-********PROTOTYPE DES FONCTIONS*******
-**************************************
-*/
-
-
-/*FUNCTION:ratio_area
+/*FUNCTION: double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape search_shape)
     permet d'exprimer la presence d'une forme.
     Plus le resulats est proche de 01 plus il y a de chance que ce
     soit la forme cherché. En multipliant le resultat retourner par 100
@@ -93,7 +100,7 @@ double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape se
 
 
 
-/*FUNCTION:get_image_best_point
+/*FUNCTION: image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int column)
     retourne le point le plus haut et le point le plus bas de l'image
 */
 /*INPUT:
@@ -112,25 +119,6 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
 
 
 
-/*FUNCTION: int segmentation(int ** image, int ligne, int colonne);
-    Segemente une image en attribuant la meme etiquette (nombre)
-    ai pixel de la meme zone
-*/
-/*INPUT:
-    int ** image
-        une image bianaire
-    int ligne
-        le nombre de ligne de image
-    int colonne
-        le nombre de colonne de image
-    int ** segmented_image
-        l'image segmentée de taille [ligne+2][colonne+2]
-*/
-/*OUTPUT:
-    int
-        un entier indiquant le nombre de segment formé
-*/
-
 /*FUNCTION:const char* get_shape_name(Shape shape)
 
 */
@@ -143,6 +131,7 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
 
 */
 const char* get_shape_name(Shape shape);
+
 
 
 /*FUNCTION: Shape get_shape(int number)

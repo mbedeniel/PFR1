@@ -10,7 +10,7 @@
 /*
 -----------------------------------------------------------------------------------------------------------------------------------
     HEADQUATER OF "imageProcessing" MODULE
-    IT IS THE MANAGER THE COMMUNICATION BETWEEN OUR FUNCTIONS AND EVALUATE THE RESULTS THOSE FUNCTIONS PRODUCES
+    IT IS THE MANAGER OF THE COMMUNICATION BETWEEN OUR FUNCTIONS AND EVALUATE THE RESULTS THOSE FUNCTIONS PRODUCES
     IT IS ALSO THE CONTACT POINT BETWEEN THE USER AND THE FEATURES OF "imageProcessing" MODULE
 -----------------------------------------------------------------------------------------------------------------------------------
 */
@@ -48,9 +48,6 @@ PRINCIPE:
     L'ACCES AUX FONCTIONNALITÉES DU MODULE DOIT 
     CE FAIRE VIA image_interface ET UNIQUEMENT 
     DE CETTE FACON LA.
-
-    POUR TOUTES DIFFICULTÉES DE COMPREHENSION
-    OU DE COMMUNICATION VEULLIEZ ME CONTACTER.
 */
 
 
@@ -60,6 +57,11 @@ PRINCIPE:
 ****************************************
 */
 
+
+/*
+Menu nous permetras d'afficher aisement un groupe d'inforamations
+relatives a un menu ou un autre pour guider l'utilisateur
+*/
 typedef enum 
 {
     MODE_MENU=0,
@@ -101,7 +103,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path);
 
 
 
-/*FUNCTION: int pattern_analyser(Object searched_pattern, Object* image_objects);
+/*FUNCTION: int pattern_analyser(Object searched_pattern, Object* image_objects)
     analyse le paatern recherché. Par exemple,
     On peut demander au robot d'avancer vers la balle. On remarque  qu'on n'a pas preciser la couleur.
     Il faudra donc regerder si il y a un objet ROUGE, VERT ou BLEU qui est une balle. De meme,
@@ -145,7 +147,7 @@ void user_interface(Menu choice);
 
 
 
-/*FUNCTION : int pattern_generator(Object object, Object* patterns);
+/*FUNCTION : int pattern_generator(Object object, Object* patterns)
     genere les differents patters correspondant a une structure de donnée.
     Par exemple si on cherche un objet ROUGE, les differente possibbilités sont:
     un CUBE rouge ou une BALLE rouge. Pareil si l'on cherche un CUBE. Les possibilitée sont :

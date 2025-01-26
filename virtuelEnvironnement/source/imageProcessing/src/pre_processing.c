@@ -192,6 +192,8 @@ void image_filter(int ** image,int ligne,int column)
 		}
 	}
 
+	/*Libearation de la memoire*/
+	free(new_image);
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/

@@ -250,7 +250,14 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     }
 
     /*------- DETECTION POSITION ------*/
-    processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
+    if(processed_image.color==NONE_COLOR && processed_image.shape==NONE_SHAPE)
+    {
+        processed_image.position=init_position();
+    }
+    else
+    {
+        processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
+    }
     
 
     /*------- LIBERER LA MEMOIRE ------*/

@@ -36,8 +36,11 @@ int main()
     scanf("%14s",image_name);/*Limiter la taille a 14 caractere pour laisser la place au /O*/
     snprintf(path, 200, "IMG_RGB_TEST/%s.txt", image_name);
 
-    /*Collecte d'information pour la recherche*/
+
+    /*Initialisation de l'objet de la recherche*/
     search_object = init_object();
+
+    /*Collecte d'information pour la recherche*/
 
     if(mode==1) /* La couleur et la forme sont fournis*/
     {

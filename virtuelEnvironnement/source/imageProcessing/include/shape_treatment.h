@@ -1,8 +1,33 @@
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------VERSION : 1.1---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------DATE : 22/01/2025-------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------
+    MANAGEMENT OF THE "Shape" STRUCTURE AND GET THE THE "Shape" of an OBJECT IN THE IMAGE
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#ifndef DEF_SHAPE_TREATMENT
+#define DEF_SHAPE_TREATMENT
+
 #include "position_treatment.h"
 #include "pre_processing.h"
 #include <math.h>
 
 #define NUMBER_OF_SHAPE 2/*nombre d'elment de Shape*/
+
+
+/*
+****************************************
+********ENUMERATION ET STRUCTURES*******
+****************************************
+*/
 
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
@@ -35,6 +60,14 @@ typedef struct
     Position lowest_pixel; /*pixel le plus bas de l'image(forme sur l'image)*/
 }image_max_min_pixel;
 
+
+/*
+**************************************
+********PROTOTYPE DES FONCTIONS*******
+**************************************
+*/
+
+
 /*FUNCTION:ratio_area
     permet d'exprimer la presence d'une forme.
     Plus le resulats est proche de 01 plus il y a de chance que ce
@@ -58,6 +91,8 @@ typedef struct
 */
 double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape search_shape);
 
+
+
 /*FUNCTION:get_image_best_point
     retourne le point le plus haut et le point le plus bas de l'image
 */
@@ -74,6 +109,8 @@ double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape se
         structure contenant les coordonnées des deux points recherchés
 */
 image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int column);
+
+
 
 /*FUNCTION: int segmentation(int ** image, int ligne, int colonne);
     Segemente une image en attribuant la meme etiquette (nombre)
@@ -108,4 +145,19 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
 const char* get_shape_name(Shape shape);
 
 
+/*FUNCTION: Shape get_shape(int number)
+    Cette fonction nous permet d'associer des Shape a des nombres
+    Nous aurions pu le faire directement lors de la definition
+    Mais cela cause des problémes. Raison pour laquelle nous
+    le realisons via une fonction
+*/
+/*INPUT:
+    int number
+        numéro de la Shape que l'on veut (voir definition de l'enumeration)
+*/
+/*OUTPUT: Shape 
+    la Shape correspondant au nombre recu (voir definition de l'enumeration)
+*/
 Shape get_shape(int number);
+
+#endif

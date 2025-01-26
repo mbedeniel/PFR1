@@ -1,5 +1,9 @@
 #include "../include/image_interface.h"
 
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
 Object image_treatment(Object search_image_inforrmation,const char* path)
 {
 
@@ -16,6 +20,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
     Object processed_image; 
+    FILE * fichier;
 
     /*
     processed_image : resultat du traitement image
@@ -30,6 +35,8 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     */
     
 
+    /*Initialisation d'un Object*/
+    processed_image=init_object();
 
     /*
     ***************************************
@@ -42,7 +49,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*Recuperation des lignes et colonnes*/
 
     /*Ouvrir le fichier en lecture*/
-    FILE* fichier = fopen(path, "r");
+    fichier = fopen(path, "r");
     if (!fichier) {
         perror("ERREUR DE LECTURE");
         return processed_image;
@@ -52,14 +59,14 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     fscanf(fichier, "%i", &ligne);
     fscanf(fichier, "%i", &colonne);
 
+    /*Affichage de la taille de ligne*/
+    printf("\n IMAGE RESOLUTION : %i X %i",ligne,colonne);
+
     /*
-    ***************************************       system("cat ./IMG_RGB_TEST/IMG_5390.txt");
+    *************************************** 
     ********DEFINITION DES VARIABLES*******
     ***************************************
     */
-
-    /*Initialisation d'un Object*/
-    processed_image=init_object();
 
 
     /*creation des tableaux*/
@@ -245,8 +252,18 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     /*------- DETECTION POSITION ------*/
     processed_image.position=get_pixel_position(max_min_pixel.lowest_pixel);
     
+
+    /*------- LIBERER LA MEMOIRE ------*/
+    free(binary_image);
+    free(image_rgb);
+    free(image_hsv);
+
     return processed_image;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 
 int pattern_analyser(Object searched_pattern, Object* image_objects,const char * path)
 {
@@ -274,16 +291,22 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     for(i=0;i<size_patterns;i++)
     {
         pattern=image_treatment(patterns[i],path);
-        if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
+        /*if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
         {
             image_objects[size_image_objects]=pattern;
             size_image_objects++;
-        }
-        
+        }*/
+        image_objects[size_image_objects]=pattern;
+        size_image_objects++;
     }
+
     
     return size_image_objects;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 
 int pattern_generator(Object object, Object* match_patterns)
 {
@@ -336,4 +359,49 @@ int pattern_generator(Object object, Object* match_patterns)
         }
     }
     return size_match_patterns;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+void user_interface(Menu choice)
+{
+    switch(choice)
+    {
+        case MODE_MENU: /*Presentation des modes*/
+            printf("\n MODES MENU  ");
+            printf("\n \t MODE 1 : search precise COLOR (ORANGE,BLUE,YELLOW) and a SHAPE (BALL,CUBE) ");
+            printf("\n \t MODE 2 : search for a precise SHAPE (BALL,CUBE) ");
+            printf("\n \t MODE 3 : search for a precise COLOR (ORANGE,BLUE,YELLOW) ");
+            printf("\n \t MODE 4 : a global analysis of the image ");
+            printf("\n \t Enter 0 for QUIT ");
+            printf("\n \t Enter a NUMBER associate to a MODE : ");
+            break;
+
+        case COLOR_MENU: /*Presentation des couleurs*/
+            printf("\n COLOR MENU  ");
+            printf("\n \t COLOR  \t | \t NUMBER");
+            printf("\n \t ORANGE \t | \t 0");
+            printf("\n \t YELLOW \t | \t 1");
+            printf("\n \t BLUE   \t | \t 2");
+            printf("\n \t Enter a NUMBER associate to a COLOR : ");
+            break;
+
+        case SHAPE_MENU: /*Presentation des formes*/
+            printf("\n COLOR MENU  ");
+            printf("\n \t SHAPE \t | \t NUMBER");
+            printf("\n \t BALL  \t | \t 0");
+            printf("\n \t CUBE  \t | \t 1");
+            printf("\n \t Enter a NUMBER associate to a SHAPE : ");
+            break;
+
+        case PATH_MENU:/*Presentation des images*/
+            printf("\n PATH MENU  ");
+            printf("\n \t The PATH is a RELATIVE PATH of a FILE(IMAGE) in the FORMAT .TXT ");
+            printf("\n \t Enter the NAME of the IMAGE : ");
+            break;
+
+        /*Pad besoin d'un default car on a une enumeration en test et on a couvert les cas possibles*/
+    }
 }

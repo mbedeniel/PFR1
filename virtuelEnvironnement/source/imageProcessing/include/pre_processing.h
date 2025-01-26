@@ -1,8 +1,34 @@
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------VERSION : 3.0---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------DATE : 12/01/2025-------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------
+    ALL TREATMENT BEFORE THE REAL ANALYSE OF THE IMAGE : FILTERING, CONVERTING
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#ifndef DEF_PRE_PROCESSING
+#define DEF_PRE_PROCESSING
+
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
 
 #define PAMAETRE_FILTRE 1 /*la taille du filtre est (2*PAMAETRE_FILTRE)*(2*PAMAETRE_FILTRE) */
+
+
+/*
+**************************************
+********PROTOTYPE DES FONCTIONS*******
+**************************************
+*/
+
 
 /*les fichiers images que nous traitons sont sous la forme*/
 /*Trois matrice de meme taille*/ 
@@ -42,6 +68,7 @@
 void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv);
 
 
+
 /*FUNTUION: double max(double r,double g,double b);
     retourne le max entre trois double
 */
@@ -67,6 +94,7 @@ double max(double r,double g,double b);
 double min(double r,double g,double b);
 
 
+
 /*FUNCTION : int int_comparer(const int * a,const int * b);
     retourne le resultat de la soustraction de a par b
     ce qui permet de s'avoir qui est le plus grand.
@@ -83,6 +111,8 @@ double min(double r,double g,double b);
 */
 int int_comparer(const void * a, const void * b);
 
+
+
 /*FUNCTION:
     permet d'utiliser le filtre median pour filter une image
     Dans le cadre de notre projet, nous nouns interesson au filtrage de bruit
@@ -98,6 +128,8 @@ int int_comparer(const void * a, const void * b);
 */
 void image_filter(int ** image,int ligne,int column);
 
+
+
 /*FUNCTION :
     permet de calculer la median et mets le pixel i,j a jour
 */
@@ -111,6 +143,8 @@ void image_filter(int ** image,int ligne,int column);
 */
 /*OUTPUT : void*/
 void median(int ** image,int i,int j);
+
+
 
 /*FUNCTION : 
     permet d'ajouter des bordures e notre images
@@ -129,3 +163,5 @@ void median(int ** image,int i,int j);
 */
 /*OUTPUT: NONE*/
 void add_padding(int ** image,int ligne,int column);
+
+#endif

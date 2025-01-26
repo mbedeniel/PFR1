@@ -1,7 +1,31 @@
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------VERSION : 1.0---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------DATE : 24/12/2024-------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------
+    MANAGEMENT OF THE "Object" STRUCTURE 
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#ifndef DEF_OBJECT
+#define DEF_OBJECT
+
 #include "color_treatment.h"
 #include "shape_treatment.h"
 #include <stdio.h>
 
+
+/*
+****************************************
+********ENUMERATION ET STRUCTURES*******
+****************************************
+*/
 
 /*un objet est defini par sa position, sa forme et sa couleur*/
 typedef struct 
@@ -10,6 +34,14 @@ typedef struct
     Shape shape;
     Color color;
 } Object;
+
+
+
+/*
+**************************************
+********PROTOTYPE DES FONCTIONS*******
+**************************************
+*/
 
 
 /*
@@ -23,6 +55,7 @@ INPUT: NONE
 OUTPUT: une structure Object
 */
 Object init_object();
+
 
 
 /*FUNCTION : Object create_object(Position position, Shape shape, Color color);
@@ -41,6 +74,8 @@ Object init_object();
 */
 Object create_object(Shape shape,Color color,Position position);
 
+
+
 /*FUNCTION:void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size)
     
 */
@@ -53,3 +88,5 @@ Object create_object(Shape shape,Color color,Position position);
     Elle copie les informations de l'objet dans le buffer sous forme de chaine de caractère
 */
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size);
+
+#endif

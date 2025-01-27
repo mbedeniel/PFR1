@@ -1,4 +1,6 @@
 #include "./include/image_interface.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------FUNCTION------------------------------------------------------------*/
@@ -65,7 +67,7 @@ int main()
         /*Recuperation de la forme*/
         scanf("%i",&color_shape);
         /*Mise a jour de la couleur l'objet*/
-        search_object.color = get_color(color_shape);
+        search_object.shape = get_shape(color_shape);
     }
     else if(mode==3) /*seul la couleur est fourni*/
     {

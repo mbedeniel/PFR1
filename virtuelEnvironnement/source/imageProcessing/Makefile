@@ -7,6 +7,7 @@ INCLUDE := include
 
 main_test_image.o:main_test_image.c pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o
 	gcc -c main_test_image.c -o main_test_image.o -W -Wall -ansi -pedantic -lm
+	
 run: main_test_image.o
 	gcc -o main_test_image.exe main_test_image.o pre_processing.o color_treatment.o shape_treatment.o image_interface.o object.o position_treatment.o -W -Wall -ansi -pedantic -lm
 ##########################################################

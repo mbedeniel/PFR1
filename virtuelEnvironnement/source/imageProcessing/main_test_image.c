@@ -34,7 +34,7 @@ int main()
 
     /*Generation du Path vers l'image*/
     scanf("%14s",image_name);/*Limiter la taille a 14 caractere pour laisser la place au /O*/
-    snprintf(path, 200, "IMG_RGB_TEST/%s.txt", image_name);
+    snprintf(path, sizeof(path), "IMG_RGB_TEST/%s.txt", image_name);
 
 
     /*Initialisation de l'objet de la recherche*/

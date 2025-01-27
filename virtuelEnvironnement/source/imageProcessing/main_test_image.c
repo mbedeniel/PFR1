@@ -8,8 +8,9 @@ int main()
 {
     Object search_object;
     Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
-    int i =0,number_valid_pattern,image_number,mode=0,color_shape;
+    int i =0,number_valid_pattern,mode=0,color_shape;
     char path[35];
+    char image_name[15];
 
 
     /* recuperer les infos de l object sous format json*/
@@ -32,12 +33,14 @@ int main()
     user_interface(PATH_MENU);
 
     /*Generation du Path vers l'image*/
-    scanf("%i", &image_number);
-    snprintf(path, 200, "IMG_RGB_TEST/IMG_%i.txt", image_number);
+    scanf("%14s",image_name);/*Limiter la taille a 14 caractere pour laisser la place au /O*/
+    snprintf(path, 200, "IMG_RGB_TEST/%s.txt", image_name);
 
+
+    /*Initialisation de l'objet de la recherche*/
+    search_object = init_object();
 
     /*Collecte d'information pour la recherche*/
-    search_object = init_object();
 
     if(mode==1) /* La couleur et la forme sont fournis*/
     {
@@ -79,16 +82,13 @@ int main()
 
     printf("\n SEARCHING ... ");
     object_to_json(&search_object, json_buffer, sizeof(json_buffer));
-    printf("\n \t %s ",json_buffer);
+    printf("\n \t %s \n",json_buffer);
     number_valid_pattern=pattern_analyser(search_object,patterns,path);
-    printf("\n RESULTS : ");
+    printf("\n RESULTS FOR IMAGE %s : \n",path);
     for(i=0;i<number_valid_pattern;i++)
     {
-        /*------------------------------------*/
-        /*ADD PYTHON FOR MARKING POSITION HEAR*/
-        /*------------------------------------*/
         object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\n \t %s \n",json_buffer);
+        printf("\n \t %i. %s \n",i+1,json_buffer);
     }
     
     return 0;

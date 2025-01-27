@@ -38,7 +38,7 @@
 
 
 
-/*FUNCTION: void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv);
+/*FUNCTION: void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv)
     elle a pour role de
     faire passer une image de la base 
     RGB(Red Green Blue) a la base HSB(Hue Saturation Value)
@@ -69,7 +69,7 @@ void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv);
 
 
 
-/*FUNTUION: double max(double r,double g,double b);
+/*FUNTUION: double max(double r,double g,double b)
     retourne le max entre trois double
 */
 /*INPUT:
@@ -82,7 +82,7 @@ double max(double r,double g,double b);
 
 
 
-/*FUNTUION: double min(double r,double g,double b);
+/*FUNTUION: double min(double r,double g,double b)
     retourne le min entre trois double
 */
 /*INPUT:
@@ -95,7 +95,7 @@ double min(double r,double g,double b);
 
 
 
-/*FUNCTION : int int_comparer(const int * a,const int * b);
+/*FUNCTION : int int_comparer(const int * a,const int * b)
     retourne le resultat de la soustraction de a par b
     ce qui permet de s'avoir qui est le plus grand.
     Cette fonction est specialement utuliser par la fonction
@@ -113,7 +113,7 @@ int int_comparer(const void * a, const void * b);
 
 
 
-/*FUNCTION:
+/*FUNCTION: void image_filter(int ** image,int ligne,int column)
     permet d'utiliser le filtre median pour filter une image
     Dans le cadre de notre projet, nous nouns interesson au filtrage de bruit
     de type sel et poivre
@@ -126,11 +126,12 @@ int int_comparer(const void * a, const void * b);
     int column
          Nombre de colone de l'image d'une matrice des matrices du tenseur
 */
+/*OUTPUT : void*/
 void image_filter(int ** image,int ligne,int column);
 
 
 
-/*FUNCTION :
+/*FUNCTION : void median(int ** image,int i,int j)
     permet de calculer la median et mets le pixel i,j a jour
 */
 /*INPUT:
@@ -152,7 +153,7 @@ void median(int ** image,int i,int j);
     du point de vue d'un tableau cela ce trqduit par l'ajout
     de ligne et de colonne au debut et a la fin
 */
-/*INPUT : 
+/*INPUT : void add_padding(int ** image,int ligne,int column)
     int ** image
         un tableau ou l'on veux initaliser le premiere ligne
         et derniere colonne a 0

@@ -30,7 +30,7 @@
 */
 
 #define COLOR_MIN_PIXEL 75
-#define SHAPE_MIN_PERCENTAGE 75
+#define SHAPE_MIN_PERCENTAGE 80
 
 /*
 COLOR_MIN_PIXEL : nombre de pixel minimu pour valider la presence d'une couleur

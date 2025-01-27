@@ -20,6 +20,7 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
     double my_ratio_area;
     Object processed_image; 
+    static int count_call=0; /*Permet de compter le nombre d'appel de image_interface*/
     FILE * fichier;
 
     /*
@@ -60,7 +61,13 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     fscanf(fichier, "%i", &colonne);
 
     /*Affichage de la taille de ligne*/
-    printf("\n IMAGE RESOLUTION : %i X %i",ligne,colonne);
+
+    /*L objectif est juste de ne pas avoir plusieurs fois le meme message a l'ecran pour un traitement*/
+    if(count_call <= 0)
+    {
+        printf("\n IMAGE RESOLUTION : %i X %i \n",ligne,colonne);
+        count_call++;
+    }
 
     /*
     *************************************** 
@@ -377,7 +384,7 @@ void user_interface(Menu choice)
     switch(choice)
     {
         case MODE_MENU: /*Presentation des modes*/
-            printf("\n MODES MENU  ");
+            printf("\n MODE MENU  ");
             printf("\n \t MODE 1 : search precise COLOR (ORANGE,BLUE,YELLOW) and a SHAPE (BALL,CUBE) ");
             printf("\n \t MODE 2 : search for a precise SHAPE (BALL,CUBE) ");
             printf("\n \t MODE 3 : search for a precise COLOR (ORANGE,BLUE,YELLOW) ");
@@ -396,7 +403,7 @@ void user_interface(Menu choice)
             break;
 
         case SHAPE_MENU: /*Presentation des formes*/
-            printf("\n COLOR MENU  ");
+            printf("\n SHAPE MENU  ");
             printf("\n \t SHAPE \t | \t NUMBER");
             printf("\n \t BALL  \t | \t 0");
             printf("\n \t CUBE  \t | \t 1");

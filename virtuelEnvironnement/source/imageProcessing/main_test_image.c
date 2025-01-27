@@ -82,13 +82,13 @@ int main()
 
     printf("\n SEARCHING ... ");
     object_to_json(&search_object, json_buffer, sizeof(json_buffer));
-    printf("\n \t %s ",json_buffer);
+    printf("\n \t %s \n",json_buffer);
     number_valid_pattern=pattern_analyser(search_object,patterns,path);
-    printf("\n RESULTS FOR IMAGE %s : ",path);
+    printf("\n RESULTS FOR IMAGE %s : \n",path);
     for(i=0;i<number_valid_pattern;i++)
     {
         object_to_json(&patterns[i], json_buffer, sizeof(json_buffer));
-        printf("\n \t %s \n",json_buffer);
+        printf("\n \t %i. %s \n",i+1,json_buffer);
     }
     
     return 0;

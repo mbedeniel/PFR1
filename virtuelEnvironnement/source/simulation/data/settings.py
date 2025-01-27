@@ -12,7 +12,7 @@ __PATH_SETTINGS_FILE__ = os.path.join(dossier, "settings.json")
 __PATH_LOG_FILE__ = os.path.join(dossier, "log.txt")
 LANGUAGES = {
     'fr': 'Français',
-    'en': 'English'
+    'en': 'English',
 }
 
 MENU_TEXT = {
@@ -33,12 +33,7 @@ MENU_TEXT = {
         'quit_ihm': "Appuyez sur 'o' pour quitter le mode IHM.",
         'end_ihm': "Fin du mode IHM.",
         'quit_prompt': "Voulez-vous vraiment quitter ? (o/n) : ",
-        'presentation_ihm': """Veuillez choisir un mode parmi les suivants :
-            a : avancer
-            r : reculer
-            d : droite
-            g : gauche
-            Saisissez le mode et la valeur (ex : a 15 ou r) : """,
+        'presentation_ihm': """Veuillez saisir votre requête s'il vous plaît :""",
         'manuel_mode': "__Mode Manuel__\n\tAppuyer sur les flèches pour déplacer le robot.\n\tAppuyer sur 'échape' pour quitter.",
         'invalid_input':"Entrée invalide. Veuillez réessayer.",
         'error': "Une erreur est survenue : {0}",
@@ -47,7 +42,7 @@ MENU_TEXT = {
         'success_config': "Paramètres sauvegardés avec succès.",
         'file_not_found': "Fichier de configuration introuvable. Création d'un fichier par défaut...",
         
-        'set_language': "Actuellement, la langue est réglée sur {0}.\nChoisissez une langue :\n\tEntrez le code de la langue 'en' ou 'fr' (par défaut 'fr') : ",
+        'set_language': "__Actuellement, la langue est réglée sur {0}__.\nChoisissez une langue :\n\tEntrez le code de la langue 'en' ou 'fr' (par défaut 'fr') : ",
         'error_set_language': "Entrée non reconnue. La langue est conservée en {0}.",
         'success_set_language': "Langue changée avec succès.",
         #interactions
@@ -83,6 +78,27 @@ MENU_TEXT = {
         #drawing
         'obstacle_outside':"Erreur : l'obstacle {0} est en dehors de la pièce.",
         'invalid_coin':"Erreur : le coin {0} de l'ouverture {1} est invalide.",
+        'image_processing_text': """
+                                MENU DES MODES :
+                                1 - Recherche d'une COULEUR précise (ORANGE, BLEU, JAUNE) et d'une FORME (BALLE, CUBE)
+                                2 - Recherche d'une FORME précise (BALLE, CUBE)
+                                3 - Recherche d'une COULEUR précise (ORANGE, BLEU, JAUNE)
+                                4 - Analyse globale de l'image
+                                0 - Quitter
+
+                                MENU DES COULEURS :
+                                0 - ORANGE
+                                1 - JAUNE
+                                2 - BLEU
+
+                                MENU DES FORMES :
+                                0 - BALLE
+                                1 - CUBE
+
+                                MENU DES CHEMINS :
+                                Entrez le chemin relatif d'un fichier image (.TXT)
+                                Exemple : NOM du fichier IMAGE
+                                """,
         },
     'en': {
         'welcome': "Welcome to the main menu!",
@@ -100,12 +116,7 @@ MENU_TEXT = {
         'quit_ihm': "Press 'o' to exit IHM mode.",
         'end_ihm': "Exiting IHM mode.",
         'quit_prompt': "Are you sure you want to exit? (o/n): ",
-        'presentation_ihm': """Please choose a mode from the following:
-            a: forward
-            r: backward
-            d: right
-            g: left
-            Enter the mode and the value (ex: a 15 or r): """,
+        'presentation_ihm': """Please enter your request:""",
         'manuel_mode': "__Manual Mode__\n\tUse the arrow keys to move the robot.\n\tPress 'escape' to exit.",
         'invalid_input':"Invalid input. Please try again.",
         'error': "An error occurred: {0}",
@@ -149,8 +160,30 @@ MENU_TEXT = {
         #drawing
         'obstacle_outside':"Error: obstacle {0} is outside the room.",
         'invalid_coin':"Error: corner {0} of opening {1} is invalid.",
+        'image_processing_text':"""
+                    MODE MENU:
+                    1 - Search precise COLOR (ORANGE, BLUE, YELLOW) and SHAPE (BALL, CUBE)
+                    2 - Search for a precise SHAPE (BALL, CUBE)
+                    3 - Search for a precise COLOR (ORANGE, BLUE, YELLOW)
+                    4 - Global analysis of the image
+                    0 - Quit
+
+                    COLOR MENU:
+                    0 - ORANGE
+                    1 - YELLOW
+                    2 - BLUE
+
+                    SHAPE MENU:
+                    0 - BALL
+                    1 - CUBE
+
+                    PATH MENU:
+                    Enter the relative path of an image file (.TXT)
+                    Example: NAME of the IMAGE
+                    """ ,
         
         }
+        
 }
 
 PROGRAMS = {
@@ -217,9 +250,12 @@ def get_text(key):
     """
     Récupère le texte dans la langue actuelle.
     """
-    langue  = load_parametre('current_language')
-    menu_text = load_parametre('MENU_TEXT')
-    return menu_text[langue].get(key,"")
+    try:
+        langue  = load_parametre('current_language')
+        menu_text = load_parametre('MENU_TEXT')
+        return menu_text[langue].get(key,"")
+    except : 
+        return "-----------ERREUR FATALE LORS DU CHARGEMENT DU FiCHIER JSON---------------"
 
 
 def load_parametre(key):

@@ -36,6 +36,8 @@ def appeler_programme_c(path_programme_c):
         except Exception as e:
             display(get_text('error_interactions').format(e))
             return {}
+        
+        
         try:
             data = json.loads(sortie)
         except json.JSONDecodeError:

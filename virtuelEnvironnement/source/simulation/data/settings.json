@@ -25,7 +25,7 @@
             "quit_ihm": "Appuyez sur 'o' pour quitter le mode IHM.",
             "end_ihm": "Fin du mode IHM.",
             "quit_prompt": "Voulez-vous vraiment quitter ? (o/n) : ",
-            "presentation_ihm": "Veuillez choisir un mode parmi les suivants :\n            a : avancer\n            r : reculer\n            d : droite\n            g : gauche\n            Saisissez le mode et la valeur (ex : a 15 ou r) : ",
+            "presentation_ihm": "Veuillez saisir votre requ\u00eate s'il vous pla\u00eet :",
             "manuel_mode": "__Mode Manuel__\n\tAppuyer sur les fl\u00e8ches pour d\u00e9placer le robot.\n\tAppuyer sur '\u00e9chape' pour quitter.",
             "invalid_input": "Entr\u00e9e invalide. Veuillez r\u00e9essayer.",
             "error": "Une erreur est survenue : {0}",
@@ -33,7 +33,7 @@
             "create_config": "Cr\u00e9ation du fichier de configuration par d\u00e9faut...",
             "success_config": "Param\u00e8tres sauvegard\u00e9s avec succ\u00e8s.",
             "file_not_found": "Fichier de configuration introuvable. Cr\u00e9ation d'un fichier par d\u00e9faut...",
-            "set_language": "Actuellement, la langue est r\u00e9gl\u00e9e sur {0}.\nChoisissez une langue :\n\tEntrez le code de la langue 'en' ou 'fr' (par d\u00e9faut 'fr') : ",
+            "set_language": "__Actuellement, la langue est r\u00e9gl\u00e9e sur {0}__.\nChoisissez une langue :\n\tEntrez le code de la langue 'en' ou 'fr' (par d\u00e9faut 'fr') : ",
             "error_set_language": "Entr\u00e9e non reconnue. La langue est conserv\u00e9e en {0}.",
             "success_set_language": "Langue chang\u00e9e avec succ\u00e8s.",
             "error_interactions": "Erreur lors de l'appel du programme C. {0}",
@@ -61,7 +61,8 @@
             "end_contournement": "Fin du contournement de l'obstacle.",
             "go_to_destination": "D\u00e9placement du Robot vers la destination ....",
             "obstacle_outside": "Erreur : l'obstacle {0} est en dehors de la pi\u00e8ce.",
-            "invalid_coin": "Erreur : le coin {0} de l'ouverture {1} est invalide."
+            "invalid_coin": "Erreur : le coin {0} de l'ouverture {1} est invalide.",
+            "image_processing_text": "\n                                MENU DES MODES :\n                                1 - Recherche d'une COULEUR pr\u00e9cise (ORANGE, BLEU, JAUNE) et d'une FORME (BALLE, CUBE)\n                                2 - Recherche d'une FORME pr\u00e9cise (BALLE, CUBE)\n                                3 - Recherche d'une COULEUR pr\u00e9cise (ORANGE, BLEU, JAUNE)\n                                4 - Analyse globale de l'image\n                                0 - Quitter\n\n                                MENU DES COULEURS :\n                                0 - ORANGE\n                                1 - JAUNE\n                                2 - BLEU\n\n                                MENU DES FORMES :\n                                0 - BALLE\n                                1 - CUBE\n\n                                MENU DES CHEMINS :\n                                Entrez le chemin relatif d'un fichier image (.TXT)\n                                Exemple : NOM du fichier IMAGE\n                                "
         },
         "en": {
             "welcome": "Welcome to the main menu!",
@@ -79,7 +80,7 @@
             "quit_ihm": "Press 'o' to exit IHM mode.",
             "end_ihm": "Exiting IHM mode.",
             "quit_prompt": "Are you sure you want to exit? (o/n): ",
-            "presentation_ihm": "Please choose a mode from the following:\n            a: forward\n            r: backward\n            d: right\n            g: left\n            Enter the mode and the value (ex: a 15 or r): ",
+            "presentation_ihm": "Please enter your request:",
             "manuel_mode": "__Manual Mode__\n\tUse the arrow keys to move the robot.\n\tPress 'escape' to exit.",
             "invalid_input": "Invalid input. Please try again.",
             "error": "An error occurred: {0}",
@@ -115,7 +116,8 @@
             "end_contournement": "End of obstacle bypass.",
             "go_to_destination": "Robot moving to destination ....",
             "obstacle_outside": "Error: obstacle {0} is outside the room.",
-            "invalid_coin": "Error: corner {0} of opening {1} is invalid."
+            "invalid_coin": "Error: corner {0} of opening {1} is invalid.",
+            "image_processing_text": "\n                    MODE MENU:\n                    1 - Search precise COLOR (ORANGE, BLUE, YELLOW) and SHAPE (BALL, CUBE)\n                    2 - Search for a precise SHAPE (BALL, CUBE)\n                    3 - Search for a precise COLOR (ORANGE, BLUE, YELLOW)\n                    4 - Global analysis of the image\n                    0 - Quit\n\n                    COLOR MENU:\n                    0 - ORANGE\n                    1 - YELLOW\n                    2 - BLUE\n\n                    SHAPE MENU:\n                    0 - BALL\n                    1 - CUBE\n\n                    PATH MENU:\n                    Enter the relative path of an image file (.TXT)\n                    Example: NAME of the IMAGE\n                    "
         }
     },
     "PROGRAMS": {

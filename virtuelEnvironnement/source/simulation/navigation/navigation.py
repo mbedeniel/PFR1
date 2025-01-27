@@ -125,57 +125,20 @@ def contourner_obstacle(curseur, obstacle, entre, sortie, piece):
 
     if entre == None or sortie == None or obstacle == None:
         return
-
-
-    
+    #calculer les dimensions de l'obstacle
     dimensions = obstacle.get('dimension')
     if obstacle.get('forme') == 'cercle':
         dimensions = dimensions + 10
     else:
         dimensions = dimensions + 10
     
-    """
-    heading = curseur.heading()
-
-    if sortie == None:
-        display(get_text('no_sortie'))
-        return
-    
-    #verifier sion on doit contourner l obstacle par la droite ou par la gauche
-    #si le point de sortie est à droite du point d'entrée
-
-    ##verifier verifier s il faut contourner l obstacle par la droite ou par la gauche
-    bon_angle = None
-    for angle in [90, -90]:
-        obsta = get_Obstacles_critiques(piece.get('obstacles', []), curseur, angle + heading)
-        if len(obsta) != 0:
-            (ob , en , so) = obsta[0]
-
-            ##verifier si le heading du point d entrer est le meme que celle de la an + heading
-            if curseur.towards((en[0], en[1])) != angle + heading: #si le heading n est pas le meme
-                bon_angle = angle
-                break
-            else: # meme heading entre l'obstacle et la direction choisie
-                if curseur.distance((en[0], en[1])) < dimensions: #si la distance est inferieur à la dimension de l obstacle
-                    display(get_text('impossible_to_move'))
-                    bon_angle = 0
-                else:
-                    bon_angle = angle
-                    break
-        else:
-            bon_angle = angle
-            break
-   
-    if bon_angle == None or bon_angle == 0:
-        display(get_text('impossible_to_move'))
-        return
-   """ 
     heading = curseur.heading() 
     #pour savaoir de quelle coter contourner l obstacle, calculer le centre de l obstacle
     #comparer le cap du centre et et le cap de la sortie
     # si cap_centre < cap_sortie, contourner par la droite
     #sinon contourner par la gauche
     coin_HD_obstacle = obstacle.get('coin_HD')
+
     #calculer le centre de l obstacle
     if obstacle.get('forme') == 'cercle':
         rayon = obstacle.get("dimension")
@@ -183,22 +146,22 @@ def contourner_obstacle(curseur, obstacle, entre, sortie, piece):
         centre = (centre_x, centre_y)
     else:
         centre = (coin_HD_obstacle[0] - dimensions / 2, coin_HD_obstacle[1] - dimensions / 2)
-    #calculer le cap du centre
-
+    
+    #calculer le cap(heading)  du centre de l'obstacle pour savoir de quel coter contourner l'obstacle
     cap_centre_object = curseur.towards(centre)
     if heading < cap_centre_object <= heading + 180:
-        bon_angle = -90
+        bon_angle = -90 # contourner par la gauche de l'obstacle
     else:
-        bon_angle = 90
+        bon_angle = 90 # contourner par la droite de l'obstacle
 
     # Contourner l'obstacle : se déplace autour de l'obstacle
     distance_sortie = curseur.distance((sortie[0], sortie[1])) + 5
-    dimension_contournement = dimensions * (distance_sortie / dimensions) / 1.5
-    curseur.setheading(heading +  bon_angle) # Se dirige vers la droite + right
+    dimension_contournement = dimensions * (distance_sortie / dimensions) / 1.5 # calculer la longyeur a parcourir pour contourner l'obstacle au plus pres
+    curseur.setheading(heading +  bon_angle) 
     curseur.forward(dimension_contournement)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
     curseur.forward(distance_sortie)  # Se déplace autour de l'obstacle
-    curseur.setheading(heading -  bon_angle) # Se dirige vers la gauche + left
+    curseur.setheading(heading -  bon_angle) 
     curseur.forward(dimension_contournement)  # Se déplace autour de l'obstacle
     curseur.setheading(heading) # Se remet dans la direction initiale
 

@@ -15,10 +15,9 @@ def speak(text, language="fr"):
             selected_voice = voice
             break
 
-    if selected_voice:
+    if selected_voice != None:
         engine.setProperty('voice', selected_voice.id)
-    else:
-        print(f"Aucune voix trouvée pour la langue '{language}'. Utilisation de la voix par défaut.")
+
 
     # Lire le texte
     engine.say(text)

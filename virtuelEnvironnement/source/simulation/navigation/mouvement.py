@@ -24,11 +24,8 @@ def translantion(curceur, val, piece):
         return
     
     if val < 0: #le robot recule
-        print("recule de ", val , " et de heading ", heading + 180)
-        print("destination ", destination)
-        print(" destination est dans la piece ", est_dans_piece(destination, piece))
         #pour que le robot recule, on verifie s il n y a d'obstacle derriere lui
-        obstacle_derriere = get_Obstacles_critiques(piece.get('obstacles', []), curceur, heading)
+        obstacle_derriere = get_Obstacles_critiques(piece.get('obstacles', []), curceur, heading + 180)
         if len(obstacle_derriere) != 0:
             (obstacle , point_entre , point_sortie) = obstacle_derriere[0]
             #on verifie la distance entre le curseur et l'obstacle

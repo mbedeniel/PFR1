@@ -38,13 +38,7 @@ char *speech_analysis_to_json( char* texte) {
     //marquer la fin du texte avec \0 au cas où
     if (texte[strlen(texte) - 1] != '\0')
         strcat(texte, "\0");
-
-
     // Allocation mémoire pour le JSON (augmentable dynamiquement si nécessaire)
-    
-    
-    
-    
     char *json = malloc(1024);
     char *splitedText;
    
@@ -57,14 +51,11 @@ char *speech_analysis_to_json( char* texte) {
     strcat(json, ", \"commandes\": [");
     if (texte == NULL) return NULL;
 
-
     // remplecer les synonymes par les clés principales
     // Remplacer les synonymes dans le texte
     texte = replaceListSynonyme(texte, command_synonyms, num_commands);
     texte = replaceListSynonyme(texte, object_synonyms, num_objects);
     texte = replaceListSynonyme(texte, color_synonyms, num_colors);
-
-
     
     // Diviser le texte en fonction des commandes
     splitedText = splitText(texte, liste_commandes, num_commands);

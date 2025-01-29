@@ -1,16 +1,16 @@
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*------------------------------------------------ @author DEVELLOPER : MBEDE Niel -----------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------VERSION : 1.1---------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------DATE : 22/01/2025-------------------------------------------------------*/
+/*---------------------------------------------------- @date DATE : 22/01/2025----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*
------------------------------------------------------------------------------------------------------------------------------------
-    MANAGEMENT OF THE "Shape" STRUCTURE AND GET THE THE "Shape" of an OBJECT IN THE IMAGE
------------------------------------------------------------------------------------------------------------------------------------
+/** @brief
+*-----------------------------------------------------------------------------------------------------------------------------------
+*    MANAGEMENT OF THE "Shape" STRUCTURE AND GET THE THE "Shape" of an OBJECT IN THE IMAGE
+*-----------------------------------------------------------------------------------------------------------------------------------
 */
 
 #ifndef DEF_SHAPE_TREATMENT
@@ -72,9 +72,10 @@ FUNCTION : Shape init_shape()
     initialise une strcuture Shape
 */
 /*
-INPUT: NONE
+INPUT: 
+    @param NONE
 */
-/*
+/*@return 
 OUTPUT: une structure Shape
 */
 Shape init_shape();
@@ -88,14 +89,15 @@ Shape init_shape();
     on obtient les chances que la forme soir presente en pourcentage
 */
 /*INPUT:
-    image_max_min_pixel max_min_pixel
+    @param image_max_min_pixel max_min_pixel
         point le plus haut et point le plus bas de l'image
-    int nbr_pixel_image
+    @param int nbr_pixel_image
         nombre de pixel de l'image original
-    Shape search_shape
+    @param Shape search_shape
         la forme que l'on recherche
 */
-/*OUTPUT: 
+/*@return 
+OUTPUT: 
     double
         ratio entre le nombre de pixel de l'image
         et le nombre de pixel de l'image rechercé.
@@ -110,14 +112,15 @@ double ratio_area(int nbr_pixel_image,image_max_min_pixel max_min_pixel,Shape se
     retourne le point le plus haut et le point le plus bas de l'image
 */
 /*INPUT:
-    int ** binary_image
+    @param int ** binary_image
         l'image binarisé par bit_image
-    int ligne
+    @param int ligne
         nombre de ligne de binary_image
-    int column
+    @param int column
         nombre de colone de binary_image
 */
-/*OUTPUT: 
+/*@return 
+OUTPUT: 
     image_max_min_pixel
         structure contenant les coordonnées des deux points recherchés
 */
@@ -129,11 +132,13 @@ image_max_min_pixel get_image_best_point(int ** binary_image,int ligne,int colum
 
 */
 
-/*INPUT: Shape shape
+/*INPUT: 
+    @param Shape shape
     
 */
 
-/*OUTPUT: const char* 
+/*@return 
+OUTPUT: const char* 
 
 */
 const char* get_shape_name(Shape shape);
@@ -147,10 +152,11 @@ const char* get_shape_name(Shape shape);
     le realisons via une fonction
 */
 /*INPUT:
-    int number
+    @param int number
         numéro de la Shape que l'on veut (voir definition de l'enumeration)
 */
-/*OUTPUT: Shape 
+/*@return 
+OUTPUT: Shape 
     la Shape correspondant au nombre recu (voir definition de l'enumeration)
 */
 Shape get_shape(int number);

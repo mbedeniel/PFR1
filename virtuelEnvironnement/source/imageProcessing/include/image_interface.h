@@ -1,18 +1,18 @@
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*------------------------------------------------ @author DEVELLOPER : MBEDE Niel -----------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------VERSION : 3.0---------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------DATE : 12/01/2025-------------------------------------------------------*/
+/*---------------------------------------------------- @date DATE : 12/01/2025----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*
------------------------------------------------------------------------------------------------------------------------------------
-    HEADQUATER OF "imageProcessing" MODULE
-    IT IS THE MANAGER OF THE COMMUNICATION BETWEEN OUR FUNCTIONS AND EVALUATE THE RESULTS THOSE FUNCTIONS PRODUCES
-    IT IS ALSO THE CONTACT POINT BETWEEN THE USER AND THE FEATURES OF "imageProcessing" MODULE
------------------------------------------------------------------------------------------------------------------------------------
+/** @brief
+*-----------------------------------------------------------------------------------------------------------------------------------
+*    HEADQUATER OF "imageProcessing" MODULE
+*    IT IS THE MANAGER OF THE COMMUNICATION BETWEEN OUR FUNCTIONS AND EVALUATE THE RESULTS THOSE FUNCTIONS PRODUCES
+*    IT IS ALSO THE CONTACT POINT BETWEEN THE USER AND THE FEATURES OF "imageProcessing" MODULE
+*-----------------------------------------------------------------------------------------------------------------------------------
 */
 
 #ifndef DEF_IMAGE_INTERFACE
@@ -84,16 +84,17 @@ typedef enum
     et recherche les informations qu'elle a recu en INPUT
 */
 /*INPUT:
-    Object search_image_inforrmation
+    @param Object search_image_inforrmation
         une structure de donnes possedants trois champs
         Le champs color contient la couleur recherchée
         Le champs shape contient la forme recherché
         Le contenue du champ position n'est pas important
-    char * path
+    @param char * path
         chemin d'access vers l'image
 */
-/*OUTPUT:
-    Object
+/*@return 
+OUTPUT:
+    @param Object
         une structure de donnée Object contenant:
         La couleur recherchée si elle a été trouvé
         La forme recherchée si elle a été trouvée
@@ -112,17 +113,18 @@ Object image_treatment(Object search_image_inforrmation,const char* path);
     Les pattern qui matche serons chargé dans un tableau
 */
 /*INPUT:
-    Object searched_pattern
+    @param Object searched_pattern
         une structure de donnes possedants trois champs
         Le champs color contient la couleur recherchée
         Le champs shape contient la forme recherché
         Le contenue du champ position n'est pas important
-    Object* image_objects
+    @param Object* image_objects
         L'adresse d'un tableau. Il contiendra les objects present dans l'image qui matchent avec le  pattern
-    char * path
+    @param char * path
         chemin d'access vers l'image
 */
-/*OUTPUT:
+/*@return 
+OUTPUT:
     int : le resultata de l'analyse de tout les pattern ayant matché
         Le processu est le suivant :
             ->pattern_generator() génére tout les patterns qui matchent avec l'objet
@@ -138,10 +140,11 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     lors de l'utilisation du programme
 */
 /*INPUT:
-    Menu choice
+    @param Menu choice
         le menu dont on veut afficher les informations
 */
-/*OUTPUT: NONE
+/*@return 
+OUTPUT: NONE
 */
 void user_interface(Menu choice);
 
@@ -155,13 +158,14 @@ void user_interface(Menu choice);
     NB, ici on ne s'interesse pas au fait qu'il soit present sur l'image ou pas 
 */
 /*INPUT:
-    Object object
+    @param Object object
         une stucture contenant le pattern rechrché
-    Object* patterns
+    @param Object* patterns
         un tableau ou stocker les patterns qui matche
 */
-/*OUTPUT:
-    int
+/*@return 
+OUTPUT:
+    @param int
         nombre de pattern qu on matché
 */
 int pattern_generator(Object object, Object* patterns);

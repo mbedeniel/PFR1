@@ -14,13 +14,13 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     */
 
     int i,j,k,nbr_pixel,ligne,colonne;
-    double *** image_hsv; /*image obtenu grace a rgb_to_hsv*/
-    double *** image_rgb; /*image recupéré*/
-    int ** binary_image; /*image obtebur grace a bit_image*/
-    image_max_min_pixel max_min_pixel; /*le pixel au deux extremités suivant la hauteur*/
+    double *** image_hsv; /**< image obtenu grace a rgb_to_hsv, image dans la base HSV*/
+    double *** image_rgb; /**< image recupéré, image dans la base RGB */
+    int ** binary_image; /**< image obtebur grace a bit_image */
+    image_max_min_pixel max_min_pixel; /**< le pixel au deux extremités suivant la hauteur */
     double my_ratio_area;
     Object processed_image; 
-    static int count_call=0; /*Permet de compter le nombre d'appel de image_interface*/
+    static int count_call=0; /**< Permet de compter le nombre d'appel de image_interface */
     FILE * fichier;
 
     /*
@@ -31,8 +31,6 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     nbr_pixel : nombre de pixel corespondant a la couleur cherchée
     ligne : nombre de ligne de la matrice dans la base RGB suivant R,G ou B
     colonne : nombre de colonne de la matrice dans la base RGB suivant R,G ou B
-    image_hsv : image dans la base HSV
-    image_rgb : image dans la base RGB
     */
     
 

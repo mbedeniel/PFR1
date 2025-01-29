@@ -1,16 +1,16 @@
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*------------------------------------------------ @author DEVELLOPER : MBEDE Niel -----------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------VERSION : 3.0---------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------DATE : 12/01/2025-------------------------------------------------------*/
+/*---------------------------------------------------- @date DATE : 12/01/2025----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*
------------------------------------------------------------------------------------------------------------------------------------
-    ALL TREATMENT BEFORE THE REAL ANALYSE OF THE IMAGE : FILTERING, CONVERTING
------------------------------------------------------------------------------------------------------------------------------------
+/** @brief
+*-----------------------------------------------------------------------------------------------------------------------------------
+*    ALL TREATMENT BEFORE THE REAL ANALYSE OF THE IMAGE : FILTERING, CONVERTING
+*-----------------------------------------------------------------------------------------------------------------------------------
 */
 
 #ifndef DEF_PRE_PROCESSING
@@ -53,24 +53,25 @@
 
 */
 /*INPUT: 
-    int ligne 
+    @param int ligne 
         Nombre de ligne de l'image d'une matrice des matrices du tenseur
-    int column
+    @param int column
          Nombre de colone de l'image d'une matrice des matrices du tenseur
-    int *** image_rgb
+    @param int *** image_rgb
         image dans la base RGB que l'on veut passer dans la base HSB.
         Il s'agit d'un tenseur (tableau a trois dimenssion)
         Premire dimenssion pour rouge
         Deuxieme dimenssion pour le vert
         troisiemme dimenssion pour le bleu
-    double *** image_hsv
+    @param double *** image_hsv
         image obtenue du passage de l'image RGB dans la base HSB
         il s'agit d'un tenseur.
         Premiere dimenssion represente H
         la seconde dimenssion S
         la troisieme dimenssion V 
 */
-/*OUTPUT: NONE*/
+/*@return 
+OUTPUT: NONE*/
 void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv);
 
 
@@ -79,9 +80,12 @@ void rgb_to_hsv(int ligne,int column,double *** image_rgb,double *** image_hsv);
     retourne le max entre trois double
 */
 /*INPUT:
-    double r,double g,double b
+    @param double r
+    @param double g
+    @param double b
 */
-/*OUTPUT: double max
+/*@return 
+OUTPUT: double max
     le max entre r, g et b
 */
 double max(double r,double g,double b);
@@ -92,9 +96,12 @@ double max(double r,double g,double b);
     retourne le min entre trois double
 */
 /*INPUT:
-    double r,double g,double b
+    @param double r
+    @param double g
+    @param double b
 */
-/*OUTPUT: double min
+/*@return 
+OUTPUT: double min
     le min entre r, g et b
 */
 double min(double r,double g,double b);
@@ -108,11 +115,12 @@ double min(double r,double g,double b);
     qsort() predefinie en c
 */
 /*INPUT :
-    const void *a : un pointeur sur un int
-    const void *b : un pointeur sur un int
+    @param const void *a : un pointeur sur un int
+    @param const void *b : un pointeur sur un int
     On precise const pour etre sur de ne pas modifier la valeur de a
 */
-/*OUTPUT: 
+/*@return 
+OUTPUT: 
     un entier : resultat de la soustraction  
 */
 int int_comparer(const void * a, const void * b);
@@ -125,14 +133,15 @@ int int_comparer(const void * a, const void * b);
     de type sel et poivre
 */
 /*INPUT:
-    int ** image
+    @param int ** image
         le tableau a traité
-    int ligne 
+    @param int ligne 
         Nombre de ligne de l'image d'une matrice des matrices du tenseur
-    int column
+    @param int column
          Nombre de colone de l'image d'une matrice des matrices du tenseur
 */
-/*OUTPUT : void*/
+/*@return 
+OUTPUT : void*/
 void image_filter(int ** image,int ligne,int column);
 
 
@@ -141,14 +150,15 @@ void image_filter(int ** image,int ligne,int column);
     permet de calculer la median et mets le pixel i,j a jour
 */
 /*INPUT:
-    const int ** image
+    @param const int ** image
         le tableau a traité
-    int i
+    @param int i
         la ligne sur laquelle le centre du masque est
-    int j
+    @param int j
         la colonne sur laquelle le centre du masque est
 */
-/*OUTPUT : void*/
+/*@return 
+OUTPUT : void*/
 void median(int ** image,int i,int j);
 
 
@@ -160,15 +170,16 @@ void median(int ** image,int i,int j);
     de ligne et de colonne au debut et a la fin
 */
 /*INPUT : void add_padding(int ** image,int ligne,int column)
-    int ** image
+    @param int ** image
         un tableau ou l'on veux initaliser le premiere ligne
         et derniere colonne a 0
-    int ligne
+    @param int ligne
         nombre de ligne du tableau pri en paramete
-    int column
+    @param int column
         nombre de colonne du tableau pris en paraùetre
 */
-/*OUTPUT: NONE*/
+/*@return 
+OUTPUT: NONE*/
 void add_padding(int ** image,int ligne,int column);
 
 #endif

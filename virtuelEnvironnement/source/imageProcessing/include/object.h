@@ -1,16 +1,16 @@
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------DEVELLOPER : MBEDE Niel----------------------------------------------------*/
+/*------------------------------------------------ @author DEVELLOPER : MBEDE Niel -----------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------VERSION : 1.0---------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------DATE : 24/12/2024-------------------------------------------------------*/
+/*---------------------------------------------------- @date DATE : 24/12/2024----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*
------------------------------------------------------------------------------------------------------------------------------------
-    MANAGEMENT OF THE "Object" STRUCTURE 
------------------------------------------------------------------------------------------------------------------------------------
+/** @brief
+*-----------------------------------------------------------------------------------------------------------------------------------
+*    MANAGEMENT OF THE "Object" STRUCTURE 
+*-----------------------------------------------------------------------------------------------------------------------------------
 */
 
 #ifndef DEF_OBJECT
@@ -49,9 +49,11 @@ FUNCTION : Object init_object()
     initialise une strcuture Object
 */
 /*
-INPUT: NONE
+INPUT: 
+    @param NONE
 */
 /*
+@return 
 OUTPUT: une structure Object
 */
 Object init_object();
@@ -62,14 +64,15 @@ Object init_object();
     crerr un objet
 */
 /*INPUT :
-    Position psotion
+    @param Position psotion
         la position a donner a l'objet
-    Shape shape 
+    @param Shape shape 
         la forme a donner a l'objet
-    Color color
+    @param Color color
         la couleur a donner a l'objet
 */
-/*OUTPUT:
+/*@return 
+OUTPUT:
     retourne l'objet creé
 */
 Object create_object(Shape shape,Color color,Position position);
@@ -81,10 +84,11 @@ Object create_object(Shape shape,Color color,Position position);
 */
 
 /*INPUT: 
-    Cette fonction prend en entrée un objet et un buffer de taille buffer_size
+    @param Cette fonction prend en entrée un objet et un buffer de taille buffer_size
 */
 
-/*OUTPUT: void
+/*@return 
+OUTPUT: void
     Elle copie les informations de l'objet dans le buffer sous forme de chaine de caractère
 */
 void object_to_json(const Object* obj, char* json_buffer, size_t buffer_size);

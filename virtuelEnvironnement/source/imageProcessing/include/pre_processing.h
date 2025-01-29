@@ -20,6 +20,12 @@
 #include<stdio.h>
 #include<math.h>
 
+/*
+******************************************
+********PARAMETRES DE CONFIGURATION*******
+******************************************
+*/
+
 #define PAMAETRE_FILTRE 1 /*la taille du filtre est (2*PAMAETRE_FILTRE)*(2*PAMAETRE_FILTRE) */
 
 

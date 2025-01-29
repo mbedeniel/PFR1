@@ -16,9 +16,31 @@
 #ifndef DEF_COLOR_TREATMENT 
 #define DEF_COLOR_TREATMENT
 
+/*
+******************************************
+********PARAMETRES DE CONFIGURATION*******
+******************************************
+*/
+
 #define NUMBER_OF_COLOR 3 /*Nombre de couleur de Color*/
 /*Nou travaillerons par defaut en anglais.*/
 /*La prise en compte de la langue sera faite par le module de simulation*/
+
+/*
+    *Firstly we are in HSV(Hue Saturation Value)
+    *H_MIN_COLOR_NAME : Hue minimum of the color COLOR_NAME
+    *H_MAX_COLOR_NAME : Hue maximum og the color COLOR_NAME
+    *S_COLOR_NAME : Saturation minimu of the color COLOR_NAME
+*/
+#define H_MIN_ORANGE 12
+#define H_MAX_ORANGE 25
+#define S_ORANGE 75.0
+#define H_MIN_BLUE 205
+#define H_MAX_BLUE 255
+#define S_BLUE 55.0
+#define H_MIN_YELLOW 33
+#define H_MAX_YELLOW 55
+#define S_YELLOW 55.0
 
 /*
 ****************************************

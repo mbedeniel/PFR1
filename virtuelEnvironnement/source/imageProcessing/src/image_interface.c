@@ -18,10 +18,10 @@ Object image_treatment(Object search_image_inforrmation,const char* path)
     double *** image_rgb; /**< image recupéré, image dans la base RGB */
     int ** binary_image; /**< image obtebur grace a bit_image */
     image_max_min_pixel max_min_pixel; /**< le pixel au deux extremités suivant la hauteur */
-    double my_ratio_area;
-    Object processed_image; 
+    double my_ratio_area; /**< le pourcentage de chance qu'il sagisse de la forme recherchée */
+    Object processed_image; /**< resultat du traitement de l'image */
     static int count_call=0; /**< Permet de compter le nombre d'appel de image_interface */
-    FILE * fichier;
+    FILE * fichier; /**< Utulisé pour la lecture du fichier contenant l'image decodée */
 
     /*
     processed_image : resultat du traitement image
@@ -285,9 +285,15 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     ********DECLARATION DES VARIABLES*******
     ****************************************
     */
-    Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE];
-    Object pattern;
+    Object patterns[NUMBER_OF_COLOR*NUMBER_OF_SHAPE]; /**< tableau contenant les patterns qui matchent avec la recherche */
+    Object pattern; /**< variable pour stocker les pattern au fur et a mesure du traitement*/
     int i,size_patterns,size_image_objects=0;
+
+    /*
+    i : variable d'incrementation pour le for
+    size_patterns : le nombre d'element contenue dans le tableau pattern
+    size_image_objects : le nombre de pattern qui nous vont
+    */
      
     /*
     **************************
@@ -303,13 +309,13 @@ int pattern_analyser(Object searched_pattern, Object* image_objects,const char *
     for(i=0;i<size_patterns;i++)
     {
         pattern=image_treatment(patterns[i],path);
-        /*if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
-        {
+
+        /*Le if nous permet de filtrer les pattern générés, on affiche rien que ceux qui contiennent des informations*/
+        if(pattern.color!=NONE_COLOR && pattern.shape!=NONE_SHAPE)
+        { 
             image_objects[size_image_objects]=pattern;
             size_image_objects++;
-        }*/
-        image_objects[size_image_objects]=pattern;
-        size_image_objects++;
+        }
     }
 
     

@@ -87,6 +87,7 @@ int main()
     printf("\n \t %s \n",json_buffer);
     number_valid_pattern=pattern_analyser(search_object,patterns,path);
     printf("\n RESULTS FOR IMAGE %s : \n",path);
+    /*Le if permet juste de filtrer les resultats (restreindre aux balle et cubes)*/
     if(number_valid_pattern<=0)
     {
         printf("\n The image do not containt a BALL or a CUBE : \n");

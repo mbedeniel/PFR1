@@ -117,7 +117,7 @@ def lancer_mode_auto(new_curseur, piece):
         sleep(0.3)
     #remettre le mode speaker actuelle
     save_parametre('speak', speak_mode)
-
+import subprocess
 def lancer_mode_image_processing(new_curseur, piece):
     """
     Gère le fonctionnement du mode de traitement d'image.
@@ -126,7 +126,10 @@ def lancer_mode_image_processing(new_curseur, piece):
     print(get_text('image_processing_text'))
     while True:
         
-        mode_image_processing()
+        #mode_image_processing()
+        programm = load_parametre('PROGRAMS')
+        chemin_programme_c = programm.get('image_processing').get("path")
+        subprocess.run([chemin_programme_c])
         display(get_text('quit_image_processing'))
         quitter = input(get_text('quit_prompt')).strip().lower()
         if quitter == 'o':

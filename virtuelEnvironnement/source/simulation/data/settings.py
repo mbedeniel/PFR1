@@ -1,3 +1,11 @@
+"""@package docstring
+Documentation for this module.
+
+ce module contient les fonctions de gestion des paramètres du programme.
+il genere un fichier de configuration par defaut si celui-ci n'existe pas.
+En cas de corruption du fichier de configuration, il le reinitialise.
+"""
+
 import os
 import json
 
@@ -194,7 +202,16 @@ PROGRAMS = {
 
 def init_settings_file():
     """
+    Documentation for a function.
+
+    cette fonction initialise le fichier de configuration par défaut.
     Sauvegarde les paramètres dans un fichier de configuration.
+
+    Args:
+        None
+    
+    Returns:
+        None
     """
     data = {
         'debug': __DEBUG__,
@@ -211,7 +228,15 @@ def init_settings_file():
 
 def load_all_parameters():
     """
-    Charge les paramètres depuis un fichier. Recrée le fichier par défaut si le chargement échoue.
+    Documentation for a function.
+
+    cette fonction Charge les paramètres depuis un fichier. Recrée le fichier par défaut si le chargement échoue.
+    
+    Args:
+        None
+    
+    Returns:
+        None    
     """
     if not os.path.exists(__PATH_SETTINGS_FILE__):
         print(get_text('file_not_found'))
@@ -234,7 +259,15 @@ def load_all_parameters():
 
 def set_language():
     """
-    Permet à l'utilisateur de choisir la langue de l'interface.
+    Documentation for a function.
+
+    Cette fonction permet à l'utilisateur de choisir la langue de l'interface.
+
+    Args:
+        None
+    
+    Returns:
+        None
     """
     print(get_text('set_language').format(load_parametre('current_language'), ', '.join(LANGUAGES.keys())))
     for code, lang in load_parametre('LANGUAGES').items():
@@ -248,7 +281,15 @@ def set_language():
 
 def get_text(key):
     """
-    Récupère le texte dans la langue actuelle.
+    Documentation for a function.
+
+    Cette fonction récupère le texte dans la langue actuelle.
+
+    Args:
+        key: la clé du texte à récupérer
+    
+    Returns:
+        str: le texte correspondant à la clé
     """
     try:
         langue  = load_parametre('current_language')
@@ -259,6 +300,17 @@ def get_text(key):
 
 
 def load_parametre(key):
+    """
+    Documentation for a function.
+
+    Cette fonction charge un paramètre depuis le fichier de configuration.
+
+    Args:
+        key: la clé du paramètre à charger
+
+    Returns:
+        str: la valeur du paramètre
+    """
     if os.path.exists(__PATH_SETTINGS_FILE__) == False:
         init_settings_file()
     with open(__PATH_SETTINGS_FILE__, "r") as f:
@@ -272,6 +324,20 @@ def load_parametre(key):
             return ""
     
 def save_parametre(key, value):
+    """
+    Documentation for a function.
+
+    Cette fonction sauvegarde un paramètre dans le fichier de configuration.
+
+    Args:
+        key: la clé du paramètre à sauvegarder
+        value: la valeur du paramètre
+
+    Returns:
+        None
+    """
+
+
     if os.path.exists(__PATH_SETTINGS_FILE__) == False:
         init_settings_file()
         
@@ -291,8 +357,3 @@ def save_parametre(key, value):
 # Point d'entrée principal
 if __name__ == "__main__":
     load_all_parameters()
-    print(get_text('welcome'))
-    save_parametre('current_language', 'en')
-    print(get_text('choose_mode'))
-    save_parametre('current_language', 'fr')
-    print(get_text('goodbye'))

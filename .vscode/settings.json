@@ -2,5 +2,8 @@
     "files.associations": {
         "speech_to_text.h": "c",
         "text_to_command.h": "c"
-    }
+    },
+    "python.analysis.extraPaths": [
+        "./virtuelEnvironnement/source"
+    ]
 }

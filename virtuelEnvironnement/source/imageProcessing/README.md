@@ -1,6 +1,6 @@
 # Module de Traitement d'Images (`image_processing`)
 
-Ce module, développé en **langage C** par [Niel Mbede](https://github.com/mbedeniel), permet d'effectuer un traitement avancé des images en analysant leurs **formes**, **couleurs** et **positions**. Il utilise une approche basée sur la **décomposition par raffinage successif** pour garantir une détection précise des objets dans une image.
+Ce module, développé en **langage C**, permet d'effectuer un traitement avancé des images en analysant leurs **formes**, **couleurs** et **positions**. Il utilise une approche basée sur la **décomposition par raffinage successif** pour garantir une détection précise des objets dans une image.
 
 ## 📌 Fonctionnalités
 
@@ -8,7 +8,9 @@ Ce module, développé en **langage C** par [Niel Mbede](https://github.com/mbed
 - Conversion de l’espace colorimétrique **RGB** vers **HSV** pour une meilleure robustesse face aux variations de luminosité.
 - Segmentation des images en fonction des couleurs.
 - Filtrage des bruits via un **filtre médian**.
-- Détection et identification des formes (**cercles, carrés, etc.**).
+- Détection et identification des formes (**balles et cubes**).
+- Paramétrage calibrable des seuils de **teinte (H)** et **saturation (S)**.
+- Détection des couleurs **ORANGE, BLEUE et JAUNE** (modifiable pour ajouter d'autres couleurs).
 - Communication avec d’autres modules via `image_interface`.
 
 ## 📂 Architecture du Module
@@ -30,7 +32,7 @@ L’échange de données avec d'autres modules (`commande vocale`, `simulation`,
 
 2. **Segmentation de la couleur**
    - Le module `color_treatment` segmente l’image en fonction de la couleur recherchée.
-   - L’algorithme s’appuie principalement sur la composante **H (teinte)** de chaque pixel, en utilisant des seuils prédéfinis.
+   - L’algorithme s’appuie principalement sur la composante **H (teinte)** de chaque pixel, en utilisant des seuils prédéfinis et ajustables.
    - À l’issue de cette segmentation, une image binaire (`binary_image`) est générée, indiquant la présence ou non de la couleur recherchée.
 
 3. **Filtrage des bruits**
@@ -40,12 +42,12 @@ L’échange de données avec d'autres modules (`commande vocale`, `simulation`,
    - Le module `shape_treatment` analyse `binary_image` pour identifier si la forme détectée correspond à celle recherchée.
    - L’approche varie selon la nature de la figure :
 
-   #### **Cas d’un cercle**
+   #### **Cas d’un cercle (balle)**
    - Un cercle est caractérisé par son **centre** et son **rayon**.
    - L’algorithme détermine les points extrêmes sur l’axe **Y** et calcule le rayon.
    - L’aire du cercle ainsi défini est comparée à l’aire réelle de la figure détectée dans `binary_image`.
 
-   #### **Cas d’un carré**
+   #### **Cas d’un carré (cube)**
    - L’algorithme identifie les points extrêmes sur l’axe **Y** pour en déduire la longueur d’un côté.
    - L’aire du carré est comparée à l’aire mesurée dans `binary_image` pour validation.
 
@@ -91,7 +93,7 @@ Si tu souhaites proposer des améliorations, n'hésite pas à créer une **issue
 
 ## 👨‍💻 Auteur
 
-Ce module a été entièrement développé par **[Niel Mbede](https://github.com/mbedeniel)**.  
+Ce module a été développé par **[Niel Mbede](https://github.com/mbedeniel)**.  
 Tu peux aussi me retrouver sur **[LinkedIn](https://www.linkedin.com/in/niel-mbede/)**.
 
 ---

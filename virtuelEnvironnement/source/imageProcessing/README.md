@@ -1,6 +1,6 @@
 # Module de Traitement d'Images (`image_processing`)
 
-Ce module, développé en **langage C**, permet d'effectuer un traitement avancé des images en analysant leurs **formes**, **couleurs** et **positions**. Il utilise une approche basée sur la **décomposition par raffinage successif** pour garantir une détection précise des objets dans une image.
+Ce module, développé en **langage C** par [Niel Mbede](https://github.com/mbedeniel), permet d'effectuer un traitement avancé des images en analysant leurs **formes**, **couleurs** et **positions**. Il utilise une approche basée sur la **décomposition par raffinage successif** pour garantir une détection précise des objets dans une image.
 
 ## 📌 Fonctionnalités
 
@@ -88,6 +88,11 @@ Ce projet est distribué sous la licence **MIT**. Consulte le fichier `LICENSE` 
 
 Les contributions sont les bienvenues !  
 Si tu souhaites proposer des améliorations, n'hésite pas à créer une **issue** ou à soumettre une **pull request**.
+
+## 👨‍💻 Auteur
+
+Ce module a été entièrement développé par **[Niel Mbede](https://github.com/mbedeniel)**.  
+Tu peux aussi me retrouver sur **[LinkedIn](https://www.linkedin.com/in/niel-mbede/)**.
 
 ---
 

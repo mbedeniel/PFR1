@@ -73,7 +73,6 @@ Pour exécuter la segmentation d'image, utilisez la commande suivante :
 
 Pour toute question, suggestion ou contribution, n'hésitez pas à me contacter via les plateformes suivantes :  
 
-- **📧 Email** : [mbedeniel@gmail.com](mailto:mbedeniel@gmail.com)  
 - **🐙 GitHub** : [@mbedeniel](https://github.com/mbedeniel)  
 - **💼 LinkedIn** : [Niel Mbede](https://www.linkedin.com/in/niel-mbede/)  
 - **🐛 Signaler un bug ou une amélioration** : [Issues GitHub](https://github.com/mbedeniel/LesGaulois/issues)  
